@@ -30,6 +30,6 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  // Apply to everything EXCEPT static assets, Next internals, and the public unsubscribe endpoint.
-  matcher: ["/((?!_next/static|_next/image|favicon\\.ico|earthpilot-logo|api/unsubscribe).*)"],
+  // Apply to everything EXCEPT static assets, Next internals, healthcheck, and the public unsubscribe endpoint.
+  matcher: ["/((?!_next/static|_next/image|favicon\\.ico|earthpilot-logo|api/health|api/unsubscribe).*)"],
 };
