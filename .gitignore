@@ -13,3 +13,6 @@ paper/*.html
 
 # Discover script outputs
 data/discover*.log
+
+# Local credentials
+data/credentials*.md
