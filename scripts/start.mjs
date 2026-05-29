@@ -22,7 +22,9 @@ const seedPath = path.join(process.cwd(), "seed", "personality-bench-seed.db.gz"
 try {
   const dbExists = fs.existsSync(dbPath);
   const dbSize = dbExists ? fs.statSync(dbPath).size : 0;
-  if (!dbExists || dbSize < 50_000) {
+  // Threshold tuned for our schema: an empty (schema-only) DB lands around 200-400 KB,
+  // a real DB with run data is 5+ MB. Use 2 MB as the boundary.
+  if (!dbExists || dbSize < 2_000_000) {
     if (fs.existsSync(seedPath)) {
       console.log(`[start] seeding ${dbPath} from ${seedPath} (${(fs.statSync(seedPath).size / 1024 / 1024).toFixed(1)} MB compressed)`);
       await pipeline(createReadStream(seedPath), createGunzip(), createWriteStream(dbPath));
