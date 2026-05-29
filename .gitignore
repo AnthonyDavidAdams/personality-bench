@@ -16,3 +16,8 @@ data/discover*.log
 
 # Local credentials
 data/credentials*.md
+
+# Seed working files — we only commit the gzipped snapshot
+seed/*.db
+seed/*.db-shm
+seed/*.db-wal
