@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 import { spawnSync, spawn } from "node:child_process";
+import { createReadStream, createWriteStream } from "node:fs";
+import { createGunzip } from "node:zlib";
+import { pipeline } from "node:stream/promises";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -11,6 +14,28 @@ const dbPath =
 
 fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 console.log(`[start] ensured directory ${path.dirname(dbPath)}`);
+
+// First-boot seeding: if the volume's DB doesn't exist (or is suspiciously empty),
+// decompress the baked-in seed snapshot. This lets a fresh Railway volume come up
+// pre-populated with the dataset shipped in the repo.
+const seedPath = path.join(process.cwd(), "seed", "personality-bench-seed.db.gz");
+try {
+  const dbExists = fs.existsSync(dbPath);
+  const dbSize = dbExists ? fs.statSync(dbPath).size : 0;
+  if (!dbExists || dbSize < 50_000) {
+    if (fs.existsSync(seedPath)) {
+      console.log(`[start] seeding ${dbPath} from ${seedPath} (${(fs.statSync(seedPath).size / 1024 / 1024).toFixed(1)} MB compressed)`);
+      await pipeline(createReadStream(seedPath), createGunzip(), createWriteStream(dbPath));
+      console.log(`[start] seed restored — ${(fs.statSync(dbPath).size / 1024 / 1024).toFixed(1)} MB on disk`);
+    } else {
+      console.log(`[start] no seed file at ${seedPath} — starting with empty DB`);
+    }
+  } else {
+    console.log(`[start] existing DB at ${dbPath} (${(dbSize / 1024 / 1024).toFixed(1)} MB) — skipping seed`);
+  }
+} catch (e) {
+  console.error(`[start] seed restoration failed (non-fatal):`, e.message);
+}
 
 const push = spawnSync("npx", ["drizzle-kit", "push", "--force"], {
   stdio: "inherit",
