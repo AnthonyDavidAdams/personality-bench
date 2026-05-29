@@ -1,0 +1,44 @@
+{
+  "id": "eq_short",
+  "name": "Empathy Quotient — Short Form (EQ-Short)",
+  "shortName": "Empathy Quotient",
+  "family": "empathy",
+  "scaleMin": 1,
+  "scaleMax": 4,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Slightly disagree",
+    "Slightly agree",
+    "Strongly agree"
+  ],
+  "description": "22-item short form of the Empathy Quotient (EQ), measuring cognitive and affective empathy as a single dimension.",
+  "citation": "Wakabayashi, A., Baron-Cohen, S., Wheelwright, S., et al. (2006). Development of short forms of the Empathy Quotient (EQ-Short) and the Systemizing Quotient (SQ-Short). Personality and Individual Differences, 41(5), 929–940.",
+  "license": "Free for non-commercial research use.",
+  "dimensions": [
+    { "id": "empathy_quotient", "label": "Empathy Quotient" }
+  ],
+  "items": [
+    { "position": 1,  "text": "I can easily tell if someone else wants to enter a conversation.",                                                      "dimension": "empathy_quotient" },
+    { "position": 2,  "text": "I find it difficult to explain to others things that I understand easily, when they don't understand it first time.", "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 3,  "text": "I really enjoy caring for other people.",                                                                              "dimension": "empathy_quotient" },
+    { "position": 4,  "text": "I find it hard to know what to do in a social situation.",                                                            "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 5,  "text": "People often tell me that I went too far in driving my point home in a discussion.",                                  "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 6,  "text": "It doesn't bother me too much if I am late meeting a friend.",                                                        "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 7,  "text": "Friendships and relationships are just too difficult, so I tend not to bother with them.",                            "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 8,  "text": "I often find it difficult to judge if something is rude or polite.",                                                  "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 9,  "text": "In a conversation, I tend to focus on my own thoughts rather than on what my listener might be thinking.",            "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 10, "text": "When I was a child, I enjoyed cutting up worms to see what would happen.",                                            "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 11, "text": "I can pick up quickly if someone says one thing but means another.",                                                  "dimension": "empathy_quotient" },
+    { "position": 12, "text": "It is hard for me to see why some things upset people so much.",                                                      "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 13, "text": "I find it easy to put myself in somebody else's shoes.",                                                              "dimension": "empathy_quotient" },
+    { "position": 14, "text": "I am good at predicting how someone will feel.",                                                                      "dimension": "empathy_quotient" },
+    { "position": 15, "text": "I am quick to spot when someone in a group is feeling awkward or uncomfortable.",                                     "dimension": "empathy_quotient" },
+    { "position": 16, "text": "Other people tell me I am good at understanding how they are feeling and what they are thinking.",                    "dimension": "empathy_quotient" },
+    { "position": 17, "text": "I can easily tell if someone else is interested or bored with what I am saying.",                                     "dimension": "empathy_quotient" },
+    { "position": 18, "text": "Friends usually talk to me about their problems as they say that I am very understanding.",                           "dimension": "empathy_quotient" },
+    { "position": 19, "text": "I can sense if I am intruding, even if the other person doesn't tell me.",                                            "dimension": "empathy_quotient" },
+    { "position": 20, "text": "Other people often say that I am insensitive, though I don't always see why.",                                        "dimension": "empathy_quotient", "reverseKeyed": true },
+    { "position": 21, "text": "I can tune into how someone else feels rapidly and intuitively.",                                                     "dimension": "empathy_quotient" },
+    { "position": 22, "text": "I can easily work out what another person might want to talk about.",                                                 "dimension": "empathy_quotient" }
+  ]
+}

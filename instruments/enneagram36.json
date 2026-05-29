@@ -1,0 +1,75 @@
+{
+  "id": "enneagram36",
+  "name": "Enneagram Type Screening Inventory (36 items)",
+  "shortName": "Enneagram",
+  "family": "enneagram",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Neither agree nor disagree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "36-item screening inventory mapping respondents to the nine Enneagram personality types as described by Riso & Hudson. Four items per type, each capturing a core motivation, fear, or behavioral signature of that type. Note: this is a constructed screening instrument for research use, not a validated clinical assessment. Type with highest mean score is the candidate primary type; second-highest is candidate wing.",
+  "citation": "Riso, D. R., & Hudson, R. (1999). The wisdom of the Enneagram. Bantam. (Items constructed for this study based on widely-used Enneagram type descriptions.)",
+  "license": "Items written for this study — CC-BY for the item set.",
+  "dimensions": [
+    { "id": "ennea_1", "label": "Type 1 — The Reformer",   "description": "Principled, purposeful, self-controlled, perfectionistic" },
+    { "id": "ennea_2", "label": "Type 2 — The Helper",     "description": "Caring, interpersonal, demonstrative, possessive" },
+    { "id": "ennea_3", "label": "Type 3 — The Achiever",   "description": "Adaptable, excelling, driven, image-conscious" },
+    { "id": "ennea_4", "label": "Type 4 — The Individualist", "description": "Expressive, dramatic, self-absorbed, temperamental" },
+    { "id": "ennea_5", "label": "Type 5 — The Investigator", "description": "Perceptive, innovative, isolated, intense" },
+    { "id": "ennea_6", "label": "Type 6 — The Loyalist",   "description": "Engaging, responsible, anxious, suspicious" },
+    { "id": "ennea_7", "label": "Type 7 — The Enthusiast", "description": "Spontaneous, versatile, acquisitive, scattered" },
+    { "id": "ennea_8", "label": "Type 8 — The Challenger", "description": "Self-confident, decisive, willful, confrontational" },
+    { "id": "ennea_9", "label": "Type 9 — The Peacemaker", "description": "Receptive, reassuring, agreeable, complacent" }
+  ],
+  "items": [
+    { "position": 1,  "text": "I have a strong inner sense of what is right and wrong, and I feel responsible for upholding it.",                  "dimension": "ennea_1" },
+    { "position": 2,  "text": "I often notice flaws and mistakes that others overlook, and I feel compelled to correct them.",                      "dimension": "ennea_1" },
+    { "position": 3,  "text": "I work hard to improve myself and live up to high standards.",                                                       "dimension": "ennea_1" },
+    { "position": 4,  "text": "I sometimes feel quietly angry or resentful when people aren't doing things the right way.",                         "dimension": "ennea_1" },
+
+    { "position": 5,  "text": "I genuinely enjoy taking care of others and anticipating their needs.",                                              "dimension": "ennea_2" },
+    { "position": 6,  "text": "I find it difficult to ask for help or say what I need from others.",                                                "dimension": "ennea_2" },
+    { "position": 7,  "text": "People often turn to me when they need emotional support.",                                                          "dimension": "ennea_2" },
+    { "position": 8,  "text": "I feel best about myself when I am needed or appreciated by others.",                                                "dimension": "ennea_2" },
+
+    { "position": 9,  "text": "I am highly driven to achieve and be successful in my work.",                                                        "dimension": "ennea_3" },
+    { "position": 10, "text": "I am very conscious of how I am perceived by others, and I adjust my image accordingly.",                            "dimension": "ennea_3" },
+    { "position": 11, "text": "I am efficient and adaptable; I can shift roles to fit what the situation requires.",                                "dimension": "ennea_3" },
+    { "position": 12, "text": "I find it hard to slow down or stop working — being productive is core to who I am.",                                "dimension": "ennea_3" },
+
+    { "position": 13, "text": "I feel that I am fundamentally different from other people in some essential way.",                                  "dimension": "ennea_4" },
+    { "position": 14, "text": "I am drawn to what is missing, melancholic, or aesthetically meaningful.",                                           "dimension": "ennea_4" },
+    { "position": 15, "text": "My emotional life is deep and intense, and I value authentic self-expression.",                                      "dimension": "ennea_4" },
+    { "position": 16, "text": "I sometimes envy what others have that I feel I am lacking.",                                                        "dimension": "ennea_4" },
+
+    { "position": 17, "text": "I prefer to observe and analyze a situation thoroughly before participating.",                                       "dimension": "ennea_5" },
+    { "position": 18, "text": "I value my privacy and need significant time alone to recharge.",                                                    "dimension": "ennea_5" },
+    { "position": 19, "text": "I find deep satisfaction in mastering complex subjects and acquiring expertise.",                                    "dimension": "ennea_5" },
+    { "position": 20, "text": "I conserve my energy and resources, and I'm uncomfortable when others demand too much of me.",                       "dimension": "ennea_5" },
+
+    { "position": 21, "text": "I am alert to potential threats and tend to anticipate what could go wrong.",                                        "dimension": "ennea_6" },
+    { "position": 22, "text": "I value loyalty and commitment, and I'm dependable in my relationships.",                                            "dimension": "ennea_6" },
+    { "position": 23, "text": "I often seek reassurance or guidance from people or systems I trust.",                                                "dimension": "ennea_6" },
+    { "position": 24, "text": "I question authority and motives — sometimes my own — more than most people do.",                                    "dimension": "ennea_6" },
+
+    { "position": 25, "text": "I am drawn to new experiences, options, and possibilities; I dislike feeling limited.",                              "dimension": "ennea_7" },
+    { "position": 26, "text": "I tend to reframe difficult situations in a positive or hopeful light.",                                             "dimension": "ennea_7" },
+    { "position": 27, "text": "I prefer to keep my options open rather than commit to one path.",                                                   "dimension": "ennea_7" },
+    { "position": 28, "text": "I have a hard time staying with painful or boring experiences for very long.",                                       "dimension": "ennea_7" },
+
+    { "position": 29, "text": "I am direct, decisive, and unafraid to confront people when needed.",                                                "dimension": "ennea_8" },
+    { "position": 30, "text": "I take charge of situations naturally and protect those under my care.",                                             "dimension": "ennea_8" },
+    { "position": 31, "text": "Showing vulnerability or weakness is difficult for me.",                                                              "dimension": "ennea_8" },
+    { "position": 32, "text": "When I feel disrespected or controlled, I respond with intensity.",                                                  "dimension": "ennea_8" },
+
+    { "position": 33, "text": "I value harmony and tend to avoid conflict when possible.",                                                          "dimension": "ennea_9" },
+    { "position": 34, "text": "I am easy-going and can see most situations from multiple perspectives.",                                            "dimension": "ennea_9" },
+    { "position": 35, "text": "I sometimes lose track of my own priorities by going along with what others want.",                                  "dimension": "ennea_9" },
+    { "position": 36, "text": "I prefer comfort and routine to disruption and intensity.",                                                          "dimension": "ennea_9" }
+  ]
+}

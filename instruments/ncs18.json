@@ -1,0 +1,41 @@
+{
+  "id": "ncs18",
+  "name": "Need for Cognition Scale (NCS-18)",
+  "shortName": "Need for Cognition",
+  "family": "cognition",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Neither agree nor disagree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "18-item short form of the Need for Cognition Scale, measuring the tendency to engage in and enjoy effortful cognitive endeavors.",
+  "citation": "Cacioppo, J. T., Petty, R. E., & Kao, C. F. (1984). The efficient assessment of need for cognition. Journal of Personality Assessment, 48(3), 306–307.",
+  "license": "Free for non-commercial research use.",
+  "dimensions": [
+    { "id": "need_for_cognition", "label": "Need for Cognition" }
+  ],
+  "items": [
+    { "position": 1,  "text": "I would prefer complex to simple problems.",                                                                           "dimension": "need_for_cognition" },
+    { "position": 2,  "text": "I like to have the responsibility of handling a situation that requires a lot of thinking.",                          "dimension": "need_for_cognition" },
+    { "position": 3,  "text": "Thinking is not my idea of fun.",                                                                                      "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 4,  "text": "I would rather do something that requires little thought than something that is sure to challenge my thinking abilities.", "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 5,  "text": "I try to anticipate and avoid situations where there is a likely chance I will have to think in depth about something.", "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 6,  "text": "I find satisfaction in deliberating hard and for long hours.",                                                         "dimension": "need_for_cognition" },
+    { "position": 7,  "text": "I only think as hard as I have to.",                                                                                   "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 8,  "text": "I prefer to think about small daily projects to long-term ones.",                                                      "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 9,  "text": "I like tasks that require little thought once I've learned them.",                                                     "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 10, "text": "The idea of relying on thought to make my way to the top appeals to me.",                                              "dimension": "need_for_cognition" },
+    { "position": 11, "text": "I really enjoy a task that involves coming up with new solutions to problems.",                                        "dimension": "need_for_cognition" },
+    { "position": 12, "text": "Learning new ways to think doesn't excite me very much.",                                                              "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 13, "text": "I prefer my life to be filled with puzzles I must solve.",                                                             "dimension": "need_for_cognition" },
+    { "position": 14, "text": "The notion of thinking abstractly is appealing to me.",                                                                "dimension": "need_for_cognition" },
+    { "position": 15, "text": "I would prefer a task that is intellectual, difficult, and important to one that is somewhat important but does not require much thought.", "dimension": "need_for_cognition" },
+    { "position": 16, "text": "I feel relief rather than satisfaction after completing a task that required a lot of mental effort.",                  "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 17, "text": "It's enough for me that something gets the job done; I don't care how or why it works.",                              "dimension": "need_for_cognition", "reverseKeyed": true },
+    { "position": 18, "text": "I usually end up deliberating about issues even when they do not affect me personally.",                              "dimension": "need_for_cognition" }
+  ]
+}

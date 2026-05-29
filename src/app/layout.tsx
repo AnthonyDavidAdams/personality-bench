@@ -1,0 +1,105 @@
+import "./globals.css";
+import Link from "next/link";
+import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Personality Bench — an EarthPilot research lab dataset",
+  description:
+    "Frontier language models, run through Big 5, HEXACO, Dark Triad, Schwartz Values, learning styles, and other personality instruments. Open methodology, open data, open cost. By Anthony David Adams.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className="min-h-screen">
+        <header className="border-b border-[var(--border)] bg-white">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image
+                src="/earthpilot-logo.png"
+                alt="EarthPilot"
+                width={32}
+                height={32}
+                className="rounded-full"
+                priority
+              />
+              <span className="font-semibold tracking-tight text-lg group-hover:text-[var(--accent)]">
+                Personality<span className="text-[var(--accent)]">·</span>Bench
+              </span>
+            </Link>
+            <nav className="flex gap-6 text-sm text-neutral-700">
+              <Link href="/models" className="hover:text-[var(--accent)]">Models</Link>
+              <Link href="/instruments" className="hover:text-[var(--accent)]">Instruments</Link>
+              <Link href="/compare" className="hover:text-[var(--accent)]">Compare</Link>
+              <Link href="/drift" className="hover:text-[var(--accent)]">Drift</Link>
+              <Link href="/paper" className="hover:text-[var(--accent)]">Paper</Link>
+              <Link href="/spend" className="hover:text-[var(--accent)]">Spend</Link>
+              <Link href="/methodology" className="hover:text-[var(--accent)]">Methodology</Link>
+            </nav>
+          </div>
+        </header>
+        <main className="max-w-6xl mx-auto px-6 py-10">{children}</main>
+        <footer className="border-t border-[var(--border)] mt-20 bg-[var(--paper)]">
+          <div className="max-w-6xl mx-auto px-6 py-8">
+            <div className="flex items-start gap-4">
+              <Image
+                src="/earthpilot-logo.png"
+                alt="EarthPilot lab flag"
+                width={48}
+                height={48}
+                className="rounded-full flex-shrink-0"
+              />
+              <div className="text-sm text-neutral-700 leading-relaxed">
+                <div>
+                  A research project by{" "}
+                  <a
+                    href="https://github.com/AnthonyDavidAdams"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--link)] hover:underline"
+                  >
+                    Anthony David Adams
+                  </a>{" "}
+                  ·{" "}
+                  <a
+                    href="https://github.com/AnthonyDavidAdams"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--link)] hover:underline"
+                  >
+                    GitHub
+                  </a>{" "}
+                  ·{" "}
+                  <a
+                    href="https://linkedin.com/in/anthonydavidadams"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--link)] hover:underline"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+                <div className="mt-1">
+                  Published by{" "}
+                  <a
+                    href="https://earthpilot.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--link)] hover:underline font-medium"
+                  >
+                    EarthPilot.ai
+                  </a>{" "}
+                  — Mission Support for Spaceship Earth.
+                </div>
+                <div className="mt-1 text-neutral-500">
+                  Provided as a public utility. Open methodology, open data, open cost.
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+    </html>
+  );
+}

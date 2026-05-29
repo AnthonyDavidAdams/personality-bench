@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  /* Surfaces */
+  --background: #ffffff;
+  --paper: #f9f7f1;          /* warm cream */
+  --soft: #f0ece1;           /* tinted card on cream */
+  --border: #d6d2c4;         /* warm taupe */
+
+  /* Type */
+  --foreground: #1a1a1a;
+  --muted: #6b6b6b;
+  --muted-2: #8a8a8a;
+
+  /* Brand */
+  --primary: #1f3a93;        /* EarthPilot deep blue */
+  --primary-soft: #e3e8f3;
+  --accent: #b45309;         /* warm amber accent (used sparingly) */
+  --accent-soft: #fbe9c6;
+
+  /* Semantic */
+  --link: #1f3a93;
+  --positive: #15803d;
+  --warning: #b45309;
+
+  /* Series palette — vendor-keyed, all similar saturation/value */
+  --series-anthropic: #c2410c;   /* rust */
+  --series-openai:    #15803d;   /* forest */
+  --series-google:    #1f3a93;   /* deep blue */
+  --series-xai:       #18181b;   /* near-black */
+  --series-deepseek:  #be185d;   /* rose */
+  --series-meta:      #4338ca;   /* indigo */
+  --series-mistral:   #6d28d9;   /* violet */
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-feature-settings: "ss01", "cv11";
+}
+
+* { box-sizing: border-box; }
+
+table { border-collapse: collapse; }
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.serif {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+}

@@ -1,0 +1,15 @@
+node_modules
+.next
+data/*.db
+data/*.db-shm
+data/*.db-wal
+.env
+.env.local
+.DS_Store
+*.tsbuildinfo
+
+# Generated paper outputs (rebuild via paper/build_pdf.py)
+paper/*.html
+
+# Discover script outputs
+data/discover*.log

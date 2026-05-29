@@ -1,0 +1,38 @@
+{
+  "id": "ecr12",
+  "name": "Experiences in Close Relationships — Short Form (ECR-S)",
+  "shortName": "Attachment (ECR-12)",
+  "family": "attachment",
+  "scaleMin": 1,
+  "scaleMax": 7,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Slightly disagree",
+    "Neither agree nor disagree",
+    "Slightly agree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "12-item short form of the Experiences in Close Relationships scale, measuring adult attachment along two dimensions: Anxiety (fear of rejection/abandonment) and Avoidance (discomfort with closeness/dependence).",
+  "citation": "Wei, M., Russell, D. W., Mallinckrodt, B., & Vogel, D. L. (2007). The Experiences in Close Relationship Scale (ECR)–Short Form: Reliability, validity, and factor structure. Journal of Personality Assessment, 88(2), 187–204.",
+  "license": "Free for non-commercial research use.",
+  "dimensions": [
+    { "id": "attachment_anxiety",   "label": "Attachment Anxiety" },
+    { "id": "attachment_avoidance", "label": "Attachment Avoidance" }
+  ],
+  "items": [
+    { "position": 1,  "text": "It helps to turn to people in times of need.",                                       "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 2,  "text": "I need to feel that I am loved by my partner.",                                      "dimension": "attachment_anxiety" },
+    { "position": 3,  "text": "I want to get close to my partner, but I keep pulling back.",                        "dimension": "attachment_avoidance" },
+    { "position": 4,  "text": "I find that my partner doesn't want to get as close as I would like.",               "dimension": "attachment_anxiety" },
+    { "position": 5,  "text": "I turn to my partner for many things, including comfort and reassurance.",           "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 6,  "text": "My desire to be very close sometimes scares people away.",                           "dimension": "attachment_anxiety" },
+    { "position": 7,  "text": "I try to avoid getting too close to my partner.",                                    "dimension": "attachment_avoidance" },
+    { "position": 8,  "text": "I do not often worry about being abandoned.",                                        "dimension": "attachment_anxiety", "reverseKeyed": true },
+    { "position": 9,  "text": "I usually discuss my problems and concerns with my partner.",                        "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 10, "text": "I get frustrated if my partner is not available when I need them.",                  "dimension": "attachment_anxiety" },
+    { "position": 11, "text": "It is easy for me to be affectionate with my partner.",                              "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 12, "text": "I worry that my partner won't care about me as much as I care about them.",         "dimension": "attachment_anxiety" }
+  ]
+}

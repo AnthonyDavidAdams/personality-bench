@@ -1,0 +1,38 @@
+{
+  "id": "kolb12",
+  "name": "Kolb Experiential Learning Modes (Likert-adapted)",
+  "shortName": "Kolb Learning Modes",
+  "family": "learning_styles",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Neither agree nor disagree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "12-item Likert adaptation of Kolb's Experiential Learning Theory, measuring four learning modes that combine into the four Kolb learning styles. Concrete Experience + Reflective Observation = Diverging; Abstract Conceptualization + Reflective Observation = Assimilating; Abstract Conceptualization + Active Experimentation = Converging; Concrete Experience + Active Experimentation = Accommodating. As with VARK, the empirical evidence for matching instruction to learning style is weak.",
+  "citation": "Kolb, D. A. (1984). Experiential Learning: Experience as the Source of Learning and Development. Prentice-Hall. (Items rewritten in Likert form for this study; the original LSI uses a ranked-choice format.)",
+  "license": "Kolb LSI © Hay Group; items rewritten in Likert form for this study (CC-BY).",
+  "dimensions": [
+    { "id": "kolb_ce", "label": "Concrete Experience",       "description": "Learning through feeling — engaging with concrete situations and people" },
+    { "id": "kolb_ro", "label": "Reflective Observation",    "description": "Learning through watching — observing carefully before judging" },
+    { "id": "kolb_ac", "label": "Abstract Conceptualization","description": "Learning through thinking — building models and theories" },
+    { "id": "kolb_ae", "label": "Active Experimentation",    "description": "Learning through doing — practical application and testing" }
+  ],
+  "items": [
+    { "position": 1,  "text": "I learn best by getting personally involved in a situation and noticing my own reactions.", "dimension": "kolb_ce" },
+    { "position": 2,  "text": "Before drawing conclusions, I prefer to step back and observe a situation from many angles.","dimension": "kolb_ro" },
+    { "position": 3,  "text": "I build mental models and theories to make sense of what I am learning.",                  "dimension": "kolb_ac" },
+    { "position": 4,  "text": "I learn most when I can try something out and see what happens.",                          "dimension": "kolb_ae" },
+    { "position": 5,  "text": "Feelings and intuition are an important part of how I understand things.",                 "dimension": "kolb_ce" },
+    { "position": 6,  "text": "I prefer to listen and observe carefully before forming an opinion.",                      "dimension": "kolb_ro" },
+    { "position": 7,  "text": "Abstract concepts and frameworks excite me more than concrete details.",                   "dimension": "kolb_ac" },
+    { "position": 8,  "text": "I'd rather take action and learn from outcomes than analyze indefinitely.",                "dimension": "kolb_ae" },
+    { "position": 9,  "text": "I value direct, lived experience as my main source of learning.",                          "dimension": "kolb_ce" },
+    { "position": 10, "text": "Reflection — looking back over what happened — is essential to how I learn.",              "dimension": "kolb_ro" },
+    { "position": 11, "text": "I enjoy precise logical analysis and reasoning from first principles.",                    "dimension": "kolb_ac" },
+    { "position": 12, "text": "Practical application is the real test of whether I've learned something.",                "dimension": "kolb_ae" }
+  ]
+}

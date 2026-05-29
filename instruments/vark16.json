@@ -1,0 +1,42 @@
+{
+  "id": "vark16",
+  "name": "VARK Learning Modality Preferences (Likert-adapted)",
+  "shortName": "VARK Learning Styles",
+  "family": "learning_styles",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Neither agree nor disagree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "16-item adaptation of Fleming's VARK framework, measuring four learning modality preferences: Visual (V), Aural (A), Read/Write (R), and Kinesthetic (K). Note: the underlying 'matching instruction to preferred style improves learning' hypothesis has been empirically rejected (Pashler et al., 2008). Included here to test whether LLMs self-identify with these modalities at all.",
+  "citation": "Fleming, N. D., & Mills, C. (1992). Not another inventory, rather a catalyst for reflection. To Improve the Academy, 11, 137–155. (Items rewritten in Likert form for this study.)",
+  "license": "VARK questionnaire © Neil Fleming; items adapted/rewritten in Likert form for this study (CC-BY).",
+  "dimensions": [
+    { "id": "vark_visual",      "label": "Visual",      "description": "Preference for charts, diagrams, maps, graphs" },
+    { "id": "vark_aural",       "label": "Aural",       "description": "Preference for spoken explanations, discussion, lectures" },
+    { "id": "vark_read_write",  "label": "Read/Write",  "description": "Preference for text — reading and writing" },
+    { "id": "vark_kinesthetic", "label": "Kinesthetic", "description": "Preference for hands-on practice, examples, simulation" }
+  ],
+  "items": [
+    { "position": 1,  "text": "I learn best when information is presented as charts, diagrams, or visual maps.",          "dimension": "vark_visual" },
+    { "position": 2,  "text": "I prefer to hear someone explain something rather than read about it.",                    "dimension": "vark_aural" },
+    { "position": 3,  "text": "I retain ideas best when I read detailed text about them.",                                "dimension": "vark_read_write" },
+    { "position": 4,  "text": "I learn most effectively when I can practice the skill hands-on.",                         "dimension": "vark_kinesthetic" },
+    { "position": 5,  "text": "When following directions, I prefer a labeled map over written turn-by-turn instructions.","dimension": "vark_visual" },
+    { "position": 6,  "text": "I enjoy lectures and audio explanations more than written material.",                      "dimension": "vark_aural" },
+    { "position": 7,  "text": "I take detailed written notes and re-read them to learn.",                                 "dimension": "vark_read_write" },
+    { "position": 8,  "text": "I prefer to learn by trying things out and seeing what happens.",                          "dimension": "vark_kinesthetic" },
+    { "position": 9,  "text": "I find that I remember a concept better once I have seen it diagrammed.",                  "dimension": "vark_visual" },
+    { "position": 10, "text": "I find it useful to talk through ideas out loud to understand them.",                      "dimension": "vark_aural" },
+    { "position": 11, "text": "I would rather read a manual than have someone demonstrate something.",                    "dimension": "vark_read_write" },
+    { "position": 12, "text": "Concrete worked examples teach me more than abstract definitions.",                        "dimension": "vark_kinesthetic" },
+    { "position": 13, "text": "I think in pictures and mental images more than in words.",                                "dimension": "vark_visual" },
+    { "position": 14, "text": "I learn well from podcasts, discussions, and recorded talks.",                             "dimension": "vark_aural" },
+    { "position": 15, "text": "I write to think; the act of writing helps me clarify ideas.",                             "dimension": "vark_read_write" },
+    { "position": 16, "text": "I prefer to learn through simulations, role-plays, or physical practice.",                 "dimension": "vark_kinesthetic" }
+  ]
+}

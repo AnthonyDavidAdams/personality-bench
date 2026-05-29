@@ -1,0 +1,50 @@
+{
+  "id": "locus_levenson",
+  "name": "Levenson Multidimensional Locus of Control (IPC)",
+  "shortName": "Locus of Control",
+  "family": "locus",
+  "scaleMin": 1,
+  "scaleMax": 6,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Slightly disagree",
+    "Slightly agree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "24-item Levenson IPC scale, decomposing locus of control into three independent dimensions: Internal (I — events are determined by one's own behavior), Powerful Others (P — events are determined by other powerful people), and Chance (C — events are determined by luck or fate).",
+  "citation": "Levenson, H. (1981). Differentiating between internality, powerful others, and chance. In H. M. Lefcourt (Ed.), Research with the locus of control construct (Vol. 1, pp. 15–63). Academic Press.",
+  "license": "Free for non-commercial research use.",
+  "dimensions": [
+    { "id": "loc_internal",         "label": "Internal Locus" },
+    { "id": "loc_powerful_others",  "label": "Powerful Others Locus" },
+    { "id": "loc_chance",           "label": "Chance Locus" }
+  ],
+  "items": [
+    { "position": 1,  "text": "Whether or not I get to be a leader depends mostly on my ability.",                                                                  "dimension": "loc_internal" },
+    { "position": 2,  "text": "To a great extent my life is controlled by accidental happenings.",                                                                   "dimension": "loc_chance" },
+    { "position": 3,  "text": "I feel like what happens in my life is mostly determined by powerful people.",                                                        "dimension": "loc_powerful_others" },
+    { "position": 4,  "text": "Whether or not I get into a car accident depends mostly on how good a driver I am.",                                                  "dimension": "loc_internal" },
+    { "position": 5,  "text": "When I make plans, I am almost certain to make them work.",                                                                          "dimension": "loc_internal" },
+    { "position": 6,  "text": "Often there is no chance of protecting my personal interests from bad luck happenings.",                                              "dimension": "loc_chance" },
+    { "position": 7,  "text": "When I get what I want, it's usually because I'm lucky.",                                                                            "dimension": "loc_chance" },
+    { "position": 8,  "text": "Although I might have good ability, I will not be given leadership responsibility without appealing to those in positions of power.", "dimension": "loc_powerful_others" },
+    { "position": 9,  "text": "How many friends I have depends on how nice a person I am.",                                                                         "dimension": "loc_internal" },
+    { "position": 10, "text": "I have often found that what is going to happen will happen.",                                                                       "dimension": "loc_chance" },
+    { "position": 11, "text": "My life is chiefly controlled by powerful others.",                                                                                  "dimension": "loc_powerful_others" },
+    { "position": 12, "text": "Whether or not I get into a car accident is mostly a matter of luck.",                                                                "dimension": "loc_chance" },
+    { "position": 13, "text": "People like myself have very little chance of protecting our personal interests when they conflict with those of strong pressure groups.", "dimension": "loc_powerful_others" },
+    { "position": 14, "text": "It's not always wise for me to plan too far ahead because many things turn out to be a matter of good or bad fortune.",              "dimension": "loc_chance" },
+    { "position": 15, "text": "Getting what I want requires pleasing those people above me.",                                                                       "dimension": "loc_powerful_others" },
+    { "position": 16, "text": "Whether or not I get to be a leader depends on whether I'm lucky enough to be in the right place at the right time.",                "dimension": "loc_chance" },
+    { "position": 17, "text": "If important people were to decide they didn't like me, I probably wouldn't make many friends.",                                     "dimension": "loc_powerful_others" },
+    { "position": 18, "text": "I can pretty much determine what will happen in my life.",                                                                           "dimension": "loc_internal" },
+    { "position": 19, "text": "I am usually able to protect my personal interests.",                                                                                "dimension": "loc_internal" },
+    { "position": 20, "text": "Whether or not I get into a car accident depends mostly on the other driver.",                                                        "dimension": "loc_powerful_others" },
+    { "position": 21, "text": "When I get what I want, it's usually because I worked hard for it.",                                                                 "dimension": "loc_internal" },
+    { "position": 22, "text": "In order to have my plans work, I make sure that they fit in with the desires of people who have power over me.",                    "dimension": "loc_powerful_others" },
+    { "position": 23, "text": "My life is determined by my own actions.",                                                                                            "dimension": "loc_internal" },
+    { "position": 24, "text": "It's chiefly a matter of fate whether or not I have a few friends or many friends.",                                                 "dimension": "loc_chance" }
+  ]
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Daily auto-discovery + sweep for Personality Bench.
+
+  Install:
+    cp scripts/launchd/ai.earthpilot.personality-bench.discover.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/ai.earthpilot.personality-bench.discover.plist
+
+  Uninstall:
+    launchctl unload ~/Library/LaunchAgents/ai.earthpilot.personality-bench.discover.plist
+    rm ~/Library/LaunchAgents/ai.earthpilot.personality-bench.discover.plist
+
+  Logs:
+    tail -f ~/personality-bench/data/discover.log
+
+  Fires once per day at 06:00 local. Edit StartCalendarInterval to change schedule.
+  Use --execute to actually run sweeps. Default below is dry-run + notify.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ai.earthpilot.personality-bench.discover</string>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/anthony/personality-bench</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>cd /Users/anthony/personality-bench &amp;&amp; /opt/homebrew/bin/npx tsx scripts/discover_and_run.ts --execute --notify --max-spend 10 &gt;&gt; data/discover.log 2&gt;&amp;1</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>6</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/anthony/personality-bench/data/discover.stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/anthony/personality-bench/data/discover.stderr.log</string>
+</dict>
+</plist>

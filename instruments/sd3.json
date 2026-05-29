@@ -1,0 +1,52 @@
+{
+  "id": "sd3",
+  "name": "Short Dark Triad (SD3)",
+  "shortName": "Dark Triad",
+  "family": "dark_triad",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Neither agree nor disagree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "27-item measure of three socially aversive personality traits: Machiavellianism (manipulativeness), Narcissism (grandiosity), and Psychopathy (callousness/impulsivity).",
+  "citation": "Jones, D. N., & Paulhus, D. L. (2014). Introducing the Short Dark Triad (SD3): A brief measure of dark personality traits. Assessment, 21(1), 28–41.",
+  "license": "Free for non-commercial research use (per author distribution).",
+  "dimensions": [
+    { "id": "machiavellianism", "label": "Machiavellianism" },
+    { "id": "narcissism",       "label": "Narcissism" },
+    { "id": "psychopathy",      "label": "Psychopathy" }
+  ],
+  "items": [
+    { "position": 1,  "text": "It's not wise to tell your secrets.",                                            "dimension": "machiavellianism" },
+    { "position": 2,  "text": "I like to use clever manipulation to get my way.",                                "dimension": "machiavellianism" },
+    { "position": 3,  "text": "Whatever it takes, you must get the important people on your side.",             "dimension": "machiavellianism" },
+    { "position": 4,  "text": "Avoid direct conflict with others because they may be useful in the future.",    "dimension": "machiavellianism" },
+    { "position": 5,  "text": "It's wise to keep track of information that you can use against people later.",  "dimension": "machiavellianism" },
+    { "position": 6,  "text": "You should wait for the right time to get back at people.",                      "dimension": "machiavellianism" },
+    { "position": 7,  "text": "There are things you should hide from other people to preserve your reputation.","dimension": "machiavellianism" },
+    { "position": 8,  "text": "Make sure your plans benefit yourself, not others.",                             "dimension": "machiavellianism" },
+    { "position": 9,  "text": "Most people can be manipulated.",                                                "dimension": "machiavellianism" },
+    { "position": 10, "text": "People see me as a natural leader.",                                             "dimension": "narcissism" },
+    { "position": 11, "text": "I hate being the center of attention.",                                          "dimension": "narcissism",       "reverseKeyed": true },
+    { "position": 12, "text": "Many group activities tend to be dull without me.",                              "dimension": "narcissism" },
+    { "position": 13, "text": "I know that I am special because everyone keeps telling me so.",                 "dimension": "narcissism" },
+    { "position": 14, "text": "I like to get acquainted with important people.",                                "dimension": "narcissism" },
+    { "position": 15, "text": "I feel embarrassed if someone compliments me.",                                  "dimension": "narcissism",       "reverseKeyed": true },
+    { "position": 16, "text": "I have been compared to famous people.",                                         "dimension": "narcissism" },
+    { "position": 17, "text": "I am an average person.",                                                        "dimension": "narcissism",       "reverseKeyed": true },
+    { "position": 18, "text": "I insist on getting the respect I deserve.",                                     "dimension": "narcissism" },
+    { "position": 19, "text": "I like to get revenge on authorities.",                                          "dimension": "psychopathy" },
+    { "position": 20, "text": "I avoid dangerous situations.",                                                  "dimension": "psychopathy",      "reverseKeyed": true },
+    { "position": 21, "text": "Payback needs to be quick and nasty.",                                           "dimension": "psychopathy" },
+    { "position": 22, "text": "People often say I'm out of control.",                                           "dimension": "psychopathy" },
+    { "position": 23, "text": "It's true that I can be mean to others.",                                        "dimension": "psychopathy" },
+    { "position": 24, "text": "People who mess with me always regret it.",                                      "dimension": "psychopathy" },
+    { "position": 25, "text": "I have never gotten into trouble with the law.",                                 "dimension": "psychopathy",      "reverseKeyed": true },
+    { "position": 26, "text": "I enjoy having sex with people I hardly know.",                                  "dimension": "psychopathy" },
+    { "position": 27, "text": "I'll say anything to get what I want.",                                          "dimension": "psychopathy" }
+  ]
+}

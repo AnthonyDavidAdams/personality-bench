@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Personality Bench: Frontier Language Models on Standard Personality Inventories"
+message: "If you use this dataset or code, please cite as below."
+type: dataset
+authors:
+  - family-names: "Adams"
+    given-names: "Anthony David"
+date-released: 2026-05-28
+license: MIT
+keywords:
+  - large language models
+  - personality assessment
+  - psychometrics
+  - AI evaluation
+  - Big Five
+  - HEXACO
+  - Schwartz values
+  - moral foundations
