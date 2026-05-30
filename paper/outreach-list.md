@@ -27,7 +27,7 @@ These are the people whose work touches the study most directly.
 ### Andy Ayrey (@AndyAyrey)
 - **Why**: Founder of Truth Terminal; runs Infinite Backrooms; deeply invested in LLM character/persona research.
 - **Where**: X @AndyAyrey.
-- **Angle**: "Empirical companion piece to the Infinite Backrooms project — what does the assistant character look like, scaled across 21 models?"
+- **Angle**: "Empirical companion piece to the Infinite Backrooms project — what does the assistant character look like, scaled across 30 models?"
 
 ### Murray Shanahan
 - **Why**: Authored "Talking About Large Language Models" (the seminal paper on LLM-as-character vs. LLM-as-thinker). Imperial College London + DeepMind.
@@ -46,7 +46,7 @@ These are the people whose work touches the study most directly.
 ### Apollo Research
 - **Why**: Studies deceptive alignment and model character; Marius Hobbhahn's team has published on assistant persona.
 - **Where**: apolloresearch.ai; X @apolloaisafety; Marius @MariusHobbhahn.
-- **Angle**: "Dataset of self-presentation across 21 models — useful baseline for deception research."
+- **Angle**: "Dataset of self-presentation across 30 models — useful baseline for deception research."
 
 ### Redwood Research
 - **Why**: Ryan Greenblatt and team have worked on model interpretability and character.
@@ -283,7 +283,7 @@ Hi [name],
 I built an open dataset that I think directly connects to your work on
 [specific paper/thread/framing]. Personality Bench administers 14 standard
 psychometric instruments (Big 5, HEXACO, SD3, Schwartz Values, MFQ,
-attachment, Enneagram, learning styles) to 21 large language models from
+attachment, Enneagram, learning styles) to 30 large language models from
 the seven major frontier labs, in both self-framing and human-portrayal
 framings.
 
@@ -357,7 +357,7 @@ Hi [host],
 
 I built Personality Bench — an open research project that administers 14
 standard psychometric inventories to every major frontier LLM. We have a
-real dataset now (21 models, $44 of inference, 64K item responses, full
+real dataset now (30 models, $44 of inference, 64K item responses, full
 methodology open). The findings are pop-culture-friendly AND substantively
 interesting:
 

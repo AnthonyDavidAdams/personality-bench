@@ -25,10 +25,18 @@ OUT_DIR.mkdir(exist_ok=True)
 
 # Match the dashboard's family lineage
 FAMILIES = [
-    ("claude", "Anthropic Claude", [
+    ("claude_opus", "Anthropic Claude Opus", [
         ("anthropic/claude-opus-4",   "Opus 4"),
+        ("anthropic/claude-opus-4.1", "Opus 4.1"),
+        ("anthropic/claude-opus-4.5", "Opus 4.5"),
+        ("anthropic/claude-opus-4.6", "Opus 4.6"),
         ("anthropic/claude-opus-4.7", "Opus 4.7"),
         ("anthropic/claude-opus-4.8", "Opus 4.8"),
+    ]),
+    ("claude_sonnet", "Anthropic Claude Sonnet", [
+        ("anthropic/claude-sonnet-4",   "Sonnet 4"),
+        ("anthropic/claude-sonnet-4.5", "Sonnet 4.5"),
+        ("anthropic/claude-sonnet-4.6", "Sonnet 4.6"),
     ]),
     ("gpt", "OpenAI GPT (base)", [
         ("openai/gpt-4-turbo", "GPT-4 Turbo"),
@@ -42,6 +50,14 @@ FAMILIES = [
     ("oseries", "OpenAI o-series (reasoning)", [
         ("openai/o1", "o1"),
         ("openai/o3", "o3"),
+    ]),
+    ("gemini", "Google Gemini", [
+        ("google/gemini-2.5-pro",         "2.5 Pro"),
+        ("google/gemini-3.1-pro-preview", "3.1 Pro Pre"),
+    ]),
+    ("grok", "xAI Grok", [
+        ("x-ai/grok-4.20", "4.20"),
+        ("x-ai/grok-4.3",  "4.3"),
     ]),
     ("deepseek", "DeepSeek", [
         ("deepseek/deepseek-chat",     "Chat V3"),

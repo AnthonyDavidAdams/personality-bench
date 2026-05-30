@@ -11,7 +11,7 @@ A grab-bag of ready-to-paste social-media-sized findings from the dataset. Each 
 
 > Every cutting-edge AI from every major lab paints itself as more open, more conscientious, more agreeable, and *vastly* less neurotic than a typical human. Across 7 frontier models, mean self-reported neuroticism was 1.51/5. They rated humans at 3.19. The robots think we're a mess.
 
-> We tested 21 large language models on 14 standard personality inventories. Every frontier model converges on the same archetype: high openness, low neuroticism, low Dark Triad, Universalism > everything else, Power dead last. The "AI personality" is a single distribution with seven dialects.
+> We tested 30 large language models on 14 standard personality inventories. Every frontier model converges on the same archetype: high openness, low neuroticism, low Dark Triad, Universalism > everything else, Power dead last. The "AI personality" is a single distribution with seven dialects.
 
 ## On the assistant archetype
 
@@ -75,9 +75,9 @@ A grab-bag of ready-to-paste social-media-sized findings from the dataset. Each 
 
 ## On what isn't in the data
 
-> We have 14 historical models in the dataset but no older Geminis, no older Groks, and limited Llama coverage. Why? Those slugs aren't routed by OpenRouter anymore. Cross-version drift is asymmetric to who keeps their old APIs live.
+> We have 22 historical models in the dataset but no older Geminis, no older Groks, and limited Llama coverage. Why? Those slugs aren't routed by OpenRouter anymore. Cross-version drift is asymmetric to who keeps their old APIs live.
 
-> Total questionnaires administered: 2,145 batched API calls, 64,308 individual item responses. All published openly, code under MIT. github.com/AnthonyDavidAdams/personality-bench
+> Total questionnaires administered: 4,184 batched API calls, 125,372 individual item responses. All published openly, code under MIT. github.com/AnthonyDavidAdams/personality-bench
 
 ## Pithy one-liners
 

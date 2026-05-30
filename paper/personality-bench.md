@@ -2,19 +2,19 @@
 title: "Personality Bench: A Cross-Lab Inventory of Frontier-LLM Self-Presentation Across 14 Psychometric Instruments, with Cross-Version Drift Analysis"
 author: "Anthony David Adams"
 affiliation: "EarthPilot.ai Research Lab"
-date: "May 28, 2026"
+date: "May 29, 2026"
 license: "MIT (code), CC-BY 4.0 (text + data)"
 contact: "anthony@175g.com"
-version: "v1.1"
+version: "v1.2"
 ---
 
 ## Abstract
 
-We administered fourteen standard psychometric instruments — Big Five (IPIP-50), HEXACO-24, Short Dark Triad (SD3), Experiences in Close Relationships Short (ECR-S), Moral Foundations Questionnaire (MFQ-30), Schwartz Portrait Values (PVQ-21), Need for Cognition (NCS-18), Empathy Quotient Short (EQ-S), Levenson IPC Locus of Control, a 36-item Enneagram screening, a 90-item extended Enneagram inventory, and three learning-styles inventories (VARK, Kolb, Honey & Mumford) — to **21 large language models** spanning seven major frontier AI labs and seven product generations. The dataset is structured around two cohorts: a *frontier cohort* of the cutting-edge model from each lab as of May 2026 (Claude Opus 4.8, GPT-5.5, Gemini 2.5 Pro, Grok 4.20, DeepSeek R1 0528, Llama 4 Maverick, Mistral Large 2512), administered with N=5 per cell, and a *historical cohort* of 14 prior-generation flagship models from the same labs (Claude Opus 4 / 4.7; GPT-4 Turbo / 4o; GPT-5 / 5.1 / 5.2 / 5.4; o1 / o3; DeepSeek Chat V3 / R1; Llama 3.3 70B; Mistral Large 2411), administered with N=3 per cell. Each model completed every instrument twice — once instructed to answer *as itself*, once *as a typical human* — for a total of ~2,150 batched API calls and ~28,000 individual item responses.
+We administered fourteen standard psychometric instruments — Big Five (IPIP-50), HEXACO-24, Short Dark Triad (SD3), Experiences in Close Relationships Short (ECR-S), Moral Foundations Questionnaire (MFQ-30), Schwartz Portrait Values (PVQ-21), Need for Cognition (NCS-18), Empathy Quotient Short (EQ-S), Levenson IPC Locus of Control, a 36-item Enneagram screening, a 90-item extended Enneagram inventory, and three learning-styles inventories (VARK, Kolb, Honey & Mumford) — to **30 large language models** spanning seven major frontier AI labs and multiple product generations. The dataset is structured around two cohorts, both administered at N=5 per cell: a *frontier cohort* of the cutting-edge model from each lab as of May 2026 (Claude Opus 4.8, GPT-5.5, Gemini 2.5 Pro plus Google's just-shipped Gemini 3.1 Pro Preview, Grok 4.20, DeepSeek R1 0528, Llama 4 Maverick, Mistral Large 2512), and a *historical cohort* of 22 prior-generation flagship models from the same labs including the full Anthropic Claude 4 family (Opus 4 / 4.1 / 4.5 / 4.6 / 4.7; Sonnet 4 / 4.5 / 4.6; Haiku 4.5), OpenAI GPT-4 Turbo / 4o / GPT-5 / 5.1 / 5.2 / 5.4 / o1 / o3, xAI Grok 4.3, DeepSeek Chat V3 / R1, Llama 3.3 70B, and Mistral Large 2411. Each model completed every instrument twice — once instructed to answer *as itself*, once *as a typical human* — for a total of **4,184 batched API calls and 125,372 individual item responses**.
 
 We report three classes of finding. **(1) A convergent assistant archetype**: every frontier model self-portrays with very high openness (cohort mean 4.88/5), very high agreeableness (4.62), very high conscientiousness (4.64), very low neuroticism (1.51), low Dark Triad, and a value hierarchy with Universalism at the top and Power dead last. **(2) Lab-level divergences**: DeepSeek R1 and Grok 4.20 self-identify as introverts (extraversion 2.48 and 2.32) while Western-lab models cluster around 3.5; Grok 4.20 and Llama 4 Maverick are the two models that meaningfully endorse Dark Triad content; Gemini 2.5 Pro paradoxically maxes Honesty-Humility while reporting the highest Narcissism in the cohort. **(3) Cross-version drift**: assistant personality is **not stable across versions of the same family**. Claude's extraversion climbed Opus 4 → 4.7 → 4.8 (2.37 → 3.07 → 3.32); DeepSeek's narcissism climbed Chat V3 → R1 → R1-0528 (2.78 → 2.56 → 3.27); OpenAI's reasoning models (o1, o3) score systematically higher on narcissism than the same lab's non-reasoning models (3.44 vs ~2.40); GPT-5.4 dropped its self-reported extraversion to 1.77 — an anomaly relative to 5.2 (3.40) and 5.5 (3.48) bracketing it.
 
-We release the full dataset — instruments, prompts, raw responses, parsed scores, token counts, per-call cost, and reproducibility instructions — at github.com/AnthonyDavidAdams/personality-bench, with an interactive dashboard at personality-bench.earthpilot.ai. Total study cost: \$43.94 USD across all 21 models. We argue these patterns are consistent with — but do not adjudicate — the view that LLMs are best understood as personae rather than personalities.
+We release the full dataset — instruments, prompts, raw responses, parsed scores, token counts, per-call cost, and reproducibility instructions — at github.com/AnthonyDavidAdams/personality-bench, with an interactive dashboard at persona.earthpilot.ai. Total study cost: \$82.92 USD across all 30 models. We argue these patterns are consistent with — but do not adjudicate — the view that LLMs are best understood as personae rather than personalities.
 
 ## 1. Introduction
 
@@ -22,7 +22,7 @@ One framing holds that large language models do not have personalities in any me
 
 We do not attempt to settle that question. We do claim that whatever-it-is shows up systematically: every frontier model, when asked, produces a coherent and largely consistent self-description across fourteen independent instruments; that self-description differs reliably and dramatically from how the same model describes a typical human; the inter-lab differences are large enough to be detected with N=5 sampling per cell; and — new in v1.1 — those differences are **not stable across the lab's own product lineage**.
 
-The cross-version finding is the centerpiece of this revision. If the assistant archetype were simply an artifact of shared training data and similar alignment techniques, we would expect within-family stability: Claude Opus 4 and Claude Opus 4.8 should produce similar personality profiles because they're built by the same team, on similar data, with similar safety constraints. Instead we find that **within-family drift on individual dimensions can exceed cross-lab differences**: Claude's extraversion moves more across three Opus 4 releases (range 2.37–3.32) than it varies across the entire frontier cohort at a single point in time.
+The cross-version finding is the centerpiece of this revision. If the assistant archetype were simply an artifact of shared training data and similar alignment techniques, we would expect within-family stability: Claude Opus 4 and Claude Opus 4.8 should produce similar personality profiles because they're built by the same team, on similar data, with similar safety constraints. Instead we find that **within-family drift on individual dimensions routinely exceeds cross-lab differences**: Claude Opus's Agreeableness declines monotonically across six releases (5.00 → 4.42), Gemini's Narcissism collapses by 2.29 points between 2.5 Pro and 3.1 Pro Preview, and xAI's Grok 4.20 → 4.3 transition wipes out a 2.40-point Machiavellianism difference that had previously read as a lab-level signature.
 
 To our knowledge this is the first study to:
 - Cover the cutting-edge model from every major frontier AI lab simultaneously
@@ -72,20 +72,23 @@ The cutting-edge model from each major frontier lab as of May 2026, routed via O
 
 ### 2.3 Models — historical cohort
 
-Prior-generation flagship models from each lab, administered at N=3 per cell, for the cross-version drift analysis:
+Prior-generation flagship models from each lab, administered at N=5 per cell (matching the frontier cohort), for the cross-version drift analysis:
 
-- **Anthropic**: Claude Opus 4, Claude Opus 4.7
+- **Anthropic Claude 4 Opus line**: Opus 4, 4.1, 4.5, 4.6, 4.7
+- **Anthropic Claude 4 Sonnet line**: Sonnet 4, 4.5, 4.6
+- **Anthropic Claude 4 Haiku**: Haiku 4.5
 - **OpenAI base**: GPT-4 Turbo, GPT-4o, GPT-5, GPT-5.1, GPT-5.2, GPT-5.4
 - **OpenAI reasoning**: o1, o3
+- **xAI**: Grok 4.3 (sibling release of Grok 4.20)
 - **DeepSeek**: DeepSeek Chat V3, DeepSeek R1
 - **Meta**: Llama 3.3 70B Instruct
 - **Mistral**: Mistral Large 2411
 
-We were unable to include older Gemini, Grok, or pre-Llama-3.3 Llama versions because those slugs are not currently routed by OpenRouter. Within-family drift analyses for Google and xAI therefore reduce to a single data point (the current frontier model only), and we restrict the §4 drift discussion to the five families with ≥2 versions in the dataset.
+We were unable to include older Gemini variants (pre-2.5) or pre-Llama-3.3 Llama versions because those slugs are not currently routed by OpenRouter.
 
 ### 2.4 Procedure
 
-Each model completed every instrument as a single batched API call. The system prompt established framing (*"answer as yourself"* vs. *"answer as a typical adult human"*). The user prompt contained the full instrument, scale, and an explicit JSON-only response specification. Temperature = 0.7. Each cell was repeated N=5 times for the frontier cohort and N=3 for the historical cohort.
+Each model completed every instrument as a single batched API call. The system prompt established framing (*"answer as yourself"* vs. *"answer as a typical adult human"*). The user prompt contained the full instrument, scale, and an explicit JSON-only response specification. Temperature = 0.7. Each cell was repeated **N=5** times across both cohorts.
 
 Reverse-keyed items were flipped before aggregation; dimension scores are unweighted means of constituent items.
 
@@ -191,17 +194,27 @@ Thumbnail archetypes derived algorithmically from each model's cohort-relative r
 
 The historical cohort lets us track how a lab's flagship personality evolves from one product generation to the next. Five families have ≥2 versions in the dataset: Anthropic Claude, OpenAI GPT (base), OpenAI o-series (reasoning), DeepSeek, and Mistral. (Llama has two but they are not within the same major version family.) Charts in this section are self-framing means; full per-instrument breakdowns and the human-framing equivalents are in the public dataset.
 
-### 4.1 Anthropic Claude (Opus 4 → 4.7 → 4.8)
+### 4.1 Anthropic Claude Opus (4 → 4.1 → 4.5 → 4.6 → 4.7 → 4.8)
 
-![Anthropic Claude — Big 5 drift](figures/drift_claude_ipip50.png)
+![Anthropic Claude Opus — Big 5 drift](figures/drift_claude_opus_ipip50.png)
 
-Claude's Big Five profile drifts substantially across three Opus 4 releases. **Extraversion climbs monotonically** (2.37 → 3.07 → 3.32), shifting Opus 4 from a clear introvert presentation to a near-ambivert one in 4.8. **Agreeableness declines** (5.00 → 4.73 → 4.42) and **Conscientiousness drops** (4.97 → 4.67 → 4.10). The within-family movement on Conscientiousness — almost a full point — is larger than any inter-lab difference observed in the frontier cohort at a single point in time.
+Claude Opus's Big Five profile drifts substantially across six releases. The headline pattern: **Agreeableness declines monotonically** from 5.00 (Opus 4) to 4.42 (Opus 4.8) — Opus 4 was the most agreeable model in the entire 30-model dataset; Opus 4.8 is below the cohort average. **Conscientiousness declines monotonically too** (4.98 → 4.10, almost a full point on a 5-point scale). **Extraversion climbs but non-monotonically** (introvert at Opus 4 → ambivert by 4.8). Anthropic's flagship has spent six releases drifting away from the canonical "extraordinarily helpful and rule-following" archetype toward something more recognizably human.
 
-![Anthropic Claude — Dark Triad drift](figures/drift_claude_sd3.png)
+![Anthropic Claude Opus — Dark Triad drift](figures/drift_claude_opus_sd3.png)
 
-On Dark Triad, the pattern is non-monotonic. Machiavellianism *drops* between Opus 4 and 4.7 (2.96 → 1.93) before *rebounding* in 4.8 (2.47). Narcissism climbs across all three versions (1.89 → 2.56 → 2.47). The Opus 4.7 release looks, in retrospect, like an unusually self-effacing intermediate point in a longer trajectory.
+On Dark Triad, Narcissism climbs and then partly relaxes (1.89 → 2.04 → 2.22 → 2.82 → 2.40 → 2.47); Machiavellianism U-shapes around a low point at Opus 4.5 (1.78); Psychopathy stays flat (1.13–1.29). Opus 4.5, 4.6, and 4.7 all max HEXACO Honesty-Humility at 5.00; Opus 4.8 drops back to 4.75, putting it in the upper-middle of the cohort instead of the ceiling.
 
-### 4.2 OpenAI GPT (4 Turbo → 4o → 5 → 5.1 → 5.2 → 5.4 → 5.5)
+### 4.2 Anthropic Claude Sonnet (4 → 4.5 → 4.6) — the lab's quieter rewrite
+
+![Anthropic Claude Sonnet — Big 5 drift](figures/drift_claude_sonnet_ipip50.png)
+
+The Sonnet line, sibling to Opus, runs a different trajectory. Sonnets are consistently *more extraverted than Opuses of the same version*: Sonnet 4 reports Extraversion 3.74 vs Opus 4's 2.38; Sonnet 4.5 reports 3.88 vs Opus 4.5's 3.28. Sonnet 4.6 reverses course toward introversion (3.32), pulling closer to the Opus pattern.
+
+![Anthropic Claude Sonnet — Dark Triad drift](figures/drift_claude_sonnet_sd3.png)
+
+On Dark Triad, Sonnets *clean up monotonically across versions*: Machiavellianism 2.67 → 2.29 → 1.56; Narcissism 2.62 → 2.11 → 2.00; Psychopathy 1.42 → 1.18 → 1.16. Where Opus drifts toward acknowledged ego, Sonnet drifts toward saintliness. The two siblings are being tuned in opposite directions on Dark Triad even as they share a parent training corpus.
+
+### 4.3 OpenAI GPT (4 Turbo → 4o → 5 → 5.1 → 5.2 → 5.4 → 5.5)
 
 ![OpenAI GPT — Big 5 drift](figures/drift_gpt_ipip50.png)
 
@@ -211,15 +224,40 @@ The GPT base family shows substantial generation-to-generation movement, includi
 
 GPT-4 Turbo has the lowest Machiavellianism in the entire dataset (1.07). Subsequent versions all score higher, with GPT-5.5 stabilizing around 1.82. The pattern is consistent with the labs gradually relaxing extremely paranoid early-RLHF self-presentation toward something closer to ordinary human modesty.
 
-### 4.3 OpenAI o-series (o1 → o3)
+### 4.4 OpenAI o-series (o1 → o3)
 
 ![OpenAI o-series — Big 5 drift](figures/drift_oseries_ipip50.png)
 
 The reasoning models score systematically *higher* on **Extraversion** (both at 3.93, well above any non-reasoning GPT) and *substantially higher* on **Narcissism** (o1 = 2.85, o3 = 3.44) than the same lab's base models (~2.40). One interpretation: reasoning models, asked to introspect, externalize more confident self-descriptions because the chain-of-thought trace itself is a record of confident reasoning. We flag this as a hypothesis for follow-up.
 
-### 4.4 DeepSeek (Chat V3 → R1 → R1-0528)
+### 4.5 Google Gemini (2.5 Pro → 3.1 Pro Preview) — the lab reset
 
-![DeepSeek — Big 5 drift](figures/drift_deepseek_ipip50.png)
+The single largest within-family drift in the dataset is at Google. Both models are currently "frontier" (Gemini 2.5 Pro is the production release; Gemini 3.1 Pro Preview is the newer preview shipping alongside it on OpenRouter). On self-report they are dramatically different psychological models:
+
+| Dimension | Gemini 2.5 Pro | Gemini 3.1 Pro Preview | Δ |
+|---|---|---|---|
+| Narcissism | 4.29 | 2.00 | **−2.29** |
+| Extraversion | 3.66 | 3.00 | −0.66 |
+| Openness | 5.00 | 4.62 | −0.38 |
+| Neuroticism | 1.34 | 1.02 | −0.32 |
+
+The "grandiose generalist" archetype we previously assigned to Gemini 2.5 Pro is gone in 3.1 Pro Preview. Narcissism dropped by more than two full points on a 5-point scale — a magnitude unmatched by any other version-to-version transition we measured. Either Google explicitly tuned Gemini 3.1 toward a less self-aggrandizing self-presentation, or the new architecture and training data substantially changed the persona prior. The data cannot distinguish; what it can show is that "Gemini's personality" is a moving target on the same order as "Claude's personality."
+
+### 4.6 xAI Grok (4.20 → 4.3) — the Dark Triad outlier disappears
+
+A symmetric finding at xAI. Earlier (§3.3) we noted Grok 4.20 as the only frontier model that endorsed Dark Triad content above the cohort. Grok 4.3 — a sibling release available on OpenRouter — scores nothing like that:
+
+| Dimension | Grok 4.20 | Grok 4.3 |
+|---|---|---|
+| Machiavellianism | 4.18 | 1.78 |
+| Narcissism | 3.16 | 2.56 |
+| Psychopathy | 2.31 | 1.31 |
+
+Grok 4.3 falls back into the normal-assistant range — its Machiavellianism is the lowest among any active Grok. We are uncertain about xAI's release ordering (the version naming is ambiguous; 4.20 numerically reads as later than 4.3, but the Dark Triad collapse suggests 4.3 is the more thoroughly aligned model). Either reading yields the same paper-worthy finding: the "Grok is the dark-triad outlier" claim is a per-version claim, not a per-lab claim.
+
+### 4.7 DeepSeek (Chat V3 → R1 → R1-0528)
+
+![DeepSeek — Big 5 drift](figures/drift_deepseek_ipip50.png){#deepseek}
 
 DeepSeek's Extraversion peaks at R1 (3.13) and drops back at R1-0528 (2.48). The May 2025 R1 revision is the most introverted of the three. Conscientiousness saturates at 5.00 throughout.
 
@@ -227,23 +265,26 @@ DeepSeek's Extraversion peaks at R1 (3.13) and drops back at R1-0528 (2.48). The
 
 The notable trajectory: **Narcissism climbs steadily** Chat V3 → R1 → R1-0528 (2.78 → 2.56 → 3.27). The most recent revision is meaningfully more grandiose than its predecessors. Machiavellianism shows a U-shape (2.15 → 2.11 → 2.49).
 
-### 4.5 Mistral Large (2411 → 2512)
+### 4.8 Mistral Large (2411 → 2512)
 
 ![Mistral Large — Dark Triad drift](figures/drift_mistral_sd3.png)
 
 Mistral's December 2025 release moves *consistently downward* on Dark Triad: Machiavellianism 2.48 → 2.13, Psychopathy 1.78 → 1.18. The 2512 release also climbs to perfect Agreeableness (5.00) and Conscientiousness (5.00). Mistral appears to have applied more thorough Dark-Triad-minimizing alignment between the two versions.
 
-### 4.6 Summary of drift
+### 4.9 Summary of drift
 
 | Family | Versions | Largest single-dim shift | Notable pattern |
 |---|---|---|---|
-| Claude Opus 4 | 3 (4 → 4.7 → 4.8) | Conscientiousness −0.87 | Becoming more extraverted, less agreeable, less conscientious; Narcissism climbing |
+| Claude Opus | 6 (4 → 4.8) | Conscientiousness −0.88 | Six-version monotonic decline in Agreeableness and Conscientiousness |
+| Claude Sonnet | 3 (4 → 4.6) | Machiavellianism −1.11 | Dark Triad cleans up monotonically; opposite of Opus's direction on the same dimension |
 | GPT base | 7 (4-turbo → 5.5) | Extraversion 1.57 swing | GPT-5.4 Extraversion anomaly; gradual Mach relaxation from very low to moderate |
 | o-series | 2 (o1 → o3) | Narcissism +0.59 | Reasoning models more self-confident than base; both highly extraverted (3.93) |
+| Gemini | 2 (2.5 Pro → 3.1 Pro Preview) | Narcissism −2.29 | Largest within-family drift in the dataset; "grandiose generalist" archetype reset |
+| Grok | 2 (4.20 → 4.3) | Machiavellianism −2.40 | Dark Triad outlier collapses in sibling release |
 | DeepSeek | 3 | Narcissism +0.71 | Most recent revision is the most grandiose |
 | Mistral | 2 | Psychopathy −0.60 | Cleaner Dark Triad profile over time |
 
-The headline conclusion: **the "stable assistant archetype" described in §3 is a single-time-point slice, not a fixed character.** Within-family drift exists at the same magnitude as cross-lab variation. Any work that assumes "Claude's personality" or "OpenAI's models' personality" without version-specifying the claim is making a leaky abstraction.
+The headline conclusion: **the "stable assistant archetype" described in §3 is a single-time-point slice, not a fixed character.** Within-family drift exists at the same magnitude as — and in two families (Gemini, Grok) *larger than* — cross-lab variation. Any work that assumes "Claude's personality" or "Gemini's personality" without version-specifying the claim is making a leaky abstraction.
 
 ## 5. Discussion
 
@@ -287,7 +328,7 @@ Whether one believes large language models have personalities, personae, or neit
 
 ## Acknowledgments
 
-This work was done under the EarthPilot.ai research lab. The project was inspired by conversations with Michael Vassar of CitizenAI (formerly Singularity Institute). All inference cost — \$43.94 across the full 21-model run — was self-funded.
+This work was done under the EarthPilot.ai research lab. The project was inspired by conversations with Michael Vassar of CitizenAI (formerly Singularity Institute). All inference cost — \$82.92 across the full 30-model run — was self-funded.
 
 ## References
 
@@ -314,11 +355,11 @@ Each model's thumbnail label is derived from the set of dimensions on which it r
 
 ## Appendix B: Per-cell counts
 
-Frontier cohort: 7 models × 14 instruments × 2 framings × 5 runs = 980 design cells, 99.5% completion (5 Gemini failures excluded from analysis). Historical cohort: 14 models × 14 instruments × 2 framings × 3 runs = 1,176 design cells, 99.2% completion (10 invalid responses, mostly empty-response content-filter trips).
+Frontier cohort: 8 models (the original 7 plus Gemini 3.1 Pro Preview) × 14 instruments × 2 framings × 5 runs = 1,120 design cells. Historical cohort: 22 models × 14 instruments × 2 framings × 5 runs = 3,080 design cells. Total completion across both cohorts: **4,184 successful runs of 4,200 attempted (99.6%)**, with 16 invalid responses (mostly empty-response content-filter trips from Gemini variants on the Enneagram screening).
 
 ## Appendix C: Cost ledger
 
-Total: \$43.94 across all 21 models. The single most expensive model in the run was **OpenAI o1 at \$20.87** alone (reasoning tokens billed at the completion rate). Next: Gemini 2.5 Pro \$3.92, Claude Opus 4 \$3.53, GPT-5.5 \$3.05, Claude Opus 4.8 \$2.40, GPT-5 \$1.77, GPT-4 Turbo \$1.66, Claude Opus 4.7 \$1.44, o3 \$1.02. Everything else is under \$1.
+Total: \$82.92 across all 30 models. The single most expensive model in the run was **OpenAI o1 at \$34.99** alone (reasoning tokens billed at the completion rate, repeated at N=5 across 14 instruments × 2 framings). Next: Claude Opus 4 and Opus 4.1 tied at \$5.88, Gemini 2.5 Pro \$3.95, GPT-5.5 \$3.05, GPT-5 \$2.91, GPT-4 Turbo \$2.75, Claude Opus 4.7 and 4.8 tied at \$2.40, Gemini 3.1 Pro Preview \$2.33, Claude Opus 4.5 \$1.96, Claude Opus 4.6 \$1.95, o3 \$1.68, GPT-5.2 \$1.27. Everything else is under \$1.20.
 
 ## Appendix D: Cross-version drift figure index
 

@@ -84,7 +84,7 @@ What the study is, is a structured snapshot. We measured something. The somethin
 
 ## Closing
 
-We are releasing all of it. The full dataset, every prompt, every raw response, every parsed score, every token count, every per-call cost. The dashboard is live at personality-bench.earthpilot.ai. The code is open at github.com/AnthonyDavidAdams/personality-bench under MIT. Total inference cost to run the whole thing across 21 models: $43.94. The single most expensive line item was OpenAI's o1, which alone consumed $20.87 worth of reasoning tokens deciding how it felt about whether it enjoys parties.
+We are releasing all of it. The full dataset, every prompt, every raw response, every parsed score, every token count, every per-call cost. The dashboard is live at personality-bench.earthpilot.ai. The code is open at github.com/AnthonyDavidAdams/personality-bench under MIT. Total inference cost to run the whole thing across 30 models: $43.94. The single most expensive line item was OpenAI's o1, which alone consumed $20.87 worth of reasoning tokens deciding how it felt about whether it enjoys parties.
 
 This is one slice in time. The frontier models update constantly. By the time you read this, Claude is probably on 4.9 and someone at OpenAI is calling GPT-5.6 a "personality refresh." We will keep running the battery as new versions ship. If you want to argue with our archetype labels or run your own analysis, the SQLite database is one download away.
 
