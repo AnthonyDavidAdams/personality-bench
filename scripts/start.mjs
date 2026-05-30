@@ -15,25 +15,42 @@ const dbPath =
 fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 console.log(`[start] ensured directory ${path.dirname(dbPath)}`);
 
-// First-boot seeding: if the volume's DB doesn't exist (or is suspiciously empty),
-// decompress the baked-in seed snapshot. This lets a fresh Railway volume come up
-// pre-populated with the dataset shipped in the repo.
+// Volume seeding: restore the baked-in snapshot if either
+//   (a) no volume DB exists / it's schema-only (< 2 MB), or
+//   (b) the seed file shipped in this deploy is newer than the volume DB.
+// (b) lets us push fresh data by just bumping seed/personality-bench-seed.db.gz
+// in git and redeploying — no manual volume cleanup needed.
 const seedPath = path.join(process.cwd(), "seed", "personality-bench-seed.db.gz");
 try {
   const dbExists = fs.existsSync(dbPath);
-  const dbSize = dbExists ? fs.statSync(dbPath).size : 0;
-  // Threshold tuned for our schema: an empty (schema-only) DB lands around 200-400 KB,
-  // a real DB with run data is 5+ MB. Use 2 MB as the boundary.
-  if (!dbExists || dbSize < 2_000_000) {
-    if (fs.existsSync(seedPath)) {
-      console.log(`[start] seeding ${dbPath} from ${seedPath} (${(fs.statSync(seedPath).size / 1024 / 1024).toFixed(1)} MB compressed)`);
-      await pipeline(createReadStream(seedPath), createGunzip(), createWriteStream(dbPath));
-      console.log(`[start] seed restored — ${(fs.statSync(dbPath).size / 1024 / 1024).toFixed(1)} MB on disk`);
-    } else {
-      console.log(`[start] no seed file at ${seedPath} — starting with empty DB`);
-    }
+  const dbStat = dbExists ? fs.statSync(dbPath) : null;
+  const seedStat = fs.existsSync(seedPath) ? fs.statSync(seedPath) : null;
+
+  let shouldSeed = false;
+  let reason = "";
+  if (!dbExists) {
+    shouldSeed = !!seedStat;
+    reason = "no volume DB yet";
+  } else if (dbStat.size < 2_000_000) {
+    shouldSeed = !!seedStat;
+    reason = `volume DB is only ${(dbStat.size / 1024 / 1024).toFixed(1)} MB (schema-only)`;
+  } else if (seedStat && seedStat.mtimeMs > dbStat.mtimeMs) {
+    shouldSeed = true;
+    const ageHours = (seedStat.mtimeMs - dbStat.mtimeMs) / 1000 / 3600;
+    reason = `seed is ${ageHours.toFixed(1)}h newer than volume DB`;
+  }
+
+  if (shouldSeed) {
+    console.log(`[start] seeding ${dbPath} from ${seedPath} (${reason}; ${(seedStat.size / 1024 / 1024).toFixed(1)} MB compressed)`);
+    // Stage to a temp file then rename atomically so a crash mid-extract doesn't leave a half DB.
+    const tmp = `${dbPath}.seed-tmp`;
+    await pipeline(createReadStream(seedPath), createGunzip(), createWriteStream(tmp));
+    fs.renameSync(tmp, dbPath);
+    console.log(`[start] seed restored — ${(fs.statSync(dbPath).size / 1024 / 1024).toFixed(1)} MB on disk`);
+  } else if (!seedStat) {
+    console.log(`[start] no seed file at ${seedPath} — starting with empty DB`);
   } else {
-    console.log(`[start] existing DB at ${dbPath} (${(dbSize / 1024 / 1024).toFixed(1)} MB) — skipping seed`);
+    console.log(`[start] existing volume DB at ${dbPath} (${(dbStat.size / 1024 / 1024).toFixed(1)} MB, ${(seedStat ? (dbStat.mtimeMs - seedStat.mtimeMs) / 1000 / 3600 : 0).toFixed(1)}h newer than seed) — keeping it`);
   }
 } catch (e) {
   console.error(`[start] seed restoration failed (non-fatal):`, e.message);
