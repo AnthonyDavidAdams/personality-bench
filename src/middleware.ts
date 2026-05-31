@@ -31,5 +31,6 @@ export function middleware(req: NextRequest) {
 
 export const config = {
   // Apply to everything EXCEPT static assets, Next internals, healthcheck, and the public unsubscribe endpoint.
-  matcher: ["/((?!_next/static|_next/image|favicon\\.ico|earthpilot-logo|api/health|api/unsubscribe).*)"],
+  // /art/* is exempt so Next.js Image Optimization can fetch source images server-side without auth.
+  matcher: ["/((?!_next/static|_next/image|favicon\\.ico|earthpilot-logo|art/|api/health|api/unsubscribe).*)"],
 };

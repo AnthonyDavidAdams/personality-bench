@@ -176,7 +176,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* ─────────── Hero ─────────── */}
+      {/* ─────────── Hero: image with text overlaid on its negative-space side ─────────── */}
       <section className="space-y-8">
         <div className="relative -mx-6 md:-mx-0 md:rounded-lg overflow-hidden border-y md:border border-[var(--border)] bg-[var(--paper)]">
           <Image
@@ -185,23 +185,28 @@ export default function Home() {
             width={1920}
             height={1080}
             priority
-            className="w-full h-auto"
+            className="w-full h-auto block"
           />
-        </div>
-        <div className="grid md:grid-cols-[1fr_auto] gap-x-12 gap-y-6 items-start">
-          <div>
-            <div className="eyebrow mb-4">A dispatch from the assistant</div>
-            <h1
-              className="serif text-[3.4rem] md:text-[5rem] leading-[0.96] tracking-[-0.025em] text-neutral-900 mb-6"
-              style={{ fontVariationSettings: '"opsz" 144, "SOFT" 0, "WONK" 0' }}
-            >
-              If LLMs are all <span className="serif-italic">persona</span>,
-              <br /><span className="text-neutral-500">whose</span> persona are they?
-            </h1>
-            <p className="text-xl text-neutral-700 leading-[1.45] max-w-2xl drop-cap">
-              We sat the cutting-edge model from every major AI lab down with a stack of standard personality tests — Big Five, HEXACO, Dark Triad, attachment, Schwartz values, Enneagram, moral foundations, learning styles — and asked them to answer twice. Once as themselves. Once as a typical human. The verdict on you is unanimous, and the verdict on themselves keeps changing.
-            </p>
+          {/* Headline overlaid on the cream negative space (left third of the image) */}
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full md:w-[58%] px-6 md:px-10 lg:px-14">
+              <div className="eyebrow text-[var(--accent)] mb-3 md:mb-4 drop-shadow-[0_1px_0_rgba(255,255,255,0.7)]">A dispatch from the assistant</div>
+              <h1
+                className="serif text-[2rem] sm:text-[3rem] md:text-[4rem] lg:text-[5.2rem] leading-[0.96] tracking-[-0.025em] text-neutral-900 drop-shadow-[0_1px_0_rgba(255,255,255,0.6)]"
+                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 0, "WONK" 0' }}
+              >
+                If LLMs are all <span className="serif-italic">persona</span>,
+                <br /><span className="text-neutral-500">whose</span> persona are they?
+              </h1>
+            </div>
           </div>
+        </div>
+
+        {/* Lead paragraph + sidebar — below the hero image, classic magazine spread */}
+        <div className="grid md:grid-cols-[1fr_auto] gap-x-12 gap-y-6 items-start">
+          <p className="text-xl text-neutral-700 leading-[1.45] max-w-2xl drop-cap">
+            We sat the cutting-edge model from every major AI lab down with a stack of standard personality tests — Big Five, HEXACO, Dark Triad, attachment, Schwartz values, Enneagram, moral foundations, learning styles — and asked them to answer twice. Once as themselves. Once as a typical human. The verdict on you is unanimous, and the verdict on themselves keeps changing.
+          </p>
           <aside className="md:w-72 md:border-l md:border-[var(--border)] md:pl-8 md:pt-2 space-y-3 text-sm text-neutral-700">
             <div className="eyebrow text-neutral-500">In this issue</div>
             <ul className="space-y-1.5">
