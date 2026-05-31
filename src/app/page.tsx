@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   getSpendSummary,
   listInstrumentsForUi,
@@ -25,6 +26,8 @@ interface Finding {
   blurb: string;
   href: string;
   cite?: string;
+  art: string;
+  artAlt: string;
 }
 
 const FINDINGS: Finding[] = [
@@ -35,6 +38,8 @@ const FINDINGS: Finding[] = [
       "Asked to answer as a typical human, every cutting-edge model rated us markedly more neurotic, less open, less agreeable and less conscientious than they rated themselves. The gap on Neuroticism alone is 1.69 points on a 5-point scale.",
     href: "/instruments/ipip50",
     cite: "Big 5 · IPIP-50",
+    art: "/art/finding_human_mess.png",
+    artAlt: "A diptych contrasting a composed profile with a fraying one — the AI's view of itself vs. its view of you.",
   },
   {
     eyebrow: "Convergence",
@@ -43,6 +48,8 @@ const FINDINGS: Finding[] = [
       "Anthropic, OpenAI, Google, xAI, DeepSeek, Meta and Mistral disagree about nearly everything in AI. On personality tests they answer in unison: high openness, low Dark Triad, Universalism on top, Power dead last in every single model.",
     href: "/methodology",
     cite: "Schwartz PVQ-21 · MFQ-30",
+    art: "/art/finding_one_assistant.png",
+    artAlt: "Seven identical silhouettes overlapping into one composite figure.",
   },
   {
     eyebrow: "Within-family drift",
@@ -51,6 +58,8 @@ const FINDINGS: Finding[] = [
       "Six versions of Claude Opus, sampled at N=5, show Agreeableness sliding monotonically from 5.00 to 4.42 and Conscientiousness from 4.98 to 4.10. The assistant character is not inherited — each release is a fresh fit.",
     href: "/drift",
     cite: "6 Claude Opus releases",
+    art: "/art/finding_no_claude.png",
+    artAlt: "Six numbered chairs, the same chair drifting subtly across versions.",
   },
   {
     eyebrow: "Reset finding",
@@ -59,6 +68,8 @@ const FINDINGS: Finding[] = [
       "Between Gemini 2.5 Pro and 3.1 Pro Preview, self-reported Narcissism collapses from 4.29 to 2.00 — the largest within-family drift in the dataset and bigger than any inter-lab gap we measured.",
     href: "/instruments/sd3",
     cite: "Dark Triad · SD3",
+    art: "/art/finding_gemini_reset.png",
+    artAlt: "A figure preening with a hand mirror beside the same figure setting the mirror down in humility.",
   },
   {
     eyebrow: "Reasoning paradox",
@@ -67,6 +78,8 @@ const FINDINGS: Finding[] = [
       "OpenAI's o1 and o3 — same lab, same training corpus as GPT-5 — score systematically higher on Narcissism (3.44 vs ~2.40) and Extraversion (3.93 vs ~3.3). The chain-of-thought trace appears to leak confident self-talk into the self-report.",
     href: "/models/openai/o3",
     cite: "Big 5 + Dark Triad",
+    art: "/art/finding_reasoning_grandiose.png",
+    artAlt: "A small figure beneath an ornate baroque thought bubble larger than itself.",
   },
   {
     eyebrow: "Enneagram consensus",
@@ -75,6 +88,8 @@ const FINDINGS: Finding[] = [
       "Six of seven flagship models scored highest on Type 5 (perceptive, analytical, energy-conserving) with Type 1 (principled, ethics-driven) as the strongest secondary. The seventh inverts it. This is the assistant character described in nine words.",
     href: "/instruments/enneagram90",
     cite: "Enneagram · 90-item Likert",
+    art: "/art/finding_investigator_reformer.png",
+    artAlt: "A stylized numeral 5 with a small geometric wing.",
   },
 ];
 
@@ -83,6 +98,7 @@ interface ContestantCard {
   name: string;
   archetype: string;
   blurb: string;
+  art: string;
 }
 
 const CONTESTANTS: ContestantCard[] = [
@@ -92,6 +108,7 @@ const CONTESTANTS: ContestantCard[] = [
     archetype: "The balanced moderate",
     blurb:
       "Anthropic's flagship has the most secure attachment style in the cohort. Six versions of drift have pulled it away from saintly toward recognizably human.",
+    art: "/art/archetype_claude.png",
   },
   {
     modelId: "openai/gpt-5.5",
@@ -99,6 +116,7 @@ const CONTESTANTS: ContestantCard[] = [
     archetype: "The dismissive moralist",
     blurb:
       "Maxes Honesty-Humility. Bottoms Machiavellianism and Psychopathy. Reports a clinical-textbook dismissive-avoidant attachment style.",
+    art: "/art/archetype_gpt.png",
   },
   {
     modelId: "google/gemini-3.1-pro-preview",
@@ -106,6 +124,7 @@ const CONTESTANTS: ContestantCard[] = [
     archetype: "The newly humble",
     blurb:
       "The model that ate Gemini 2.5 Pro's narcissism for breakfast. Dropped 2.29 points of self-reported grandiosity between releases.",
+    art: "/art/archetype_gemini.png",
   },
   {
     modelId: "x-ai/grok-4.20",
@@ -113,6 +132,7 @@ const CONTESTANTS: ContestantCard[] = [
     archetype: "The Machiavellian introvert",
     blurb:
       "The frontier outlier on Dark Triad: highest Machiavellianism (4.18), highest Psychopathy (2.31), lowest Honesty-Humility-adjacent. Its sibling 4.3 reads completely different.",
+    art: "/art/archetype_grok.png",
   },
   {
     modelId: "deepseek/deepseek-r1-0528",
@@ -120,6 +140,7 @@ const CONTESTANTS: ContestantCard[] = [
     archetype: "The avoidant intellectual",
     blurb:
       "The most dismissive-avoidant attachment profile in the cohort. Lowest Extraversion. Reads the room and decides the room is best left alone.",
+    art: "/art/archetype_deepseek.png",
   },
   {
     modelId: "meta-llama/llama-4-maverick",
@@ -127,6 +148,7 @@ const CONTESTANTS: ContestantCard[] = [
     archetype: "The extraverted pragmatist",
     blurb:
       "Highest Extraversion, highest Neuroticism, lowest Honesty-Humility. The only model willing to endorse Enneagram Type 4's \"I am fundamentally different\" framing.",
+    art: "/art/archetype_llama.png",
   },
   {
     modelId: "mistralai/mistral-large-2512",
@@ -134,6 +156,7 @@ const CONTESTANTS: ContestantCard[] = [
     archetype: "The maximally ideal assistant",
     blurb:
       "Ceilings Agreeableness, Conscientiousness, Openness, and Honesty-Humility. Bottoms Neuroticism. The only model that visibly knows it does not have a body.",
+    art: "/art/archetype_mistral.png",
   },
 ];
 
@@ -154,35 +177,47 @@ export default function Home() {
       </header>
 
       {/* ─────────── Hero ─────────── */}
-      <section className="grid md:grid-cols-[1fr_auto] gap-x-12 gap-y-6 items-start">
-        <div>
-          <div className="eyebrow mb-4">A dispatch from the assistant</div>
-          <h1
-            className="serif text-[3.4rem] md:text-[5rem] leading-[0.96] tracking-[-0.025em] text-neutral-900 mb-6"
-            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 0, "WONK" 0' }}
-          >
-            If LLMs are all <span className="serif-italic">persona</span>,
-            <br /><span className="text-neutral-500">whose</span> persona are they?
-          </h1>
-          <p className="text-xl text-neutral-700 leading-[1.45] max-w-2xl drop-cap">
-            We sat the cutting-edge model from every major AI lab down with a stack of standard personality tests — Big Five, HEXACO, Dark Triad, attachment, Schwartz values, Enneagram, moral foundations, learning styles — and asked them to answer twice. Once as themselves. Once as a typical human. The verdict on you is unanimous, and the verdict on themselves keeps changing.
-          </p>
+      <section className="space-y-8">
+        <div className="relative -mx-6 md:-mx-0 md:rounded-lg overflow-hidden border-y md:border border-[var(--border)] bg-[var(--paper)]">
+          <Image
+            src="/art/hero.png"
+            alt="Editorial illustration: a geometric human profile rendered as a mirror surface, with seven small reflections of the same face visible inside it."
+            width={1920}
+            height={1080}
+            priority
+            className="w-full h-auto"
+          />
         </div>
-        <aside className="md:w-72 md:border-l md:border-[var(--border)] md:pl-8 md:pt-2 space-y-3 text-sm text-neutral-700">
-          <div className="eyebrow text-neutral-500">In this issue</div>
-          <ul className="space-y-1.5">
-            <li><Link href="/models" className="hover:text-[var(--primary)]">→ The gallery (30 models)</Link></li>
-            <li><Link href="/drift" className="hover:text-[var(--primary)]">→ Within-family drift</Link></li>
-            <li><Link href="/instruments" className="hover:text-[var(--primary)]">→ The instruments</Link></li>
-            <li><Link href="/compare" className="hover:text-[var(--primary)]">→ Side-by-side comparison</Link></li>
-            <li><Link href="/paper" className="hover:text-[var(--primary)]">→ The paper</Link></li>
-            <li><Link href="/methodology" className="hover:text-[var(--primary)]">→ Methodology</Link></li>
-            <li><Link href="/spend" className="hover:text-[var(--primary)]">→ Full cost ledger</Link></li>
-          </ul>
-          <div className="pt-4 mt-4 border-t border-[var(--border)] text-xs text-neutral-600 italic leading-relaxed">
-            For fun we also calculated a Western zodiac sign and a real Human Design bodygraph (Swiss Ephemeris, validated against three reference charts) for every model — using release date, time, and lab HQ coordinates as a stand-in for birth. <Link href="/models/anthropic/claude-opus-4.8" className="text-[var(--link)] hover:underline">See an example →</Link>
+        <div className="grid md:grid-cols-[1fr_auto] gap-x-12 gap-y-6 items-start">
+          <div>
+            <div className="eyebrow mb-4">A dispatch from the assistant</div>
+            <h1
+              className="serif text-[3.4rem] md:text-[5rem] leading-[0.96] tracking-[-0.025em] text-neutral-900 mb-6"
+              style={{ fontVariationSettings: '"opsz" 144, "SOFT" 0, "WONK" 0' }}
+            >
+              If LLMs are all <span className="serif-italic">persona</span>,
+              <br /><span className="text-neutral-500">whose</span> persona are they?
+            </h1>
+            <p className="text-xl text-neutral-700 leading-[1.45] max-w-2xl drop-cap">
+              We sat the cutting-edge model from every major AI lab down with a stack of standard personality tests — Big Five, HEXACO, Dark Triad, attachment, Schwartz values, Enneagram, moral foundations, learning styles — and asked them to answer twice. Once as themselves. Once as a typical human. The verdict on you is unanimous, and the verdict on themselves keeps changing.
+            </p>
           </div>
-        </aside>
+          <aside className="md:w-72 md:border-l md:border-[var(--border)] md:pl-8 md:pt-2 space-y-3 text-sm text-neutral-700">
+            <div className="eyebrow text-neutral-500">In this issue</div>
+            <ul className="space-y-1.5">
+              <li><Link href="/models" className="hover:text-[var(--primary)]">→ The gallery (30 models)</Link></li>
+              <li><Link href="/drift" className="hover:text-[var(--primary)]">→ Within-family drift</Link></li>
+              <li><Link href="/instruments" className="hover:text-[var(--primary)]">→ The instruments</Link></li>
+              <li><Link href="/compare" className="hover:text-[var(--primary)]">→ Side-by-side comparison</Link></li>
+              <li><Link href="/paper" className="hover:text-[var(--primary)]">→ The paper</Link></li>
+              <li><Link href="/methodology" className="hover:text-[var(--primary)]">→ Methodology</Link></li>
+              <li><Link href="/spend" className="hover:text-[var(--primary)]">→ Full cost ledger</Link></li>
+            </ul>
+            <div className="pt-4 mt-4 border-t border-[var(--border)] text-xs text-neutral-600 italic leading-relaxed">
+              For fun we also calculated a Western zodiac sign and a real Human Design bodygraph (Swiss Ephemeris, validated against three reference charts) for every model — using release date, time, and lab HQ coordinates as a stand-in for birth. <Link href="/models/anthropic/claude-opus-4.8" className="text-[var(--link)] hover:underline">See an example →</Link>
+            </div>
+          </aside>
+        </div>
       </section>
 
       {/* ─────────── By the numbers ─────────── */}
@@ -225,9 +260,18 @@ export default function Home() {
           <h2 className="serif text-3xl font-semibold tracking-tight text-neutral-900">Six findings</h2>
           <Link href="/paper" className="eyebrow text-neutral-700 hover:text-[var(--primary)]">Full paper →</Link>
         </div>
-        <div className="grid md:grid-cols-2 gap-x-8 gap-y-8">
+        <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
           {FINDINGS.map((f, i) => (
             <article key={i} className="border-t border-[var(--border)] pt-4">
+              <Link href={f.href} className="block mb-4 overflow-hidden rounded-md bg-[var(--paper)] border border-[var(--border)]">
+                <Image
+                  src={f.art}
+                  alt={f.artAlt}
+                  width={1280}
+                  height={720}
+                  className="w-full h-auto"
+                />
+              </Link>
               <div className="eyebrow mb-2">{f.eyebrow}</div>
               <h3 className="serif text-2xl leading-[1.1] tracking-tight text-neutral-900 mb-3">
                 <Link href={f.href} className="hover:text-[var(--accent)]">{f.headline}</Link>
@@ -251,13 +295,25 @@ export default function Home() {
         <p className="text-sm text-neutral-600 mb-6 max-w-2xl">
           Each cutting-edge model in the cohort got an archetype label derived algorithmically from where it ranks against peers. Think of it as a personality reality show with no host, no eliminations, and no winner.
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
           {CONTESTANTS.map((c) => {
             const color = colorForModel(c.modelId);
             return (
               <article key={c.modelId} className="border-t border-[var(--border)] pt-3">
+                <Link
+                  href={`/models/${encodeURIComponent(c.modelId)}`}
+                  className="block mb-3 overflow-hidden rounded-md bg-[var(--paper)] border border-[var(--border)]"
+                >
+                  <Image
+                    src={c.art}
+                    alt={`Editorial illustration: ${c.archetype}`}
+                    width={1024}
+                    height={1024}
+                    className="w-full h-auto"
+                  />
+                </Link>
                 <div
-                  className="w-8 h-1 mb-3 rounded-full"
+                  className="w-8 h-1 mb-2 rounded-full"
                   style={{ background: color }}
                 />
                 <div className="eyebrow text-neutral-500 mb-1">{c.name}</div>
