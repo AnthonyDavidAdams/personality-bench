@@ -1,7 +1,22 @@
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import { Fraunces, Inter } from "next/font/google";
 import type { Metadata } from "next";
+
+const display = Fraunces({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
+  display: "swap",
+  axes: ["SOFT", "WONK", "opsz"],
+});
+const body = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Personality Bench — an EarthPilot research lab dataset",
@@ -11,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body className="min-h-screen">
         <header className="border-b border-[var(--border)] bg-white">
           <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -24,11 +39,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 className="rounded-full"
                 priority
               />
-              <span className="font-semibold tracking-tight text-lg group-hover:text-[var(--accent)]">
-                Personality<span className="text-[var(--accent)]">·</span>Bench
+              <span
+                className="serif font-semibold tracking-tight text-xl group-hover:text-[var(--accent)]"
+                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 0' }}
+              >
+                Personality<span className="text-[var(--accent)] mx-0.5">·</span>Bench
               </span>
             </Link>
-            <nav className="flex gap-6 text-sm text-neutral-700">
+            <nav className="flex gap-5 text-sm text-neutral-700 font-medium">
               <Link href="/models" className="hover:text-[var(--accent)]">Models</Link>
               <Link href="/instruments" className="hover:text-[var(--accent)]">Instruments</Link>
               <Link href="/compare" className="hover:text-[var(--accent)]">Compare</Link>

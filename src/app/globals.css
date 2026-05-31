@@ -3,9 +3,11 @@
 :root {
   /* Surfaces */
   --background: #ffffff;
-  --paper: #f9f7f1;          /* warm cream */
-  --soft: #f0ece1;           /* tinted card on cream */
-  --border: #d6d2c4;         /* warm taupe */
+  --paper: #faf8f0;          /* warmer cream */
+  --soft: #efeadf;           /* subtle warm card */
+  --soft-2: #e3ddc9;
+  --border: #d2cdbc;         /* warm taupe */
+  --rule: #2c2a25;           /* near-black for editorial rules */
 
   /* Type */
   --foreground: #1a1a1a;
@@ -15,41 +17,94 @@
   /* Brand */
   --primary: #1f3a93;        /* EarthPilot deep blue */
   --primary-soft: #e3e8f3;
-  --accent: #b45309;         /* warm amber accent (used sparingly) */
+  --accent: #b45309;         /* warm amber */
   --accent-soft: #fbe9c6;
 
   /* Semantic */
   --link: #1f3a93;
-  --positive: #15803d;
+  --positive: #166534;
   --warning: #b45309;
 
-  /* Series palette — vendor-keyed, all similar saturation/value */
-  --series-anthropic: #c2410c;   /* rust */
-  --series-openai:    #15803d;   /* forest */
-  --series-google:    #1f3a93;   /* deep blue */
-  --series-xai:       #18181b;   /* near-black */
-  --series-deepseek:  #be185d;   /* rose */
-  --series-meta:      #4338ca;   /* indigo */
-  --series-mistral:   #6d28d9;   /* violet */
+  /* Vendor-keyed series colors (same as before, for chart consistency) */
+  --series-anthropic: #c2410c;
+  --series-openai:    #15803d;
+  --series-google:    #1f3a93;
+  --series-xai:       #18181b;
+  --series-deepseek:  #be185d;
+  --series-meta:      #4338ca;
+  --series-mistral:   #6d28d9;
+
+  --font-display: var(--font-display, ui-serif, Georgia, serif);
+  --font-body:    var(--font-body, ui-sans-serif, system-ui, -apple-system, sans-serif);
 }
 
 html, body {
   background: var(--background);
   color: var(--foreground);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-feature-settings: "ss01", "cv11";
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11", "kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 * { box-sizing: border-box; }
 
 table { border-collapse: collapse; }
 
+/* Paper-feel card */
 .card {
   background: var(--paper);
   border: 1px solid var(--border);
   border-radius: 8px;
 }
 
+/* Editorial serif — variable Fraunces */
 .serif {
-  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-feature-settings: "ss01";
+  font-variation-settings: "opsz" 144;
 }
+
+.serif-italic {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+
+/* Drop cap for editorial intros */
+.drop-cap::first-letter {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 1;
+  font-weight: 700;
+  font-size: 4.5em;
+  line-height: 0.85;
+  float: left;
+  margin: 0.08em 0.08em 0 0;
+  color: var(--accent);
+}
+
+/* Magazine-style pull-quote */
+.pullquote {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.55rem;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  color: #2c2a25;
+}
+
+/* Section eyebrow — small caps tag above headlines */
+.eyebrow {
+  font-family: var(--font-body), ui-sans-serif, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Editorial rules */
+.rule-thick { border-top: 3px solid var(--rule); }
+.rule-thin  { border-top: 1px solid var(--border); }
