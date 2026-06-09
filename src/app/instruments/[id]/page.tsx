@@ -3,8 +3,24 @@ import { notFound } from "next/navigation";
 import { getDimensionScores, getInstrumentInfo } from "@/lib/queries";
 import { DIMENSION_GUIDES } from "@/lib/interpretations";
 import { RadarChart, colorForModel } from "@/components/RadarChart";
+import { buildMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const info = getInstrumentInfo(id);
+  if (!info) return buildMetadata({ title: "Instrument", description: "Personality Bench instrument page.", path: `/instruments/${id}` });
+  const dims: string[] = (() => { try { return JSON.parse(info.dimensions); } catch { return []; } })();
+  return buildMetadata({
+    title: info.name,
+    description:
+      info.description ||
+      `${info.name}${info.itemCount ? ` (${info.itemCount} items)` : ""} — administered to every model in the Personality Bench dataset under both self and human-typical framings.${dims.length ? ` Dimensions: ${dims.length}.` : ""}`,
+    path: `/instruments/${id}`,
+  });
+}
 
 type Framing = "self" | "human" | "both";
 

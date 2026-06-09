@@ -2,8 +2,16 @@ import Link from "next/link";
 import { rawSqlite } from "@/lib/db";
 import { MODEL_PROFILES } from "@/lib/model_profiles";
 import { colorForModel, VENDOR_COLORS } from "@/components/RadarChart";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "Timeline",
+  description:
+    "The complete release timeline for every model in the Personality Bench dataset — by lab, by date, with each entrant's spend and run count.",
+  path: "/timeline",
+});
 
 interface TimelineModel {
   modelId: string;

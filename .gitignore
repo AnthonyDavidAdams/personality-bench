@@ -17,6 +17,12 @@ data/discover*.log
 # Local credentials
 data/credentials*.md
 
+# HDSR submission materials — kept local only
+paper/hdsr-*.md
+
+# Stale dev sqlite location (real dev DB lives at data/personality-bench.db)
+src/lib/db/*.sqlite
+
 # Seed working files — we only commit the gzipped snapshot
 seed/*.db
 seed/*.db-shm

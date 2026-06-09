@@ -1,3 +1,12 @@
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Methodology",
+  description:
+    "How Personality Bench administered 14 standard psychometric inventories to 31 frontier LLMs under two framings — answering as itself and as a typical human — via OpenRouter, with the full reproducibility chain from instrument JSON to billed-cost ledger.",
+  path: "/methodology",
+});
+
 export default function Methodology() {
   return (
     <div className="max-w-3xl space-y-6">

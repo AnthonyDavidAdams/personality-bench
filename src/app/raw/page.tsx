@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { rawSqlite } from "@/lib/db";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "Raw responses",
+  description:
+    "Browse every individual prompt and raw response in the Personality Bench dataset — all 129,000+ item answers, indexed by model, instrument and run.",
+  path: "/raw",
+});
 
 interface RawPageProps {
   searchParams: Promise<{ model?: string; instrument?: string; run?: string }>;

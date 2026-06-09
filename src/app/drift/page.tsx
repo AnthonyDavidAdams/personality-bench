@@ -4,8 +4,16 @@ import { FAMILIES } from "@/lib/families";
 import { LineChart, LineChartLegend, type LineSeries } from "@/components/LineChart";
 import { DIMENSION_GUIDES } from "@/lib/interpretations";
 import { colorForModel } from "@/components/RadarChart";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "Within-family drift",
+  description:
+    "Personality self-report drifts measurably between major releases of the same model line — often by more than the gap between rival labs. Charts for Claude, GPT, Gemini, Grok, DeepSeek and Llama families.",
+  path: "/drift",
+});
 
 const DRIFT_DIMENSIONS = [
   { instrumentId: "ipip50", dimensions: ["openness", "agreeableness", "conscientiousness", "neuroticism", "extraversion"], label: "Big 5", scaleMin: 1, scaleMax: 5 },

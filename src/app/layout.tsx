@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fraunces, Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, DEFAULT_OG_ALT } from "@/lib/seo";
 
 const display = Fraunces({
   subsets: ["latin"],
@@ -18,10 +19,37 @@ const body = Inter({
   display: "swap",
 });
 
+const DEFAULT_DESCRIPTION =
+  "Frontier language models, run through Big 5, HEXACO, Dark Triad, Schwartz Values, learning styles, and other personality instruments. Open methodology, open data, open cost. By Anthony David Adams.";
+
 export const metadata: Metadata = {
-  title: "Personality Bench — an EarthPilot research lab dataset",
-  description:
-    "Frontier language models, run through Big 5, HEXACO, Dark Triad, Schwartz Values, learning styles, and other personality instruments. Open methodology, open data, open cost. By Anthony David Adams.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Personality Bench — an EarthPilot research lab dataset",
+    template: "%s · Personality Bench",
+  },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: "Anthony David Adams", url: "https://github.com/AnthonyDavidAdams" }],
+  creator: "Anthony David Adams",
+  publisher: "EarthPilot.ai Research Lab",
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    title: "Personality Bench — an EarthPilot research lab dataset",
+    description: DEFAULT_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    type: "website",
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1920, height: 1080, alt: DEFAULT_OG_ALT }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Personality Bench — an EarthPilot research lab dataset",
+    description: DEFAULT_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+    creator: "@anthonyadams",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

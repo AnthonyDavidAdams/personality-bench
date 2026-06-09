@@ -1,10 +1,52 @@
 import Link from "next/link";
+import fs from "node:fs";
+import path from "node:path";
 import { notFound } from "next/navigation";
 import { rawSqlite } from "@/lib/db";
 import { colorForModel } from "@/components/RadarChart";
 import { MODEL_PROFILES } from "@/lib/model_profiles";
+import { buildMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+const ARTICLE_ART: Record<string, string> = {
+  "anthropic/claude-opus-4.8":     "/art/archetype_claude.png",
+  "anthropic/claude-fable-5":      "/art/archetype_claude_fable.png",
+  "openai/gpt-5.5":                "/art/archetype_gpt.png",
+  "google/gemini-2.5-pro":         "/art/archetype_gemini.png",
+  "google/gemini-3.1-pro-preview": "/art/archetype_gemini.png",
+  "x-ai/grok-4.20":                "/art/archetype_grok.png",
+  "deepseek/deepseek-r1-0528":     "/art/archetype_deepseek.png",
+  "meta-llama/llama-4-maverick":   "/art/archetype_llama.png",
+  "mistralai/mistral-large-2512":  "/art/archetype_mistral.png",
+};
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const db = rawSqlite();
+  const row = db
+    .prepare(
+      `SELECT a.title, a.subtitle, a.model_id as modelId, a.published_at as publishedAt, a.generated_at as generatedAt,
+              m.display_name as modelDisplayName
+       FROM articles a LEFT JOIN models m ON m.id = a.model_id
+       WHERE a.slug = ?`,
+    )
+    .get(slug) as { title?: string; subtitle?: string | null; modelId?: string; modelDisplayName?: string | null; publishedAt?: number | null; generatedAt?: number } | undefined;
+  if (!row?.title) return buildMetadata({ title: "Article", description: "Personality Bench article.", path: `/changelog/${slug}` });
+  const candidate = row.modelId ? ARTICLE_ART[row.modelId] : undefined;
+  const image = candidate && fs.existsSync(path.join(process.cwd(), "public", candidate)) ? candidate : undefined;
+  const ts = (row.publishedAt ?? row.generatedAt ?? 0) * 1000;
+  return buildMetadata({
+    title: row.title,
+    ogTitle: row.modelDisplayName ? `${row.title} — ${row.modelDisplayName}` : row.title,
+    description: row.subtitle || `Personality Bench dispatch on ${row.modelDisplayName ?? "a model"}: ${row.title}.`,
+    path: `/changelog/${slug}`,
+    image,
+    type: "article",
+    publishedTime: ts ? new Date(ts).toISOString() : undefined,
+  });
+}
 
 // Minimal markdown renderer — no external dep. Handles paragraphs, h2/h3, lists, bold/italic, links.
 function renderMarkdown(md: string): string {

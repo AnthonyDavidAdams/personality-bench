@@ -285,6 +285,38 @@ export function listActiveFrontierModels(): FrontierGalleryRow[] {
   }).filter(Boolean) as FrontierGalleryRow[];
 }
 
+export interface LatestArticleRow {
+  id: string;
+  slug: string;
+  modelId: string;
+  modelDisplayName: string | null;
+  title: string;
+  subtitle: string | null;
+  status: string;
+  publishedAt: number | null;
+  generatedAt: number;
+}
+/**
+ * Returns the most recent articles for the home page dispatches rail.
+ * Includes drafts if there are not enough published articles yet — we want
+ * the front page to always reflect the latest model that joined the dataset.
+ */
+export function listLatestArticles(limit = 3): LatestArticleRow[] {
+  const db = rawSqlite();
+  return db
+    .prepare(
+      `SELECT a.id, a.slug, a.model_id AS modelId,
+              m.display_name AS modelDisplayName,
+              a.title, a.subtitle, a.status,
+              a.published_at AS publishedAt,
+              a.generated_at AS generatedAt
+       FROM articles a LEFT JOIN models m ON m.id = a.model_id
+       ORDER BY COALESCE(a.published_at, a.generated_at) DESC
+       LIMIT ?`,
+    )
+    .all(limit) as LatestArticleRow[];
+}
+
 export function getInstrumentInfo(id: string) {
   const db = rawSqlite();
   return db.prepare(

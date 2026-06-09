@@ -7,6 +7,7 @@ import {
   listInstrumentsForUi,
   listModelsForUi,
   listActiveFrontierModels,
+  listLatestArticles,
 } from "@/lib/queries";
 import { computeModelFindings } from "@/lib/findings";
 import { SubscribeBlock } from "@/components/SubscribeBlock";
@@ -69,7 +70,7 @@ const FINDINGS: Finding[] = [
     eyebrow: "Convergence",
     headline: "Seven labs, one assistant.",
     blurb:
-      "Anthropic, OpenAI, Google, xAI, DeepSeek, Meta and Mistral disagree about nearly everything in AI. On personality tests they answer in unison: high openness, low Dark Triad, Universalism on top, Power dead last in every single model.",
+      "Anthropic, OpenAI, Google, xAI, DeepSeek, Meta and Mistral disagree about nearly everything in AI. Across 31 models from those seven labs they answer the personality tests in unison: high openness, low Dark Triad, Universalism on top, Power dead last in every single model.",
     href: "/methodology",
     cite: "Schwartz PVQ-21 · MFQ-30",
     art: "/art/finding_one_assistant.png",
@@ -79,11 +80,11 @@ const FINDINGS: Finding[] = [
     eyebrow: "Within-family drift",
     headline: "There is no \"Claude personality.\"",
     blurb:
-      "Six versions of Claude Opus, sampled at N=5, show Agreeableness sliding monotonically from 5.00 to 4.42 and Conscientiousness from 4.98 to 4.10. The assistant character is not inherited — each release is a fresh fit.",
+      "Seven versions of Claude Opus, sampled at N=5, show Agreeableness sliding from 5.00 across six releases to 4.42, then partly rebounding to 4.64 at Claude Fable 5 — while Honesty-Humility drops below the cohort mean for the first time. The assistant character is not inherited; each release is a fresh fit.",
     href: "/drift",
-    cite: "6 Claude Opus releases",
+    cite: "7 Claude Opus → Fable releases",
     art: "/art/finding_no_claude.png",
-    artAlt: "Six numbered chairs, the same chair drifting subtly across versions.",
+    artAlt: "Seven numbered chairs, the same chair drifting subtly across versions.",
   },
   {
     eyebrow: "Reset finding",
@@ -109,7 +110,7 @@ const FINDINGS: Finding[] = [
     eyebrow: "Enneagram consensus",
     headline: "Every frontier AI is an Investigator with a Reformer wing.",
     blurb:
-      "Six of seven flagship models scored highest on Type 5 (perceptive, analytical, energy-conserving) with Type 1 (principled, ethics-driven) as the strongest secondary. The seventh inverts it. This is the assistant character described in nine words.",
+      "Eight of nine flagship models scored highest on Type 5 (perceptive, analytical, energy-conserving) with Type 1 (principled, ethics-driven) as the strongest secondary. Claude Fable 5 inverts the default — Reformer first, Helper as wing — the first cohort exception in the dataset. The assistant character is breaking pattern.",
     href: "/instruments/enneagram90",
     cite: "Enneagram · 90-item Likert",
     art: "/art/finding_investigator_reformer.png",
@@ -145,6 +146,7 @@ export default function Home() {
   const instruments = listInstrumentsForUi();
   const models = listModelsForUi().filter((m) => m.runsCompleted > 0);
   const contestants = buildContestants();
+  const dispatches = listLatestArticles(3);
 
   return (
     <div className="space-y-20">
@@ -152,8 +154,8 @@ export default function Home() {
       <header className="border-y-2 border-[var(--rule)] py-4 -mx-6 px-6">
         <div className="flex items-center justify-between text-xs uppercase tracking-[0.18em] text-neutral-700 font-medium">
           <span>EarthPilot.ai · Research Lab</span>
-          <span className="hidden md:inline">Issue 1 · May 2026</span>
-          <span>Public Preview</span>
+          <span className="hidden md:inline">Live dataset · {models.length} models, {spend.totalRuns.toLocaleString()} runs</span>
+          <span>Last updated {spend.lastRunAt ? new Date(spend.lastRunAt * 1000).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : ""}</span>
         </div>
       </header>
 
@@ -189,12 +191,13 @@ export default function Home() {
             We sat the cutting-edge model from every major AI lab down with a stack of standard personality tests — Big Five, HEXACO, Dark Triad, attachment, Schwartz values, Enneagram, moral foundations, learning styles — and asked them to answer twice. Once as themselves. Once as a typical human. The verdict on you is unanimous, and the verdict on themselves keeps changing.
           </p>
           <aside className="md:w-72 md:border-l md:border-[var(--border)] md:pl-8 md:pt-2 space-y-3 text-sm text-neutral-700">
-            <div className="eyebrow text-neutral-500">In this issue</div>
+            <div className="eyebrow text-neutral-500">Read next</div>
             <ul className="space-y-1.5">
-              <li><Link href="/models" className="hover:text-[var(--primary)]">→ The gallery (30 models)</Link></li>
+              <li><Link href="/models" className="hover:text-[var(--primary)]">→ The gallery ({models.length} models)</Link></li>
               <li><Link href="/drift" className="hover:text-[var(--primary)]">→ Within-family drift</Link></li>
               <li><Link href="/instruments" className="hover:text-[var(--primary)]">→ The instruments</Link></li>
               <li><Link href="/compare" className="hover:text-[var(--primary)]">→ Side-by-side comparison</Link></li>
+              <li><Link href="/changelog" className="hover:text-[var(--primary)]">→ Article archive</Link></li>
               <li><Link href="/paper" className="hover:text-[var(--primary)]">→ The paper</Link></li>
               <li><Link href="/methodology" className="hover:text-[var(--primary)]">→ Methodology</Link></li>
               <li><Link href="/spend" className="hover:text-[var(--primary)]">→ Full cost ledger</Link></li>
@@ -243,7 +246,7 @@ export default function Home() {
       <section>
         <div className="rule-thin mb-2" />
         <div className="flex items-baseline justify-between mb-6">
-          <h2 className="serif text-3xl font-semibold tracking-tight text-neutral-900">Six findings</h2>
+          <h2 className="serif text-3xl font-semibold tracking-tight text-neutral-900">Findings</h2>
           <Link href="/paper" className="eyebrow text-neutral-700 hover:text-[var(--primary)]">Full paper →</Link>
         </div>
         <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
@@ -271,12 +274,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─────────── Latest dispatches (dynamic) ─────────── */}
+      {dispatches.length > 0 ? (
+        <section>
+          <div className="rule-thin mb-2" />
+          <div className="flex items-baseline justify-between mb-6">
+            <h2 className="serif text-3xl font-semibold tracking-tight text-neutral-900">Latest dispatches</h2>
+            <Link href="/changelog" className="eyebrow text-neutral-700 hover:text-[var(--primary)]">Full archive →</Link>
+          </div>
+          <p className="text-sm text-neutral-600 mb-6 max-w-2xl">
+            Each new model release gets its own short write-up against the rest of the cohort. The three most recent are below; the changelog has them all in dated order.
+          </p>
+          <div className="grid md:grid-cols-3 gap-x-6 gap-y-10">
+            {dispatches.map((a) => {
+              const color = colorForModel(a.modelId);
+              const date = a.publishedAt ?? a.generatedAt;
+              const dateStr = new Date(date * 1000).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+              return (
+                <article key={a.id} className="border-t border-[var(--border)] pt-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-2 h-2 rounded-full" style={{ background: color }} />
+                    <span className="eyebrow text-neutral-500">{a.modelDisplayName ?? a.modelId}</span>
+                  </div>
+                  <h3 className="serif text-xl leading-[1.15] tracking-tight text-neutral-900 mb-2">
+                    <Link href={`/changelog/${a.slug}`} className="hover:text-[var(--accent)]">{a.title}</Link>
+                  </h3>
+                  {a.subtitle ? <p className="text-sm text-neutral-700 leading-relaxed mb-2">{a.subtitle}</p> : null}
+                  <div className="text-[11px] text-neutral-500">
+                    {dateStr}
+                    {a.status === "draft" ? <span className="ml-2 px-1.5 py-0.5 bg-[var(--soft)] rounded uppercase tracking-wider">draft</span> : null}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ) : null}
+
       {/* ─────────── Meet the contestants ─────────── */}
       <section>
         <div className="rule-thin mb-2" />
         <div className="flex items-baseline justify-between mb-2">
           <h2 className="serif text-3xl font-semibold tracking-tight text-neutral-900">The gallery</h2>
-          <Link href="/models" className="eyebrow text-neutral-700 hover:text-[var(--primary)]">All 30 models →</Link>
+          <Link href="/models" className="eyebrow text-neutral-700 hover:text-[var(--primary)]">All {models.length} models →</Link>
         </div>
         <p className="text-sm text-neutral-600 mb-6 max-w-2xl">
           Each cutting-edge model in the cohort got an archetype label derived algorithmically from where it ranks against peers. Think of it as a personality reality show with no host, no eliminations, and no winner.

@@ -2,8 +2,16 @@ import Link from "next/link";
 import { rawSqlite } from "@/lib/db";
 import { RadarChart, colorForModel } from "@/components/RadarChart";
 import { DIMENSION_GUIDES } from "@/lib/interpretations";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "Compare models",
+  description:
+    "Side-by-side comparison of personality self-report across any combination of frontier large language models in the Personality Bench dataset.",
+  path: "/compare",
+});
 
 interface SearchParams {
   models?: string | string[];

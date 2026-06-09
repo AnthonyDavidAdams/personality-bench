@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { listInstrumentsForUi } from "@/lib/queries";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "The instruments",
+  description:
+    "Fourteen standard human-personality inventories used in the Personality Bench dataset — Big Five, HEXACO, Dark Triad, attachment, Schwartz values, Moral Foundations, Enneagram, learning styles, locus of control, empathy, need for cognition.",
+  path: "/instruments",
+});
 
 export default function InstrumentsIndex() {
   const instruments = listInstrumentsForUi();

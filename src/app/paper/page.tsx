@@ -1,8 +1,16 @@
 import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "The paper",
+  description:
+    "Whose Persona Are They? A peer-review-ready paper on personality self-report across 31 frontier language models, with per-version drift analysis. Methodology, figures, full bibliography.",
+  path: "/paper",
+});
 
 export default function PaperPage() {
   // List available paper versions in /paper/

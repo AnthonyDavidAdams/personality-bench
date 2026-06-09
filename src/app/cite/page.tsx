@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { getSpendSummary } from "@/lib/queries";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "How to cite",
+  description:
+    "BibTeX and APA citations for the Personality Bench dataset, plus instructions for citing a frozen snapshot identified by GitHub commit SHA.",
+  path: "/cite",
+});
 
 export default function CitePage() {
   const spend = getSpendSummary();

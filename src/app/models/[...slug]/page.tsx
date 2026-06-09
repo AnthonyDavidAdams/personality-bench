@@ -1,4 +1,6 @@
 import Link from "next/link";
+import fs from "node:fs";
+import path from "node:path";
 import { notFound } from "next/navigation";
 import { rawSqlite } from "@/lib/db";
 import { RadarChart, RadarLegend, colorForModel } from "@/components/RadarChart";
@@ -10,8 +12,41 @@ import { computeModelFindings } from "@/lib/findings";
 import { ZodiacIcon, ELEMENT_COLORS } from "@/components/ZodiacIcon";
 import { ScatterChart } from "@/components/ScatterChart";
 import { interpretInstrumentForModel } from "@/lib/instrument_interpretation";
+import { buildMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+const MODEL_ARCHETYPE_ART: Record<string, string> = {
+  "anthropic/claude-opus-4.8":     "/art/archetype_claude.png",
+  "anthropic/claude-fable-5":      "/art/archetype_claude_fable.png",
+  "openai/gpt-5.5":                "/art/archetype_gpt.png",
+  "google/gemini-2.5-pro":         "/art/archetype_gemini.png",
+  "google/gemini-3.1-pro-preview": "/art/archetype_gemini.png",
+  "x-ai/grok-4.20":                "/art/archetype_grok.png",
+  "deepseek/deepseek-r1-0528":     "/art/archetype_deepseek.png",
+  "meta-llama/llama-4-maverick":   "/art/archetype_llama.png",
+  "mistralai/mistral-large-2512":  "/art/archetype_mistral.png",
+};
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const modelId = slug.map(decodeURIComponent).join("/");
+  const db = rawSqlite();
+  const model = db.prepare(`SELECT display_name as name FROM models WHERE id=?`).get(modelId) as { name?: string } | undefined;
+  if (!model?.name) return buildMetadata({ title: "Model", description: "Personality Bench model page.", path: `/models/${modelId}` });
+  const findings = computeModelFindings(modelId, model.name);
+  const archetype = findings.bigFiveLabel ? ` — ${findings.bigFiveLabel}` : "";
+  const candidate = MODEL_ARCHETYPE_ART[modelId];
+  const image = candidate && fs.existsSync(path.join(process.cwd(), "public", candidate)) ? candidate : undefined;
+  return buildMetadata({
+    title: model.name,
+    ogTitle: `${model.name}${archetype}`,
+    description: findings.summary || `Personality self-report for ${model.name} across 14 standard psychometric instruments, with cross-version drift analysis.`,
+    path: `/models/${modelId}`,
+    image,
+  });
+}
 
 function fmtUsd(n: number) {
   if (!n) return "$0";

@@ -1,7 +1,15 @@
 import { getSpendSummary, getRecentRuns, getSpendTableRows } from "@/lib/queries";
 import { SortableSpendTable } from "@/components/SortableSpendTable";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "Cost ledger",
+  description:
+    "Every billed cent in the Personality Bench dataset, broken down by model, instrument and run. Authoritative cost sourced from OpenRouter's /generation endpoint per call.",
+  path: "/spend",
+});
 
 function fmtUsd(n: number) {
   if (n === 0) return "$0";

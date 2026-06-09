@@ -2,8 +2,16 @@ import Link from "next/link";
 import { rawSqlite } from "@/lib/db";
 import { colorForModel } from "@/components/RadarChart";
 import { MODEL_PROFILES } from "@/lib/model_profiles";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "The changelog",
+  description:
+    "One short article per model release. As new frontier LLMs join the dataset we draft a write-up comparing the new entrant to the rest of the cohort and to its immediate predecessor.",
+  path: "/changelog",
+});
 
 interface ArticleRow {
   id: string;

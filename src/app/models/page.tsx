@@ -3,8 +3,16 @@ import { listModelsForUi } from "@/lib/queries";
 import { getModelProfile } from "@/lib/model_profiles";
 import { zodiacFromDate } from "@/lib/zodiac";
 import { ZodiacIcon, ELEMENT_COLORS } from "@/components/ZodiacIcon";
+import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+
+export const metadata = buildMetadata({
+  title: "The gallery",
+  description:
+    "Every model in the Personality Bench dataset, indexed by lab, release date, zodiac sign and Human Design type. Includes nine cutting-edge frontier models and 22 historical predecessors.",
+  path: "/models",
+});
 
 function fmtUsd(n: number) {
   if (!n) return "$0";
