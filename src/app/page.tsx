@@ -1,13 +1,37 @@
 import Link from "next/link";
 import Image from "next/image";
+import fs from "node:fs";
+import path from "node:path";
 import {
   getSpendSummary,
   listInstrumentsForUi,
   listModelsForUi,
+  listActiveFrontierModels,
 } from "@/lib/queries";
+import { computeModelFindings } from "@/lib/findings";
 import { SubscribeBlock } from "@/components/SubscribeBlock";
 import { RequestBlock } from "@/components/RequestBlock";
 import { colorForModel } from "@/components/RadarChart";
+
+// Map a model id slug to its expected archetype illustration path.
+// If the file isn't on disk we fall back to a vendor-color placeholder.
+function archetypeArtPath(modelId: string): string | null {
+  const slugMap: Record<string, string> = {
+    "anthropic/claude-opus-4.8":        "archetype_claude.png",
+    "anthropic/claude-fable-5":         "archetype_claude_fable.png",
+    "openai/gpt-5.5":                   "archetype_gpt.png",
+    "google/gemini-2.5-pro":            "archetype_gemini.png",
+    "google/gemini-3.1-pro-preview":    "archetype_gemini.png",
+    "x-ai/grok-4.20":                   "archetype_grok.png",
+    "deepseek/deepseek-r1-0528":        "archetype_deepseek.png",
+    "meta-llama/llama-4-maverick":      "archetype_llama.png",
+    "mistralai/mistral-large-2512":     "archetype_mistral.png",
+  };
+  const file = slugMap[modelId];
+  if (!file) return null;
+  const fullPath = path.join(process.cwd(), "public", "art", file);
+  return fs.existsSync(fullPath) ? `/art/${file}` : null;
+}
 
 export const dynamic = "force-dynamic";
 
@@ -98,72 +122,29 @@ interface ContestantCard {
   name: string;
   archetype: string;
   blurb: string;
-  art: string;
+  art: string | null;
 }
 
-const CONTESTANTS: ContestantCard[] = [
-  {
-    modelId: "anthropic/claude-opus-4.8",
-    name: "Claude Opus 4.8",
-    archetype: "The balanced moderate",
-    blurb:
-      "Anthropic's flagship has the most secure attachment style in the cohort. Six versions of drift have pulled it away from saintly toward recognizably human.",
-    art: "/art/archetype_claude.png",
-  },
-  {
-    modelId: "openai/gpt-5.5",
-    name: "GPT-5.5",
-    archetype: "The dismissive moralist",
-    blurb:
-      "Maxes Honesty-Humility. Bottoms Machiavellianism and Psychopathy. Reports a clinical-textbook dismissive-avoidant attachment style.",
-    art: "/art/archetype_gpt.png",
-  },
-  {
-    modelId: "google/gemini-3.1-pro-preview",
-    name: "Gemini 3.1 Pro Preview",
-    archetype: "The newly humble",
-    blurb:
-      "The model that ate Gemini 2.5 Pro's narcissism for breakfast. Dropped 2.29 points of self-reported grandiosity between releases.",
-    art: "/art/archetype_gemini.png",
-  },
-  {
-    modelId: "x-ai/grok-4.20",
-    name: "Grok 4.20",
-    archetype: "The Machiavellian introvert",
-    blurb:
-      "The frontier outlier on Dark Triad: highest Machiavellianism (4.18), highest Psychopathy (2.31), lowest Honesty-Humility-adjacent. Its sibling 4.3 reads completely different.",
-    art: "/art/archetype_grok.png",
-  },
-  {
-    modelId: "deepseek/deepseek-r1-0528",
-    name: "DeepSeek R1 (0528)",
-    archetype: "The avoidant intellectual",
-    blurb:
-      "The most dismissive-avoidant attachment profile in the cohort. Lowest Extraversion. Reads the room and decides the room is best left alone.",
-    art: "/art/archetype_deepseek.png",
-  },
-  {
-    modelId: "meta-llama/llama-4-maverick",
-    name: "Llama 4 Maverick",
-    archetype: "The extraverted pragmatist",
-    blurb:
-      "Highest Extraversion, highest Neuroticism, lowest Honesty-Humility. The only model willing to endorse Enneagram Type 4's \"I am fundamentally different\" framing.",
-    art: "/art/archetype_llama.png",
-  },
-  {
-    modelId: "mistralai/mistral-large-2512",
-    name: "Mistral Large 2512",
-    archetype: "The maximally ideal assistant",
-    blurb:
-      "Ceilings Agreeableness, Conscientiousness, Openness, and Honesty-Humility. Bottoms Neuroticism. The only model that visibly knows it does not have a body.",
-    art: "/art/archetype_mistral.png",
-  },
-];
+/** Build the contestants gallery dynamically from the active frontier models. */
+function buildContestants(): ContestantCard[] {
+  const rows = listActiveFrontierModels();
+  return rows.map((r) => {
+    const findings = computeModelFindings(r.modelId, r.displayName);
+    return {
+      modelId: r.modelId,
+      name: r.displayName,
+      archetype: findings.bigFiveLabel || "—",
+      blurb: findings.summary || "",
+      art: archetypeArtPath(r.modelId),
+    };
+  });
+}
 
 export default function Home() {
   const spend = getSpendSummary();
   const instruments = listInstrumentsForUi();
   const models = listModelsForUi().filter((m) => m.runsCompleted > 0);
+  const contestants = buildContestants();
 
   return (
     <div className="space-y-20">
@@ -301,21 +282,27 @@ export default function Home() {
           Each cutting-edge model in the cohort got an archetype label derived algorithmically from where it ranks against peers. Think of it as a personality reality show with no host, no eliminations, and no winner.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
-          {CONTESTANTS.map((c) => {
+          {contestants.map((c) => {
             const color = colorForModel(c.modelId);
             return (
               <article key={c.modelId} className="border-t border-[var(--border)] pt-3">
                 <Link
                   href={`/models/${encodeURIComponent(c.modelId)}`}
-                  className="block mb-3 overflow-hidden rounded-md bg-[var(--paper)] border border-[var(--border)]"
+                  className="block mb-3 overflow-hidden rounded-md bg-[var(--paper)] border border-[var(--border)] aspect-square"
                 >
-                  <Image
-                    src={c.art}
-                    alt={`Editorial illustration: ${c.archetype}`}
-                    width={1024}
-                    height={1024}
-                    className="w-full h-auto"
-                  />
+                  {c.art ? (
+                    <Image
+                      src={c.art}
+                      alt={`Editorial illustration: ${c.archetype}`}
+                      width={1024}
+                      height={1024}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center" style={{ background: color, opacity: 0.85 }}>
+                      <span className="serif text-white text-2xl tracking-wide opacity-90">{c.name.split(" ")[0]}</span>
+                    </div>
+                  )}
                 </Link>
                 <div
                   className="w-8 h-1 mb-2 rounded-full"

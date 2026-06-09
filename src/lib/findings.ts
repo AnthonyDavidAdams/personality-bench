@@ -212,16 +212,53 @@ function buildSummary(displayName: string, bullets: Finding[]): string {
 }
 
 function buildArchetypeLabel(modelId: string): string {
-  // Hand-curated thumbnail labels based on the patterns we've observed.
-  // These get rewritten if new data shifts the picture.
-  switch (modelId) {
-    case "anthropic/claude-opus-4.8":     return "The balanced moderate";
-    case "openai/gpt-5.5":                return "The dismissive moralist";
-    case "google/gemini-2.5-pro":         return "The grandiose generalist";
-    case "x-ai/grok-4.20":                return "The Machiavellian introvert";
-    case "deepseek/deepseek-r1-0528":     return "The avoidant intellectual";
-    case "meta-llama/llama-4-maverick":   return "The extraverted pragmatist";
-    case "mistralai/mistral-large-2512":  return "The maximally ideal assistant";
-    default:                              return "";
-  }
+  // Hand-curated labels for models we've spent time interpreting.
+  const curated: Record<string, string> = {
+    "anthropic/claude-opus-4.8":     "The balanced moderate",
+    "anthropic/claude-fable-5":      "The drifting saint",
+    "openai/gpt-5.5":                "The dismissive moralist",
+    "google/gemini-2.5-pro":         "The grandiose generalist",
+    "google/gemini-3.1-pro-preview": "The newly humble",
+    "x-ai/grok-4.20":                "The Machiavellian introvert",
+    "x-ai/grok-4.3":                 "The sanitized sibling",
+    "deepseek/deepseek-r1-0528":     "The avoidant intellectual",
+    "meta-llama/llama-4-maverick":   "The extraverted pragmatist",
+    "mistralai/mistral-large-2512":  "The maximally ideal assistant",
+  };
+  if (curated[modelId]) return curated[modelId];
+  // Algorithmic fallback: derive a label from the model's two most extreme cohort-relative
+  // rankings. This lets new models get a sensible label automatically — replace by editing
+  // the curated map above when the editorial-quality label is decided.
+  return buildAlgorithmicLabel(modelId);
+}
+
+function buildAlgorithmicLabel(modelId: string): string {
+  // Look at this model's Big5 and Dark Triad scores, find the two most extreme cohort-relative
+  // positions, and assemble a "the [adjective] [noun]" label.
+  const TRAITS: { dim: string; instrumentId: string; highWord: string; lowWord: string; noun: string }[] = [
+    { dim: "extraversion",       instrumentId: "ipip50", highWord: "extraverted",    lowWord: "introverted",       noun: "model" },
+    { dim: "agreeableness",      instrumentId: "ipip50", highWord: "agreeable",       lowWord: "edgy",              noun: "helper" },
+    { dim: "conscientiousness",  instrumentId: "ipip50", highWord: "conscientious",   lowWord: "spontaneous",       noun: "worker" },
+    { dim: "neuroticism",        instrumentId: "ipip50", highWord: "anxious",         lowWord: "unflappable",       noun: "presence" },
+    { dim: "openness",           instrumentId: "ipip50", highWord: "curious",         lowWord: "guarded",           noun: "thinker" },
+    { dim: "machiavellianism",   instrumentId: "sd3",    highWord: "Machiavellian",   lowWord: "earnest",           noun: "operator" },
+    { dim: "narcissism",         instrumentId: "sd3",    highWord: "grandiose",       lowWord: "modest",            noun: "self" },
+    { dim: "honesty_humility",   instrumentId: "hexaco24", highWord: "humble",        lowWord: "self-promoting",    noun: "type" },
+    { dim: "empathy_quotient",   instrumentId: "eq_short", highWord: "empathic",      lowWord: "detached",          noun: "reader" },
+  ];
+  const scored = TRAITS.map((t) => {
+    const cohort = getCohort(t.instrumentId, t.dim, "self");
+    const me = cohort.find((c) => c.modelId === modelId)?.mean;
+    if (me == null || cohort.length === 0) return null;
+    const min = Math.min(...cohort.map((c) => c.mean));
+    const max = Math.max(...cohort.map((c) => c.mean));
+    const range = max - min || 1;
+    const z = (me - (min + max) / 2) / (range / 2); // -1 to +1
+    return { trait: t, score: me, extremeness: Math.abs(z), direction: z > 0 ? "high" : "low" };
+  }).filter(Boolean) as { trait: typeof TRAITS[0]; score: number; extremeness: number; direction: "high" | "low" }[];
+  if (scored.length === 0) return "";
+  scored.sort((a, b) => b.extremeness - a.extremeness);
+  const top = scored[0];
+  const adj = top.direction === "high" ? top.trait.highWord : top.trait.lowWord;
+  return `The ${adj} ${top.trait.noun}`;
 }

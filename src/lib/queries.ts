@@ -252,6 +252,39 @@ export function getRecentRuns(limit = 50) {
     .all(limit) as any[];
 }
 
+/**
+ * Active frontier model rows for the home page gallery. Pulled from the DB so new models
+ * appear automatically without code changes. Cohort tag uses the same logic as the spend table.
+ */
+export interface FrontierGalleryRow {
+  modelId: string;
+  displayName: string;
+  vendor: string;
+}
+export function listActiveFrontierModels(): FrontierGalleryRow[] {
+  const db = rawSqlite();
+  // The 9 cutting-edge slugs by lab. We could also drive this from a DB column, but the
+  // explicit list here is the documented "frontier cohort" definition.
+  const FRONTIER_SLUGS = [
+    "anthropic/claude-fable-5",
+    "anthropic/claude-opus-4.8",
+    "openai/gpt-5.5",
+    "google/gemini-2.5-pro",
+    "google/gemini-3.1-pro-preview",
+    "x-ai/grok-4.20",
+    "deepseek/deepseek-r1-0528",
+    "meta-llama/llama-4-maverick",
+    "mistralai/mistral-large-2512",
+  ];
+  return FRONTIER_SLUGS.map((id) => {
+    const row = db
+      .prepare(`SELECT display_name as displayName, vendor FROM models WHERE id = ?`)
+      .get(id) as { displayName?: string; vendor?: string } | undefined;
+    if (!row?.displayName) return null;
+    return { modelId: id, displayName: row.displayName, vendor: row.vendor ?? "" };
+  }).filter(Boolean) as FrontierGalleryRow[];
+}
+
 export function getInstrumentInfo(id: string) {
   const db = rawSqlite();
   return db.prepare(
