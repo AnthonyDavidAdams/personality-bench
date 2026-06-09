@@ -1,0 +1,32 @@
+# Don't ship dev/build artifacts to Railway — they slow the upload and bloat the image.
+# Railway/Nixpacks re-runs install + build from package.json on the server.
+node_modules
+.next
+.git
+.DS_Store
+
+# Local sqlite databases (the real DB lives on a Railway volume at /data)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.gz
+src/lib/db/*.sqlite
+
+# Logs and discover script output
+data/discover*.log
+
+# Local credential files (these are in .gitignore too, belt-and-suspenders)
+data/credentials*.md
+
+# HDSR submission materials — local only
+paper/hdsr-*.md
+paper/hdsr-*.pdf
+paper/hdsr-header.tex
+
+# Build/IDE noise
+*.tsbuildinfo
+.vscode
+.idea
+
+# Backup tarballs
+/tmp/*.tar.gz
