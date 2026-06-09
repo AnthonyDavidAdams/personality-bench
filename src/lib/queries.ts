@@ -155,7 +155,7 @@ export function listInstrumentsForUi() {
   return db
     .prepare(
       `SELECT id, name, short_name as shortName, family, item_count as itemCount, scale_min as scaleMin, scale_max as scaleMax, description, citation, dimensions
-       FROM instruments ORDER BY family, name`,
+       FROM instruments WHERE active = 1 ORDER BY family, name`,
     )
     .all() as { id: string; name: string; shortName: string; family: string; itemCount: number; scaleMin: number; scaleMax: number; description: string; citation: string; dimensions: string }[];
 }

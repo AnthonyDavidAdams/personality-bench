@@ -17,6 +17,7 @@ export const instruments = sqliteTable("instruments", {
   citation: text("citation"),                        // source paper/URL
   license: text("license"),                          // 'public domain', 'CC-BY', etc.
   dimensions: text("dimensions").notNull(),          // JSON array of dimension IDs scored by this instrument
+  active: integer("active", { mode: "boolean" }).notNull().default(true),
   createdAt: integer("created_at", { mode: "timestamp" }).notNull().default(sql`(unixepoch())`),
 });
 
@@ -207,6 +208,31 @@ export const requests = sqliteTable("requests", {
   createdAt: integer("created_at", { mode: "timestamp" }).notNull().default(sql`(unixepoch())`),
 }, (t) => ({
   byStatus: index("requests_by_status").on(t.status),
+}));
+
+/**
+ * articles — auto-generated mini-articles, one per model release. Drafted by the
+ * generator script (scripts/generate_article.ts) when a new model lands without an
+ * article. Editorial review then flips status from 'draft' to 'published'.
+ */
+export const articles = sqliteTable("articles", {
+  id: text("id").primaryKey(),                       // nanoid
+  slug: text("slug").notNull().unique(),             // url-safe identifier (e.g. 'claude-fable-5')
+  modelId: text("model_id").notNull(),               // the model this article is about
+  title: text("title").notNull(),
+  subtitle: text("subtitle"),
+  body: text("body").notNull(),                      // markdown
+  status: text("status").notNull().default("draft"), // 'draft' | 'published' | 'archived'
+  generatedBy: text("generated_by"),                 // model id of the generator (e.g. 'anthropic/claude-opus-4.8')
+  generatedAt: integer("generated_at", { mode: "timestamp" }).notNull().default(sql`(unixepoch())`),
+  publishedAt: integer("published_at", { mode: "timestamp" }),
+  // Cost tracking for the generation itself
+  generationPromptTokens: integer("generation_prompt_tokens"),
+  generationCompletionTokens: integer("generation_completion_tokens"),
+  generationCostUsd: real("generation_cost_usd"),
+}, (t) => ({
+  byStatus: index("articles_by_status").on(t.status, t.publishedAt),
+  byModel: index("articles_by_model").on(t.modelId),
 }));
 
 /**

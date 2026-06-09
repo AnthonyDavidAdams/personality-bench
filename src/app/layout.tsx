@@ -51,9 +51,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/instruments" className="hover:text-[var(--accent)]">Instruments</Link>
               <Link href="/compare" className="hover:text-[var(--accent)]">Compare</Link>
               <Link href="/drift" className="hover:text-[var(--accent)]">Drift</Link>
+              <Link href="/timeline" className="hover:text-[var(--accent)]">Timeline</Link>
+              <Link href="/raw" className="hover:text-[var(--accent)]">Raw</Link>
               <Link href="/paper" className="hover:text-[var(--accent)]">Paper</Link>
-              <Link href="/spend" className="hover:text-[var(--accent)]">Spend</Link>
-              <Link href="/methodology" className="hover:text-[var(--accent)]">Methodology</Link>
+              <Link href="/changelog" className="hover:text-[var(--accent)]">Changelog</Link>
+              <Link href="/cite" className="hover:text-[var(--accent)]">Cite</Link>
             </nav>
           </div>
         </header>
@@ -112,6 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
                 <div className="mt-1 text-neutral-500">
                   Provided as a public utility. Open methodology, open data, open cost.
+                  {" "}<Link href="/cite" className="text-[var(--link)] hover:underline">Cite this work →</Link>
                 </div>
               </div>
             </div>

@@ -25,13 +25,14 @@ OUT_DIR.mkdir(exist_ok=True)
 
 # Match the dashboard's family lineage
 FAMILIES = [
-    ("claude_opus", "Anthropic Claude Opus", [
+    ("claude_opus", "Anthropic Claude Opus → Fable", [
         ("anthropic/claude-opus-4",   "Opus 4"),
         ("anthropic/claude-opus-4.1", "Opus 4.1"),
         ("anthropic/claude-opus-4.5", "Opus 4.5"),
         ("anthropic/claude-opus-4.6", "Opus 4.6"),
         ("anthropic/claude-opus-4.7", "Opus 4.7"),
         ("anthropic/claude-opus-4.8", "Opus 4.8"),
+        ("anthropic/claude-fable-5",  "Fable 5"),
     ]),
     ("claude_sonnet", "Anthropic Claude Sonnet", [
         ("anthropic/claude-sonnet-4",   "Sonnet 4"),

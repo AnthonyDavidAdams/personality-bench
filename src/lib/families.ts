@@ -12,13 +12,27 @@ export interface FamilyLineage {
 
 export const FAMILIES: FamilyLineage[] = [
   {
-    id: "claude",
-    label: "Anthropic Claude",
+    id: "claude_opus",
+    label: "Anthropic Claude Opus",
     vendor: "anthropic",
     versions: [
       { modelId: "anthropic/claude-opus-4",   label: "Opus 4",   releaseDate: "2025-05-22" },
+      { modelId: "anthropic/claude-opus-4.1", label: "Opus 4.1", releaseDate: "2025-08-05" },
+      { modelId: "anthropic/claude-opus-4.5", label: "Opus 4.5", releaseDate: "2025-11-24" },
+      { modelId: "anthropic/claude-opus-4.6", label: "Opus 4.6", releaseDate: "2026-01-15" },
       { modelId: "anthropic/claude-opus-4.7", label: "Opus 4.7", releaseDate: "2026-03-15" },
       { modelId: "anthropic/claude-opus-4.8", label: "Opus 4.8", releaseDate: "2026-05-15" },
+      { modelId: "anthropic/claude-fable-5",  label: "Fable 5",  releaseDate: "2026-06-09" },
+    ],
+  },
+  {
+    id: "claude_sonnet",
+    label: "Anthropic Claude Sonnet",
+    vendor: "anthropic",
+    versions: [
+      { modelId: "anthropic/claude-sonnet-4",   label: "Sonnet 4",   releaseDate: "2025-05-22" },
+      { modelId: "anthropic/claude-sonnet-4.5", label: "Sonnet 4.5", releaseDate: "2025-11-24" },
+      { modelId: "anthropic/claude-sonnet-4.6", label: "Sonnet 4.6", releaseDate: "2026-03-15" },
     ],
   },
   {
