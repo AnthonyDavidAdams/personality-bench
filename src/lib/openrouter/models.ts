@@ -20,6 +20,16 @@ export interface ModelEntry {
 
 export const FRONTIER_MODELS: ModelEntry[] = [
   {
+    id: "anthropic/claude-fable-5",
+    vendor: "anthropic",
+    displayName: "Claude Fable 5",
+    family: "claude-fable",
+    tier: "frontier",
+    reasoning: false,
+    maxTokens: 4000,
+    active: true,
+  },
+  {
     id: "anthropic/claude-opus-4.8",
     vendor: "anthropic",
     displayName: "Claude Opus 4.8",

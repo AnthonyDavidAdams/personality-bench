@@ -22,6 +22,19 @@ export interface ModelProfile {
 }
 
 export const MODEL_PROFILES: Record<string, ModelProfile> = {
+  "anthropic/claude-fable-5": {
+    id: "anthropic/claude-fable-5",
+    vendor: "Anthropic",
+    releaseDate: "2026-06-09",
+    releaseTime: "17:00",
+    releaseTimeNote: "Approximate — Anthropic typically posts model releases around 10am Pacific (17:00 UTC).",
+    hqCity: "San Francisco",
+    hqCountry: "USA",
+    hqLat: 37.7749,
+    hqLon: -122.4194,
+    blurb: "Anthropic's new top-tier model in a new naming line, positioned above the Opus 4 family by pricing ($10/$50 per M tokens — 2× Opus 4.8). Released June 2026.",
+    predecessor: "anthropic/claude-opus-4.8",
+  },
   "anthropic/claude-opus-4.8": {
     id: "anthropic/claude-opus-4.8",
     vendor: "Anthropic",
