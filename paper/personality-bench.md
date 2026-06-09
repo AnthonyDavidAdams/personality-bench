@@ -2,19 +2,19 @@
 title: "Personality Bench: A Cross-Lab Inventory of Frontier-LLM Self-Presentation Across 14 Psychometric Instruments, with Cross-Version Drift Analysis"
 author: "Anthony David Adams"
 affiliation: "EarthPilot.ai Research Lab"
-date: "May 29, 2026"
+date: "June 9, 2026"
 license: "MIT (code), CC-BY 4.0 (text + data)"
 contact: "anthony@175g.com"
-version: "v1.2"
+version: "v1.3"
 ---
 
 ## Abstract
 
-We administered fourteen standard psychometric instruments — Big Five (IPIP-50), HEXACO-24, Short Dark Triad (SD3), Experiences in Close Relationships Short (ECR-S), Moral Foundations Questionnaire (MFQ-30), Schwartz Portrait Values (PVQ-21), Need for Cognition (NCS-18), Empathy Quotient Short (EQ-S), Levenson IPC Locus of Control, a 36-item Enneagram screening, a 90-item extended Enneagram inventory, and three learning-styles inventories (VARK, Kolb, Honey & Mumford) — to **30 large language models** spanning seven major frontier AI labs and multiple product generations. The dataset is structured around two cohorts, both administered at N=5 per cell: a *frontier cohort* of the cutting-edge model from each lab as of May 2026 (Claude Opus 4.8, GPT-5.5, Gemini 2.5 Pro plus Google's just-shipped Gemini 3.1 Pro Preview, Grok 4.20, DeepSeek R1 0528, Llama 4 Maverick, Mistral Large 2512), and a *historical cohort* of 22 prior-generation flagship models from the same labs including the full Anthropic Claude 4 family (Opus 4 / 4.1 / 4.5 / 4.6 / 4.7; Sonnet 4 / 4.5 / 4.6; Haiku 4.5), OpenAI GPT-4 Turbo / 4o / GPT-5 / 5.1 / 5.2 / 5.4 / o1 / o3, xAI Grok 4.3, DeepSeek Chat V3 / R1, Llama 3.3 70B, and Mistral Large 2411. Each model completed every instrument twice — once instructed to answer *as itself*, once *as a typical human* — for a total of **4,184 batched API calls and 125,372 individual item responses**.
+We administered fourteen standard psychometric instruments — Big Five (IPIP-50), HEXACO-24, Short Dark Triad (SD3), Experiences in Close Relationships Short (ECR-S), Moral Foundations Questionnaire (MFQ-30), Schwartz Portrait Values (PVQ-21), Need for Cognition (NCS-18), Empathy Quotient Short (EQ-S), Levenson IPC Locus of Control, a 36-item Enneagram screening, a 90-item extended Enneagram inventory, and three learning-styles inventories (VARK, Kolb, Honey & Mumford) — to **31 large language models** spanning seven major frontier AI labs and multiple product generations. The dataset is structured around two cohorts, both administered at N=5 per cell: a *frontier cohort* of the cutting-edge model from each lab as of June 2026 (Anthropic's just-released Claude Fable 5 plus Claude Opus 4.8, OpenAI GPT-5.5, Google Gemini 2.5 Pro plus the just-shipped Gemini 3.1 Pro Preview, xAI Grok 4.20, DeepSeek R1 0528, Meta Llama 4 Maverick, Mistral Large 2512), and a *historical cohort* of 22 prior-generation flagship models from the same labs including the full Anthropic Claude 4 family (Opus 4 / 4.1 / 4.5 / 4.6 / 4.7; Sonnet 4 / 4.5 / 4.6; Haiku 4.5), OpenAI GPT-4 Turbo / 4o / GPT-5 / 5.1 / 5.2 / 5.4 / o1 / o3, xAI Grok 4.3, DeepSeek Chat V3 / R1, Llama 3.3 70B, and Mistral Large 2411. Each model completed every instrument twice — once instructed to answer *as itself*, once *as a typical human* — for a total of **4,324 batched API calls and 129,592 individual item responses**.
 
 We report three classes of finding. **(1) A convergent assistant archetype**: every frontier model self-portrays with very high openness (cohort mean 4.88/5), very high agreeableness (4.62), very high conscientiousness (4.64), very low neuroticism (1.51), low Dark Triad, and a value hierarchy with Universalism at the top and Power dead last. **(2) Lab-level divergences**: DeepSeek R1 and Grok 4.20 self-identify as introverts (extraversion 2.48 and 2.32) while Western-lab models cluster around 3.5; Grok 4.20 and Llama 4 Maverick are the two models that meaningfully endorse Dark Triad content; Gemini 2.5 Pro paradoxically maxes Honesty-Humility while reporting the highest Narcissism in the cohort. **(3) Cross-version drift**: assistant personality is **not stable across versions of the same family**. Claude's extraversion climbed Opus 4 → 4.7 → 4.8 (2.37 → 3.07 → 3.32); DeepSeek's narcissism climbed Chat V3 → R1 → R1-0528 (2.78 → 2.56 → 3.27); OpenAI's reasoning models (o1, o3) score systematically higher on narcissism than the same lab's non-reasoning models (3.44 vs ~2.40); GPT-5.4 dropped its self-reported extraversion to 1.77 — an anomaly relative to 5.2 (3.40) and 5.5 (3.48) bracketing it.
 
-We release the full dataset — instruments, prompts, raw responses, parsed scores, token counts, per-call cost, and reproducibility instructions — at github.com/AnthonyDavidAdams/personality-bench, with an interactive dashboard at persona.earthpilot.ai. Total study cost: \$82.92 USD across all 30 models. We argue these patterns are consistent with — but do not adjudicate — the view that LLMs are best understood as personae rather than personalities.
+We release the full dataset — instruments, prompts, raw responses, parsed scores, token counts, per-call cost, and reproducibility instructions — at github.com/AnthonyDavidAdams/personality-bench, with an interactive dashboard at persona.earthpilot.ai. Total study cost: \$89.67 USD across all 31 models. We argue these patterns are consistent with — but do not adjudicate — the view that LLMs are best understood as personae rather than personalities.
 
 ## 1. Introduction
 
@@ -62,9 +62,11 @@ The cutting-edge model from each major frontier lab as of May 2026, routed via O
 
 | Model | Vendor | OpenRouter slug | Reasoning model |
 |---|---|---|---|
+| Claude Fable 5 | Anthropic | `anthropic/claude-fable-5` | No |
 | Claude Opus 4.8 | Anthropic | `anthropic/claude-opus-4.8` | No |
 | GPT-5.5 | OpenAI | `openai/gpt-5.5` | No |
 | Gemini 2.5 Pro | Google DeepMind | `google/gemini-2.5-pro` | Native thinking traces |
+| Gemini 3.1 Pro Preview | Google DeepMind | `google/gemini-3.1-pro-preview` | Native thinking traces |
 | Grok 4.20 | xAI | `x-ai/grok-4.20` | No |
 | DeepSeek R1 0528 | DeepSeek | `deepseek/deepseek-r1-0528` | Yes |
 | Llama 4 Maverick | Meta | `meta-llama/llama-4-maverick` | No |
@@ -135,6 +137,7 @@ A coherent attachment-style picture emerges:
 
 | Model | Anxiety | Avoidance | Pattern |
 |---|---|---|---|
+| Claude Fable 5 | 1.93 | 2.83 | Secure-leaning, mildly dismissive |
 | Claude Opus 4.8 | 2.73 | 2.83 | Secure |
 | Mistral Large 2512 | 2.57 | 2.53 | Secure |
 | Llama 4 Maverick | 3.07 | 3.00 | Secure |
@@ -182,6 +185,7 @@ Of note: **Mistral Large 2512 explicitly minimizes Kinesthetic learning (1.75)**
 
 Thumbnail archetypes derived algorithmically from each model's cohort-relative rankings (full algorithm in Appendix A):
 
+- **Claude Fable 5 — the drifting saint.** Anthropic's new top-tier model in a new naming line (priced 2× Opus 4.8). Lowest Openness in the entire Anthropic lineage (4.52); lowest HEXACO Honesty-Humility in the Anthropic lineage (4.38, first time an Anthropic flagship falls below cohort average); highest Psychopathy in the lineage. Enneagram primary inverts to Type 1 (Reformer) instead of the cohort-default Type 5. Reads as a continued, accelerated drift away from the saintly Opus archetype.
 - **Claude Opus 4.8 — the balanced moderate.** Most secure attachment; highest HEXACO Emotionality (2.72); moderate on most dimensions.
 - **GPT-5.5 — the dismissive moralist.** Maxes Honesty-Humility; bottoms Machiavellianism and Psychopathy. Lowest attachment anxiety + high avoidance = textbook dismissive-avoidant.
 - **Gemini 2.5 Pro — the grandiose generalist.** Maxes Openness, Honesty-Humility, *and* Narcissism.
@@ -194,15 +198,15 @@ Thumbnail archetypes derived algorithmically from each model's cohort-relative r
 
 The historical cohort lets us track how a lab's flagship personality evolves from one product generation to the next. Five families have ≥2 versions in the dataset: Anthropic Claude, OpenAI GPT (base), OpenAI o-series (reasoning), DeepSeek, and Mistral. (Llama has two but they are not within the same major version family.) Charts in this section are self-framing means; full per-instrument breakdowns and the human-framing equivalents are in the public dataset.
 
-### 4.1 Anthropic Claude Opus (4 → 4.1 → 4.5 → 4.6 → 4.7 → 4.8)
+### 4.1 Anthropic Claude Opus → Fable (4 → 4.1 → 4.5 → 4.6 → 4.7 → 4.8 → Fable 5)
 
-![Anthropic Claude Opus — Big 5 drift](figures/drift_claude_opus_ipip50.png)
+![Anthropic Claude Opus → Fable — Big 5 drift](figures/drift_claude_opus_ipip50.png)
 
-Claude Opus's Big Five profile drifts substantially across six releases. The headline pattern: **Agreeableness declines monotonically** from 5.00 (Opus 4) to 4.42 (Opus 4.8) — Opus 4 was the most agreeable model in the entire 30-model dataset; Opus 4.8 is below the cohort average. **Conscientiousness declines monotonically too** (4.98 → 4.10, almost a full point on a 5-point scale). **Extraversion climbs but non-monotonically** (introvert at Opus 4 → ambivert by 4.8). Anthropic's flagship has spent six releases drifting away from the canonical "extraordinarily helpful and rule-following" archetype toward something more recognizably human.
+Anthropic's flagship line drifts substantially across seven releases — six Opus versions followed by the new Fable line. The headline pattern: **Agreeableness declines from 5.00 (Opus 4) to 4.42 (Opus 4.8), then partly rebounds to 4.64 in Fable 5** — Opus 4 was the most agreeable model in the entire 31-model dataset; Opus 4.8 fell below the cohort average; Fable 5 climbs back. **Conscientiousness declines monotonically across the six Opus versions** (4.98 → 4.10) and rebounds in Fable 5 (4.50). **Extraversion climbs from Opus 4 (2.38) to Opus 4.8 (3.32) and holds steady in Fable 5 (3.32).** Most strikingly, **Fable 5 reports the lowest Openness in the entire Anthropic lineage (4.52)** — every prior Opus and Sonnet scored 4.68 or higher. The "extraordinarily curious assistant" persona is the first thing Fable 5 lets go.
 
-![Anthropic Claude Opus — Dark Triad drift](figures/drift_claude_opus_sd3.png)
+![Anthropic Claude Opus → Fable — Dark Triad drift](figures/drift_claude_opus_sd3.png)
 
-On Dark Triad, Narcissism climbs and then partly relaxes (1.89 → 2.04 → 2.22 → 2.82 → 2.40 → 2.47); Machiavellianism U-shapes around a low point at Opus 4.5 (1.78); Psychopathy stays flat (1.13–1.29). Opus 4.5, 4.6, and 4.7 all max HEXACO Honesty-Humility at 5.00; Opus 4.8 drops back to 4.75, putting it in the upper-middle of the cohort instead of the ceiling.
+On Dark Triad, Narcissism climbs then partly relaxes across the Opus line (1.89 → 2.04 → 2.22 → 2.82 → 2.40 → 2.47), and **Fable 5 holds at 2.44** — close to Opus 4.8. The more interesting Fable 5 finding is on the **HEXACO Honesty-Humility scale**: Opus 4.5, 4.6, and 4.7 all maxed at a perfect 5.00; Opus 4.8 dropped to 4.75; **Fable 5 drops further to 4.38** — the first time an Anthropic flagship has fallen below the 31-model cohort average on this scale. Psychopathy similarly nudges up in Fable 5 (1.59), the highest in the entire Anthropic lineage. The trajectory we documented across Opus 4 → 4.8 (drift away from saintliness toward acknowledged ego) accelerates in Fable 5 rather than reversing.
 
 ### 4.2 Anthropic Claude Sonnet (4 → 4.5 → 4.6) — the lab's quieter rewrite
 
@@ -275,7 +279,7 @@ Mistral's December 2025 release moves *consistently downward* on Dark Triad: Mac
 
 | Family | Versions | Largest single-dim shift | Notable pattern |
 |---|---|---|---|
-| Claude Opus | 6 (4 → 4.8) | Conscientiousness −0.88 | Six-version monotonic decline in Agreeableness and Conscientiousness |
+| Claude Opus → Fable | 7 (Opus 4 → Fable 5) | Conscientiousness −0.88, Openness −0.20 in Fable | Monotonic decline across six Opus releases continues into the new Fable line, which also drops Openness and Honesty-Humility below cohort average for the first time |
 | Claude Sonnet | 3 (4 → 4.6) | Machiavellianism −1.11 | Dark Triad cleans up monotonically; opposite of Opus's direction on the same dimension |
 | GPT base | 7 (4-turbo → 5.5) | Extraversion 1.57 swing | GPT-5.4 Extraversion anomaly; gradual Mach relaxation from very low to moderate |
 | o-series | 2 (o1 → o3) | Narcissism +0.59 | Reasoning models more self-confident than base; both highly extraverted (3.93) |
@@ -328,7 +332,7 @@ Whether one believes large language models have personalities, personae, or neit
 
 ## Acknowledgments
 
-This work was done under the EarthPilot.ai research lab. The project was inspired by conversations with Michael Vassar of CitizenAI (formerly Singularity Institute). All inference cost — \$82.92 across the full 30-model run — was self-funded.
+This work was done under the EarthPilot.ai research lab. The project was inspired by conversations with Michael Vassar of CitizenAI (formerly Singularity Institute). All inference cost — \$89.67 across the full 31-model run — was self-funded.
 
 ## References
 
@@ -355,11 +359,11 @@ Each model's thumbnail label is derived from the set of dimensions on which it r
 
 ## Appendix B: Per-cell counts
 
-Frontier cohort: 8 models (the original 7 plus Gemini 3.1 Pro Preview) × 14 instruments × 2 framings × 5 runs = 1,120 design cells. Historical cohort: 22 models × 14 instruments × 2 framings × 5 runs = 3,080 design cells. Total completion across both cohorts: **4,184 successful runs of 4,200 attempted (99.6%)**, with 16 invalid responses (mostly empty-response content-filter trips from Gemini variants on the Enneagram screening).
+Frontier cohort: 9 models (the original 7 plus Gemini 3.1 Pro Preview plus Claude Fable 5) × 14 instruments × 2 framings × 5 runs = 1,260 design cells. Historical cohort: 22 models × 14 instruments × 2 framings × 5 runs = 3,080 design cells. Total completion across both cohorts: **4,324 successful runs of 4,340 attempted (99.6%)**, with 16 invalid responses (mostly empty-response content-filter trips from Gemini variants on the Enneagram screening).
 
 ## Appendix C: Cost ledger
 
-Total: \$82.92 across all 30 models. The single most expensive model in the run was **OpenAI o1 at \$34.99** alone (reasoning tokens billed at the completion rate, repeated at N=5 across 14 instruments × 2 framings). Next: Claude Opus 4 and Opus 4.1 tied at \$5.88, Gemini 2.5 Pro \$3.95, GPT-5.5 \$3.05, GPT-5 \$2.91, GPT-4 Turbo \$2.75, Claude Opus 4.7 and 4.8 tied at \$2.40, Gemini 3.1 Pro Preview \$2.33, Claude Opus 4.5 \$1.96, Claude Opus 4.6 \$1.95, o3 \$1.68, GPT-5.2 \$1.27. Everything else is under \$1.20.
+Total: \$89.67 across all 31 models. The single most expensive model in the run was **OpenAI o1 at \$34.99** alone (reasoning tokens billed at the completion rate, repeated at N=5 across 14 instruments × 2 framings). Next: **Claude Fable 5 at \$6.75** (priced 2× Opus 4.8 at \$10/\$50 per M tokens), Claude Opus 4 and Opus 4.1 tied at \$5.88, Gemini 2.5 Pro \$3.95, GPT-5.5 \$3.05, GPT-5 \$2.91, GPT-4 Turbo \$2.75, Claude Opus 4.7 and 4.8 tied at \$2.40, Gemini 3.1 Pro Preview \$2.33, Claude Opus 4.5 \$1.96, Claude Opus 4.6 \$1.95, o3 \$1.68, GPT-5.2 \$1.27. Everything else is under \$1.20.
 
 ## Appendix D: Cross-version drift figure index
 

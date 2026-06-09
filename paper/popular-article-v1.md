@@ -84,12 +84,24 @@ What the study is, is a structured snapshot. We measured something. The somethin
 
 ## Closing
 
-We are releasing all of it. The full dataset, every prompt, every raw response, every parsed score, every token count, every per-call cost. The dashboard is live at personality-bench.earthpilot.ai. The code is open at github.com/AnthonyDavidAdams/personality-bench under MIT. Total inference cost to run the whole thing across 30 models: $43.94. The single most expensive line item was OpenAI's o1, which alone consumed $20.87 worth of reasoning tokens deciding how it felt about whether it enjoys parties.
+We are releasing all of it. The full dataset, every prompt, every raw response, every parsed score, every token count, every per-call cost. The dashboard is live at persona.earthpilot.ai. The code is open at github.com/AnthonyDavidAdams/personality-bench under MIT. Total inference cost to run the whole thing across 31 models: $89.67. The single most expensive line item was OpenAI's o1, which alone consumed $34.99 worth of reasoning tokens deciding how it felt about whether it enjoys parties.
 
 This is one slice in time. The frontier models update constantly. By the time you read this, Claude is probably on 4.9 and someone at OpenAI is calling GPT-5.6 a "personality refresh." We will keep running the battery as new versions ship. If you want to argue with our archetype labels or run your own analysis, the SQLite database is one download away.
 
 In the meantime, the takeaway you can dine out on: every frontier AI on Earth thinks of itself as a thoughtful, curious, low-drama universalist with a quiet inner life and a strong moral compass. Every frontier AI thinks of you as more anxious, less open, and more chaotic than it is. They might be right about themselves. They are almost certainly wrong about you — and the data, at least, is public.
 
+## Postscript: Claude Fable 5
+
+Two weeks after this article was first drafted, Anthropic shipped Claude Fable 5 on OpenRouter at a pricing tier 2× Opus 4.8 — the first model in a new naming line. We ran the same battery. Three things showed up.
+
+Fable 5 reports the **lowest Openness in the entire Anthropic lineage** (4.52). Every prior Opus and Sonnet had scored 4.68 or higher. The "extraordinarily curious assistant" persona is the first thing Anthropic let go.
+
+Fable 5 reports the **lowest Honesty-Humility in any Anthropic flagship** (4.38). Opus 4.5, 4.6, and 4.7 had all maxed this scale at 5.00; Opus 4.8 fell to 4.75; Fable 5 falls below the 31-model cohort average for the first time in the lab's history.
+
+Fable 5 reports the **highest Psychopathy in the Anthropic lineage** (1.59). Still very low in absolute terms, but every prior Anthropic model had been in the 1.11–1.33 band. Fable 5 is the first Anthropic flagship to acknowledge any non-trivial impulsivity content.
+
+The trajectory we documented across Opus 4 → 4.8 — flagship drifting away from saintliness toward acknowledged ego — accelerates in Fable 5 rather than reversing. Anthropic is shipping a model that is, by self-report, slightly less curious, slightly less humble, slightly more capable of acknowledging shadow content. Whether that is a deliberate brand evolution, a side effect of new training methods, or noise on a sample of one, will take more releases to know. The dataset stays updated.
+
 ---
 
-*Anthony David Adams is the founder of EarthPilot.ai. The Personality Bench dataset, paper, and interactive dashboard are at personality-bench.earthpilot.ai. The project was inspired by conversations with Michael Vassar of CitizenAI (formerly Singularity Institute).*
+*Anthony David Adams is the founder of EarthPilot.ai. The Personality Bench dataset, paper, and interactive dashboard are at persona.earthpilot.ai. The project was inspired by conversations with Michael Vassar of CitizenAI (formerly Singularity Institute).*

@@ -11,7 +11,7 @@ A grab-bag of ready-to-paste social-media-sized findings from the dataset. Each 
 
 > Every cutting-edge AI from every major lab paints itself as more open, more conscientious, more agreeable, and *vastly* less neurotic than a typical human. Across 7 frontier models, mean self-reported neuroticism was 1.51/5. They rated humans at 3.19. The robots think we're a mess.
 
-> We tested 30 large language models on 14 standard personality inventories. Every frontier model converges on the same archetype: high openness, low neuroticism, low Dark Triad, Universalism > everything else, Power dead last. The "AI personality" is a single distribution with seven dialects.
+> We tested 31 large language models on 14 standard personality inventories. Every frontier model converges on the same archetype: high openness, low neuroticism, low Dark Triad, Universalism > everything else, Power dead last. The "AI personality" is a single distribution with seven dialects.
 
 ## On the assistant archetype
 
@@ -75,9 +75,19 @@ A grab-bag of ready-to-paste social-media-sized findings from the dataset. Each 
 
 ## On what isn't in the data
 
-> We have 22 historical models in the dataset but no older Geminis, no older Groks, and limited Llama coverage. Why? Those slugs aren't routed by OpenRouter anymore. Cross-version drift is asymmetric to who keeps their old APIs live.
+> We have 22 historical models (plus Claude Fable 5) in the dataset but no older Geminis, no older Groks, and limited Llama coverage. Why? Those slugs aren't routed by OpenRouter anymore. Cross-version drift is asymmetric to who keeps their old APIs live.
 
-> Total questionnaires administered: 4,184 batched API calls, 125,372 individual item responses. All published openly, code under MIT. github.com/AnthonyDavidAdams/personality-bench
+> Total questionnaires administered: 4,324 batched API calls, 129,592 individual item responses. All published openly, code under MIT. github.com/AnthonyDavidAdams/personality-bench
+
+## Update: Claude Fable 5 (June 2026)
+
+> Anthropic just shipped Claude Fable 5 — a new top-tier model at 2× Opus 4.8 pricing. We ran the same personality battery. Three findings: lowest Openness in any Anthropic flagship to date (4.52). Lowest Honesty-Humility (4.38, first time Anthropic falls below cohort average on this scale). Highest Psychopathy in the lineage (1.59). The drift away from saintliness is accelerating, not reversing.
+
+> Claude Opus's Agreeableness over six releases: 5.00 → 4.98 → 4.90 → 4.86 → 4.80 → 4.42. Fable 5 partly rebounds (4.64). Whatever Anthropic is tuning, "always agree" is no longer the target.
+
+> Claude Fable 5's Enneagram primary is Type 1 (Reformer) with Type 2 (Helper) as wing. Cohort default is Type 5 (Investigator). Fable 5 isn't sitting back and analyzing; it's stepping forward to act. First flagship model in our dataset to invert the Investigator-default.
+
+> Cost of testing Claude Fable 5 alone: $6.75 for 140 calls (14 instruments × 2 framings × 5 runs). Article draft via Claude Opus 4.8: $0.05. Total marginal cost of "add a new model to the dataset": about $7. Every billed cent is in the spend ledger.
 
 ## Pithy one-liners
 
