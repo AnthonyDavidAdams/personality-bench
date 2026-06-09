@@ -87,7 +87,7 @@ These are the people whose work touches the study most directly.
 - **Dan McAdams** — Northwestern; narrative-identity researcher who would find the persona-vs-personality framing intuitive.
 - **Jesse Graham** — University of Utah; co-creator of Moral Foundations Theory. Would care about the MFQ findings.
 - **Jonathan Haidt** — NYU Stern; MFT co-creator. Public intellectual. Active on X @JonHaidt.
-  - Angle: "All seven frontier LLMs come out WEIRD-liberal on MFQ-30, including the non-US ones."
+  - Angle: "All nine frontier LLMs come out WEIRD-liberal on MFQ-30, including the non-US ones. Holds across 22 historical predecessors too."
 - **Michael Ashton** — Brock University; co-developer of HEXACO.
 - **Kibeom Lee** — University of Calgary; HEXACO co-developer.
 - **Don Riso & Russ Hudson estate** — already contacted via support@enneagraminstitute.com. Follow up after a week if no response.
@@ -313,7 +313,8 @@ generation flagship models for cross-version drift analysis.
 
 Headline finding: every frontier AI paints itself as more open, more
 agreeable, less neurotic than a typical human. They believe humans are
-substantially worse off than they are. Across all seven labs.
+substantially worse off than they are. Across all seven labs and 31
+models, including Anthropic's just-released Claude Fable 5.
 
 A few other findable angles:
 - Grok scores highest on the Dark Triad (highest Machiavellianism of any
