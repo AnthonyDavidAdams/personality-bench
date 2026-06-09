@@ -22,7 +22,7 @@ function archetypeArtPath(modelId: string): string | null {
     "anthropic/claude-fable-5":         "archetype_claude_fable.png",
     "openai/gpt-5.5":                   "archetype_gpt.png",
     "google/gemini-2.5-pro":            "archetype_gemini.png",
-    "google/gemini-3.1-pro-preview":    "archetype_gemini.png",
+    "google/gemini-3.1-pro-preview":    "archetype_gemini_3_1.png",
     "x-ai/grok-4.20":                   "archetype_grok.png",
     "deepseek/deepseek-r1-0528":        "archetype_deepseek.png",
     "meta-llama/llama-4-maverick":      "archetype_llama.png",

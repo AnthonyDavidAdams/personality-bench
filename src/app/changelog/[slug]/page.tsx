@@ -15,7 +15,7 @@ const ARTICLE_ART: Record<string, string> = {
   "anthropic/claude-fable-5":      "/art/archetype_claude_fable.png",
   "openai/gpt-5.5":                "/art/archetype_gpt.png",
   "google/gemini-2.5-pro":         "/art/archetype_gemini.png",
-  "google/gemini-3.1-pro-preview": "/art/archetype_gemini.png",
+  "google/gemini-3.1-pro-preview": "/art/archetype_gemini_3_1.png",
   "x-ai/grok-4.20":                "/art/archetype_grok.png",
   "deepseek/deepseek-r1-0528":     "/art/archetype_deepseek.png",
   "meta-llama/llama-4-maverick":   "/art/archetype_llama.png",

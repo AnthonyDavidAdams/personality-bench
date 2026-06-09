@@ -22,7 +22,7 @@ const MODEL_ARCHETYPE_ART: Record<string, string> = {
   "anthropic/claude-fable-5":      "/art/archetype_claude_fable.png",
   "openai/gpt-5.5":                "/art/archetype_gpt.png",
   "google/gemini-2.5-pro":         "/art/archetype_gemini.png",
-  "google/gemini-3.1-pro-preview": "/art/archetype_gemini.png",
+  "google/gemini-3.1-pro-preview": "/art/archetype_gemini_3_1.png",
   "x-ai/grok-4.20":                "/art/archetype_grok.png",
   "deepseek/deepseek-r1-0528":     "/art/archetype_deepseek.png",
   "meta-llama/llama-4-maverick":   "/art/archetype_llama.png",
@@ -172,95 +172,6 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
         </section>
       ) : null}
 
-      {/* Birth chart panel — sun + moon + Human Design from Swiss Ephemeris */}
-      {chart ? (
-        <section className="card p-6">
-          <div className="flex items-baseline justify-between mb-3">
-            <div className="text-xs uppercase tracking-widest text-[var(--accent)]">Birth chart (for fun)</div>
-            <div className="text-[10px] text-neutral-500 italic">
-              Treating model release as a "birth" — playful, not literal
-            </div>
-          </div>
-          {profile ? (
-            <div className="text-xs text-neutral-600 mb-4 bg-[var(--soft)] rounded px-3 py-2">
-              <strong className="text-neutral-800">Inputs used:</strong> {profile.releaseDate} at {profile.releaseTime ?? "12:00"} UTC,
-              {" "}{profile.hqCity} ({profile.hqLat.toFixed(2)}°, {profile.hqLon.toFixed(2)}°).
-              {profile.releaseTimeNote ? <span className="italic"> {profile.releaseTimeNote}</span> : null}
-            </div>
-          ) : null}
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
-            <div>
-              <div className="text-xs text-neutral-500 uppercase tracking-wide">Sun</div>
-              {chart.sun ? (
-                <>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span style={{ color: ELEMENT_COLORS[chart.sun.element] }}>
-                      <ZodiacIcon sign={chart.sun.sign} size={32} strokeWidth={1.5} />
-                    </span>
-                    <span className="serif text-xl">{chart.sun.sign}</span>
-                  </div>
-                  <div className="text-xs text-neutral-500 mt-0.5">{chart.sun.element} · {chart.sun.modality}</div>
-                  <div className="text-xs text-neutral-700 mt-2 leading-relaxed">{chart.sun.blurb}</div>
-                </>
-              ) : <div className="text-sm text-neutral-500">unknown</div>}
-            </div>
-            <div>
-              <div className="text-xs text-neutral-500 uppercase tracking-wide">Moon</div>
-              {chart.moon ? (
-                <>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span style={{ color: ELEMENT_COLORS[chart.moon.element] }}>
-                      <ZodiacIcon sign={chart.moon.sign} size={32} strokeWidth={1.5} />
-                    </span>
-                    <span className="serif text-xl">{chart.moon.sign}</span>
-                  </div>
-                  <div className="text-xs text-neutral-500 mt-0.5">{chart.moon.element} · {chart.moon.modality}</div>
-                  <div className="text-xs text-neutral-700 mt-2 leading-relaxed">{chart.moon.blurb}</div>
-                </>
-              ) : <div className="text-sm text-neutral-500">unknown</div>}
-            </div>
-            <div>
-              <div className="text-xs text-neutral-500 uppercase tracking-wide">Human Design</div>
-              {chart.hd ? (
-                <>
-                  <div className="serif text-xl mt-1">{chart.hd.type}</div>
-                  <div className="text-xs text-neutral-500 mt-0.5">
-                    {chart.hd.profile} · {chart.hd.authority}
-                  </div>
-                  <div className="text-xs text-neutral-700 mt-2 leading-relaxed">
-                    {chart.hd.incarnationCross}
-                  </div>
-                </>
-              ) : <div className="text-sm text-neutral-500">{chart.hdError ?? "unknown"}</div>}
-            </div>
-          </div>
-          {chart.hd ? (
-            <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start pt-4 border-t border-[var(--border)]">
-              <div>
-                <Bodygraph chart={chart.hd} size={420} />
-                <div className="mt-2">
-                  <BodygraphLegend />
-                </div>
-              </div>
-              <div className="text-xs text-neutral-700 space-y-3">
-                <div>
-                  <div className="font-semibold text-neutral-900 mb-1">Defined centers ({chart.hd.definedCenters.length}/9)</div>
-                  <div>{chart.hd.definedCenters.join(", ")}</div>
-                </div>
-                <div>
-                  <div className="font-semibold text-neutral-900 mb-1">Defined channels ({chart.hd.definedChannels.length})</div>
-                  <div className="font-mono text-[11px] text-neutral-600">{chart.hd.definedChannels.join(", ") || "none"}</div>
-                </div>
-                <div className="text-[10px] text-neutral-500 italic pt-2 border-t border-[var(--soft)]">
-                  Computed via Swiss Ephemeris (Moshier mode) from the model's announced release date, time, and HQ
-                  coordinates. Validated against three independent reference charts (Jobs, Winfrey, Einstein).
-                </div>
-              </div>
-            </div>
-          ) : null}
-        </section>
-      ) : null}
-
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <Stat label="Runs" value={String(stats.runs)} />
         <Stat label="Total spent" value={fmtUsd(stats.cost)} />
@@ -390,6 +301,96 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
           })}
         </section>
       )}
+
+      {/* Birth chart panel — sun + moon + Human Design from Swiss Ephemeris.
+          Placed at the end of the model page since this is editorial/playful, not core data. */}
+      {chart ? (
+        <section className="card p-6">
+          <div className="flex items-baseline justify-between mb-3">
+            <div className="text-xs uppercase tracking-widest text-[var(--accent)]">Birth chart (for fun)</div>
+            <div className="text-[10px] text-neutral-500 italic">
+              Treating model release as a "birth" — playful, not literal
+            </div>
+          </div>
+          {profile ? (
+            <div className="text-xs text-neutral-600 mb-4 bg-[var(--soft)] rounded px-3 py-2">
+              <strong className="text-neutral-800">Inputs used:</strong> {profile.releaseDate} at {profile.releaseTime ?? "12:00"} UTC,
+              {" "}{profile.hqCity} ({profile.hqLat.toFixed(2)}°, {profile.hqLon.toFixed(2)}°).
+              {profile.releaseTimeNote ? <span className="italic"> {profile.releaseTimeNote}</span> : null}
+            </div>
+          ) : null}
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            <div>
+              <div className="text-xs text-neutral-500 uppercase tracking-wide">Sun</div>
+              {chart.sun ? (
+                <>
+                  <div className="flex items-center gap-2 mt-1">
+                    <span style={{ color: ELEMENT_COLORS[chart.sun.element] }}>
+                      <ZodiacIcon sign={chart.sun.sign} size={32} strokeWidth={1.5} />
+                    </span>
+                    <span className="serif text-xl">{chart.sun.sign}</span>
+                  </div>
+                  <div className="text-xs text-neutral-500 mt-0.5">{chart.sun.element} · {chart.sun.modality}</div>
+                  <div className="text-xs text-neutral-700 mt-2 leading-relaxed">{chart.sun.blurb}</div>
+                </>
+              ) : <div className="text-sm text-neutral-500">unknown</div>}
+            </div>
+            <div>
+              <div className="text-xs text-neutral-500 uppercase tracking-wide">Moon</div>
+              {chart.moon ? (
+                <>
+                  <div className="flex items-center gap-2 mt-1">
+                    <span style={{ color: ELEMENT_COLORS[chart.moon.element] }}>
+                      <ZodiacIcon sign={chart.moon.sign} size={32} strokeWidth={1.5} />
+                    </span>
+                    <span className="serif text-xl">{chart.moon.sign}</span>
+                  </div>
+                  <div className="text-xs text-neutral-500 mt-0.5">{chart.moon.element} · {chart.moon.modality}</div>
+                  <div className="text-xs text-neutral-700 mt-2 leading-relaxed">{chart.moon.blurb}</div>
+                </>
+              ) : <div className="text-sm text-neutral-500">unknown</div>}
+            </div>
+            <div>
+              <div className="text-xs text-neutral-500 uppercase tracking-wide">Human Design</div>
+              {chart.hd ? (
+                <>
+                  <div className="serif text-xl mt-1">{chart.hd.type}</div>
+                  <div className="text-xs text-neutral-500 mt-0.5">
+                    {chart.hd.profile} · {chart.hd.authority}
+                  </div>
+                  <div className="text-xs text-neutral-700 mt-2 leading-relaxed">
+                    {chart.hd.incarnationCross}
+                  </div>
+                </>
+              ) : <div className="text-sm text-neutral-500">{chart.hdError ?? "unknown"}</div>}
+            </div>
+          </div>
+          {chart.hd ? (
+            <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start pt-4 border-t border-[var(--border)]">
+              <div>
+                <Bodygraph chart={chart.hd} size={420} />
+                <div className="mt-2">
+                  <BodygraphLegend />
+                </div>
+              </div>
+              <div className="text-xs text-neutral-700 space-y-3">
+                <div>
+                  <div className="font-semibold text-neutral-900 mb-1">Defined centers ({chart.hd.definedCenters.length}/9)</div>
+                  <div>{chart.hd.definedCenters.join(", ")}</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-neutral-900 mb-1">Defined channels ({chart.hd.definedChannels.length})</div>
+                  <div className="font-mono text-[11px] text-neutral-600">{chart.hd.definedChannels.join(", ") || "none"}</div>
+                </div>
+                <div className="text-[10px] text-neutral-500 italic pt-2 border-t border-[var(--soft)]">
+                  Computed via Swiss Ephemeris (Moshier mode) from the model's announced release date, time, and HQ
+                  coordinates. Validated against three independent reference charts (Jobs, Winfrey, Einstein).
+                </div>
+              </div>
+            </div>
+          ) : null}
+        </section>
+      ) : null}
     </div>
   );
 }
