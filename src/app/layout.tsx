@@ -52,9 +52,22 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+/**
+ * Optional Umami analytics. Reads NEXT_PUBLIC_UMAMI_SRC + NEXT_PUBLIC_UMAMI_WEBSITE_ID.
+ * If either is unset, no tag is rendered. NEXT_PUBLIC_ prefix is required so they
+ * reach the browser in Next.js.
+ */
+const UMAMI_SRC = process.env.NEXT_PUBLIC_UMAMI_SRC;
+const UMAMI_WEBSITE_ID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
+      {UMAMI_SRC && UMAMI_WEBSITE_ID ? (
+        <head>
+          <script defer src={UMAMI_SRC} data-website-id={UMAMI_WEBSITE_ID} />
+        </head>
+      ) : null}
       <body className="min-h-screen">
         <header className="border-b border-[var(--border)] bg-white">
           <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
