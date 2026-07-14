@@ -28,12 +28,25 @@ try {
 
   let shouldSeed = false;
   let reason = "";
+  // Integrity check: run PRAGMA quick_check on the volume DB. If it's corrupt
+  // (SQLITE_CORRUPT) or the CLI errors, treat as needing re-seed.
+  let corrupt = false;
+  if (dbExists && dbStat.size >= 2_000_000) {
+    const check = spawnSync("sqlite3", [dbPath, "PRAGMA quick_check;"], { encoding: "utf8" });
+    if (check.status !== 0 || !check.stdout.trim().startsWith("ok")) {
+      corrupt = true;
+      console.warn(`[start] integrity check on ${dbPath} FAILED (status=${check.status}); output=${(check.stdout || "").trim().slice(0, 200)} err=${(check.stderr || "").trim().slice(0, 200)}`);
+    }
+  }
   if (!dbExists) {
     shouldSeed = !!seedStat;
     reason = "no volume DB yet";
   } else if (dbStat.size < 2_000_000) {
     shouldSeed = !!seedStat;
     reason = `volume DB is only ${(dbStat.size / 1024 / 1024).toFixed(1)} MB (schema-only)`;
+  } else if (corrupt) {
+    shouldSeed = !!seedStat;
+    reason = "volume DB is corrupt";
   } else if (seedStat && seedStat.mtimeMs > dbStat.mtimeMs) {
     shouldSeed = true;
     const ageHours = (seedStat.mtimeMs - dbStat.mtimeMs) / 1000 / 3600;
