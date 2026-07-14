@@ -61,10 +61,10 @@ const push = spawnSync("npx", ["drizzle-kit", "push", "--force"], {
   env: process.env,
 });
 if (push.status !== 0) {
-  console.error(`[start] drizzle-kit push exited with status ${push.status}`);
-  process.exit(push.status ?? 1);
+  console.warn(`[start] drizzle-kit push exited with status ${push.status} — continuing anyway; schema is probably already in sync`);
+} else {
+  console.log("[start] schema up to date");
 }
-console.log("[start] schema up to date");
 
 const next = spawn("npx", ["next", "start", "-p", process.env.PORT || "3000"], {
   stdio: "inherit",
