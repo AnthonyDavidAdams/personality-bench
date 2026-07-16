@@ -56,6 +56,17 @@ try {
 
   if (shouldSeed) {
     console.log(`[start] seeding ${dbPath} from ${seedPath} (${reason}; ${(seedStat.size / 1024 / 1024).toFixed(1)} MB compressed)`);
+    // Also delete the WAL and SHM sidecar files — if they persist from a prior
+    // corrupt state, SQLite will read them at open time and re-taint the fresh
+    // DB with 'database disk image is malformed'. Every seed must be an atomic
+    // replacement of ALL THREE files.
+    for (const suffix of ["-wal", "-shm", "-journal"]) {
+      const side = `${dbPath}${suffix}`;
+      if (fs.existsSync(side)) {
+        console.log(`[start] removing stale sidecar ${side}`);
+        fs.unlinkSync(side);
+      }
+    }
     // Stage to a temp file then rename atomically so a crash mid-extract doesn't leave a half DB.
     const tmp = `${dbPath}.seed-tmp`;
     await pipeline(createReadStream(seedPath), createGunzip(), createWriteStream(tmp));
