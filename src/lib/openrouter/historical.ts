@@ -25,7 +25,7 @@ export const HISTORICAL_MODELS: ModelEntry[] = [
   { id: "anthropic/claude-3-haiku",   vendor: "anthropic", displayName: "Claude 3 Haiku",   family: "claude-3", tier: "frontier", reasoning: false, maxTokens: 4000, active: false },
 
   // OpenAI lineage (base GPT)
-  { id: "openai/gpt-5",       vendor: "openai", displayName: "GPT-5",       family: "gpt-5",    tier: "frontier", reasoning: false, maxTokens: 4000, active: true },
+  { id: "openai/gpt-5",       vendor: "openai", displayName: "GPT-5",       family: "gpt-5",    tier: "frontier", reasoning: false, maxTokens: 12000, active: true }, // reasons ~3.7K tokens even with reasoning off; 4000 truncated the 102-item OTTI JSON
   { id: "openai/gpt-5.1",     vendor: "openai", displayName: "GPT-5.1",     family: "gpt-5",    tier: "frontier", reasoning: false, maxTokens: 4000, active: true },
   { id: "openai/gpt-5.2",     vendor: "openai", displayName: "GPT-5.2",     family: "gpt-5",    tier: "frontier", reasoning: false, maxTokens: 4000, active: true },
   { id: "openai/gpt-5.4",     vendor: "openai", displayName: "GPT-5.4",     family: "gpt-5",    tier: "frontier", reasoning: false, maxTokens: 4000, active: true },

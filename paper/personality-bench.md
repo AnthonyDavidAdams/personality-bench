@@ -51,8 +51,10 @@ To our knowledge this is the first study to:
 | Learning Styles | VARK (Likert-adapted) | 16 | 1–5 | Fleming & Mills 1992 |
 | Learning Styles | Kolb Learning Modes | 12 | 1–5 | Kolb 1984 |
 | Learning Styles | Honey & Mumford LSQ | 40 | 1–5 | Honey & Mumford 1986/2006 |
+| Workplace | Open Behavioral Styles Inventory (OBSI-32) | 32 | 1–5 | Constructed for this study, inspired by Marston's (1928) DISC model |
+| Workplace | Open Talent Themes Inventory (OTTI-102) | 102 | 1–5 | Constructed for this study, inspired by the 34 CliftonStrengths themes (Rath 2007) |
 
-**Total: 14 instruments, 422 items.**
+**Total: 16 instruments, 556 items** (14 instruments and 422 items in the v1.3 analyses below; the two workplace inventories were added in September 2026 and are reported on the live site only).
 
 We use public-domain items wherever they exist (IPIP-50). For instruments where the original format is incompatible with batched Likert administration (RHETI's forced-choice format; original Kolb LSI's ranked choice; VARK's multi-select), we constructed Likert adaptations that preserve the underlying construct and dimensional structure but should not be treated as psychometrically equivalent to the originals. We are pursuing licensure of the actual RHETI v2.5 with The Enneagram Institute for a future revision; the extended 90-item Likert Enneagram included here is our best-effort free alternative.
 

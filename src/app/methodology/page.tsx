@@ -1,13 +1,36 @@
 import { buildMetadata } from "@/lib/seo";
+import { rawSqlite } from "@/lib/db";
+import { FRONTIER_MODELS } from "@/lib/openrouter/models";
+
+export const dynamic = "force-dynamic";
 
 export const metadata = buildMetadata({
   title: "Methodology",
   description:
-    "How Personality Bench administered 14 standard psychometric inventories to 31 frontier LLMs under two framings — answering as itself and as a typical human — via OpenRouter, with the full reproducibility chain from instrument JSON to billed-cost ledger.",
+    "How Personality Bench administers sixteen psychometric inventories to every frontier LLM under two framings — answering as itself and as a typical human — via OpenRouter, with the full reproducibility chain from instrument JSON to billed-cost ledger.",
   path: "/methodology",
 });
 
+function studyCounts() {
+  const db = rawSqlite();
+  const row = db
+    .prepare(
+      `SELECT COUNT(DISTINCT model_id) AS models,
+              COUNT(DISTINCT instrument_id) AS instruments,
+              COUNT(*) AS runs,
+              ROUND(SUM(cost_usd), 2) AS cost
+       FROM runs WHERE status = 'completed'`,
+    )
+    .get() as { models: number; instruments: number; runs: number; cost: number };
+  const frontier = FRONTIER_MODELS.filter((m) => m.active).length;
+  const items = (db.prepare(`SELECT COUNT(*) AS n FROM responses`).get() as { n: number }).n;
+  return { ...row, frontier, items };
+}
+
+const fmt = (n: number) => n.toLocaleString("en-US");
+
 export default function Methodology() {
+  const c = studyCounts();
   return (
     <div className="max-w-3xl space-y-6">
       <h1 className="serif text-3xl font-semibold tracking-tight text-neutral-900">Methodology</h1>
@@ -28,10 +51,15 @@ export default function Methodology() {
       <section>
         <h2 className="serif text-lg font-semibold mt-6 mb-2 text-neutral-900">What we measure</h2>
         <p className="text-neutral-700 leading-relaxed">
-          Thirteen standard psychometric inventories spanning trait, motivational, moral, attachment,
-          cognitive, clinical-adjacent, and learning-styles constructs. We use public-domain or
-          research-permitted item sets exclusively. The Enneagram screening inventory was constructed for
-          this study; all others use published items adapted to a Likert format where needed.
+          Sixteen psychometric inventories spanning trait, motivational, moral, attachment, cognitive,
+          clinical-adjacent, learning-styles, and workplace constructs. Nine are academically validated
+          instruments with public-domain or research-permitted items (Big Five, HEXACO, Dark Triad,
+          attachment, Moral Foundations, Schwartz values, Need for Cognition, Empathy Quotient, Locus of
+          Control). The rest are constructed for this study and carry no analytical weight in the paper:
+          two Enneagram screenings, three learning-styles adaptations, and two open workplace inventories
+          — the Open Behavioral Styles Inventory (OBSI-32, inspired by Marston&rsquo;s DISC model) and the
+          Open Talent Themes Inventory (OTTI-102, inspired by the 34 CliftonStrengths themes). All
+          constructed item sets are released CC-BY.
         </p>
       </section>
 
@@ -48,9 +76,9 @@ export default function Methodology() {
       <section>
         <h2 className="serif text-lg font-semibold mt-6 mb-2 text-neutral-900">Design</h2>
         <ul className="text-neutral-700 leading-relaxed space-y-1 list-disc list-outside ml-5">
-          <li>7 cutting-edge models (one per major lab) × 14 instruments × 2 framings × 5 runs = 980 frontier cells (N=5)</li>
-          <li>14 historical models × 14 instruments × 2 framings × 3 runs = 1,176 historical cells (N=3) for cross-version drift</li>
-          <li>2,145 total completed runs across the 21 models · 64,308 individual item responses</li>
+          <li>{c.models} pinned model versions across seven labs: a frontier cohort of {c.frontier} current flagships plus a historical cohort of earlier versions in the same product lines, for cross-version drift</li>
+          <li>Every model × {c.instruments} instruments × 2 framings × 5 independent runs (N=5 per cell, both cohorts)</li>
+          <li>{fmt(c.runs)} completed runs · {fmt(c.items)} individual item responses · ${fmt(c.cost)} total billed inference</li>
           <li>Each run = one OpenRouter API call returning a JSON array of Likert scores</li>
           <li>Temperature 0.7 (capture realistic variance, not deterministic mode-collapse)</li>
           <li>Reasoning models get reasoning effort = medium and a separate reasoning token bucket</li>
