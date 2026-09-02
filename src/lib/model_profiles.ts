@@ -22,6 +22,19 @@ export interface ModelProfile {
 }
 
 export const MODEL_PROFILES: Record<string, ModelProfile> = {
+  "anthropic/claude-fable-5.1": {
+    id: "anthropic/claude-fable-5.1",
+    vendor: "Anthropic",
+    releaseDate: "2026-09-01",
+    releaseTime: "17:00",
+    releaseTimeNote: "Approximate — date taken from the OpenRouter listing (2026-09-01 UTC); Anthropic typically posts model releases around 10am Pacific (17:00 UTC).",
+    hqCity: "San Francisco",
+    hqCountry: "USA",
+    hqLat: 37.7749,
+    hqLon: -122.4194,
+    blurb: "Point release in the Fable line, same $10/$50 per M token pricing as Fable 5. Swept into Personality Bench on 2026-09-02, one day after it appeared on OpenRouter.",
+    predecessor: "anthropic/claude-fable-5",
+  },
   "anthropic/claude-fable-5": {
     id: "anthropic/claude-fable-5",
     vendor: "Anthropic",

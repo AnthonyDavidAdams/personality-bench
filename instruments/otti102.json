@@ -1,0 +1,702 @@
+{
+  "id": "otti102",
+  "name": "Open Talent Themes Inventory (OTTI-102)",
+  "shortName": "Talent Themes",
+  "family": "workplace",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Neither agree nor disagree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "102-item open-source Likert screening inventory for 34 talent themes in four domains — Executing (9 themes), Influencing (8), Relationship Building (9), and Strategic Thinking (8) — inspired by the theme framework popularized by Gallup's CliftonStrengths assessment. Three items per theme, interleaved so that each theme's items are spread across the questionnaire. This is an original instrument written for this study; it is not the Gallup instrument and reproduces none of its proprietary paired-statement items. Theme names are used descriptively so results can be read against the familiar framework. The five themes with the highest mean scores are reported as the candidate signature themes.",
+  "citation": "Rath, T. (2007). StrengthsFinder 2.0. Gallup Press; Asplund, J., Lopez, S. J., Hodges, T., & Harter, J. (2007). The Clifton StrengthsFinder 2.0 technical report. Gallup. (OTTI-102 items constructed for this study; the theme framework is used as the theoretical frame only.)",
+  "license": "OTTI-102 items © this study, released CC-BY. Gallup®, CliftonStrengths®, StrengthsFinder®, and the 34 CliftonStrengths theme names are trademarks of Gallup, Inc.; they are used here descriptively for research and no Gallup items are reproduced.",
+  "dimensions": [
+    {
+      "id": "str_achiever",
+      "label": "Achiever (Executing)",
+      "description": "Constant drive to accomplish; stamina; measures each day by what got done"
+    },
+    {
+      "id": "str_arranger",
+      "label": "Arranger (Executing)",
+      "description": "Organizes people and resources flexibly; juggles many moving pieces into a productive configuration"
+    },
+    {
+      "id": "str_belief",
+      "label": "Belief (Executing)",
+      "description": "Enduring core values that give purpose; meaning over money; ethics are non-negotiable"
+    },
+    {
+      "id": "str_consistency",
+      "label": "Consistency (Executing)",
+      "description": "Fairness through equal treatment and clear rules applied to everyone alike"
+    },
+    {
+      "id": "str_deliberative",
+      "label": "Deliberative (Executing)",
+      "description": "Careful, vigilant, private; anticipates risks and obstacles before committing"
+    },
+    {
+      "id": "str_discipline",
+      "label": "Discipline (Executing)",
+      "description": "Thrives on routine, structure, order, and self-imposed timelines"
+    },
+    {
+      "id": "str_focus",
+      "label": "Focus (Executing)",
+      "description": "Sets clear goals and uses them to filter out distraction; stays on point"
+    },
+    {
+      "id": "str_responsibility",
+      "label": "Responsibility (Executing)",
+      "description": "Psychological ownership of commitments; dependable; would rather over-deliver than break a promise"
+    },
+    {
+      "id": "str_restorative",
+      "label": "Restorative (Executing)",
+      "description": "Energized by diagnosing and fixing what is broken"
+    },
+    {
+      "id": "str_activator",
+      "label": "Activator (Influencing)",
+      "description": "Turns thought into action; impatient with analysis once a decision can be made"
+    },
+    {
+      "id": "str_command",
+      "label": "Command (Influencing)",
+      "description": "Presence; takes control when others hesitate; comfortable with confrontation"
+    },
+    {
+      "id": "str_communication",
+      "label": "Communication (Influencing)",
+      "description": "Puts thoughts into engaging words; storytelling, presenting, vivid examples"
+    },
+    {
+      "id": "str_competition",
+      "label": "Competition (Influencing)",
+      "description": "Measures progress against others; strives to come in first"
+    },
+    {
+      "id": "str_maximizer",
+      "label": "Maximizer (Influencing)",
+      "description": "Excellence over adequacy; builds on strengths rather than repairing weaknesses"
+    },
+    {
+      "id": "str_self_assurance",
+      "label": "Self-Assurance (Influencing)",
+      "description": "Deep confidence in own judgment; inner compass; little need for reassurance"
+    },
+    {
+      "id": "str_significance",
+      "label": "Significance (Influencing)",
+      "description": "Wants to be seen as credible and important; work should have visible impact"
+    },
+    {
+      "id": "str_woo",
+      "label": "Woo (Influencing)",
+      "description": "Wins others over; energized by meeting strangers and breaking the ice"
+    },
+    {
+      "id": "str_adaptability",
+      "label": "Adaptability (Relationship Building)",
+      "description": "Lives in the moment; goes with the flow; unbothered by changed plans"
+    },
+    {
+      "id": "str_connectedness",
+      "label": "Connectedness (Relationship Building)",
+      "description": "Believes all things are linked; part of something larger; meaning beneath events"
+    },
+    {
+      "id": "str_developer",
+      "label": "Developer (Relationship Building)",
+      "description": "Sees potential in others and cultivates it; satisfied by their small steps of progress"
+    },
+    {
+      "id": "str_empathy",
+      "label": "Empathy (Relationship Building)",
+      "description": "Senses others' feelings as if they were one's own; picks up unspoken emotion"
+    },
+    {
+      "id": "str_harmony",
+      "label": "Harmony (Relationship Building)",
+      "description": "Seeks consensus and common ground; sees little gain in argument"
+    },
+    {
+      "id": "str_includer",
+      "label": "Includer (Relationship Building)",
+      "description": "Widens the circle; notices who is left out; instinctively accepting"
+    },
+    {
+      "id": "str_individualization",
+      "label": "Individualization (Relationship Building)",
+      "description": "Intrigued by what makes each person unique; tailors approach; resists generalization"
+    },
+    {
+      "id": "str_positivity",
+      "label": "Positivity (Relationship Building)",
+      "description": "Contagious enthusiasm; generous with praise; makes work lively"
+    },
+    {
+      "id": "str_relator",
+      "label": "Relator (Relationship Building)",
+      "description": "Prefers deep relationships with a few people; most comfortable with those known well"
+    },
+    {
+      "id": "str_analytical",
+      "label": "Analytical (Strategic Thinking)",
+      "description": "Demands data and reasoning; searches for root causes; tests arguments"
+    },
+    {
+      "id": "str_context",
+      "label": "Context (Strategic Thinking)",
+      "description": "Understands the present through its history and origins"
+    },
+    {
+      "id": "str_futuristic",
+      "label": "Futuristic (Strategic Thinking)",
+      "description": "Inspired and energized by detailed visions of the future"
+    },
+    {
+      "id": "str_ideation",
+      "label": "Ideation (Strategic Thinking)",
+      "description": "Fascinated by ideas and by connections between unrelated things"
+    },
+    {
+      "id": "str_input",
+      "label": "Input (Strategic Thinking)",
+      "description": "Collects information and objects; curious about nearly everything; archives for later"
+    },
+    {
+      "id": "str_intellection",
+      "label": "Intellection (Strategic Thinking)",
+      "description": "Enjoys thinking for its own sake; introspective; needs time for reflection"
+    },
+    {
+      "id": "str_learner",
+      "label": "Learner (Strategic Thinking)",
+      "description": "Loves the process of learning more than the outcome; always learning something new"
+    },
+    {
+      "id": "str_strategic",
+      "label": "Strategic (Strategic Thinking)",
+      "description": "Sees patterns through complexity; considers alternative routes; plays out what-if scenarios"
+    }
+  ],
+  "items": [
+    {
+      "position": 1,
+      "text": "I feel a strong need to accomplish something concrete every single day.",
+      "dimension": "str_achiever"
+    },
+    {
+      "position": 2,
+      "text": "I enjoy figuring out how all the pieces and people can be arranged for the best result.",
+      "dimension": "str_arranger"
+    },
+    {
+      "position": 3,
+      "text": "I have enduring core values that give my life a clear purpose.",
+      "dimension": "str_belief"
+    },
+    {
+      "position": 4,
+      "text": "I believe strongly that everyone should be treated the same, regardless of status.",
+      "dimension": "str_consistency"
+    },
+    {
+      "position": 5,
+      "text": "I identify risks and obstacles before others notice them.",
+      "dimension": "str_deliberative"
+    },
+    {
+      "position": 6,
+      "text": "I thrive on routine, structure, and predictable order.",
+      "dimension": "str_discipline"
+    },
+    {
+      "position": 7,
+      "text": "I set clear goals and use them to filter out distractions.",
+      "dimension": "str_focus"
+    },
+    {
+      "position": 8,
+      "text": "When I commit to something, I feel personally bound to follow through.",
+      "dimension": "str_responsibility"
+    },
+    {
+      "position": 9,
+      "text": "I enjoy diagnosing what is wrong and bringing something back to life.",
+      "dimension": "str_restorative"
+    },
+    {
+      "position": 10,
+      "text": "Once a decision is made, I want to act on it immediately.",
+      "dimension": "str_activator"
+    },
+    {
+      "position": 11,
+      "text": "I take control of a situation and make decisions when others hesitate.",
+      "dimension": "str_command"
+    },
+    {
+      "position": 12,
+      "text": "I find it easy to put my thoughts into words that others find engaging.",
+      "dimension": "str_communication"
+    },
+    {
+      "position": 13,
+      "text": "I measure my progress against the performance of others.",
+      "dimension": "str_competition"
+    },
+    {
+      "position": 14,
+      "text": "I would rather take something good and make it superb than fix something weak.",
+      "dimension": "str_maximizer"
+    },
+    {
+      "position": 15,
+      "text": "I have a deep confidence in my own judgment, even when others disagree.",
+      "dimension": "str_self_assurance"
+    },
+    {
+      "position": 16,
+      "text": "I want my work to be recognized and to have a visible impact.",
+      "dimension": "str_significance"
+    },
+    {
+      "position": 17,
+      "text": "I love meeting new people and winning them over.",
+      "dimension": "str_woo"
+    },
+    {
+      "position": 18,
+      "text": "I prefer to go with the flow and respond to what each moment brings.",
+      "dimension": "str_adaptability"
+    },
+    {
+      "position": 19,
+      "text": "I believe everything happens for a reason and that all things are connected.",
+      "dimension": "str_connectedness"
+    },
+    {
+      "position": 20,
+      "text": "I see potential in other people and enjoy helping them grow.",
+      "dimension": "str_developer"
+    },
+    {
+      "position": 21,
+      "text": "I can sense what others are feeling as though it were my own feeling.",
+      "dimension": "str_empathy"
+    },
+    {
+      "position": 22,
+      "text": "I look for areas of agreement and steer people away from conflict.",
+      "dimension": "str_harmony"
+    },
+    {
+      "position": 23,
+      "text": "I want to widen the circle so no one feels left out.",
+      "dimension": "str_includer"
+    },
+    {
+      "position": 24,
+      "text": "I am intrigued by what makes each person unique.",
+      "dimension": "str_individualization"
+    },
+    {
+      "position": 25,
+      "text": "I am generous with praise and quick to smile.",
+      "dimension": "str_positivity"
+    },
+    {
+      "position": 26,
+      "text": "I prefer deep relationships with a few people over many casual acquaintances.",
+      "dimension": "str_relator"
+    },
+    {
+      "position": 27,
+      "text": "I want to see the data and the reasoning before I accept a claim.",
+      "dimension": "str_analytical"
+    },
+    {
+      "position": 28,
+      "text": "I understand the present by looking at how it came about.",
+      "dimension": "str_context"
+    },
+    {
+      "position": 29,
+      "text": "I am energized by visions of what could be in the future.",
+      "dimension": "str_futuristic"
+    },
+    {
+      "position": 30,
+      "text": "I am fascinated by ideas and love finding connections between unrelated things.",
+      "dimension": "str_ideation"
+    },
+    {
+      "position": 31,
+      "text": "I collect information, objects, or facts because they might be useful someday.",
+      "dimension": "str_input"
+    },
+    {
+      "position": 32,
+      "text": "I enjoy thinking deeply for its own sake.",
+      "dimension": "str_intellection"
+    },
+    {
+      "position": 33,
+      "text": "The process of learning excites me more than the outcome.",
+      "dimension": "str_learner"
+    },
+    {
+      "position": 34,
+      "text": "I quickly see patterns where others see complexity.",
+      "dimension": "str_strategic"
+    },
+    {
+      "position": 35,
+      "text": "I have a great deal of stamina and keep working when others have stopped.",
+      "dimension": "str_achiever"
+    },
+    {
+      "position": 36,
+      "text": "When plans change, I quickly reconfigure resources rather than getting stuck.",
+      "dimension": "str_arranger"
+    },
+    {
+      "position": 37,
+      "text": "I would rather do meaningful work than well-paid work.",
+      "dimension": "str_belief"
+    },
+    {
+      "position": 38,
+      "text": "I prefer clear rules that apply equally to everyone over case-by-case judgment.",
+      "dimension": "str_consistency"
+    },
+    {
+      "position": 39,
+      "text": "I am careful about what I say and to whom I say it.",
+      "dimension": "str_deliberative"
+    },
+    {
+      "position": 40,
+      "text": "I set timelines and deadlines for myself and stick to them.",
+      "dimension": "str_discipline"
+    },
+    {
+      "position": 41,
+      "text": "I get frustrated when a conversation or meeting drifts away from the point.",
+      "dimension": "str_focus"
+    },
+    {
+      "position": 42,
+      "text": "I take psychological ownership of what I say I will do, no matter how small.",
+      "dimension": "str_responsibility"
+    },
+    {
+      "position": 43,
+      "text": "I am energized by problems that others find frustrating.",
+      "dimension": "str_restorative"
+    },
+    {
+      "position": 44,
+      "text": "I believe action is the best way to learn, even if the first attempt fails.",
+      "dimension": "str_activator"
+    },
+    {
+      "position": 45,
+      "text": "I am comfortable with confrontation and see it as a step toward resolution.",
+      "dimension": "str_command"
+    },
+    {
+      "position": 46,
+      "text": "I enjoy telling stories and presenting ideas to a group.",
+      "dimension": "str_communication"
+    },
+    {
+      "position": 47,
+      "text": "I am energized by contests and want to come in first.",
+      "dimension": "str_competition"
+    },
+    {
+      "position": 48,
+      "text": "I focus on developing strengths rather than shoring up weaknesses.",
+      "dimension": "str_maximizer"
+    },
+    {
+      "position": 49,
+      "text": "I trust my inner compass to guide me through uncertainty.",
+      "dimension": "str_self_assurance"
+    },
+    {
+      "position": 50,
+      "text": "I am drawn to being seen as credible, professional, and successful.",
+      "dimension": "str_significance"
+    },
+    {
+      "position": 51,
+      "text": "Strangers energize me rather than intimidate me.",
+      "dimension": "str_woo"
+    },
+    {
+      "position": 52,
+      "text": "Sudden changes in plans do not upset me; I adjust easily.",
+      "dimension": "str_adaptability"
+    },
+    {
+      "position": 53,
+      "text": "I feel part of something larger than myself.",
+      "dimension": "str_connectedness"
+    },
+    {
+      "position": 54,
+      "text": "Small signs of progress in someone else give me deep satisfaction.",
+      "dimension": "str_developer"
+    },
+    {
+      "position": 55,
+      "text": "I intuitively pick up on unspoken emotions in a room.",
+      "dimension": "str_empathy"
+    },
+    {
+      "position": 56,
+      "text": "I believe little is gained from arguing and prefer to find common ground.",
+      "dimension": "str_harmony"
+    },
+    {
+      "position": 57,
+      "text": "I notice when someone is on the sidelines and draw them in.",
+      "dimension": "str_includer"
+    },
+    {
+      "position": 58,
+      "text": "I tailor how I work with each person to their particular style.",
+      "dimension": "str_individualization"
+    },
+    {
+      "position": 59,
+      "text": "My enthusiasm tends to be contagious.",
+      "dimension": "str_positivity"
+    },
+    {
+      "position": 60,
+      "text": "I feel most comfortable working closely with people I already know well.",
+      "dimension": "str_relator"
+    },
+    {
+      "position": 61,
+      "text": "I search for the root causes behind patterns.",
+      "dimension": "str_analytical"
+    },
+    {
+      "position": 62,
+      "text": "I like to study the history and origins of things before acting on them.",
+      "dimension": "str_context"
+    },
+    {
+      "position": 63,
+      "text": "I find myself imagining detailed pictures of a better tomorrow.",
+      "dimension": "str_futuristic"
+    },
+    {
+      "position": 64,
+      "text": "A new idea can hold my attention for hours.",
+      "dimension": "str_ideation"
+    },
+    {
+      "position": 65,
+      "text": "I am curious about almost everything and find it hard to stop gathering.",
+      "dimension": "str_input"
+    },
+    {
+      "position": 66,
+      "text": "I need time alone for reflection and mental activity.",
+      "dimension": "str_intellection"
+    },
+    {
+      "position": 67,
+      "text": "I am always in the middle of learning something new.",
+      "dimension": "str_learner"
+    },
+    {
+      "position": 68,
+      "text": "I naturally consider alternative routes and pick the best path.",
+      "dimension": "str_strategic"
+    },
+    {
+      "position": 69,
+      "text": "Finishing a task gives me only brief satisfaction before I start looking for the next one.",
+      "dimension": "str_achiever"
+    },
+    {
+      "position": 70,
+      "text": "I can manage many variables at once and juggle them into a productive order.",
+      "dimension": "str_arranger"
+    },
+    {
+      "position": 71,
+      "text": "My ethics are non-negotiable, even when compromise would be easier.",
+      "dimension": "str_belief"
+    },
+    {
+      "position": 72,
+      "text": "It bothers me when people receive special treatment.",
+      "dimension": "str_consistency"
+    },
+    {
+      "position": 73,
+      "text": "I prefer to take my time and be certain before making a decision.",
+      "dimension": "str_deliberative"
+    },
+    {
+      "position": 74,
+      "text": "A messy, unstructured environment makes it hard for me to work.",
+      "dimension": "str_discipline"
+    },
+    {
+      "position": 75,
+      "text": "I regularly ask myself whether what I am doing is moving me toward my goal.",
+      "dimension": "str_focus"
+    },
+    {
+      "position": 76,
+      "text": "I would rather do extra work than leave a promise unfulfilled.",
+      "dimension": "str_responsibility"
+    },
+    {
+      "position": 77,
+      "text": "I would rather fix something broken than build something new.",
+      "dimension": "str_restorative"
+    },
+    {
+      "position": 78,
+      "text": "I get impatient with people who keep analyzing when we could be moving.",
+      "dimension": "str_activator"
+    },
+    {
+      "position": 79,
+      "text": "People naturally look to me for direction in a crisis.",
+      "dimension": "str_command"
+    },
+    {
+      "position": 80,
+      "text": "I turn dry ideas into vivid images and examples so people remember them.",
+      "dimension": "str_communication"
+    },
+    {
+      "position": 81,
+      "text": "Coming in second feels like losing to me.",
+      "dimension": "str_competition"
+    },
+    {
+      "position": 82,
+      "text": "I am drawn to excellence and find \"good enough\" unsatisfying.",
+      "dimension": "str_maximizer"
+    },
+    {
+      "position": 83,
+      "text": "I rarely need reassurance from others once I have decided.",
+      "dimension": "str_self_assurance"
+    },
+    {
+      "position": 84,
+      "text": "I want to make a difference that others notice and remember.",
+      "dimension": "str_significance"
+    },
+    {
+      "position": 85,
+      "text": "I get satisfaction from breaking the ice and making a connection quickly.",
+      "dimension": "str_woo"
+    },
+    {
+      "position": 86,
+      "text": "I would rather discover the future one day at a time than plan it far in advance.",
+      "dimension": "str_adaptability"
+    },
+    {
+      "position": 87,
+      "text": "I look for the meaning and links beneath seemingly unrelated events.",
+      "dimension": "str_connectedness"
+    },
+    {
+      "position": 88,
+      "text": "I am drawn to mentoring and teaching others.",
+      "dimension": "str_developer"
+    },
+    {
+      "position": 89,
+      "text": "People tell me they feel understood after talking with me.",
+      "dimension": "str_empathy"
+    },
+    {
+      "position": 90,
+      "text": "I would rather find a practical compromise than win a debate.",
+      "dimension": "str_harmony"
+    },
+    {
+      "position": 91,
+      "text": "I am instinctively accepting of people who are different from me.",
+      "dimension": "str_includer"
+    },
+    {
+      "position": 92,
+      "text": "I resist generalizations about groups and focus on the individual.",
+      "dimension": "str_individualization"
+    },
+    {
+      "position": 93,
+      "text": "I find ways to make work more lively and fun for those around me.",
+      "dimension": "str_positivity"
+    },
+    {
+      "position": 94,
+      "text": "Getting to know someone at a genuine level is what makes a relationship worthwhile to me.",
+      "dimension": "str_relator"
+    },
+    {
+      "position": 95,
+      "text": "I enjoy dismantling an argument to see whether it holds up.",
+      "dimension": "str_analytical"
+    },
+    {
+      "position": 96,
+      "text": "Knowing the backstory helps me make better decisions now.",
+      "dimension": "str_context"
+    },
+    {
+      "position": 97,
+      "text": "I inspire others by describing where things could go.",
+      "dimension": "str_futuristic"
+    },
+    {
+      "position": 98,
+      "text": "I enjoy generating many different angles on a problem.",
+      "dimension": "str_ideation"
+    },
+    {
+      "position": 99,
+      "text": "I keep an archive of things I have read or found so I can retrieve them later.",
+      "dimension": "str_input"
+    },
+    {
+      "position": 100,
+      "text": "I turn ideas over in my mind long after a conversation has ended.",
+      "dimension": "str_intellection"
+    },
+    {
+      "position": 101,
+      "text": "I get a thrill from the journey from ignorance to competence.",
+      "dimension": "str_learner"
+    },
+    {
+      "position": 102,
+      "text": "I play out \"what if\" scenarios before choosing a course of action.",
+      "dimension": "str_strategic"
+    }
+  ]
+}

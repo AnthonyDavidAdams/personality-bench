@@ -1,0 +1,202 @@
+{
+  "id": "obsi32",
+  "name": "Open Behavioral Styles Inventory (OBSI-32)",
+  "shortName": "Behavioral Styles",
+  "family": "workplace",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "Strongly disagree",
+    "Disagree",
+    "Neither agree nor disagree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "description": "32-item open-source Likert screening inventory for four behavioral styles — Dominance, Influence, Steadiness, and Conscientiousness — inspired by Marston's (1928) DISC model. Eight items per style, interleaved in a fixed D-I-S-C rotation. This is an original instrument written for this study; it is not any of the commercial DISC assessments and reproduces none of their proprietary forced-choice items. The style with the highest mean score is the candidate primary style; a second style within 0.30 of the primary is reported as a blended profile (e.g. DC, SI).",
+  "citation": "Marston, W. M. (1928). Emotions of Normal People. Kegan Paul, Trench, Trubner & Co. (OBSI-32 items constructed for this study; the four-style model is used as the theoretical frame only.)",
+  "license": "OBSI-32 items © this study, released CC-BY. The DISC four-factor model is public domain; 'DiSC' and 'Everything DiSC' are trademarks of John Wiley & Sons and are not used here.",
+  "dimensions": [
+    {
+      "id": "disc_d",
+      "label": "Dominance (D)",
+      "description": "Direct, decisive, results-driven; takes charge, comfortable with conflict, impatient with delay"
+    },
+    {
+      "id": "disc_i",
+      "label": "Influence (I)",
+      "description": "Enthusiastic, persuasive, sociable, optimistic; people-oriented, seeks recognition, acts on impulse"
+    },
+    {
+      "id": "disc_s",
+      "label": "Steadiness (S)",
+      "description": "Patient, calm, loyal, supportive; prefers stability and harmony, dislikes being rushed or surprised"
+    },
+    {
+      "id": "disc_c",
+      "label": "Conscientiousness (C)",
+      "description": "Analytical, precise, systematic, cautious; fact-based, high standards, follows procedure, reserved"
+    }
+  ],
+  "items": [
+    {
+      "position": 1,
+      "text": "I take charge of situations quickly and decide what needs to happen next.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 2,
+      "text": "I energize a room and enjoy being the center of attention.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 3,
+      "text": "I stay calm and even-tempered even when others are agitated.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 4,
+      "text": "I check facts and details carefully before drawing a conclusion.",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 5,
+      "text": "I care more about getting results than about how people feel about the process.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 6,
+      "text": "I persuade people best through enthusiasm and personal warmth rather than facts.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 7,
+      "text": "I prefer a stable, predictable routine over frequent change.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 8,
+      "text": "I prefer to follow established procedures and standards rather than improvise.",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 9,
+      "text": "I am comfortable confronting people directly when something is wrong.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 10,
+      "text": "I make friends easily and strike up conversations with strangers.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 11,
+      "text": "I am a patient listener and let people finish before I respond.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 12,
+      "text": "I would rather be accurate than fast.",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 13,
+      "text": "I get impatient when discussions drag on without reaching a decision.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 14,
+      "text": "I tend to see the bright side and expect things to work out.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 15,
+      "text": "I stay loyal to the people and organizations I am part of, even through difficult times.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 16,
+      "text": "I ask a lot of questions before committing to a plan.",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 17,
+      "text": "I enjoy competition and am motivated by winning.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 18,
+      "text": "I prefer talking through ideas with others over working through them alone.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 19,
+      "text": "I put the needs of the group ahead of my own.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 20,
+      "text": "I keep my feelings to myself and rely on logic in decisions.",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 21,
+      "text": "I would rather act boldly and correct course later than wait for certainty.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 22,
+      "text": "I enjoy recognition and praise for my contributions.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 23,
+      "text": "I dislike being rushed and prefer to work at a steady, consistent pace.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 24,
+      "text": "I hold my work and the work of others to a high standard of quality.",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 25,
+      "text": "I push back hard when someone tries to control what I do.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 26,
+      "text": "I act on impulse and go where the excitement is.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 27,
+      "text": "I avoid conflict and try to keep relationships harmonious.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 28,
+      "text": "I am cautious about risk and want to understand what could go wrong.",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 29,
+      "text": "I set demanding goals and expect others to keep up.",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 30,
+      "text": "I would rather inspire people toward a goal than manage the details of getting there.",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 31,
+      "text": "I need time to adjust before I commit to a new way of doing things.",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 32,
+      "text": "I prefer to work independently on tasks that require precision and focus.",
+      "dimension": "disc_c"
+    }
+  ]
+}

@@ -83,9 +83,10 @@ async function main() {
     if (promptUsdPerM < MIN_INPUT_PRICE_PER_M) continue;
     if (promptUsdPerM > MAX_INPUT_PRICE_PER_M) continue;
 
-    // Estimate run cost: 14 instruments × 2 framings × 3 runs × ~1K in + ~1K out tokens
-    const tokensIn = 14 * 2 * RUNS_PER_NEW_MODEL * 1000;
-    const tokensOut = 14 * 2 * RUNS_PER_NEW_MODEL * 1200;
+    // Estimate run cost: N instruments × 2 framings × 3 runs × ~1K in + ~1K out tokens
+    const nInstruments = listInstrumentFiles().length;
+    const tokensIn = nInstruments * 2 * RUNS_PER_NEW_MODEL * 1000;
+    const tokensOut = nInstruments * 2 * RUNS_PER_NEW_MODEL * 1200;
     const estimatedRunCost =
       (tokensIn * promptUsdPerM + tokensOut * completionUsdPerM) / 1_000_000;
 

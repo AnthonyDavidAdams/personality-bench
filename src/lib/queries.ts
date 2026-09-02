@@ -266,6 +266,7 @@ export function listActiveFrontierModels(): FrontierGalleryRow[] {
   // The 9 cutting-edge slugs by lab. We could also drive this from a DB column, but the
   // explicit list here is the documented "frontier cohort" definition.
   const FRONTIER_SLUGS = [
+    "anthropic/claude-fable-5.1",
     "anthropic/claude-fable-5",
     "anthropic/claude-opus-4.8",
     "openai/gpt-5.5",

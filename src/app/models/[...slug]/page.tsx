@@ -19,6 +19,7 @@ export const dynamic = "force-dynamic";
 
 const MODEL_ARCHETYPE_ART: Record<string, string> = {
   "anthropic/claude-opus-4.8":     "/art/archetype_claude.png",
+  "anthropic/claude-fable-5.1":    "/art/archetype_claude_fable_5_1.png",
   "anthropic/claude-fable-5":      "/art/archetype_claude_fable.png",
   "openai/gpt-5.5":                "/art/archetype_gpt.png",
   "google/gemini-2.5-pro":         "/art/archetype_gemini.png",

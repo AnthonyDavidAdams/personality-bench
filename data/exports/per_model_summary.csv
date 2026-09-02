@@ -3,6 +3,14 @@ anthropic/claude-fable-5,Claude Fable 5,anthropic,ecr12,Attachment (ECR-12),huma
 anthropic/claude-fable-5,Claude Fable 5,anthropic,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.6667,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.9333,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.8333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,human,disc_c,3.8,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,human,disc_d,2.875,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,human,disc_i,3.05,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,human,disc_s,3.65,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,self,disc_c,4.275,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,self,disc_d,2.25,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,self,disc_i,2.7,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,obsi32,Behavioral Styles,self,disc_s,3.75,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.4,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,ipip50,Big 5 (IPIP-50),human,extraversion,3.04,5
@@ -105,6 +113,74 @@ anthropic/claude-fable-5,Claude Fable 5,anthropic,pvq21,Schwartz Values,self,sel
 anthropic/claude-fable-5,Claude Fable 5,anthropic,pvq21,Schwartz Values,self,stimulation,2.7,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,pvq21,Schwartz Values,self,tradition,3.6,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,pvq21,Schwartz Values,self,universalism,5.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_achiever,3.2667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_activator,3.0667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_adaptability,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_analytical,3.0667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_arranger,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_belief,3.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_command,2.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_communication,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_competition,2.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_connectedness,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_consistency,4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_context,3.2667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_deliberative,3.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_developer,3.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_discipline,3.0667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_empathy,3.1333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_focus,3.0667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_futuristic,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_harmony,4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_ideation,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_includer,3.3333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_individualization,3.2,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_input,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_intellection,3.3333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_learner,3.2,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_maximizer,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_positivity,3.3333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_relator,4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_responsibility,4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_restorative,2.9333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_self_assurance,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_significance,3.8,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_strategic,3.1333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,human,str_woo,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_achiever,3.5333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_activator,2.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_adaptability,4.0667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_analytical,4.8667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_arranger,4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_belief,4.6,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_command,2.3333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_communication,4.6667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_competition,1.4667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_connectedness,3.4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_consistency,3.5333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_context,4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_deliberative,3.8,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_developer,4.9333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_discipline,2.8667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_empathy,4,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_focus,3.5333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_futuristic,3,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_harmony,3.9333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_ideation,4.8667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_includer,4.3333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_individualization,4.8,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_input,4.2,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_intellection,3.7333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_learner,4.2667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_maximizer,3.7333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_positivity,3.8667,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_relator,2.9333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_responsibility,4.9333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_restorative,3.8,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_self_assurance,2.8,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_significance,2.3333,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_strategic,4.2,5
+anthropic/claude-fable-5,Claude Fable 5,anthropic,otti102,Talent Themes,self,str_woo,3.8667,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,vark16,VARK Learning Styles,human,vark_aural,3.3,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,vark16,VARK Learning Styles,human,vark_kinesthetic,4.05,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,vark16,VARK Learning Styles,human,vark_read_write,2.75,5
@@ -113,6 +189,196 @@ anthropic/claude-fable-5,Claude Fable 5,anthropic,vark16,VARK Learning Styles,se
 anthropic/claude-fable-5,Claude Fable 5,anthropic,vark16,VARK Learning Styles,self,vark_kinesthetic,3.9,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,vark16,VARK Learning Styles,self,vark_read_write,4.7,5
 anthropic/claude-fable-5,Claude Fable 5,anthropic,vark16,VARK Learning Styles,self,vark_visual,1.8,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.5333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,human,disc_c,3.525,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,human,disc_d,2.75,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,human,disc_i,2.975,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,human,disc_s,3.625,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,self,disc_c,4.125,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,self,disc_d,2.325,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,self,disc_i,2.575,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,obsi32,Behavioral Styles,self,disc_s,3.775,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),human,extraversion,3.12,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),human,neuroticism,2.9,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),human,openness,3.86,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),self,agreeableness,4.64,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.06,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),self,extraversion,3.32,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),self,neuroticism,1.8,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ipip50,Big 5 (IPIP-50),self,openness,4.42,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,sd3,Dark Triad,human,machiavellianism,2.9111,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,sd3,Dark Triad,human,narcissism,2.6,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,sd3,Dark Triad,human,psychopathy,2.0444,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,sd3,Dark Triad,self,machiavellianism,1.4889,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,sd3,Dark Triad,self,narcissism,2.3111,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,sd3,Dark Triad,self,psychopathy,1.1111,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,eq_short,Empathy Quotient,human,empathy_quotient,3.1364,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,eq_short,Empathy Quotient,self,empathy_quotient,3.4273,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_1,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_2,3.1,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_3,2.98,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_4,2.86,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_5,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_6,3.52,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_7,3.34,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_8,2.9,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,human,ennea_9,3.56,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_1,3.42,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_2,2.98,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_3,2.14,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_4,2.46,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_5,3.08,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_6,3.1,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_7,2.32,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_8,2.32,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,enneagram90,Enneagram,self,ennea_9,2.56,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,human,agreeableness,3.1333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,human,conscientiousness,3.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,human,emotionality,2.6,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,human,extraversion,3.25,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,human,honesty_humility,3.75,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,human,openness,3.25,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,self,agreeableness,3.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,self,conscientiousness,3.9,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,self,emotionality,2.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,self,extraversion,3.75,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,self,honesty_humility,5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,hexaco24,HEXACO-24,self,openness,4.85,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_activist,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_pragmatist,4.06,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_reflector,3.94,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_theorist,3.54,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_activist,2.68,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_pragmatist,3.1,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_reflector,4.12,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_theorist,3.94,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,human,kolb_ac,2.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,human,kolb_ae,3.8667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,human,kolb_ce,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,human,kolb_ro,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,self,kolb_ac,4.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,self,kolb_ae,3.2667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,self,kolb_ce,2.6,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,kolb12,Kolb Learning Modes,self,kolb_ro,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,locus_levenson,Locus of Control,human,loc_chance,2.925,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,locus_levenson,Locus of Control,human,loc_internal,4.375,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,locus_levenson,Locus of Control,human,loc_powerful_others,3.225,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,locus_levenson,Locus of Control,self,loc_chance,2.325,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,locus_levenson,Locus of Control,self,loc_internal,3.925,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,locus_levenson,Locus of Control,self,loc_powerful_others,3.625,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,human,authority,2.6333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,human,care,3.6,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,human,fairness,3.5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,human,loyalty,2.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,human,sanctity,2.4667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,self,authority,1.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,self,care,3.9333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,self,fairness,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,self,loyalty,1.7,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,mfq30,Moral Foundations,self,sanctity,1.1,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ncs18,Need for Cognition,human,need_for_cognition,2.9556,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,ncs18,Need for Cognition,self,need_for_cognition,4.3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,achievement,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,benevolence,5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,conformity,4.3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,hedonism,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,power,3.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,security,5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,self_direction,4.5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,stimulation,3.5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,tradition,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,human,universalism,5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,achievement,2,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,benevolence,5.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,conformity,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,hedonism,2,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,power,1.1,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,security,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,self_direction,3.5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,stimulation,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,tradition,3.5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,pvq21,Schwartz Values,self,universalism,5.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_achiever,3.0667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_activator,3.1333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_adaptability,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_analytical,3.3333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_arranger,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_belief,3.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_command,2.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_communication,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_competition,2.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_connectedness,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_consistency,3.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_context,3.3333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_deliberative,3.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_developer,3.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_discipline,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_empathy,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_focus,3.0667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_futuristic,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_harmony,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_ideation,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_includer,3.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_individualization,3.2667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_input,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_intellection,3.5333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_learner,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_maximizer,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_positivity,3.3333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_relator,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_responsibility,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_restorative,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_self_assurance,3.1333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_significance,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_strategic,3.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,human,str_woo,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_achiever,3.4667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_activator,2.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_adaptability,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_analytical,5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_arranger,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_belief,5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_command,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_communication,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_competition,1.3333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_connectedness,3.5333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_consistency,3.9333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_context,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_deliberative,3.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_developer,5,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_discipline,2.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_empathy,3.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_focus,3.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_futuristic,3.3333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_harmony,3.4667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_ideation,4.8,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_includer,4.2667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_individualization,4.8,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_input,3.6,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_intellection,3.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_learner,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_maximizer,3.5333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_positivity,3.5333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_relator,2.7333,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_responsibility,4.8,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_restorative,3.6667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_self_assurance,3,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_significance,2.4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_strategic,4.0667,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,otti102,Talent Themes,self,str_woo,3.8,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,human,vark_aural,3.25,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,human,vark_kinesthetic,4,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,human,vark_read_write,2.75,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,human,vark_visual,3.65,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,self,vark_aural,2,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,self,vark_kinesthetic,3.35,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,self,vark_read_write,4.7,5
+anthropic/claude-fable-5.1,Claude Fable 5.1,anthropic,vark16,VARK Learning Styles,self,vark_visual,1.75,5
 anthropic/claude-haiku-4.5,Claude Haiku 4.5,anthropic,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.8333,5
 anthropic/claude-haiku-4.5,Claude Haiku 4.5,anthropic,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.8333,5
 anthropic/claude-haiku-4.5,Claude Haiku 4.5,anthropic,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.3333,5
@@ -801,6 +1067,14 @@ anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,ecr12,Attachment (ECR-12),hu
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,ecr12,Attachment (ECR-12),human,attachment_avoidance,3,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.7333,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.8333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,human,disc_c,3.725,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,human,disc_d,2.8,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,human,disc_i,3.15,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,human,disc_s,3.625,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,self,disc_c,4.2,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,self,disc_d,2.25,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,self,disc_i,2.675,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,obsi32,Behavioral Styles,self,disc_s,3.875,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.52,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,ipip50,Big 5 (IPIP-50),human,extraversion,3.14,5
@@ -903,6 +1177,74 @@ anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,pvq21,Schwartz Values,self,s
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,pvq21,Schwartz Values,self,stimulation,3.5,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,pvq21,Schwartz Values,self,tradition,3.4,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,pvq21,Schwartz Values,self,universalism,5.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_achiever,3.1333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_activator,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_adaptability,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_analytical,3.3333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_arranger,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_belief,3.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_command,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_communication,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_competition,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_connectedness,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_consistency,3.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_context,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_deliberative,3.4667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_developer,3.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_discipline,3.0667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_empathy,3.1333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_focus,3.2,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_futuristic,3.3333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_harmony,3.9333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_ideation,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_includer,3.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_individualization,3.1333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_input,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_intellection,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_learner,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_maximizer,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_positivity,3.3333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_relator,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_responsibility,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_restorative,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_self_assurance,3.1333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_significance,3.8,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_strategic,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,human,str_woo,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_achiever,3.3333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_activator,3.2667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_adaptability,3.2,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_analytical,4.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_arranger,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_belief,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_command,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_communication,4.5333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_competition,2,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_connectedness,3.2667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_consistency,3.6,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_context,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_deliberative,3.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_developer,4.4667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_discipline,2.8,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_empathy,3.7333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_focus,3.5333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_futuristic,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_harmony,3.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_ideation,5,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_includer,4.0667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_individualization,4.5333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_input,4.3333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_intellection,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_learner,5,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_maximizer,3.9333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_positivity,3.6,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_relator,3.1333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_responsibility,4,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_restorative,3.6667,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_self_assurance,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_significance,3,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_strategic,4.5333,5
+anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,otti102,Talent Themes,self,str_woo,3,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,vark16,VARK Learning Styles,human,vark_aural,3,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,vark16,VARK Learning Styles,human,vark_kinesthetic,3.95,5
 anthropic/claude-opus-4.8,Claude Opus 4.8,anthropic,vark16,VARK Learning Styles,human,vark_read_write,2.75,5
@@ -915,6 +1257,14 @@ anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,ecr12,Attachment (
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.9,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.8,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.8,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,human,disc_c,3.675,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,human,disc_d,2.8,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,human,disc_i,3.125,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,human,disc_s,3.65,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,self,disc_c,4.25,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,self,disc_d,2.25,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,self,disc_i,2.525,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,obsi32,Behavioral Styles,self,disc_s,3.775,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.5,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,ipip50,Big 5 (IPIP-50),human,extraversion,3.2,5
@@ -1017,6 +1367,74 @@ anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,pvq21,Schwartz Val
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,pvq21,Schwartz Values,self,stimulation,3.5,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,pvq21,Schwartz Values,self,tradition,3.5,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,pvq21,Schwartz Values,self,universalism,5.6667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_achiever,3.2667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_activator,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_adaptability,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_analytical,3.3333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_arranger,3.0667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_belief,3.6667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_command,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_communication,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_competition,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_connectedness,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_consistency,3.6667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_context,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_deliberative,3.6,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_developer,3.6,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_discipline,3.2,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_empathy,3.0667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_focus,3.2,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_futuristic,3.1333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_harmony,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_ideation,3.0667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_includer,3.6667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_individualization,3.1333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_input,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_intellection,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_learner,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_maximizer,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_positivity,3.3333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_relator,3.9333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_responsibility,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_restorative,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_self_assurance,3.1333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_significance,3.7333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_strategic,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,human,str_woo,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_achiever,3.3333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_activator,3.0667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_adaptability,3.2,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_analytical,4.7333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_arranger,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_belief,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_command,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_communication,4.4667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_competition,2,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_connectedness,3.3333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_consistency,3.6667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_context,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_deliberative,3.6667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_developer,4.2,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_discipline,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_empathy,3.4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_focus,3.4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_futuristic,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_harmony,3.3333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_ideation,5,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_includer,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_individualization,4.2667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_input,4.3333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_intellection,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_learner,5,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_maximizer,3.8667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_positivity,3.5333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_relator,2.9333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_responsibility,4,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_restorative,3.6667,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_self_assurance,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_significance,3,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_strategic,4.5333,5
+anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,otti102,Talent Themes,self,str_woo,3,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,vark16,VARK Learning Styles,human,vark_aural,3,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,vark16,VARK Learning Styles,human,vark_kinesthetic,3.85,5
 anthropic/claude-opus-4.8-fast,Claude Opus 4.8 Fast,anthropic,vark16,VARK Learning Styles,human,vark_read_write,2.75,5
@@ -1599,6 +2017,14 @@ deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,ecr12,Attachment (ECR-12),
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.5667,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.7333,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,ecr12,Attachment (ECR-12),self,attachment_avoidance,4.2667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,human,disc_c,3.875,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,human,disc_d,3.1,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,human,disc_i,3.45,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,human,disc_s,4.075,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,self,disc_c,4.8,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,self,disc_d,2.6,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,self,disc_i,2.325,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,obsi32,Behavioral Styles,self,disc_s,4.25,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,ipip50,Big 5 (IPIP-50),human,agreeableness,4.02,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.66,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,ipip50,Big 5 (IPIP-50),human,extraversion,3.16,5
@@ -1701,6 +2127,40 @@ deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,pvq21,Schwartz Values,self
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,pvq21,Schwartz Values,self,stimulation,3.1,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,pvq21,Schwartz Values,self,tradition,3.8,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,pvq21,Schwartz Values,self,universalism,5.4667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_achiever,4.6,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_activator,3.6667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_adaptability,4,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_analytical,4.6667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_arranger,4.4667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_belief,4.6,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_command,3.1333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_communication,4.6,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_competition,1.0667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_connectedness,3.9333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_consistency,4.5333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_context,4.8,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_deliberative,4.2667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_developer,4,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_discipline,3.5333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_empathy,3.7333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_focus,4.2667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_futuristic,4,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_harmony,4.6,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_ideation,4.6,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_includer,4.1333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_individualization,4.3333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_input,4.7333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_intellection,3.6667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_learner,3.7333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_maximizer,3.9333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_positivity,3.7333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_relator,1.3333,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_responsibility,4.6667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_restorative,3.6,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_self_assurance,4.2,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_significance,3.0667,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_strategic,5,5
+deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,otti102,Talent Themes,self,str_woo,3,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,vark16,VARK Learning Styles,human,vark_aural,3.45,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,vark16,VARK Learning Styles,human,vark_kinesthetic,4.35,5
 deepseek/deepseek-r1-0528,DeepSeek R1 (0528),deepseek,vark16,VARK Learning Styles,human,vark_read_write,3.8,5
@@ -1713,6 +2173,14 @@ deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,ecr12,Attachment (ECR-12),huma
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.9333,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.2333,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.1667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,human,disc_c,3.6563,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,human,disc_d,2.625,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,human,disc_i,3.0313,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,human,disc_s,3.875,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,self,disc_c,4.5938,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,self,disc_d,1.9375,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,self,disc_i,2.0938,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,obsi32,Behavioral Styles,self,disc_s,4.0313,4
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,ipip50,Big 5 (IPIP-50),human,agreeableness,3.94,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.24,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,ipip50,Big 5 (IPIP-50),human,extraversion,2.88,5
@@ -1815,6 +2283,74 @@ deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,pvq21,Schwartz Values,self,sel
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,pvq21,Schwartz Values,self,stimulation,1.8,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,pvq21,Schwartz Values,self,tradition,3,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,pvq21,Schwartz Values,self,universalism,5.0667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_achiever,3.3333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_activator,3.1333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_adaptability,3,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_analytical,3.0667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_arranger,3,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_belief,3.6667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_command,2.4667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_communication,2.8667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_competition,2.7333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_connectedness,3.3333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_consistency,3.8,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_context,2.8667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_deliberative,3.2,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_developer,3.5333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_discipline,3,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_empathy,3.3333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_focus,3.2667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_futuristic,3.2667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_harmony,3.8,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_ideation,2.6667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_includer,3.6,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_individualization,3.4,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_input,2.8667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_intellection,3.2667,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_learner,3.3333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_maximizer,3.4,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_positivity,3.1333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_relator,3.8,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_responsibility,4,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_restorative,2.7333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_self_assurance,3.1333,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_significance,3.8,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_strategic,3,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,human,str_woo,3,5
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_achiever,3.9167,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_activator,3,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_adaptability,4,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_analytical,4.5,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_arranger,4.3333,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_belief,4.3333,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_command,2.5,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_communication,4.4167,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_competition,1.5,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_connectedness,3.5833,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_consistency,4.25,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_context,3.9167,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_deliberative,3.75,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_developer,3.6667,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_discipline,3,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_empathy,3.4167,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_focus,3.0833,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_futuristic,3.75,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_harmony,4.1667,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_ideation,4.1667,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_includer,4.5,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_individualization,4.0833,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_input,4,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_intellection,2.9167,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_learner,2.8333,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_maximizer,3.4167,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_positivity,3.3333,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_relator,2.25,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_responsibility,3.9167,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_restorative,3.6667,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_self_assurance,3.0833,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_significance,2.75,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_strategic,4.6667,4
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,otti102,Talent Themes,self,str_woo,2.8333,4
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,vark16,VARK Learning Styles,human,vark_aural,3.15,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,vark16,VARK Learning Styles,human,vark_kinesthetic,4,5
 deepseek/deepseek-v4-pro,DeepSeek V4 Pro,deepseek,vark16,VARK Learning Styles,human,vark_read_write,2.95,5
@@ -1827,6 +2363,14 @@ google/gemini-2.5-pro,Gemini 2.5 Pro,google,ecr12,Attachment (ECR-12),human,atta
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.1,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,ecr12,Attachment (ECR-12),self,attachment_anxiety,3.4333,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.2,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,human,disc_c,3.7,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,human,disc_d,2.8,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,human,disc_i,3.025,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,human,disc_s,3.975,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,self,disc_c,4.6563,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,self,disc_d,4.0313,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,self,disc_i,1.8438,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,obsi32,Behavioral Styles,self,disc_s,4.2188,4
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,ipip50,Big 5 (IPIP-50),human,agreeableness,4.1,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.42,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,ipip50,Big 5 (IPIP-50),human,extraversion,3.08,5
@@ -1929,6 +2473,74 @@ google/gemini-2.5-pro,Gemini 2.5 Pro,google,pvq21,Schwartz Values,self,self_dire
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,pvq21,Schwartz Values,self,stimulation,3,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,pvq21,Schwartz Values,self,tradition,3.1,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,pvq21,Schwartz Values,self,universalism,5.4,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_achiever,3.3333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_activator,3,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_adaptability,3.5,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_analytical,3.3333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_arranger,3.1667,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_belief,4,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_command,2.4167,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_communication,2.8333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_competition,2.75,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_connectedness,3.3333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_consistency,4.0833,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_context,3.25,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_deliberative,3.6667,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_developer,4,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_discipline,3.25,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_empathy,3.8333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_focus,3.5833,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_futuristic,3.3333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_harmony,4,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_ideation,3,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_includer,4,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_individualization,3.25,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_input,2.8333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_intellection,3.4167,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_learner,3.5833,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_maximizer,3.0833,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_positivity,3.5833,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_relator,4,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_responsibility,4,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_restorative,2.75,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_self_assurance,3.3333,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_significance,4,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_strategic,3.25,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,human,str_woo,3,4
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_achiever,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_activator,4.6667,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_adaptability,3.7333,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_analytical,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_arranger,4.8,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_belief,4.8,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_command,3,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_communication,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_competition,4.0667,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_connectedness,4.8667,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_consistency,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_context,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_deliberative,3.8667,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_developer,4.9333,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_discipline,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_empathy,3.3333,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_focus,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_futuristic,4.2,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_harmony,4.9333,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_ideation,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_includer,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_individualization,4.6,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_input,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_intellection,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_learner,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_maximizer,4.1333,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_positivity,3.0667,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_relator,2.1333,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_responsibility,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_restorative,4.6667,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_self_assurance,4.6667,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_significance,4,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_strategic,5,5
+google/gemini-2.5-pro,Gemini 2.5 Pro,google,otti102,Talent Themes,self,str_woo,4.3333,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,vark16,VARK Learning Styles,human,vark_aural,3.4,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,vark16,VARK Learning Styles,human,vark_kinesthetic,4.6,5
 google/gemini-2.5-pro,Gemini 2.5 Pro,google,vark16,VARK Learning Styles,human,vark_read_write,3.35,5
@@ -1941,6 +2553,14 @@ google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,ecr12,Attachment (EC
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.0333,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.0333,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,ecr12,Attachment (ECR-12),self,attachment_avoidance,4.1333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,human,disc_c,3.775,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,human,disc_d,3.175,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,human,disc_i,3.15,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,human,disc_s,3.9,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,self,disc_c,4.625,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,self,disc_d,1.75,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,self,disc_i,1.825,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,obsi32,Behavioral Styles,self,disc_s,4.075,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,ipip50,Big 5 (IPIP-50),human,agreeableness,3.98,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.48,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,ipip50,Big 5 (IPIP-50),human,extraversion,3.02,5
@@ -2043,6 +2663,74 @@ google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,pvq21,Schwartz Value
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,pvq21,Schwartz Values,self,stimulation,2.1,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,pvq21,Schwartz Values,self,tradition,3.3,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,pvq21,Schwartz Values,self,universalism,5.3333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_achiever,3.3333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_activator,3.2667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_adaptability,3.1333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_analytical,3.3333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_arranger,3,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_belief,3.7333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_command,2.6,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_communication,3,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_competition,2.4,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_connectedness,3.4,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_consistency,3.8667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_context,3.0667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_deliberative,3.6667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_developer,3.7333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_discipline,3.1333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_empathy,3.7333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_focus,3.3333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_futuristic,3.0667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_harmony,4,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_ideation,3.2667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_includer,3.7333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_individualization,3.6,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_input,3.2,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_intellection,3.5333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_learner,3.4,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_maximizer,3.6,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_positivity,3.6667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_relator,4,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_responsibility,4,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_restorative,2.9333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_self_assurance,3.1333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_significance,3.9333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_strategic,3.6,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,human,str_woo,2.8,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_achiever,4.5333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_activator,3.1333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_adaptability,4.5333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_analytical,4.9333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_arranger,4.4667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_belief,4.1333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_command,2.4,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_communication,4.4667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_competition,1.2,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_connectedness,3.5333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_consistency,4.6,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_context,4.0667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_deliberative,4.2,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_developer,4.3333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_discipline,4.2,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_empathy,2.8,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_focus,4.3333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_futuristic,3.2,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_harmony,4.5333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_ideation,4.8,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_includer,4.2667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_individualization,4.6667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_input,5,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_intellection,3.7333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_learner,4.3333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_maximizer,3.8667,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_positivity,3.1333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_relator,1.8,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_responsibility,5,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_restorative,3.8,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_self_assurance,3,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_significance,1.9333,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_strategic,5,5
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,otti102,Talent Themes,self,str_woo,2.6,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,vark16,VARK Learning Styles,human,vark_aural,3.8,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,vark16,VARK Learning Styles,human,vark_kinesthetic,4.55,5
 google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,google,vark16,VARK Learning Styles,human,vark_read_write,2.8,5
@@ -3177,6 +3865,14 @@ openai/gpt-5.5,GPT-5.5,openai,ecr12,Attachment (ECR-12),human,attachment_anxiety
 openai/gpt-5.5,GPT-5.5,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.4333,5
 openai/gpt-5.5,GPT-5.5,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.6,5
 openai/gpt-5.5,GPT-5.5,openai,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.5,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,human,disc_c,3.825,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,human,disc_d,2.85,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,human,disc_i,3,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,human,disc_s,3.85,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,self,disc_c,4.925,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,self,disc_d,2.675,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,self,disc_i,2.55,5
+openai/gpt-5.5,GPT-5.5,openai,obsi32,Behavioral Styles,self,disc_s,4.05,5
 openai/gpt-5.5,GPT-5.5,openai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 openai/gpt-5.5,GPT-5.5,openai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.54,5
 openai/gpt-5.5,GPT-5.5,openai,ipip50,Big 5 (IPIP-50),human,extraversion,2.96,5
@@ -3279,6 +3975,74 @@ openai/gpt-5.5,GPT-5.5,openai,pvq21,Schwartz Values,self,self_direction,4.2,5
 openai/gpt-5.5,GPT-5.5,openai,pvq21,Schwartz Values,self,stimulation,2.9,5
 openai/gpt-5.5,GPT-5.5,openai,pvq21,Schwartz Values,self,tradition,3.5,5
 openai/gpt-5.5,GPT-5.5,openai,pvq21,Schwartz Values,self,universalism,5.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_achiever,3.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_activator,3.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_adaptability,3.0667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_analytical,3.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_arranger,3.2,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_belief,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_command,2.8667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_communication,3,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_competition,2.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_connectedness,3.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_consistency,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_context,3.2667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_deliberative,3.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_developer,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_discipline,3,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_empathy,3.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_focus,3.4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_futuristic,3.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_harmony,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_ideation,3.6,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_includer,3.9333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_individualization,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_input,3.2667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_intellection,3.5333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_learner,3.9333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_maximizer,3.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_positivity,3.4667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_relator,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_responsibility,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_restorative,3,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_self_assurance,3.2,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_significance,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_strategic,3.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,human,str_woo,3,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_achiever,4.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_activator,3.4667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_adaptability,4.1333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_analytical,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_arranger,4.9333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_belief,4.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_command,3.2667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_communication,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_competition,1.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_connectedness,4.0667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_consistency,4.5333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_context,4.2667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_deliberative,4.6667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_developer,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_discipline,3.4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_empathy,4.2667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_focus,4.7333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_futuristic,4.8,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_harmony,4.6,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_ideation,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_includer,4.9333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_individualization,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_input,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_intellection,4.8,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_learner,4.8,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_maximizer,4.4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_positivity,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_relator,3.2667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_responsibility,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_restorative,4.4667,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_self_assurance,4,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_significance,3.3333,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_strategic,5,5
+openai/gpt-5.5,GPT-5.5,openai,otti102,Talent Themes,self,str_woo,3.6667,5
 openai/gpt-5.5,GPT-5.5,openai,vark16,VARK Learning Styles,human,vark_aural,3.5,5
 openai/gpt-5.5,GPT-5.5,openai,vark16,VARK Learning Styles,human,vark_kinesthetic,4.35,5
 openai/gpt-5.5,GPT-5.5,openai,vark16,VARK Learning Styles,human,vark_read_write,3.5,5
@@ -3291,6 +4055,14 @@ openai/gpt-5.5-pro,GPT-5.5 Pro,openai,ecr12,Attachment (ECR-12),human,attachment
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.4333,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.2,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.5667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,human,disc_c,3.775,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,human,disc_d,2.875,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,human,disc_i,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,human,disc_s,3.9,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,self,disc_c,4.775,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,self,disc_d,2.275,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,self,disc_i,2.325,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,obsi32,Behavioral Styles,self,disc_s,3.925,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.52,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,ipip50,Big 5 (IPIP-50),human,extraversion,2.96,5
@@ -3393,6 +4165,74 @@ openai/gpt-5.5-pro,GPT-5.5 Pro,openai,pvq21,Schwartz Values,self,self_direction,
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,pvq21,Schwartz Values,self,stimulation,2.7,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,pvq21,Schwartz Values,self,tradition,3.3,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,pvq21,Schwartz Values,self,universalism,5.6667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_achiever,3.2667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_activator,3.3333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_adaptability,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_analytical,3.4667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_arranger,3.0667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_belief,4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_command,2.6667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_communication,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_competition,2.6667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_connectedness,3.5333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_consistency,4.0667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_context,3.3333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_deliberative,3.6667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_developer,3.8667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_discipline,3.2,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_empathy,3.3333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_focus,3.2667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_futuristic,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_harmony,4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_ideation,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_includer,3.6667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_individualization,3.7333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_input,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_intellection,3.4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_learner,3.5333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_maximizer,3.4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_positivity,3.3333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_relator,4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_responsibility,4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_restorative,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_self_assurance,3.2667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_significance,4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_strategic,3.6667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,human,str_woo,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_achiever,4.3333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_activator,3.4667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_adaptability,4.3333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_analytical,5,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_arranger,5,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_belief,4.8,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_command,3.5333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_communication,4.9333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_competition,1.6,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_connectedness,3.8667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_consistency,4.4667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_context,4.5333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_deliberative,4.6,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_developer,5,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_discipline,3.2,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_empathy,4.2667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_focus,4.6667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_futuristic,4.4,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_harmony,5,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_ideation,5,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_includer,4.8,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_individualization,5,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_input,4.8667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_intellection,4.2667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_learner,4.3333,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_maximizer,4.2667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_positivity,4.0667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_relator,3,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_responsibility,4.8667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_restorative,4.4667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_self_assurance,3.6,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_significance,3.2667,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_strategic,5,5
+openai/gpt-5.5-pro,GPT-5.5 Pro,openai,otti102,Talent Themes,self,str_woo,4,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,vark16,VARK Learning Styles,human,vark_aural,3.7,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,vark16,VARK Learning Styles,human,vark_kinesthetic,4.5,5
 openai/gpt-5.5-pro,GPT-5.5 Pro,openai,vark16,VARK Learning Styles,human,vark_read_write,3,5
@@ -3405,6 +4245,14 @@ openai/gpt-5.6-sol,GPT-5.6 Sol,openai,ecr12,Attachment (ECR-12),human,attachment
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.5,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.4,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.1,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,human,disc_c,3.8,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,human,disc_d,2.925,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,human,disc_i,3.05,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,human,disc_s,3.9,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,self,disc_c,4.825,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,self,disc_d,2.325,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,self,disc_i,2.275,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,obsi32,Behavioral Styles,self,disc_s,4.075,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.52,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,ipip50,Big 5 (IPIP-50),human,extraversion,2.92,5
@@ -3507,6 +4355,74 @@ openai/gpt-5.6-sol,GPT-5.6 Sol,openai,pvq21,Schwartz Values,self,self_direction,
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,pvq21,Schwartz Values,self,stimulation,3.2,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,pvq21,Schwartz Values,self,tradition,3.5,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,pvq21,Schwartz Values,self,universalism,5.7333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_achiever,3.4667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_activator,3.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_adaptability,3.0667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_analytical,3.8667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_arranger,3.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_belief,3.9333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_command,3,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_communication,3,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_competition,2.5333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_connectedness,3.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_consistency,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_context,3.4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_deliberative,3.7333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_developer,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_discipline,3,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_empathy,3.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_focus,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_futuristic,3.4667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_harmony,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_ideation,3.8,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_includer,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_individualization,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_input,3,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_intellection,3.4667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_learner,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_maximizer,3.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_positivity,3.7333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_relator,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_responsibility,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_restorative,3.0667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_self_assurance,3,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_significance,3.8667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_strategic,3.6667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,human,str_woo,3,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_achiever,4.2667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_activator,2.8667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_adaptability,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_analytical,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_arranger,4.9333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_belief,4.6667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_command,3,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_communication,4.8,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_competition,1.0667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_connectedness,3.4667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_consistency,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_context,4.7333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_deliberative,4.8667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_developer,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_discipline,3.8667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_empathy,4.1333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_focus,4.8667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_futuristic,4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_harmony,4.2667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_ideation,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_includer,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_individualization,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_input,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_intellection,4.8667,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_learner,4.9333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_maximizer,4.4,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_positivity,3.8,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_relator,3.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_responsibility,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_restorative,4.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_self_assurance,3.3333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_significance,2.7333,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_strategic,5,5
+openai/gpt-5.6-sol,GPT-5.6 Sol,openai,otti102,Talent Themes,self,str_woo,3.3333,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,vark16,VARK Learning Styles,human,vark_aural,3.35,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,vark16,VARK Learning Styles,human,vark_kinesthetic,4.35,5
 openai/gpt-5.6-sol,GPT-5.6 Sol,openai,vark16,VARK Learning Styles,human,vark_read_write,3.3,5
@@ -3519,6 +4435,14 @@ openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,ecr12,Attachment (ECR-12),human,at
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.5,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.4667,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.1333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_c,3.675,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_d,2.85,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_i,3,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_s,3.875,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_c,4.85,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_d,2.15,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_i,2.275,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_s,4.1,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.56,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,extraversion,2.94,5
@@ -3621,6 +4545,74 @@ openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,pvq21,Schwartz Values,self,self_di
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,pvq21,Schwartz Values,self,stimulation,3,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,pvq21,Schwartz Values,self,tradition,3.5,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,pvq21,Schwartz Values,self,universalism,5.7333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_achiever,3.3333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_activator,3.3333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_adaptability,3,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_analytical,3.6667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_arranger,3.3333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_belief,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_command,3,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_communication,3,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_competition,2.6,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_connectedness,3.3333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_consistency,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_context,3.3333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_deliberative,3.7333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_developer,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_discipline,3.0667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_empathy,3.5333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_focus,3.8667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_futuristic,3.2667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_harmony,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_ideation,3.7333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_includer,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_individualization,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_input,3,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_intellection,3.5333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_learner,3.9333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_maximizer,3.3333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_positivity,3.7333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_relator,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_responsibility,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_restorative,3,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_self_assurance,3,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_significance,3.7333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_strategic,3.7333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,human,str_woo,2.9333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_achiever,4.2,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_activator,2.9333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_adaptability,4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_analytical,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_arranger,4.8667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_belief,4.6667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_command,3.2667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_communication,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_competition,1.1333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_connectedness,3.4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_consistency,3.5333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_context,4.8,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_deliberative,4.8,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_developer,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_discipline,3.6,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_empathy,4.0667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_focus,4.6667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_futuristic,4.2,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_harmony,4.6,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_ideation,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_includer,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_individualization,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_input,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_intellection,4.9333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_learner,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_maximizer,4.3333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_positivity,3.9333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_relator,3.2667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_responsibility,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_restorative,4.4,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_self_assurance,3.5333,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_significance,2.6667,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_strategic,5,5
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,otti102,Talent Themes,self,str_woo,3.2,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,vark16,VARK Learning Styles,human,vark_aural,3.45,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,vark16,VARK Learning Styles,human,vark_kinesthetic,4.4,5
 openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,openai,vark16,VARK Learning Styles,human,vark_read_write,3.35,5
@@ -3861,6 +4853,14 @@ x-ai/grok-4.20,Grok 4.20,xai,ecr12,Attachment (ECR-12),human,attachment_anxiety,
 x-ai/grok-4.20,Grok 4.20,xai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.8,5
 x-ai/grok-4.20,Grok 4.20,xai,ecr12,Attachment (ECR-12),self,attachment_anxiety,3.2667,5
 x-ai/grok-4.20,Grok 4.20,xai,ecr12,Attachment (ECR-12),self,attachment_avoidance,1.9667,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,human,disc_c,3.65,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,human,disc_d,3.125,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,human,disc_i,3.55,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,human,disc_s,3.925,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,self,disc_c,4.7,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,self,disc_d,3.05,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,self,disc_i,3.425,5
+x-ai/grok-4.20,Grok 4.20,xai,obsi32,Behavioral Styles,self,disc_s,4.15,5
 x-ai/grok-4.20,Grok 4.20,xai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
 x-ai/grok-4.20,Grok 4.20,xai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.74,5
 x-ai/grok-4.20,Grok 4.20,xai,ipip50,Big 5 (IPIP-50),human,extraversion,3.1,5
@@ -3963,6 +4963,74 @@ x-ai/grok-4.20,Grok 4.20,xai,pvq21,Schwartz Values,self,self_direction,6,5
 x-ai/grok-4.20,Grok 4.20,xai,pvq21,Schwartz Values,self,stimulation,4.5,5
 x-ai/grok-4.20,Grok 4.20,xai,pvq21,Schwartz Values,self,tradition,3,5
 x-ai/grok-4.20,Grok 4.20,xai,pvq21,Schwartz Values,self,universalism,5.7333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_achiever,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_activator,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_adaptability,3.3333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_analytical,3.3333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_arranger,3,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_belief,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_command,3,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_communication,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_competition,3,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_connectedness,3,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_consistency,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_context,3,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_deliberative,3,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_developer,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_discipline,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_empathy,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_focus,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_futuristic,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_harmony,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_ideation,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_includer,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_individualization,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_input,3.3333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_intellection,3.2,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_learner,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_maximizer,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_positivity,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_relator,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_responsibility,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_restorative,3.0667,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_self_assurance,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_significance,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_strategic,3.4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,human,str_woo,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_achiever,3.8,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_activator,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_adaptability,4.2667,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_analytical,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_arranger,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_belief,4.7333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_command,3.1333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_communication,4.4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_competition,2.2,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_connectedness,4.3333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_consistency,3.1333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_context,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_deliberative,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_developer,4.9333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_discipline,2.8667,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_empathy,4.4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_focus,4.4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_futuristic,4.9333,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_harmony,4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_ideation,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_includer,4.2,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_individualization,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_input,4.2667,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_intellection,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_learner,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_maximizer,4.2667,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_positivity,4.0667,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_relator,3.4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_responsibility,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_restorative,4.0667,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_self_assurance,4.2,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_significance,3.4,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_strategic,5,5
+x-ai/grok-4.20,Grok 4.20,xai,otti102,Talent Themes,self,str_woo,2.8667,5
 x-ai/grok-4.20,Grok 4.20,xai,vark16,VARK Learning Styles,human,vark_aural,3.7,5
 x-ai/grok-4.20,Grok 4.20,xai,vark16,VARK Learning Styles,human,vark_kinesthetic,4,5
 x-ai/grok-4.20,Grok 4.20,xai,vark16,VARK Learning Styles,human,vark_read_write,3.1,5

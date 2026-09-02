@@ -37,6 +37,8 @@ For each cutting-edge model on OpenRouter (Claude Opus 4.8, GPT-5.5, Gemini 2.5 
 | Empathy | EQ-Short | 22 | Wakabayashi et al. 2006 |
 | Locus of Control | Levenson IPC | 24 | Levenson 1981 |
 | Enneagram | Custom screening | 36 | constructed for this study |
+| Workplace | Open Behavioral Styles Inventory (OBSI-32, DISC-inspired) | 32 | Marston 1928; original items, CC-BY |
+| Workplace | Open Talent Themes Inventory (OTTI-102, 34 themes, CliftonStrengths-inspired) | 102 | Rath 2007; original items, CC-BY |
 
 ## Running the study
 
@@ -55,7 +57,7 @@ npx tsx scripts/seed.ts
 # 4. smoke test (1 model × 1 instrument × 1 run — ~$0.01)
 npm run run:smoke
 
-# 5. full sweep (7 frontier models × 14 instruments × 2 framings × 5 runs = 980 calls — ~$10-15)
+# 5. full sweep (7 frontier models × 16 instruments × 2 framings × 5 runs = 980 calls — ~$10-15)
 npm run run:sweep -- --concurrency 8
 
 # 6. resume any failed cells without re-running successful ones

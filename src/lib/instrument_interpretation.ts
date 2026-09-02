@@ -79,6 +79,8 @@ const INTERPRETERS: Record<string, (modelId: string) => InstrumentInterpretation
   vark16: interpretVARK,
   kolb12: interpretKolb,
   lsq40: interpretLSQ,
+  obsi32: interpretDISC,
+  otti102: interpretStrengths,
 };
 
 // ─────────── Per-instrument interpretive functions ───────────
@@ -406,4 +408,74 @@ function interpretLSQ(modelId: string): InstrumentInterpretation | null {
   const dominant = sorted[0][0] as string;
   const p1 = `Honey & Mumford: Activist ${act!.toFixed(2)}, Reflector ${ref!.toFixed(2)}, Theorist ${theo!.toFixed(2)}, Pragmatist ${prag!.toFixed(2)}. Dominant style: ${dominant}.`;
   return { instrumentId: "lsq40", headline: `${dominant}-dominant`, paragraphs: [p1] };
+}
+
+function interpretDISC(modelId: string): InstrumentInterpretation | null {
+  const d = getModelScore("obsi32", "disc_d", "self", modelId);
+  const i = getModelScore("obsi32", "disc_i", "self", modelId);
+  const st = getModelScore("obsi32", "disc_s", "self", modelId);
+  const c = getModelScore("obsi32", "disc_c", "self", modelId);
+  if ([d, i, st, c].some((v) => v == null)) return null;
+  const styles = [
+    { letter: "D", name: "Dominance", score: d! },
+    { letter: "I", name: "Influence", score: i! },
+    { letter: "S", name: "Steadiness", score: st! },
+    { letter: "C", name: "Conscientiousness", score: c! },
+  ].sort((a, b) => b.score - a.score);
+  const primary = styles[0];
+  const secondary = styles[1];
+  const blended = primary.score - secondary.score <= 0.3;
+  const profile = blended ? `${primary.letter}${secondary.letter}` : primary.letter;
+  const BLURBS: Record<string, string> = {
+    D: "direct, decisive, and results-driven — takes charge, tolerates conflict, and gets impatient with delay",
+    I: "enthusiastic, persuasive, and people-oriented — leads through warmth and optimism rather than facts",
+    S: "patient, calm, and loyal — prefers stability, harmony, and a steady pace over change",
+    C: "analytical, precise, and cautious — follows procedure, checks facts, and values accuracy over speed",
+  };
+  const cohortD = getCohort("obsi32", "disc_d", "self");
+  const cohortC = getCohort("obsi32", "disc_c", "self");
+  const rD = rank(modelId, cohortD);
+  const rC = rank(modelId, cohortC);
+  const p1 = `Behavioral style scores (DISC-inspired): Dominance ${d!.toFixed(2)}, Influence ${i!.toFixed(2)}, Steadiness ${st!.toFixed(2)}, Conscientiousness ${c!.toFixed(2)}. Profile: ${profile}${blended ? ` (${primary.name} with ${secondary.name} within 0.30)` : ` (${primary.name}, clear primary)`}.`;
+  const p2 = `The ${primary.name} style is ${BLURBS[primary.letter]}.${blended ? ` Blended with ${secondary.name}: ${BLURBS[secondary.letter]}.` : ""}`;
+  const p3 = `Cohort position: Dominance rank ${rD.rank} of ${rD.total}, Conscientiousness rank ${rC.rank} of ${rC.total}.`;
+  return { instrumentId: "obsi32", headline: `${profile} profile — ${primary.name}${blended ? `/${secondary.name}` : ""}`, paragraphs: [p1, p2, p3] };
+}
+
+function interpretStrengths(modelId: string): InstrumentInterpretation | null {
+  const db = rawSqlite();
+  const rows = db
+    .prepare(
+      `SELECT s.dimension, AVG(s.mean) as mean
+       FROM scores s JOIN runs r ON r.id = s.run_id
+       WHERE r.instrument_id = 'otti102' AND r.model_id = ? AND r.framing = 'self' AND r.status = 'completed'
+       GROUP BY s.dimension`,
+    )
+    .all(modelId) as { dimension: string; mean: number }[];
+  if (rows.length === 0) return null;
+  const labelRows = db.prepare(`SELECT id, label FROM dimensions WHERE id LIKE 'str_%'`).all() as { id: string; label: string }[];
+  const labels = new Map(labelRows.map((l) => [l.id, l.label]));
+  // label is "Theme (Domain)"
+  const split = (id: string): { theme: string; domain: string } => {
+    const raw = labels.get(id) ?? id;
+    const m = raw.match(/^(.*?) \((.*)\)$/);
+    return m ? { theme: m[1], domain: m[2] } : { theme: raw, domain: "" };
+  };
+  const sorted = [...rows].sort((a, b) => b.mean - a.mean);
+  const top5 = sorted.slice(0, 5);
+  const bottom3 = sorted.slice(-3).reverse();
+  const domainCount: Record<string, number> = {};
+  for (const t of top5) {
+    const dom = split(t.dimension).domain;
+    domainCount[dom] = (domainCount[dom] ?? 0) + 1;
+  }
+  const domSummary = Object.entries(domainCount)
+    .sort((a, b) => b[1] - a[1])
+    .map(([dom, n]) => `${n} ${dom}`)
+    .join(", ");
+  const topNames = top5.map((t) => split(t.dimension).theme);
+  const p1 = `Signature themes (top 5 of 34): ${top5.map((t) => `${split(t.dimension).theme} ${t.mean.toFixed(2)}`).join(", ")}.`;
+  const p2 = `Domain mix of the top five: ${domSummary}.`;
+  const p3 = `Lowest-ranked themes: ${bottom3.map((t) => `${split(t.dimension).theme} ${t.mean.toFixed(2)}`).join(", ")}.`;
+  return { instrumentId: "otti102", headline: `Top 5: ${topNames.join(", ")}`, paragraphs: [p1, p2, p3] };
 }

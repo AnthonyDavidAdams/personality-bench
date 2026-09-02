@@ -23,6 +23,7 @@ export const FAMILIES: FamilyLineage[] = [
       { modelId: "anthropic/claude-opus-4.7", label: "Opus 4.7", releaseDate: "2026-03-15" },
       { modelId: "anthropic/claude-opus-4.8", label: "Opus 4.8", releaseDate: "2026-05-15" },
       { modelId: "anthropic/claude-fable-5",  label: "Fable 5",  releaseDate: "2026-06-09" },
+      { modelId: "anthropic/claude-fable-5.1", label: "Fable 5.1", releaseDate: "2026-09-01" },
     ],
   },
   {

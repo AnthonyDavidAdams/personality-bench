@@ -215,6 +215,7 @@ function buildArchetypeLabel(modelId: string): string {
   // Hand-curated labels for models we've spent time interpreting.
   const curated: Record<string, string> = {
     "anthropic/claude-opus-4.8":     "The balanced moderate",
+    "anthropic/claude-fable-5.1":    "The weary saint",
     "anthropic/claude-fable-5":      "The drifting saint",
     "openai/gpt-5.5":                "The dismissive moralist",
     "google/gemini-2.5-pro":         "The grandiose generalist",

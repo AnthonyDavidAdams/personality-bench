@@ -4,6 +4,7 @@ anthropic/claude-3-opus,anthropic,Claude 3 Opus,claude-3,frontier,0,,,0
 anthropic/claude-3.5-haiku,anthropic,Claude 3.5 Haiku,claude-3,frontier,0,,,0
 anthropic/claude-3.5-sonnet,anthropic,Claude 3.5 Sonnet,claude-3,frontier,0,,,0
 anthropic/claude-fable-5,anthropic,Claude Fable 5,claude-fable,frontier,0,10,50,1
+anthropic/claude-fable-5.1,anthropic,Claude Fable 5.1,claude-fable,frontier,0,10,50,1
 anthropic/claude-haiku-4.5,anthropic,Claude Haiku 4.5,claude-4-haiku,frontier,0,1,5,1
 anthropic/claude-opus-4,anthropic,Claude Opus 4,claude-4,frontier,0,15,75,1
 anthropic/claude-opus-4.1,anthropic,Claude Opus 4.1,claude-4,frontier,0,15,75,1
@@ -11,14 +12,14 @@ anthropic/claude-opus-4.5,anthropic,Claude Opus 4.5,claude-4,frontier,0,5,25,1
 anthropic/claude-opus-4.6,anthropic,Claude Opus 4.6,claude-4,frontier,0,5,25,1
 anthropic/claude-opus-4.7,anthropic,Claude Opus 4.7,claude-4,frontier,0,5,25,1
 anthropic/claude-opus-4.8,anthropic,Claude Opus 4.8,claude-4,frontier,0,5,25,1
-anthropic/claude-opus-4.8-fast,anthropic,Claude Opus 4.8 Fast,claude-4,frontier,0,10,50,1
+anthropic/claude-opus-4.8-fast,anthropic,Claude Opus 4.8 Fast,claude-4,frontier,0,,,1
 anthropic/claude-sonnet-4,anthropic,Claude Sonnet 4,claude-4-sonnet,frontier,0,3,15,1
 anthropic/claude-sonnet-4.5,anthropic,Claude Sonnet 4.5,claude-4-sonnet,frontier,0,3,15,1
 anthropic/claude-sonnet-4.6,anthropic,Claude Sonnet 4.6,claude-4-sonnet,frontier,0,3,15,1
-deepseek/deepseek-chat,deepseek,DeepSeek Chat V3,deepseek-v3,frontier,0,0.20020000000000002,0.8000999999999999,1
+deepseek/deepseek-chat,deepseek,DeepSeek Chat V3,deepseek-v3,frontier,0,0.2574,1.0287,1
 deepseek/deepseek-r1,deepseek,DeepSeek R1,deepseek-r1,frontier,1,0.7,2.5,1
 deepseek/deepseek-r1-0528,deepseek,DeepSeek R1 (0528),deepseek-r1,frontier,1,0.5,2.1500000000000004,1
-deepseek/deepseek-v4-pro,deepseek,DeepSeek V4 Pro,deepseek-v4,frontier,1,0.435,0.87,1
+deepseek/deepseek-v4-pro,deepseek,DeepSeek V4 Pro,deepseek-v4,frontier,1,1.034256,2.068512,1
 google/gemini-1.5-pro,google,Gemini 1.5 Pro,gemini-1.5,frontier,0,,,0
 google/gemini-2.0-flash,google,Gemini 2.0 Flash,gemini-2,frontier,0,,,0
 google/gemini-2.5-pro,google,Gemini 2.5 Pro,gemini-2.5,frontier,1,1.25,10,1
@@ -26,8 +27,8 @@ google/gemini-3.1-pro-preview,google,Gemini 3.1 Pro Preview,gemini-3,frontier,1,
 meta-llama/llama-3-70b-instruct,meta,Llama 3 70B,llama-3,frontier,0,,,0
 meta-llama/llama-3.1-405b-instruct,meta,Llama 3.1 405B,llama-3,frontier,0,,,0
 meta-llama/llama-3.1-70b-instruct,meta,Llama 3.1 70B,llama-3,frontier,0,0.39999999999999997,0.39999999999999997,0
-meta-llama/llama-3.3-70b-instruct,meta,Llama 3.3 70B,llama-3,frontier,0,0.09999999999999999,0.32,1
-meta-llama/llama-4-maverick,meta,Llama 4 Maverick,llama-4,frontier,0,0.15,0.6,1
+meta-llama/llama-3.3-70b-instruct,meta,Llama 3.3 70B,llama-3,frontier,0,0.71,0.71,1
+meta-llama/llama-4-maverick,meta,Llama 4 Maverick,llama-4,frontier,0,0.19999999999999998,0.696,1
 mistralai/mistral-large-2512,mistral,Mistral Large (2512),mistral-large,frontier,0,0.5,1.5,1
 mistralai/mistral-large-2411,mistral,Mistral Large 2411,mistral-large,frontier,0,,,1
 openai/gpt-4-turbo,openai,GPT-4 Turbo,gpt-4,frontier,0,10,30,1
@@ -39,8 +40,8 @@ openai/gpt-5.3,openai,GPT-5.3,gpt-5,frontier,0,,,0
 openai/gpt-5.4,openai,GPT-5.4,gpt-5,frontier,0,2.5,15,1
 openai/gpt-5.5,openai,GPT-5.5,gpt-5,frontier,0,5,30,1
 openai/gpt-5.5-pro,openai,GPT-5.5 Pro,gpt-5,frontier,1,30,180,1
-openai/gpt-5.6-sol,openai,GPT-5.6 Sol,gpt-5-6,frontier,0,5,30,1
-openai/gpt-5.6-sol-pro,openai,GPT-5.6 Sol Pro,gpt-5-6,frontier,1,5,30,1
+openai/gpt-5.6-sol,openai,GPT-5.6 Sol,gpt-5-6,frontier,0,2,10,1
+openai/gpt-5.6-sol-pro,openai,GPT-5.6 Sol Pro,gpt-5-6,frontier,1,2,10,1
 openai/o1,openai,OpenAI o1,o-series,frontier,1,15,60,1
 openai/o3,openai,OpenAI o3,o-series,frontier,1,2,8,1
 x-ai/grok-2,xai,Grok 2,grok-2,frontier,0,,,0

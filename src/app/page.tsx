@@ -19,6 +19,7 @@ import { colorForModel } from "@/components/RadarChart";
 function archetypeArtPath(modelId: string): string | null {
   const slugMap: Record<string, string> = {
     "anthropic/claude-opus-4.8":        "archetype_claude.png",
+    "anthropic/claude-fable-5.1":       "archetype_claude_fable_5_1.png",
     "anthropic/claude-fable-5":         "archetype_claude_fable.png",
     "openai/gpt-5.5":                   "archetype_gpt.png",
     "google/gemini-2.5-pro":            "archetype_gemini.png",
