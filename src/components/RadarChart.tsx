@@ -33,9 +33,13 @@ export function RadarChart({
 }: RadarChartProps) {
   // Dynamic padding so long labels (e.g. "Type 1 — The Reformer") never crop.
   // 6px per character is a generous over-approximation at our 11pt font.
-  const longestLabel = dimensions.reduce((m, d) => Math.max(m, d.length), 0);
-  const labelPadEstimate = Math.min(140, 24 + longestLabel * 6);
-  const padding = Math.max(60, labelPadEstimate);
+  // Many-axis mode (e.g. the 34-theme OTTI-102): smaller type, labels run outward along each
+  // spoke instead of sitting beside it, and any "(Domain)" suffix is dropped from the label.
+  const many = dimensions.length > 12;
+  const shortLabel = (d: string) => (many ? d.replace(/\s*\(.*\)\s*$/, "") : d);
+  const longestLabel = dimensions.reduce((m, d) => Math.max(m, shortLabel(d).length), 0);
+  const labelPadEstimate = many ? 14 + longestLabel * 4.8 : Math.min(140, 24 + longestLabel * 6);
+  const padding = Math.max(many ? 40 : 60, labelPadEstimate);
 
   const cx = size / 2;
   const cy = size / 2;
@@ -55,7 +59,7 @@ export function RadarChart({
   }
   function labelPos(axisIndex: number) {
     const t = -Math.PI / 2 + (axisIndex / n) * 2 * Math.PI;
-    const r = radius + 18;
+    const r = radius + (many ? 7 : 18);
     return [cx + r * Math.cos(t), cy + r * Math.sin(t)] as const;
   }
 
@@ -109,6 +113,26 @@ export function RadarChart({
       {dimensions.map((label, i) => {
         const [x, y] = labelPos(i);
         const t = -Math.PI / 2 + (i / n) * 2 * Math.PI;
+        if (many) {
+          // Rotate the label to lie along its spoke; flip the left half so it still reads left-to-right.
+          const deg = (t * 180) / Math.PI;
+          const flip = Math.cos(t) < -0.001;
+          return (
+            <text
+              key={i}
+              x={x}
+              y={y}
+              transform={`rotate(${flip ? deg + 180 : deg} ${x} ${y})`}
+              textAnchor={flip ? "end" : "start"}
+              dominantBaseline="middle"
+              fontSize={8}
+              fill="var(--foreground)"
+              fontWeight={500}
+            >
+              {shortLabel(label)}
+            </text>
+          );
+        }
         const anchor =
           Math.abs(Math.cos(t)) < 0.1 ? "middle" : Math.cos(t) > 0 ? "start" : "end";
         // Wrap long labels onto two lines on "Type N — Name" patterns.
