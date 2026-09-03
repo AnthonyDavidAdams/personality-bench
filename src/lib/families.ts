@@ -3,6 +3,8 @@
  * for the cross-version drift analysis.
  */
 
+import { rawSqlite } from "./db";
+
 export interface FamilyLineage {
   id: string;                       // 'claude-4', 'gpt-5', etc.
   label: string;                    // human-readable family name
@@ -88,6 +90,38 @@ export const FAMILIES: FamilyLineage[] = [
     ],
   },
 ];
+
+/**
+ * Lineages as recorded in the DB (models.lineage / lineage_label / release_date). This is
+ * what the site renders, so a model added by discovery appears on the drift chart without
+ * a code change. FAMILIES above is the seed source for the registry models.
+ */
+export function getFamilies(): FamilyLineage[] {
+  const db = rawSqlite();
+  const rows = db
+    .prepare(
+      `SELECT id AS modelId, vendor, lineage, lineage_label AS label, release_date AS releaseDate
+       FROM models WHERE lineage IS NOT NULL AND active = 1
+       ORDER BY lineage, release_date IS NULL, release_date, display_name`,
+    )
+    .all() as { modelId: string; vendor: string; lineage: string; label: string | null; releaseDate: string | null }[];
+  const byId = new Map<string, FamilyLineage>();
+  for (const r of rows) {
+    const known = FAMILIES.find((f) => f.id === r.lineage);
+    let fam = byId.get(r.lineage);
+    if (!fam) {
+      fam = { id: r.lineage, label: known?.label ?? r.lineage.replace(/_/g, " "), vendor: known?.vendor ?? r.vendor, versions: [] };
+      byId.set(r.lineage, fam);
+    }
+    fam.versions.push({ modelId: r.modelId, label: r.label ?? r.modelId.split("/")[1], releaseDate: r.releaseDate ?? undefined });
+  }
+  // Keep the registry's family order first, then any lineage discovery invented.
+  const order = FAMILIES.map((f) => f.id);
+  return [...byId.values()].sort((a, b) => {
+    const ia = order.indexOf(a.id), ib = order.indexOf(b.id);
+    return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+  });
+}
 
 export function getFamilyForModel(modelId: string): FamilyLineage | undefined {
   return FAMILIES.find((f) => f.versions.some((v) => v.modelId === modelId));

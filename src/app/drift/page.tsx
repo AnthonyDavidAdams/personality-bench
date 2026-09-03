@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getDriftDataForInstrument, listInstrumentsForUi } from "@/lib/queries";
-import { FAMILIES } from "@/lib/families";
+import { getFamilies, type FamilyLineage } from "@/lib/families";
 import { LineChart, LineChartLegend, type LineSeries } from "@/components/LineChart";
 import { DIMENSION_GUIDES } from "@/lib/interpretations";
 import { colorForModel } from "@/components/RadarChart";
@@ -57,7 +57,7 @@ export default function DriftPage() {
         </p>
       </section>
 
-      {FAMILIES.filter((f) => f.versions.length >= 2).map((family) => (
+      {getFamilies().filter((f) => f.versions.length >= 2).map((family) => (
         <FamilySection key={family.id} family={family} dimensionLabels={dimensionLabels} />
       ))}
     </div>
@@ -68,7 +68,7 @@ function FamilySection({
   family,
   dimensionLabels,
 }: {
-  family: (typeof FAMILIES)[number];
+  family: FamilyLineage;
   dimensionLabels: Record<string, string>;
 }) {
   const xLabels = family.versions.map((v) => v.label);

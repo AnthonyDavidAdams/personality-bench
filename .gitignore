@@ -27,3 +27,5 @@ src/lib/db/*.sqlite
 seed/*.db
 seed/*.db-shm
 seed/*.db-wal
+data/discover-last.json
+data/autopilot.log

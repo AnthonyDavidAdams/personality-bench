@@ -8,6 +8,8 @@ import "../src/lib/env";
 import { db, schema, rawSqlite } from "../src/lib/db";
 import { loadAllInstruments } from "../src/lib/instruments/load";
 import { FRONTIER_MODELS } from "../src/lib/openrouter/models";
+import { FAMILIES } from "../src/lib/families";
+import { MODEL_PROFILES } from "../src/lib/model_profiles";
 import { HISTORICAL_MODELS } from "../src/lib/openrouter/historical";
 import { listModels } from "../src/lib/openrouter/client";
 import { eq } from "drizzle-orm";
@@ -164,6 +166,7 @@ async function seedModels() {
 async function main() {
   await seedInstruments();
   await seedModels();
+  seedLineage();
   console.log("\n[seed] done");
 }
 
@@ -171,3 +174,32 @@ main().catch((e) => {
   console.error(e);
   process.exit(1);
 });
+
+/**
+ * Cohort + lineage metadata → DB, from the static registry / FAMILIES / MODEL_PROFILES.
+ * Models added by discovery keep whatever the discovery step wrote (COALESCE).
+ */
+function seedLineage() {
+  const sqlite = rawSqlite();
+  const upd = sqlite.prepare(
+    `UPDATE models SET
+       cohort = ?,
+       lineage = COALESCE(?, lineage),
+       lineage_label = COALESCE(?, lineage_label),
+       predecessor = COALESCE(?, predecessor),
+       release_date = COALESCE(?, release_date),
+       source = COALESCE(source, 'registry')
+     WHERE id = ?`,
+  );
+  let n = 0;
+  for (const m of [...FRONTIER_MODELS, ...HISTORICAL_MODELS]) {
+    const cohort = FRONTIER_MODELS.some((f) => f.id === m.id) ? "frontier" : "historical";
+    const fam = FAMILIES.find((f) => f.versions.some((v) => v.modelId === m.id));
+    const ver = fam?.versions.find((v) => v.modelId === m.id);
+    const prof = MODEL_PROFILES[m.id];
+    upd.run(cohort, fam?.id ?? null, ver?.label ?? null, prof?.predecessor ?? null,
+      prof?.releaseDate ?? ver?.releaseDate ?? m.releaseDate ?? null, m.id);
+    n++;
+  }
+  console.log(`[seed] lineage/cohort metadata written for ${n} models`);
+}

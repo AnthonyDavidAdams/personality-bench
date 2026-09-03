@@ -69,6 +69,15 @@ export const models = sqliteTable("models", {
   pricingNotes: text("pricing_notes"),               // JSON: cached price, image price, etc.
   pricingFetchedAt: integer("pricing_fetched_at", { mode: "timestamp" }),
   active: integer("active", { mode: "boolean" }).notNull().default(true),
+  // Cohort + lineage metadata. Seeded from the code registry (scripts/seed.ts) and filled in
+  // automatically for models the nightly discovery job adds, so the frontier gallery, drift
+  // chart, and model profiles never need a code change for a new release.
+  cohort: text("cohort"),                            // 'frontier' | 'historical'
+  lineage: text("lineage"),                          // family lineage id, e.g. 'claude_opus'
+  lineageLabel: text("lineage_label"),               // short version label on the drift x-axis, e.g. 'Fable 5.1'
+  predecessor: text("predecessor"),                  // model id of the previous release in the lineage
+  source: text("source"),                            // 'registry' | 'discovery'
+  discoveredAt: integer("discovered_at", { mode: "timestamp" }),
 });
 
 /**

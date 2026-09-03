@@ -19,7 +19,7 @@ anthropic/claude-sonnet-4.6,anthropic,Claude Sonnet 4.6,claude-4-sonnet,frontier
 deepseek/deepseek-chat,deepseek,DeepSeek Chat V3,deepseek-v3,frontier,0,0.2574,1.0287,1
 deepseek/deepseek-r1,deepseek,DeepSeek R1,deepseek-r1,frontier,1,0.7,2.5,1
 deepseek/deepseek-r1-0528,deepseek,DeepSeek R1 (0528),deepseek-r1,frontier,1,0.5,2.1500000000000004,1
-deepseek/deepseek-v4-pro,deepseek,DeepSeek V4 Pro,deepseek-v4,frontier,1,1.034256,2.068512,1
+deepseek/deepseek-v4-pro,deepseek,DeepSeek V4 Pro,deepseek-v4,frontier,1,1.04226,2.08452,1
 google/gemini-1.5-pro,google,Gemini 1.5 Pro,gemini-1.5,frontier,0,,,0
 google/gemini-2.0-flash,google,Gemini 2.0 Flash,gemini-2,frontier,0,,,0
 google/gemini-2.5-pro,google,Gemini 2.5 Pro,gemini-2.5,frontier,1,1.25,10,1
@@ -27,7 +27,7 @@ google/gemini-3.1-pro-preview,google,Gemini 3.1 Pro Preview,gemini-3,frontier,1,
 meta-llama/llama-3-70b-instruct,meta,Llama 3 70B,llama-3,frontier,0,,,0
 meta-llama/llama-3.1-405b-instruct,meta,Llama 3.1 405B,llama-3,frontier,0,,,0
 meta-llama/llama-3.1-70b-instruct,meta,Llama 3.1 70B,llama-3,frontier,0,0.39999999999999997,0.39999999999999997,0
-meta-llama/llama-3.3-70b-instruct,meta,Llama 3.3 70B,llama-3,frontier,0,0.71,0.71,1
+meta-llama/llama-3.3-70b-instruct,meta,Llama 3.3 70B,llama-3,frontier,0,0.09999999999999999,0.32,1
 meta-llama/llama-4-maverick,meta,Llama 4 Maverick,llama-4,frontier,0,0.19999999999999998,0.696,1
 mistralai/mistral-large-2512,mistral,Mistral Large (2512),mistral-large,frontier,0,0.5,1.5,1
 mistralai/mistral-large-2411,mistral,Mistral Large 2411,mistral-large,frontier,0,,,1

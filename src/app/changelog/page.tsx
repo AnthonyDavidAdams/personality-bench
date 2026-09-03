@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { rawSqlite } from "@/lib/db";
 import { colorForModel } from "@/components/RadarChart";
-import { MODEL_PROFILES } from "@/lib/model_profiles";
+import { getModelProfile } from "@/lib/model_profiles";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
@@ -94,7 +94,7 @@ export default function ChangelogPage() {
 }
 
 function ArticleCard({ a }: { a: ArticleRow }) {
-  const profile = MODEL_PROFILES[a.modelId];
+  const profile = getModelProfile(a.modelId);
   const date = a.publishedAt ?? a.generatedAt;
   const dateStr = new Date(date * 1000).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
   const color = colorForModel(a.modelId);

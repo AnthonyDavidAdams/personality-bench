@@ -4,7 +4,7 @@ import path from "node:path";
 import { notFound } from "next/navigation";
 import { rawSqlite } from "@/lib/db";
 import { colorForModel } from "@/components/RadarChart";
-import { MODEL_PROFILES } from "@/lib/model_profiles";
+import { getModelProfile } from "@/lib/model_profiles";
 import { buildMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
@@ -140,7 +140,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     | undefined;
   if (!article) notFound();
 
-  const profile = MODEL_PROFILES[article.model_id];
+  const profile = getModelProfile(article.model_id);
   const color = colorForModel(article.model_id);
   const isDraft = article.status === "draft";
   const date = article.published_at ?? article.generated_at;

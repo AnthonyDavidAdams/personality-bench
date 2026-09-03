@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { rawSqlite } from "@/lib/db";
-import { MODEL_PROFILES } from "@/lib/model_profiles";
+import { getModelProfile } from "@/lib/model_profiles";
 import { colorForModel, VENDOR_COLORS } from "@/components/RadarChart";
 import { buildMetadata } from "@/lib/seo";
 
@@ -39,7 +39,7 @@ function getTimelineData(): TimelineModel[] {
 
   return stats
     .map((s) => {
-      const profile = MODEL_PROFILES[s.modelId];
+      const profile = getModelProfile(s.modelId);
       if (!profile) return null;
       return {
         modelId: s.modelId,
