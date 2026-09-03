@@ -15,7 +15,7 @@ import { loadInstrumentFile } from "./instruments/load";
 import { buildPrompts, parseQuestionnaireResponse, type Framing } from "./instruments/prompt";
 import { scoreInstrument } from "./scoring/score";
 import { chatWithRetry, getGeneration, type ChatRequest } from "./openrouter/client";
-import { findModel } from "./openrouter/models";
+import { findModel, type ModelEntry } from "./openrouter/models";
 import { nanoid } from "nanoid";
 import { and, eq } from "drizzle-orm";
 
@@ -42,7 +42,7 @@ export interface RunOutcome {
 }
 
 export async function runCell(opts: RunOptions): Promise<RunOutcome> {
-  const model = findModel(opts.modelId);
+  const model = findModel(opts.modelId) ?? modelFromDb(opts.modelId);
   if (!model) {
     return { runId: "", status: "failed", error: `unknown model ${opts.modelId}` };
   }
@@ -291,4 +291,16 @@ function estimateLocalCost(modelId: string, usage: { promptTokens?: number; comp
       (usage.reasoningTokens ?? 0) * reasoningUsd) /
     1_000_000;
   return Number(cost.toFixed(8));
+}
+
+/**
+ * Models added by the discovery job live only in the DB, not in the code registry.
+ * Build a registry-shaped entry for them so run.ts --resume / --models can re-run their cells.
+ */
+function modelFromDb(id: string): ModelEntry | undefined {
+  const row = rawSqlite()
+    .prepare(`SELECT id, vendor, display_name AS displayName, family, reasoning, active FROM models WHERE id = ?`)
+    .get(id) as { id: string; vendor: string; displayName: string; family: string | null; reasoning: number; active: number } | undefined;
+  if (!row) return undefined;
+  return { id: row.id, vendor: row.vendor, displayName: row.displayName, family: row.family ?? row.vendor, tier: "frontier", reasoning: !!row.reasoning, maxTokens: 12000, active: !!row.active };
 }
