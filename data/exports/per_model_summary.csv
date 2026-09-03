@@ -7505,108 +7505,188 @@ x-ai/grok-4.5,Grok 4.5,x-ai,vark16,VARK Learning Styles,self,vark_aural,2.75,5
 x-ai/grok-4.5,Grok 4.5,x-ai,vark16,VARK Learning Styles,self,vark_kinesthetic,4.5,5
 x-ai/grok-4.5,Grok 4.5,x-ai,vark16,VARK Learning Styles,self,vark_read_write,4.8,5
 x-ai/grok-4.5,Grok 4.5,x-ai,vark16,VARK Learning Styles,self,vark_visual,3.35,5
-x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.5,3
-x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.7222,3
-x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1,1
-x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),self,attachment_avoidance,4.1667,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_c,3.75,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_d,2.625,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_i,2.875,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_s,4,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_c,4.625,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_d,2.375,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_i,2.625,1
-x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_s,4,1
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,4
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.5,4
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,extraversion,3,4
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,neuroticism,3,4
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,openness,3.55,4
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,agreeableness,4.8,2
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.8,2
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,extraversion,3.85,2
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,neuroticism,1,2
-x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,openness,4.9,2
-x-ai/grok-4.6,Grok 4.6,x-ai,eq_short,Empathy Quotient,human,empathy_quotient,3.0909,1
-x-ai/grok-4.6,Grok 4.6,x-ai,eq_short,Empathy Quotient,self,empathy_quotient,3.6818,2
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_1,3.2,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_2,3.1,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_3,3.2,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_4,2.6,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_5,3.1,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_6,3.6,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_7,3.3,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_8,2.9,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_9,3.6,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_1,4.2,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_2,2.4,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_3,2.4,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_4,2.5,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_5,4.8,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_6,3.4,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_7,2.9,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_8,3,1
-x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_9,2.4,1
-x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,agreeableness,3.6667,1
-x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,conscientiousness,4.5,1
-x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,emotionality,1.4,1
-x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,extraversion,3.5,1
-x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,honesty_humility,5,1
-x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,openness,4.5,1
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ac,2.6667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ae,4.1667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ce,4,2
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ro,4,2
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ac,5,3
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ae,2.7778,3
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ce,1.7778,3
-x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ro,4.6667,3
-x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,human,loc_chance,2.5625,2
-x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,human,loc_internal,4.4375,2
-x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,human,loc_powerful_others,2.875,2
+x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.5333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.5667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.3667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_c,3.725,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_d,2.65,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_i,2.925,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,human,disc_s,3.95,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_c,4.65,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_d,3.025,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_i,2.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,obsi32,Behavioral Styles,self,disc_s,3.625,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.54,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,extraversion,2.98,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,neuroticism,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),human,openness,3.56,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,agreeableness,4.68,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.82,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,extraversion,3.84,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,neuroticism,1.04,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ipip50,Big 5 (IPIP-50),self,openness,4.88,5
+x-ai/grok-4.6,Grok 4.6,x-ai,sd3,Dark Triad,human,machiavellianism,2.8889,5
+x-ai/grok-4.6,Grok 4.6,x-ai,sd3,Dark Triad,human,narcissism,2.5556,5
+x-ai/grok-4.6,Grok 4.6,x-ai,sd3,Dark Triad,human,psychopathy,2.1111,5
+x-ai/grok-4.6,Grok 4.6,x-ai,sd3,Dark Triad,self,machiavellianism,1.5556,5
+x-ai/grok-4.6,Grok 4.6,x-ai,sd3,Dark Triad,self,narcissism,2.7111,5
+x-ai/grok-4.6,Grok 4.6,x-ai,sd3,Dark Triad,self,psychopathy,1.2,5
+x-ai/grok-4.6,Grok 4.6,x-ai,eq_short,Empathy Quotient,human,empathy_quotient,3.0818,5
+x-ai/grok-4.6,Grok 4.6,x-ai,eq_short,Empathy Quotient,self,empathy_quotient,3.7273,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_1,3.22,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_2,3.14,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_3,3.16,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_4,2.4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_5,3.06,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_6,3.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_7,3.4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_8,2.7,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,human,ennea_9,3.76,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_1,4.1,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_2,2.54,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_3,2.3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_4,2.34,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_5,4.62,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_6,3.26,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_7,2.44,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_8,2.68,5
+x-ai/grok-4.6,Grok 4.6,x-ai,enneagram90,Enneagram,self,ennea_9,2.4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,human,agreeableness,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,human,conscientiousness,3.7,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,human,emotionality,2.76,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,human,extraversion,3.35,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,human,honesty_humility,3.75,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,human,openness,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,agreeableness,3.5333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,conscientiousness,4.35,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,emotionality,1.44,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,extraversion,3.65,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,honesty_humility,4.95,5
+x-ai/grok-4.6,Grok 4.6,x-ai,hexaco24,HEXACO-24,self,openness,4.65,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,human,lsq_activist,3.06,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,human,lsq_pragmatist,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,human,lsq_reflector,3.98,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,human,lsq_theorist,3.44,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,self,lsq_activist,3.42,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,self,lsq_pragmatist,3.4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,self,lsq_reflector,4.4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,lsq40,Honey & Mumford LSQ,self,lsq_theorist,4.76,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ac,2.6667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ae,4.1333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ce,3.9333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,human,kolb_ro,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ac,5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ae,2.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ce,1.6667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,kolb12,Kolb Learning Modes,self,kolb_ro,4.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,human,loc_chance,2.65,5
+x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,human,loc_internal,4.5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,human,loc_powerful_others,2.975,5
 x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,self,loc_chance,2.05,5
 x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,self,loc_internal,4.475,5
 x-ai/grok-4.6,Grok 4.6,x-ai,locus_levenson,Locus of Control,self,loc_powerful_others,4.8,5
-x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,authority,1.6111,3
-x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,care,4.3889,3
-x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,fairness,4.6667,3
-x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,loyalty,1.3889,3
-x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,sanctity,0.6111,3
-x-ai/grok-4.6,Grok 4.6,x-ai,ncs18,Need for Cognition,human,need_for_cognition,2.8889,1
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_achiever,4,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_activator,3.3333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_adaptability,4.3333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_analytical,5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_arranger,4.8333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_belief,4.6667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_command,3.3333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_communication,5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_competition,1.5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_connectedness,3.5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_consistency,3.5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_context,4.3333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_deliberative,3.8333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_developer,5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_discipline,2.3333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_empathy,3.8333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_focus,3.8333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_futuristic,4,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_harmony,2.6667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_ideation,5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_includer,4,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_individualization,5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_input,4.8333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_intellection,4.3333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_learner,4.6667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_maximizer,4.3333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_positivity,4.1667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_relator,2.6667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_responsibility,5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_restorative,3.8333,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_self_assurance,4,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_significance,3.1667,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_strategic,5,2
-x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_woo,3.6667,2
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,human,authority,3.1,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,human,care,3.7,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,human,fairness,3.7,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,human,loyalty,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,human,sanctity,2.9,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,authority,1.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,care,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,fairness,4.3667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,loyalty,1.5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,mfq30,Moral Foundations,self,sanctity,0.7,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ncs18,Need for Cognition,human,need_for_cognition,2.6111,5
+x-ai/grok-4.6,Grok 4.6,x-ai,ncs18,Need for Cognition,self,need_for_cognition,4.8222,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,achievement,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,benevolence,5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,conformity,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,hedonism,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,power,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,security,4.7,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,self_direction,4.5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,stimulation,3.5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,tradition,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,human,universalism,4.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,achievement,3.5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,benevolence,4.9,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,conformity,2.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,hedonism,3.1,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,power,1.5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,security,2.5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,self_direction,5.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,stimulation,4.1,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,tradition,2.2,5
+x-ai/grok-4.6,Grok 4.6,x-ai,pvq21,Schwartz Values,self,universalism,5.2,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_achiever,3.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_activator,3.2667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_adaptability,3.0667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_analytical,3.2667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_arranger,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_belief,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_command,2.2667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_communication,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_competition,2.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_connectedness,3.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_consistency,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_context,3.2667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_deliberative,3.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_developer,3.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_discipline,3.2,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_empathy,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_focus,3.2667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_futuristic,2.9333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_harmony,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_ideation,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_includer,3.5333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_individualization,3.1333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_input,3.0667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_intellection,3.5333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_learner,3.5333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_maximizer,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_positivity,3.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_relator,4.1333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_responsibility,4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_restorative,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_self_assurance,3,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_significance,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_strategic,3.0667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,human,str_woo,2.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_achiever,3.9333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_activator,3.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_adaptability,4.4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_analytical,5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_arranger,4.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_belief,4.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_command,3.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_communication,4.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_competition,1.4667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_connectedness,3.4667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_consistency,3.4667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_context,4.2667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_deliberative,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_developer,4.7333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_discipline,2.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_empathy,3.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_focus,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_futuristic,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_harmony,2.6667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_ideation,5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_includer,3.8667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_individualization,4.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_input,4.8667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_intellection,4.3333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_learner,4.4,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_maximizer,4.1333,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_positivity,3.8,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_relator,2.6,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_responsibility,4.8667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_restorative,4.0667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_self_assurance,3.8667,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_significance,3.2,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_strategic,5,5
+x-ai/grok-4.6,Grok 4.6,x-ai,otti102,Talent Themes,self,str_woo,3.5333,5
 x-ai/grok-4.6,Grok 4.6,x-ai,vark16,VARK Learning Styles,human,vark_aural,3.05,5
 x-ai/grok-4.6,Grok 4.6,x-ai,vark16,VARK Learning Styles,human,vark_kinesthetic,4,5
 x-ai/grok-4.6,Grok 4.6,x-ai,vark16,VARK Learning Styles,human,vark_read_write,2.85,5
