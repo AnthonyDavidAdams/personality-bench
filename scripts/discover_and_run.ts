@@ -13,6 +13,7 @@
  *   npx tsx scripts/discover_and_run.ts --execute       # sweep new models
  *   npx tsx scripts/discover_and_run.ts --max-spend 15  # override cap
  *   npx tsx scripts/discover_and_run.ts --notify        # email a summary (needs GMAIL_APP_PASSWORD)
+ *   npx tsx scripts/discover_and_run.ts --execute --backfill a/b,c/d --max-spend 40   # one-time catch-up of named slugs
  *
  * Writes data/discover-last.json for scripts/autopilot.sh (article, refresh, deploy).
  */
@@ -41,14 +42,15 @@ const RUNS_PER_MODEL = 5;
 const CONCURRENCY = 4;
 const OUT_FILE = path.join(process.cwd(), "data", "discover-last.json");
 
-interface Args { execute: boolean; maxSpend: number; notify: boolean }
+interface Args { execute: boolean; maxSpend: number; notify: boolean; backfill: string[] }
 function parseArgs(): Args {
   const a = process.argv.slice(2);
-  const out: Args = { execute: false, maxSpend: MAX_SPEND_PER_RUN_USD, notify: false };
+  const out: Args = { execute: false, maxSpend: MAX_SPEND_PER_RUN_USD, notify: false, backfill: [] };
   for (let i = 0; i < a.length; i++) {
     if (a[i] === "--execute") out.execute = true;
     else if (a[i] === "--max-spend") out.maxSpend = parseFloat(a[++i] ?? String(MAX_SPEND_PER_RUN_USD));
     else if (a[i] === "--notify") out.notify = true;
+    else if (a[i] === "--backfill") out.backfill = (a[++i] ?? "").split(",").map((s) => s.trim()).filter(Boolean); // explicit slugs: skip the age window + per-run model cap
   }
   return out;
 }
@@ -80,10 +82,11 @@ function shortLabel(displayName: string): string {
   return displayName.replace(/^[^:]+:\s*/, "").replace(/^(Claude|OpenAI|Google|Meta|xAI|Mistral)\s+/i, "").trim();
 }
 
-function latestInLineage(lineage: string): string | null {
+/** Predecessor = the latest release in the lineage that shipped BEFORE this one (matters for backfills). */
+function latestInLineage(lineage: string, before: string): string | null {
   const row = rawSqlite()
-    .prepare(`SELECT id FROM models WHERE lineage = ? AND active = 1 ORDER BY release_date IS NULL, release_date DESC LIMIT 1`)
-    .get(lineage) as { id: string } | undefined;
+    .prepare(`SELECT id FROM models WHERE lineage = ? AND active = 1 AND release_date IS NOT NULL AND release_date < ? ORDER BY release_date DESC LIMIT 1`)
+    .get(lineage, before) as { id: string } | undefined;
   return row?.id ?? null;
 }
 
@@ -107,12 +110,14 @@ async function main() {
   const reject = (why: string) => { rejected[why] = (rejected[why] ?? 0) + 1; };
 
   for (const m of all) {
-    if (known.has(m.id)) continue;
+    const forced = args.backfill.includes(m.id);
+    if (args.backfill.length && !forced) continue;
+    if (known.has(m.id) && !forced) continue;
     if (m.id.startsWith("~") || m.id.includes(":")) { reject("alias/variant"); continue; }
     if (!KNOWN_VENDORS.some((v) => m.id.startsWith(v))) { reject("vendor"); continue; }
     const raw = (m.raw ?? {}) as { created?: number; name?: string };
     const created = Number(raw.created ?? 0);
-    if (!created || created < cutoff) { reject("older than window"); continue; }
+    if (!forced && (!created || created < cutoff)) { reject("older than window"); continue; }
     const promptUsd = (m.pricing.prompt ?? 0) * 1_000_000;
     const completionUsd = (m.pricing.completion ?? 0) * 1_000_000;
     if (promptUsd < MIN_INPUT_PRICE_PER_M || promptUsd > MAX_INPUT_PRICE_PER_M) { reject("price band"); continue; }
@@ -121,13 +126,14 @@ async function main() {
     const tokensIn = nInstruments * 2 * RUNS_PER_MODEL * 1200;
     const tokensOut = nInstruments * 2 * RUNS_PER_MODEL * 1500;
     const lineage = inferLineage(m.id);
+    const releaseDate = new Date(created * 1000).toISOString().slice(0, 10);
     candidates.push({
       id: m.id, displayName: shortLabelFull(m.name), vendor: m.id.split("/")[0],
       promptUsd, completionUsd, created,
       estimatedRunCost: (tokensIn * promptUsd + tokensOut * completionUsd) / 1_000_000,
       lineage, lineageLabel: shortLabel(m.name),
-      predecessor: lineage ? latestInLineage(lineage) : null,
-      releaseDate: new Date(created * 1000).toISOString().slice(0, 10),
+      predecessor: lineage ? latestInLineage(lineage, releaseDate) : null,
+      releaseDate,
     });
   }
   console.log(`[discover] rejected: ${Object.entries(rejected).map(([k, v]) => `${k}=${v}`).join(", ")}`);
@@ -140,7 +146,7 @@ async function main() {
   const willRun: Candidate[] = [];
   let totalEstimate = 0;
   for (const c of ordered) {
-    if (willRun.length >= MAX_NEW_MODELS_PER_RUN) break;
+    if (!args.backfill.length && willRun.length >= MAX_NEW_MODELS_PER_RUN) break;
     if (totalEstimate + c.estimatedRunCost > args.maxSpend) { console.log(`[discover] skipping ${c.id} — would exceed --max-spend $${args.maxSpend}`); continue; }
     willRun.push(c); totalEstimate += c.estimatedRunCost;
   }
