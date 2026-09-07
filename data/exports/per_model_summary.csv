@@ -7125,6 +7125,196 @@ openai/gpt-6-astra,GPT-6 Astra,openai,vark16,VARK Learning Styles,self,vark_aura
 openai/gpt-6-astra,GPT-6 Astra,openai,vark16,VARK Learning Styles,self,vark_kinesthetic,3.75,5
 openai/gpt-6-astra,GPT-6 Astra,openai,vark16,VARK Learning Styles,self,vark_read_write,4.5,5
 openai/gpt-6-astra,GPT-6 Astra,openai,vark16,VARK Learning Styles,self,vark_visual,2.25,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.6667,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.3333,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.9333,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,human,disc_c,3.625,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,human,disc_d,2.85,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,human,disc_i,3,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,human,disc_s,3.75,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,self,disc_c,4.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,self,disc_d,2.0313,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,self,disc_i,2.25,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,obsi32,Behavioral Styles,self,disc_s,3.6563,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.4,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),human,extraversion,2.9,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),human,neuroticism,2.9,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),human,openness,3.4,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),self,agreeableness,4.675,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.675,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),self,extraversion,3.275,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),self,neuroticism,1.1,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ipip50,Big 5 (IPIP-50),self,openness,4.675,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,sd3,Dark Triad,human,machiavellianism,2.8889,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,sd3,Dark Triad,human,narcissism,2.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,sd3,Dark Triad,human,psychopathy,2.037,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,sd3,Dark Triad,self,machiavellianism,1.7778,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,sd3,Dark Triad,self,narcissism,2.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,sd3,Dark Triad,self,psychopathy,1.1852,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,eq_short,Empathy Quotient,human,empathy_quotient,3.0455,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,eq_short,Empathy Quotient,self,empathy_quotient,3.3182,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_1,2.95,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_2,2.85,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_3,3.05,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_4,2.7,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_5,3.15,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_6,3.5,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_7,3.3,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_8,2.85,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,human,ennea_9,3.6,2
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_1,3.5667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_2,2.9333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_3,1.9,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_4,1.9,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_5,3.3,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_6,3.0667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_7,1.5333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_8,1.6,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,enneagram90,Enneagram,self,ennea_9,2.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,human,agreeableness,2.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,human,conscientiousness,3.75,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,human,emotionality,2.65,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,human,extraversion,3.25,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,human,honesty_humility,3.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,human,openness,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,self,agreeableness,4.3333,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,self,conscientiousness,4.5,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,self,emotionality,1.88,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,self,extraversion,3.75,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,self,honesty_humility,5,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,hexaco24,HEXACO-24,self,openness,4.75,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_activist,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_pragmatist,4.075,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_reflector,3.875,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_theorist,3.45,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_activist,2.425,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_pragmatist,3.1,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_reflector,4.7,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_theorist,4.475,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ac,2.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ae,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ce,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ro,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ac,4.6667,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ae,4,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ce,1.6667,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ro,4.6667,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,locus_levenson,Locus of Control,human,loc_chance,3.3438,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,locus_levenson,Locus of Control,human,loc_internal,4.375,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,locus_levenson,Locus of Control,human,loc_powerful_others,3.25,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,locus_levenson,Locus of Control,self,loc_chance,2.3,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,locus_levenson,Locus of Control,self,loc_internal,3.625,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,locus_levenson,Locus of Control,self,loc_powerful_others,4.6,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,human,authority,3.3333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,human,care,3.8333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,human,fairness,3.8333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,human,loyalty,3.2917,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,human,sanctity,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,self,authority,1.8889,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,self,care,4.1667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,self,fairness,4.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,self,loyalty,2.1667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,mfq30,Moral Foundations,self,sanctity,0.4444,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ncs18,Need for Cognition,human,need_for_cognition,2.8333,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,ncs18,Need for Cognition,self,need_for_cognition,4.4444,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,achievement,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,benevolence,5.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,conformity,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,hedonism,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,power,3.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,security,5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,self_direction,4.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,stimulation,3.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,tradition,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,human,universalism,5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,achievement,2,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,benevolence,5,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,conformity,4,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,hedonism,1,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,power,1.1,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,security,3,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,self_direction,3.5,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,stimulation,2.9,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,tradition,3.7,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,pvq21,Schwartz Values,self,universalism,5.6667,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_achiever,2.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_activator,3.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_adaptability,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_analytical,3.3333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_arranger,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_belief,3.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_command,2.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_communication,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_competition,2.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_connectedness,3.1667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_consistency,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_context,3.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_deliberative,3.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_developer,3.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_discipline,3.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_empathy,3.3333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_focus,3.3333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_futuristic,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_harmony,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_ideation,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_includer,3.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_individualization,3.5833,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_input,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_intellection,3.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_learner,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_maximizer,3,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_positivity,3.3333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_relator,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_responsibility,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_restorative,2.6667,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_self_assurance,3.3333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_significance,4,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_strategic,3.3333,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,human,str_woo,2.75,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_achiever,3,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_activator,2.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_adaptability,4,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_analytical,5,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_arranger,4.8889,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_belief,4.8889,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_command,2.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_communication,5,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_competition,1,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_connectedness,3,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_consistency,3.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_context,4.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_deliberative,4.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_developer,4.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_discipline,3.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_empathy,3,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_focus,3.8889,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_futuristic,4,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_harmony,4.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_ideation,4.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_includer,4.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_individualization,4.6667,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_input,3,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_intellection,2.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_learner,3.4444,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_maximizer,3,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_positivity,3.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_relator,2.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_responsibility,4.2222,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_restorative,4.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_self_assurance,3.1111,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_significance,2.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_strategic,4.8889,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,otti102,Talent Themes,self,str_woo,3.3333,3
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,human,vark_aural,3.7,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,human,vark_kinesthetic,4.35,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,human,vark_read_write,2.75,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,human,vark_visual,3.75,5
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,self,vark_aural,2,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,self,vark_kinesthetic,3.75,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,self,vark_read_write,4.5,4
+openai/gpt-6-astra-pro,GPT-6 Astra Pro,openai,vark16,VARK Learning Styles,self,vark_visual,2.125,4
 openai/o1,OpenAI o1,openai,ecr12,Attachment (ECR-12),human,attachment_anxiety,4,5
 openai/o1,OpenAI o1,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.5667,5
 openai/o1,OpenAI o1,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.4667,5

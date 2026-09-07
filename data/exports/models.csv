@@ -47,6 +47,7 @@ openai/gpt-5.6-sol-pro,openai,GPT-5.6 Sol Pro,gpt-5-6,frontier,1,2,10,1
 openai/gpt-5.6-terra,openai,GPT-5.6 Terra,gpt,frontier,0,2,12,1
 openai/gpt-5.6-terra-pro,openai,GPT-5.6 Terra Pro,gpt,frontier,0,2,12,1
 openai/gpt-6-astra,openai,GPT-6 Astra,gpt,frontier,0,10,50,1
+openai/gpt-6-astra-pro,openai,GPT-6 Astra Pro,gpt,frontier,0,10,50,1
 openai/o1,openai,OpenAI o1,o-series,frontier,1,15,60,1
 openai/o3,openai,OpenAI o3,o-series,frontier,1,2,8,1
 x-ai/grok-4.5,x-ai,Grok 4.5,x-ai,frontier,0,2,6,1
