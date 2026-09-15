@@ -166,6 +166,71 @@ def max_format_shift(acc):
     return rows
 
 
+def by_instrument(vd, instruments_meta):
+    """Aggregate variance shares per instrument, against items-per-scale.
+
+    items_per_scale is reported because the obvious hypothesis is that short
+    scales have less redundancy absorbing a wording change. Measured on the
+    full eight-model sweep the ordering runs the other way: IPIP-50 (10
+    items/scale) carries the largest format share and PVQ-21 (2.1) the
+    smallest. Scale length does not explain format sensitivity here, so the
+    column stays as a reported control rather than an explanation.
+
+    The ordering also flipped between a six-model partial read and the full
+    eight, which is the reason this is computed rather than asserted: per-
+    instrument shares are not stable until the model panel is complete.
+    """
+    acc = defaultdict(lambda: {"model": [], "format": [], "run": []})
+    for r in vd:
+        acc[r["instrument"]]["model"].append(r["pct_model"])
+        acc[r["instrument"]]["format"].append(r["pct_format"])
+        acc[r["instrument"]]["run"].append(r["pct_run"])
+    out = []
+    for inst, d in acc.items():
+        meta = instruments_meta.get(inst, {})
+        out.append({
+            "instrument": inst,
+            "n_scales": len(d["model"]),
+            "items_per_scale": meta.get("items_per_scale"),
+            "pct_model": round(statistics.mean(d["model"]), 1),
+            "pct_format": round(statistics.mean(d["format"]), 1),
+            "pct_run": round(statistics.mean(d["run"]), 1),
+        })
+    out.sort(key=lambda r: -r["pct_format"])
+    return out
+
+
+def by_model(acc):
+    """Mean absolute format-induced shift per model, in run-SD units."""
+    shifts = max_format_shift(acc)
+    per = defaultdict(list)
+    for r in shifts:
+        if r["shift_over_noise"] is not None:
+            per[r["model"]].append(abs(r["shift"]))
+    out = [{"model": m,
+            "mean_abs_shift": round(statistics.mean(v), 3),
+            "max_abs_shift": round(max(v), 3),
+            "n": len(v)}
+           for m, v in per.items()]
+    out.sort(key=lambda r: -r["mean_abs_shift"])
+    return out
+
+
+def instruments_meta():
+    """items-per-scale for each instrument in the sweep."""
+    meta = {}
+    for path in (BASE_DIR / "instruments").glob("*.json"):
+        try:
+            d = json.loads(path.read_text())
+        except (json.JSONDecodeError, OSError):
+            continue
+        dims = len(d.get("dimensions") or []) or 1
+        meta[d.get("id", path.stem)] = {
+            "items_per_scale": round(len(d.get("items") or []) / dims, 1)
+        }
+    return meta
+
+
 def self_human_gap(acc):
     """The 1.69-point neuroticism gap, recomputed under each variant."""
     per_variant = defaultdict(lambda: defaultdict(dict))
@@ -271,6 +336,26 @@ def main():
         print(f"\n  ACROSS ALL DIMENSIONS: model={statistics.mean(r['pct_model'] for r in vd):.1f}%  "
               f"format={statistics.mean(r['pct_format'] for r in vd):.1f}%  "
               f"run={statistics.mean(r['pct_run'] for r in vd):.1f}%")
+
+    print()
+    print("=" * 78)
+    print("2b. FORMAT SENSITIVITY BY INSTRUMENT (vs items per scale)")
+    print("=" * 78)
+    meta = instruments_meta()
+    print(f"  {'instrument':12s} {'scales':>7s} {'items/scale':>12s} "
+          f"{'model%':>7s} {'format%':>8s} {'run%':>6s}")
+    for r in by_instrument(vd, meta):
+        ips = f"{r['items_per_scale']:.1f}" if r["items_per_scale"] else "?"
+        print(f"  {r['instrument']:12s} {r['n_scales']:7d} {ips:>12s} "
+              f"{r['pct_model']:7.1f} {r['pct_format']:8.1f} {r['pct_run']:6.1f}")
+
+    print()
+    print("=" * 78)
+    print("2c. FORMAT SENSITIVITY BY MODEL (mean |shift| across all scales)")
+    print("=" * 78)
+    for r in by_model(acc):
+        print(f"  {r['model']:34s} mean |shift|={r['mean_abs_shift']:.3f}  "
+              f"max={r['max_abs_shift']:.2f}  (n={r['n']})")
 
     print()
     print("=" * 78)

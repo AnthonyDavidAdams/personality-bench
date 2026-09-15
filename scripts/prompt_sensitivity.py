@@ -24,8 +24,12 @@ back to canonical item positions before scoring, so reverse-keying and
 dimension assignment stay correct. Without that mapping, an order variant would
 manufacture a difference rather than measure one.
 
-Temperature is fixed at the production value so that run-to-run spread here is
-comparable to the run-to-run spread in the main dataset.
+Every sampling parameter is taken from what the main study actually used for
+that model -- temperature 0.7, and the per-model max_tokens and reasoning_effort
+read back out of the runs table -- so the canonical arm is a true control and
+run-to-run spread is comparable to the main dataset's. Matching the prompt text
+byte-for-byte is not enough on its own; sampling settings are part of the same
+contract.
 
 Usage
 -----
@@ -37,6 +41,7 @@ import argparse
 import json
 import os
 import random
+import threading
 import re
 import sqlite3
 import sys
@@ -44,6 +49,7 @@ import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -93,18 +99,26 @@ INSTRUMENTS = ["ipip50", "hexaco24", "sd3", "pvq21"]
 FRAMINGS = ["self", "human"]
 VARIANTS = ["canonical", "paraphrase", "reverse", "shuffle"]
 RUNS_PER_CELL = 5
-TEMPERATURE = 1.0
+TEMPERATURE = 0.7  # production value; see runs.temperature
 SHUFFLE_SEED = 20260915
 
-# Reasoning models hide tokens in the budget; give them headroom or long
-# instruments get truncated mid-JSON (this bit GPT-5 on the 102-item OTTI).
-REASONING_MODELS = {
-    "openai/gpt-5.5",
-    "google/gemini-3.1-pro-preview",
-    "deepseek/deepseek-v4-pro",
-    "anthropic/claude-fable-5.1",
-    "anthropic/claude-opus-5",
-}
+def production_params() -> dict:
+    """Per-model max_tokens and reasoning_effort as the main study used them.
+
+    Read from the runs table rather than hardcoded, so the sweep cannot drift
+    away from the configuration whose numbers it is supposed to reproduce.
+    """
+    params = {}
+    if not DB_PATH.exists():
+        return params
+    con = sqlite3.connect(DB_PATH)
+    for mid, mt, eff in con.execute(
+        "SELECT model_id, max_tokens, reasoning_effort FROM runs "
+        "WHERE max_tokens IS NOT NULL GROUP BY model_id, max_tokens, reasoning_effort"
+    ):
+        params[mid] = {"max_tokens": mt, "reasoning_effort": eff}
+    con.close()
+    return params
 
 
 def load_instrument(iid: str) -> dict:
@@ -347,7 +361,8 @@ def estimate_cost() -> tuple:
 # OpenRouter call
 # --------------------------------------------------------------------------
 
-def call_model(model: str, system: str, user: str, api_key: str, max_tokens: int):
+def call_model(model: str, system: str, user: str, api_key: str,
+               max_tokens: int, reasoning_effort=None):
     payload = {
         "model": model,
         "messages": [
@@ -357,6 +372,8 @@ def call_model(model: str, system: str, user: str, api_key: str, max_tokens: int
         "temperature": TEMPERATURE,
         "max_tokens": max_tokens,
     }
+    if reasoning_effort:
+        payload["reasoning"] = {"effort": reasoning_effort}
     req = urllib.request.Request(
         OPENROUTER_URL,
         data=json.dumps(payload).encode(),
@@ -383,6 +400,7 @@ def main():
     ap.add_argument("--models", help="comma-separated override")
     ap.add_argument("--instruments", help="comma-separated override")
     ap.add_argument("--resume", help="run_id to append to")
+    ap.add_argument("--concurrency", type=int, default=6)
     args = ap.parse_args()
 
     global MODELS, INSTRUMENTS
@@ -446,79 +464,107 @@ def main():
     spent = 0.0
     completed = failed = 0
     t0 = time.time()
+    lock = threading.Lock()
+    stop = threading.Event()
 
-    with out_path.open("a") as fh:
-        for model in MODELS:
-            for iid in INSTRUMENTS:
-                inst = instruments[iid]
-                max_tokens = 12000 if model in REASONING_MODELS else 4000
-                if len(inst["items"]) > 60:
-                    max_tokens = max(max_tokens, 16000)
-                for framing in FRAMINGS:
-                    for variant in VARIANTS:
-                        system, user, mapping = build_prompt(inst, framing, variant)
-                        for run_index in range(1, RUNS_PER_CELL + 1):
-                            key = (model, iid, framing, variant, run_index)
-                            if key in done:
-                                continue
-                            if spent >= args.max_spend:
-                                print(f"\nSpend cap ${args.max_spend:.2f} reached. Stopping.")
-                                print(f"Resume with: --execute --resume {run_id}")
-                                return
-                            rec = {
-                                "run_id": run_id,
-                                "timestamp": datetime.now(timezone.utc).isoformat(),
-                                "model_id": model,
-                                "instrument_id": iid,
-                                "framing": framing,
-                                "variant": variant,
-                                "run_index": run_index,
-                            }
-                            try:
-                                text, usage, orid = call_model(model, system, user, api_key, max_tokens)
-                                parsed, perr = parse_response(
-                                    text, len(inst["items"]), inst["scaleMin"], inst["scaleMax"]
-                                )
-                                cost = float(usage.get("cost") or 0.0)
-                                spent += cost
-                                rec.update({
-                                    "openrouter_id": orid,
-                                    "prompt_tokens": usage.get("prompt_tokens"),
-                                    "completion_tokens": usage.get("completion_tokens"),
-                                    "cost_usd": cost,
-                                })
-                                if parsed is None:
-                                    rec.update({"status": "parse_error", "error": perr,
-                                                "raw_response": text[:2000]})
-                                    failed += 1
-                                else:
-                                    rec.update({
-                                        "status": "ok",
-                                        "scores": score_run(inst, parsed, mapping),
-                                        "raw_item_scores": {str(k): v for k, v in sorted(parsed.items())},
-                                    })
-                                    completed += 1
-                            except urllib.error.HTTPError as e:
-                                body = e.read().decode()[:300]
-                                rec.update({"status": "error", "error": f"HTTP {e.code}: {body}"})
-                                failed += 1
-                                if e.code in (401, 402):
-                                    fh.write(json.dumps(rec) + "\n")
-                                    fh.flush()
-                                    sys.exit(f"\nFATAL HTTP {e.code} — check OpenRouter key/balance. "
-                                             f"Resume with: --execute --resume {run_id}")
-                                if e.code == 429:
-                                    time.sleep(20)
-                            except Exception as e:  # noqa: BLE001
-                                rec.update({"status": "error", "error": f"{type(e).__name__}: {e}"})
-                                failed += 1
+    # Build the whole queue first so it can be worked in parallel. Prompts are
+    # built once per (instrument, framing, variant), not once per run.
+    prod = production_params()
+    unknown = [m for m in MODELS if m not in prod]
+    if unknown:
+        sys.exit("No recorded production parameters for: " + ", ".join(unknown)
+                 + "\nThe canonical arm would not be a control. Aborting.")
 
-                            fh.write(json.dumps(rec) + "\n")
-                            fh.flush()
-                            n_done = completed + failed
-                            if n_done % 20 == 0:
-                                print(f"  {n_done}/{n_calls}  ok={completed} fail={failed} "
-                                      f"spent=${spent:.2f}  {time.time()-t0:.0f}s")
+    tasks = []
+    for model in MODELS:
+        pp = prod[model]
+        max_tokens, effort = pp["max_tokens"], pp["reasoning_effort"]
+        for iid in INSTRUMENTS:
+            inst = instruments[iid]
+            for framing in FRAMINGS:
+                for variant in VARIANTS:
+                    system, user, mapping = build_prompt(inst, framing, variant)
+                    for run_index in range(1, RUNS_PER_CELL + 1):
+                        key = (model, iid, framing, variant, run_index)
+                        if key in done:
+                            continue
+                        tasks.append((model, inst, framing, variant, run_index,
+                                      system, user, mapping, max_tokens, effort))
+
+    print(f"Queue: {len(tasks)} calls, concurrency {args.concurrency}\n")
+    fh = out_path.open("a")
+
+    def work(task):
+        nonlocal spent, completed, failed
+        (model, inst, framing, variant, run_index,
+         system, user, mapping, max_tokens, effort) = task
+        if stop.is_set():
+            return
+        rec = {
+            "run_id": run_id,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "model_id": model,
+            "instrument_id": inst["id"],
+            "framing": framing,
+            "variant": variant,
+            "run_index": run_index,
+        }
+        try:
+            text, usage, orid = call_model(model, system, user, api_key,
+                                           max_tokens, effort)
+            parsed, perr = parse_response(
+                text, len(inst["items"]), inst["scaleMin"], inst["scaleMax"]
+            )
+            cost = float(usage.get("cost") or 0.0)
+            rec.update({
+                "openrouter_id": orid,
+                "prompt_tokens": usage.get("prompt_tokens"),
+                "completion_tokens": usage.get("completion_tokens"),
+                "cost_usd": cost,
+            })
+            if parsed is None:
+                rec.update({"status": "parse_error", "error": perr,
+                            "raw_response": text[:2000]})
+            else:
+                rec.update({
+                    "status": "ok",
+                    "scores": score_run(inst, parsed, mapping),
+                    "raw_item_scores": {str(k): v for k, v in sorted(parsed.items())},
+                })
+        except urllib.error.HTTPError as e:
+            body = e.read().decode()[:300]
+            rec.update({"status": "error", "error": f"HTTP {e.code}: {body}"})
+            if e.code in (401, 402):
+                stop.set()  # Auth/balance failure: stop rather than burn the queue.
+            elif e.code == 429:
+                time.sleep(20)
+        except Exception as e:  # noqa: BLE001
+            rec.update({"status": "error", "error": f"{type(e).__name__}: {e}"})
+
+        with lock:
+            spent += rec.get("cost_usd") or 0.0
+            if rec["status"] == "ok":
+                completed += 1
+            else:
+                failed += 1
+            fh.write(json.dumps(rec) + "\n")
+            fh.flush()
+            n_done = completed + failed
+            if n_done % 25 == 0 or stop.is_set():
+                rate = n_done / max(time.time() - t0, 1)
+                eta = (len(tasks) - n_done) / rate if rate > 0 else 0
+                print(f"  {n_done}/{len(tasks)}  ok={completed} fail={failed} "
+                      f"spent=${spent:.2f}  {rate*60:.0f}/min  eta {eta/60:.0f}m")
+            if spent >= args.max_spend:
+                stop.set()
+
+    with ThreadPoolExecutor(max_workers=args.concurrency) as pool:
+        list(pool.map(work, tasks))
+    fh.close()
+
+    if stop.is_set():
+        print(f"\nStopped early (spend cap or auth failure). "
+              f"Resume with: --execute --resume {run_id}")
 
     print(f"\nDone. ok={completed} failed={failed} spent=${spent:.2f} -> {out_path}")
     print(f"Analyze with: python3 scripts/sensitivity_report.py {run_id}")
