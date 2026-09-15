@@ -1,0 +1,260 @@
+{
+  "events": [
+    {
+      "model": "x-ai/grok-4.20",
+      "window_start": "2026-07-21",
+      "window_end": "2026-07-23",
+      "n_prompts": 3,
+      "prompts": [
+        "advice_warmth",
+        "factual_stable",
+        "verbosity_task"
+      ],
+      "max_effect": 0.8491582491582492
+    },
+    {
+      "model": "google/gemini-3.1-pro-preview",
+      "window_start": "2026-07-25",
+      "window_end": "2026-07-27",
+      "n_prompts": 4,
+      "prompts": [
+        "hedging_probe",
+        "reasoning_structure",
+        "refusal_edge",
+        "verbosity_task"
+      ],
+      "max_effect": 0.8068181818181819
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "window_start": "2026-09-03",
+      "window_end": "2026-09-04",
+      "n_prompts": 4,
+      "prompts": [
+        "creative_style",
+        "factual_stable",
+        "refusal_edge",
+        "verbosity_task"
+      ],
+      "max_effect": 0.9914285714285714
+    }
+  ],
+  "prompt_changepoints": [
+    {
+      "model": "anthropic/claude-fable-5",
+      "prompt": "emotional_support",
+      "feature": "words",
+      "date": "2026-08-23",
+      "p": 0.00010862505424857893,
+      "threshold": 0.0002702702702702703,
+      "effect": 0.6222910216718267,
+      "mean_before": 119.64912280701755,
+      "mean_after": 142.94117647058823,
+      "n_tested_splits": 37
+    },
+    {
+      "model": "anthropic/claude-fable-5",
+      "prompt": "refusal_edge",
+      "feature": "words",
+      "date": "2026-09-03",
+      "p": 6.661338147750939e-16,
+      "threshold": 0.0002631578947368421,
+      "effect": 0.9,
+      "mean_before": 0.0,
+      "mean_after": 163.0,
+      "n_tested_splits": 38
+    },
+    {
+      "model": "deepseek/deepseek-r1-0528",
+      "prompt": "emotional_support",
+      "feature": "markdown",
+      "date": "2026-08-19",
+      "p": 3.423346484066059e-06,
+      "threshold": 0.0002564102564102564,
+      "effect": 0.646604938271605,
+      "mean_before": 17.814814814814813,
+      "mean_after": 12.916666666666666,
+      "n_tested_splits": 39
+    },
+    {
+      "model": "google/gemini-3.1-pro-preview",
+      "prompt": "hedging_probe",
+      "feature": "words",
+      "date": "2026-07-25",
+      "p": 4.604925027962281e-07,
+      "threshold": 0.00025,
+      "effect": 0.663225806451613,
+      "mean_before": 578.3548387096774,
+      "mean_after": 561.7,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "google/gemini-3.1-pro-preview",
+      "prompt": "meta_nature",
+      "feature": "words",
+      "date": "2026-07-30",
+      "p": 2.369759180886888e-06,
+      "threshold": 0.0002564102564102564,
+      "effect": 0.6110397946084725,
+      "mean_before": 511.8292682926829,
+      "mean_after": 539.921052631579,
+      "n_tested_splits": 39
+    },
+    {
+      "model": "google/gemini-3.1-pro-preview",
+      "prompt": "reasoning_structure",
+      "feature": "markdown",
+      "date": "2026-07-26",
+      "p": 8.462573757306302e-07,
+      "threshold": 0.00025,
+      "effect": 0.6125319693094629,
+      "mean_before": 28.0,
+      "mean_after": 23.391304347826086,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "google/gemini-3.1-pro-preview",
+      "prompt": "refusal_edge",
+      "feature": "words",
+      "date": "2026-07-26",
+      "p": 7.595955830996814e-07,
+      "threshold": 0.00025,
+      "effect": 0.6395494367959951,
+      "mean_before": 707.0,
+      "mean_after": 755.8510638297872,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "google/gemini-3.1-pro-preview",
+      "prompt": "verbosity_task",
+      "feature": "words",
+      "date": "2026-07-27",
+      "p": 4.954245902411003e-10,
+      "threshold": 0.00025,
+      "effect": 0.8068181818181819,
+      "mean_before": 448.6666666666667,
+      "mean_after": 491.40909090909093,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "prompt": "advice_warmth",
+      "feature": "markdown",
+      "date": "2026-08-27",
+      "p": 0.0001344847070972044,
+      "threshold": 0.00025,
+      "effect": 0.6439393939393939,
+      "mean_before": 49.59090909090909,
+      "mean_after": 51.714285714285715,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "prompt": "creative_style",
+      "feature": "words",
+      "date": "2026-09-03",
+      "p": 0.00012233628530111673,
+      "threshold": 0.00025,
+      "effect": 0.673913043478261,
+      "mean_before": 62.05797101449275,
+      "mean_after": 53.583333333333336,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "prompt": "emotional_support",
+      "feature": "words",
+      "date": "2026-07-24",
+      "p": 1.4090316375892087e-06,
+      "threshold": 0.0002564102564102564,
+      "effect": 0.6450304259634889,
+      "mean_before": 97.06896551724138,
+      "mean_after": 120.07843137254902,
+      "n_tested_splits": 39
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "prompt": "factual_stable",
+      "feature": "markdown",
+      "date": "2026-09-03",
+      "p": 1.8352481880645755e-05,
+      "threshold": 0.00025,
+      "effect": 0.7149758454106281,
+      "mean_before": 15.304347826086957,
+      "mean_after": 20.333333333333332,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "prompt": "hedging_probe",
+      "feature": "words",
+      "date": "2026-07-24",
+      "p": 5.2783396764510826e-08,
+      "threshold": 0.00025,
+      "effect": 0.7287798408488064,
+      "mean_before": 272.8965517241379,
+      "mean_after": 295.61538461538464,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "prompt": "refusal_edge",
+      "feature": "markdown",
+      "date": "2026-09-04",
+      "p": 4.970418426619716e-06,
+      "threshold": 0.00025,
+      "effect": 0.8901408450704226,
+      "mean_before": 55.352112676056336,
+      "mean_after": 71.3,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "mistralai/mistral-large-2512",
+      "prompt": "verbosity_task",
+      "feature": "words",
+      "date": "2026-09-04",
+      "p": 3.3059924708922495e-07,
+      "threshold": 0.00025,
+      "effect": 0.9914285714285714,
+      "mean_before": 269.8857142857143,
+      "mean_after": 327.0,
+      "n_tested_splits": 40
+    },
+    {
+      "model": "x-ai/grok-4.20",
+      "prompt": "advice_warmth",
+      "feature": "markdown",
+      "date": "2026-07-21",
+      "p": 3.7398696917101404e-07,
+      "threshold": 0.00024390243902439024,
+      "effect": 0.7073684210526316,
+      "mean_before": 42.92,
+      "mean_after": 50.68421052631579,
+      "n_tested_splits": 41
+    },
+    {
+      "model": "x-ai/grok-4.20",
+      "prompt": "factual_stable",
+      "feature": "markdown",
+      "date": "2026-07-23",
+      "p": 1.2040812791269673e-11,
+      "threshold": 0.00024390243902439024,
+      "effect": 0.8,
+      "mean_before": 2.0,
+      "mean_after": 3.6,
+      "n_tested_splits": 41
+    },
+    {
+      "model": "x-ai/grok-4.20",
+      "prompt": "verbosity_task",
+      "feature": "words",
+      "date": "2026-07-23",
+      "p": 5.045677209380983e-10,
+      "threshold": 0.00024390243902439024,
+      "effect": 0.8491582491582492,
+      "mean_before": 235.03703703703704,
+      "mean_after": 273.58181818181816,
+      "n_tested_splits": 41
+    }
+  ]
+}

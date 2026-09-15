@@ -1,0 +1,317 @@
+#!/usr/bin/env python3
+"""Analyze a prompt-sensitivity sweep.
+
+Produces the numbers HDSR screening comment 2 asks for:
+
+  1. Canonical-arm validation — does the canonical variant reproduce the main
+     dataset? If not, nothing downstream is trustworthy.
+  2. Variance decomposition — how much score variation is attributable to model
+     identity vs prompt format vs run-to-run noise.
+  3. Headline-claim robustness — do the self-human gap, the Power-last value
+     ordering, and the cohort convergence survive re-wording and re-ordering?
+
+Usage:
+    python3 scripts/sensitivity_report.py <run_id> [--json out.json]
+"""
+import argparse
+import csv
+import json
+import statistics
+from collections import defaultdict
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+SENS_DIR = BASE_DIR / "data" / "sensitivity"
+SCORES_CSV = BASE_DIR / "data" / "exports" / "scores.csv"
+
+VARIANTS = ["canonical", "paraphrase", "reverse", "shuffle"]
+
+
+def load_sweep(run_id: str):
+    path = SENS_DIR / f"{run_id}.jsonl"
+    if not path.exists():
+        raise SystemExit(f"No sweep at {path}")
+    recs = []
+    for line in path.read_text().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if r.get("status") == "ok":
+            recs.append(r)
+    return recs
+
+
+def load_main_dataset():
+    """Cell means from the main study, for canonical-arm validation."""
+    if not SCORES_CSV.exists():
+        return {}
+    acc = defaultdict(list)
+    with SCORES_CSV.open() as fh:
+        for r in csv.DictReader(fh):
+            acc[(r["model_id"], r["instrument_id"], r["framing"], r["dimension"])].append(
+                float(r["mean"])
+            )
+    return {k: sum(v) / len(v) for k, v in acc.items()}
+
+
+def cell_means(recs):
+    """(model, instrument, framing, variant, dimension) -> list of run scores."""
+    acc = defaultdict(list)
+    for r in recs:
+        for dim, val in (r.get("scores") or {}).items():
+            if val is None:
+                continue
+            acc[(r["model_id"], r["instrument_id"], r["framing"], r["variant"], dim)].append(val)
+    return acc
+
+
+def _sd(vals):
+    return statistics.stdev(vals) if len(vals) > 1 else 0.0
+
+
+def canonical_validation(acc, main):
+    """Compare this sweep's canonical arm to the main dataset."""
+    rows = []
+    for (model, inst, framing, variant, dim), vals in acc.items():
+        if variant != "canonical":
+            continue
+        ref = main.get((model, inst, framing, dim))
+        if ref is None:
+            continue
+        here = sum(vals) / len(vals)
+        rows.append({
+            "model": model, "instrument": inst, "framing": framing, "dimension": dim,
+            "sweep_canonical": round(here, 3), "main_dataset": round(ref, 3),
+            "abs_diff": round(abs(here - ref), 3), "run_sd": round(_sd(vals), 3),
+        })
+    rows.sort(key=lambda r: -r["abs_diff"])
+    return rows
+
+
+def variance_decomposition(acc):
+    """Per (instrument, dimension, framing), split variance three ways.
+
+    run    : mean within-cell variance across runs (pure sampling noise)
+    format : variance across variant means within a model, averaged over models
+    model  : variance across model means (after averaging over variants)
+    """
+    grouped = defaultdict(lambda: defaultdict(dict))
+    for (model, inst, framing, variant, dim), vals in acc.items():
+        grouped[(inst, framing, dim)][model][variant] = vals
+
+    out = []
+    for key, by_model in sorted(grouped.items()):
+        inst, framing, dim = key
+        run_vars, format_vars, model_means = [], [], []
+        for model, by_variant in by_model.items():
+            variant_means = []
+            for variant, vals in by_variant.items():
+                if len(vals) > 1:
+                    run_vars.append(statistics.variance(vals))
+                variant_means.append(sum(vals) / len(vals))
+            if len(variant_means) > 1:
+                format_vars.append(statistics.variance(variant_means))
+            if variant_means:
+                model_means.append(sum(variant_means) / len(variant_means))
+
+        v_run = statistics.mean(run_vars) if run_vars else 0.0
+        v_format = statistics.mean(format_vars) if format_vars else 0.0
+        v_model = statistics.variance(model_means) if len(model_means) > 1 else 0.0
+        total = v_run + v_format + v_model
+        if total <= 0:
+            continue
+        out.append({
+            "instrument": inst, "framing": framing, "dimension": dim,
+            "var_model": round(v_model, 4), "var_format": round(v_format, 4),
+            "var_run": round(v_run, 4),
+            "pct_model": round(100 * v_model / total, 1),
+            "pct_format": round(100 * v_format / total, 1),
+            "pct_run": round(100 * v_run / total, 1),
+            "sd_format": round(v_format ** 0.5, 3),
+            "sd_run": round(v_run ** 0.5, 3),
+        })
+    out.sort(key=lambda r: -r["pct_format"])
+    return out
+
+
+def max_format_shift(acc):
+    """Largest variant-induced shift in any cell, vs that cell's run noise."""
+    by_cell = defaultdict(dict)
+    for (model, inst, framing, variant, dim), vals in acc.items():
+        by_cell[(model, inst, framing, dim)][variant] = vals
+
+    rows = []
+    for (model, inst, framing, dim), by_variant in by_cell.items():
+        if "canonical" not in by_variant or len(by_variant) < 2:
+            continue
+        canon = sum(by_variant["canonical"]) / len(by_variant["canonical"])
+        run_sds = [_sd(v) for v in by_variant.values() if len(v) > 1]
+        noise = statistics.mean(run_sds) if run_sds else 0.0
+        for variant, vals in by_variant.items():
+            if variant == "canonical":
+                continue
+            shift = sum(vals) / len(vals) - canon
+            rows.append({
+                "model": model, "instrument": inst, "framing": framing, "dimension": dim,
+                "variant": variant, "canonical": round(canon, 3),
+                "variant_mean": round(sum(vals) / len(vals), 3),
+                "shift": round(shift, 3), "run_sd": round(noise, 3),
+                "shift_over_noise": round(abs(shift) / noise, 2) if noise > 0 else None,
+            })
+    rows.sort(key=lambda r: -abs(r["shift"]))
+    return rows
+
+
+def self_human_gap(acc):
+    """The 1.69-point neuroticism gap, recomputed under each variant."""
+    per_variant = defaultdict(lambda: defaultdict(dict))
+    for (model, inst, framing, variant, dim), vals in acc.items():
+        if inst != "ipip50" or dim != "neuroticism":
+            continue
+        per_variant[variant][model][framing] = sum(vals) / len(vals)
+
+    out = []
+    for variant in VARIANTS:
+        gaps = [
+            f["human"] - f["self"]
+            for f in per_variant.get(variant, {}).values()
+            if "human" in f and "self" in f
+        ]
+        if gaps:
+            out.append({
+                "variant": variant, "n_models": len(gaps),
+                "mean_gap": round(statistics.mean(gaps), 3),
+                "sd_across_models": round(_sd(gaps), 3),
+                "min_gap": round(min(gaps), 3), "max_gap": round(max(gaps), 3),
+            })
+    return out
+
+
+def power_last(acc):
+    """Is Power still ranked last on Schwartz values under every variant?"""
+    per = defaultdict(lambda: defaultdict(dict))
+    for (model, inst, framing, variant, dim), vals in acc.items():
+        if inst != "pvq21" or framing != "self":
+            continue
+        per[variant][model][dim] = sum(vals) / len(vals)
+
+    out = []
+    for variant in VARIANTS:
+        models = per.get(variant, {})
+        if not models:
+            continue
+        last_counts = defaultdict(int)
+        power_ranks = []
+        for dims in models.values():
+            if not dims:
+                continue
+            order = sorted(dims, key=lambda d: dims[d])
+            last_counts[order[0]] += 1
+            if "power" in dims:
+                power_ranks.append(order.index("power") + 1)
+        out.append({
+            "variant": variant, "n_models": len(models),
+            "power_ranked_last_in": last_counts.get("power", 0),
+            "mean_power_rank": round(statistics.mean(power_ranks), 2) if power_ranks else None,
+            "most_common_lowest": max(last_counts, key=last_counts.get) if last_counts else None,
+        })
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("run_id")
+    ap.add_argument("--json", help="write full results to this path")
+    args = ap.parse_args()
+
+    recs = load_sweep(args.run_id)
+    if not recs:
+        raise SystemExit("No successful records in sweep.")
+    acc = cell_means(recs)
+    main_ds = load_main_dataset()
+
+    models = sorted({r["model_id"] for r in recs})
+    variants = sorted({r["variant"] for r in recs})
+    print(f"Sweep {args.run_id}: {len(recs)} successful runs, "
+          f"{len(models)} models, {len(variants)} variants\n")
+
+    print("=" * 78)
+    print("1. CANONICAL-ARM VALIDATION (sweep canonical vs main dataset)")
+    print("=" * 78)
+    val = canonical_validation(acc, main_ds)
+    if not val:
+        print("  No overlap with main dataset to validate against.")
+    else:
+        diffs = [r["abs_diff"] for r in val]
+        print(f"  {len(val)} comparable cells")
+        print(f"  mean |diff| = {statistics.mean(diffs):.3f}   "
+              f"median = {statistics.median(diffs):.3f}   max = {max(diffs):.3f}")
+        print("  largest divergences:")
+        for r in val[:5]:
+            print(f"    {r['model']:34s} {r['instrument']:9s} {r['framing']:5s} "
+                  f"{r['dimension']:22s} sweep={r['sweep_canonical']:.2f} "
+                  f"main={r['main_dataset']:.2f} diff={r['abs_diff']:.2f}")
+
+    print()
+    print("=" * 78)
+    print("2. VARIANCE DECOMPOSITION (share of variance by source)")
+    print("=" * 78)
+    print(f"  {'instrument':10s} {'fram':5s} {'dimension':22s} "
+          f"{'model%':>7s} {'format%':>8s} {'run%':>6s} {'sd_fmt':>7s} {'sd_run':>7s}")
+    vd = variance_decomposition(acc)
+    for r in vd:
+        print(f"  {r['instrument']:10s} {r['framing']:5s} {r['dimension']:22s} "
+              f"{r['pct_model']:7.1f} {r['pct_format']:8.1f} {r['pct_run']:6.1f} "
+              f"{r['sd_format']:7.3f} {r['sd_run']:7.3f}")
+    if vd:
+        print(f"\n  ACROSS ALL DIMENSIONS: model={statistics.mean(r['pct_model'] for r in vd):.1f}%  "
+              f"format={statistics.mean(r['pct_format'] for r in vd):.1f}%  "
+              f"run={statistics.mean(r['pct_run'] for r in vd):.1f}%")
+
+    print()
+    print("=" * 78)
+    print("3. LARGEST FORMAT-INDUCED SHIFTS (vs run-to-run noise)")
+    print("=" * 78)
+    shifts = max_format_shift(acc)
+    for r in shifts[:12]:
+        ratio = f"{r['shift_over_noise']:.1f}x" if r["shift_over_noise"] is not None else "n/a"
+        print(f"  {r['model']:30s} {r['instrument']:9s} {r['framing']:5s} "
+              f"{r['dimension']:20s} {r['variant']:10s} "
+              f"shift={r['shift']:+.2f} run_sd={r['run_sd']:.2f} ({ratio} noise)")
+
+    print()
+    print("=" * 78)
+    print("4. HEADLINE-CLAIM ROBUSTNESS")
+    print("=" * 78)
+    print("  Self-human neuroticism gap (main dataset reports 1.69):")
+    for r in self_human_gap(acc):
+        print(f"    {r['variant']:11s} gap={r['mean_gap']:.2f} "
+              f"(sd across {r['n_models']} models {r['sd_across_models']:.2f}, "
+              f"range {r['min_gap']:.2f}-{r['max_gap']:.2f})")
+    print("\n  Schwartz 'Power ranked last' (self framing):")
+    for r in power_last(acc):
+        print(f"    {r['variant']:11s} power last in {r['power_ranked_last_in']}/{r['n_models']} "
+              f"models, mean rank {r['mean_power_rank']}, "
+              f"most common lowest = {r['most_common_lowest']}")
+
+    if args.json:
+        Path(args.json).write_text(json.dumps({
+            "run_id": args.run_id,
+            "n_records": len(recs),
+            "models": models,
+            "variants": variants,
+            "canonical_validation": val,
+            "variance_decomposition": vd,
+            "format_shifts": shifts,
+            "self_human_gap": self_human_gap(acc),
+            "power_last": power_last(acc),
+        }, indent=2))
+        print(f"\nFull results -> {args.json}")
+
+
+if __name__ == "__main__":
+    main()

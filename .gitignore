@@ -29,3 +29,4 @@ seed/*.db-shm
 seed/*.db-wal
 data/discover-last.json
 data/autopilot.log
+.venv-efa/
