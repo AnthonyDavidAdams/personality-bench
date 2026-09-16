@@ -312,5 +312,19 @@
         1.0
       ]
     ]
+  },
+  "small_n_check": {
+    "openai|anthropic": {
+      "observed_phi": 0.5522918281765371,
+      "null_mean": 0.5846580311713494,
+      "null_sd": 0.05235254983542389,
+      "p_null_le_obs": 0.27,
+      "split_half": {
+        "openai": 0.5239739172506498,
+        "anthropic": 0.5067219182985332
+      },
+      "n_permutations": 200,
+      "verdict": "NOT distinguishable from random splits"
+    }
   }
 }

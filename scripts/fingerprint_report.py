@@ -232,6 +232,38 @@ def _emit_event(events, model, cluster):
     })
 
 
+def permutation_null(ok, n_draws=20, seed=20260915):
+    """Shuffle timestamps within each (model, prompt) series and re-detect.
+
+    Any real changepoint is destroyed by the shuffle, so the counts that come
+    back are what the detector produces from noise alone. Reported alongside
+    the observed counts so the events are never quoted without their null.
+    """
+    import random
+    rng = random.Random(seed)
+    by = defaultdict(list)
+    for e in ok:
+        by[(e["model_id"], e["prompt_id"])].append(e)
+    null_cp, null_ev = [], []
+    for _ in range(n_draws):
+        shuffled = []
+        for entries in by.values():
+            ts = [e["timestamp"] for e in entries]
+            rng.shuffle(ts)
+            for e, t in zip(entries, ts):
+                e2 = dict(e)
+                e2["timestamp"] = t
+                shuffled.append(e2)
+        cp, ev = detect(shuffled)
+        null_cp.append(len(cp))
+        null_ev.append(len(ev))
+    return {
+        "n_draws": n_draws,
+        "changepoints_mean": sum(null_cp) / n_draws, "changepoints_max": max(null_cp),
+        "events_mean": sum(null_ev) / n_draws, "events_max": max(null_ev),
+    }
+
+
 def coverage(ok, errs):
     """What the longitudinal record can actually support."""
     all_days = defaultdict(lambda: [0, 0])
@@ -325,6 +357,8 @@ def main():
     ap.add_argument("--prompts", action="store_true", help="Per-(model,prompt) changepoint detail")
     ap.add_argument("--coverage", action="store_true", help="Log health and gaps")
     ap.add_argument("--duplicates", action="store_true", help="Exact-hash duplicate rate (old view)")
+    ap.add_argument("--null", type=int, metavar="N", default=0,
+                    help="also run N permutation draws and report the null event rate")
     ap.add_argument("--json", help="write events to this path")
     args = ap.parse_args()
 
@@ -368,9 +402,18 @@ def main():
         print(f"\n{n_clustered} of {len(per_prompt)} changepoints fall in these events; "
               f"{len(per_prompt) - n_clustered} remain isolated (noise).")
 
+    null = None
+    if args.null:
+        null = permutation_null(ok, args.null)
+        print(f"\nPermutation null ({null['n_draws']} date-shuffled draws): "
+              f"changepoints mean={null['changepoints_mean']:.1f} max={null['changepoints_max']}, "
+              f"events mean={null['events_mean']:.2f} max={null['events_max']} "
+              f"(observed: {len(per_prompt)} / {len(events)})")
+
     if args.json:
         Path(args.json).write_text(json.dumps({
             "events": events,
+            "permutation_null": null,
             "prompt_changepoints": [
                 {"model": m, "prompt": p, "feature": f, **cp}
                 for (m, p, f), cp in sorted(per_prompt.items())

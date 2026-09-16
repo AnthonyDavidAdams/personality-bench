@@ -154,6 +154,57 @@ for i, l1 in enumerate(lab_names):
     row_str = "  ".join(f"{congruence_mat[i,j]:.3f}" for j in range(len(lab_names)))
     print(f"{l1:>10s}  {row_str}")
 
+# --- Is the cross-lab non-congruence distinguishable from small-N noise? ---
+# Per-lab EFA here fits k factors on p features with N in the low teens, so N
+# is at or below p and the solutions are unstable. Low congruence between two
+# such solutions can arise with no lab difference at all. Two checks, run
+# every time so the number is never reported without them:
+#   (1) random-split null: reassign the two labs' models to two groups of the
+#       same sizes at random, refit, and see where the observed phi falls;
+#   (2) split-half self-congruence: how well does each lab's solution agree
+#       with itself across random halves of its own models?
+rng = np.random.default_rng(20260915)
+fitted_labs = [l for l in lab_names if l != "pool"]
+null_results = {}
+if len(fitted_labs) >= 2:
+    def _fit(Z):
+        return pd.DataFrame(
+            FactorAnalysis(n_components=k, rotation="varimax", random_state=0)
+            .fit(Z.values).components_.T, index=Z.columns)
+    print("\n=== Small-N check: random-split null and split-half stability ===")
+    for a_i in range(len(fitted_labs)):
+        for b_i in range(a_i + 1, len(fitted_labs)):
+            la, lb = fitted_labs[a_i], fitted_labs[b_i]
+            Xa, Xb = Xn.xs(la, level="lab"), Xn.xs(lb, level="lab")
+            obs = congruence_mat[lab_names.index(la), lab_names.index(lb)]
+            both = pd.concat([Xa, Xb]); na = len(Xa)
+            null = []
+            for _ in range(200):
+                idx = rng.permutation(len(both))
+                phi_null, _, _ = best_congruence(_fit(both.iloc[idx[:na]]), _fit(both.iloc[idx[na:]]))
+                null.append(phi_null)
+            null = np.array(null)
+            p_val = float((null <= obs).mean())
+            sh = {}
+            for lab, Z in ((la, Xa), (lb, Xb)):
+                vals = []
+                for _ in range(100):
+                    idx = rng.permutation(len(Z)); h = len(Z) // 2
+                    v, _, _ = best_congruence(_fit(Z.iloc[idx[:h]]), _fit(Z.iloc[idx[h:]]))
+                    vals.append(v)
+                sh[lab] = float(np.mean(vals))
+            verdict = ("NOT distinguishable from random splits" if p_val > 0.05
+                       else "distinguishable from random splits")
+            print(f"  {la} vs {lb}: observed phi={obs:.3f}; random-split null "
+                  f"mean={null.mean():.3f} sd={null.std():.3f}; P(null<=obs)={p_val:.3f} "
+                  f"-> {verdict}")
+            print(f"    split-half self-congruence: {la}={sh[la]:.3f}  {lb}={sh[lb]:.3f}")
+            null_results[f"{la}|{lb}"] = {
+                "observed_phi": float(obs), "null_mean": float(null.mean()),
+                "null_sd": float(null.std()), "p_null_le_obs": p_val,
+                "split_half": sh, "n_permutations": 200, "verdict": verdict,
+            }
+
 # Save results
 OUT_JSON.write_text(json.dumps({
     "n_factors": k,
@@ -162,7 +213,8 @@ OUT_JSON.write_text(json.dumps({
     "congruence": {
         "labs": lab_names,
         "matrix": congruence_mat.tolist(),
-    }
+    },
+    "small_n_check": null_results
 }, indent=2))
 print(f"\nSaved to {OUT_JSON}")
 

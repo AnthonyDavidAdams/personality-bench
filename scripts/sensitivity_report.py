@@ -95,9 +95,19 @@ def canonical_validation(acc, main):
 def variance_decomposition(acc):
     """Per (instrument, dimension, framing), split variance three ways.
 
-    run    : mean within-cell variance across runs (pure sampling noise)
-    format : variance across variant means within a model, averaged over models
-    model  : variance across model means (after averaging over variants)
+    Nested design: run within variant within model. Components are estimated
+    by expected mean squares, not by taking the variance of cell means
+    directly. The distinction matters: the variance of five-run variant means
+    contains sigma^2_run / 5 of sampling error, and the variance of model
+    means contains sigma^2_format / n_v + sigma^2_run / (n_r * n_v). Reading
+    those raw variances as components overstated the format share by about
+    three points on this sweep (20.4% -> 17.5%).
+
+    run    : sigma^2_run    mean within-cell variance across runs
+    format : sigma^2_format variance of variant means minus its run-noise part
+    model  : sigma^2_model  variance of model means minus format and run parts
+    Negative estimates (a component smaller than its own sampling error) are
+    floored at zero, as is standard for method-of-moments variance components.
     """
     grouped = defaultdict(lambda: defaultdict(dict))
     for (model, inst, framing, variant, dim), vals in acc.items():
@@ -106,21 +116,32 @@ def variance_decomposition(acc):
     out = []
     for key, by_model in sorted(grouped.items()):
         inst, framing, dim = key
-        run_vars, format_vars, model_means = [], [], []
+        run_vars, obs_format_vars, model_means = [], [], []
+        n_r_list, n_v_list = [], []
         for model, by_variant in by_model.items():
             variant_means = []
             for variant, vals in by_variant.items():
                 if len(vals) > 1:
                     run_vars.append(statistics.variance(vals))
+                    n_r_list.append(len(vals))
                 variant_means.append(sum(vals) / len(vals))
             if len(variant_means) > 1:
-                format_vars.append(statistics.variance(variant_means))
+                obs_format_vars.append(statistics.variance(variant_means))
+                n_v_list.append(len(variant_means))
             if variant_means:
                 model_means.append(sum(variant_means) / len(variant_means))
 
-        v_run = statistics.mean(run_vars) if run_vars else 0.0
-        v_format = statistics.mean(format_vars) if format_vars else 0.0
-        v_model = statistics.variance(model_means) if len(model_means) > 1 else 0.0
+        if not run_vars or not obs_format_vars or len(model_means) < 2:
+            continue
+        n_r = statistics.mean(n_r_list)
+        n_v = statistics.mean(n_v_list)
+
+        v_run = statistics.mean(run_vars)
+        obs_format = statistics.mean(obs_format_vars)
+        obs_model = statistics.variance(model_means)
+
+        v_format = max(obs_format - v_run / n_r, 0.0)
+        v_model = max(obs_model - v_format / n_v - v_run / (n_r * n_v), 0.0)
         total = v_run + v_format + v_model
         if total <= 0:
             continue
