@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { listModelsForUi } from "@/lib/queries";
+import { listModelsForUi, VENDOR_LABELS } from "@/lib/queries";
 import { getModelProfile } from "@/lib/model_profiles";
 import { zodiacFromDate } from "@/lib/zodiac";
-import { ZodiacIcon, ELEMENT_COLORS } from "@/components/ZodiacIcon";
+import { computeModelFindings } from "@/lib/findings";
+import { ModelsExplorer, type ModelExplorerRow } from "@/components/ModelsExplorer";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
@@ -10,65 +10,47 @@ export const dynamic = "force-dynamic";
 export const metadata = buildMetadata({
   title: "The gallery",
   description:
-    "Every model in the Personality Bench dataset, indexed by lab, release date, zodiac sign and Human Design type. Includes nine cutting-edge frontier models and 22 historical predecessors.",
+    "Every model in the Personality Bench dataset, sortable by lab, release date, cohort, cost and run count. Frontier flagships and their historical predecessors, with full personality data and cost transparency.",
   path: "/models",
 });
 
-function fmtUsd(n: number) {
-  if (!n) return "$0";
-  if (n < 0.01) return `$${n.toFixed(5)}`;
-  return `$${n.toFixed(2)}`;
-}
-function fmtPerM(n?: number | null) {
-  if (n == null) return "—";
-  return `$${n.toFixed(2)}`;
-}
-
 export default function ModelsIndex() {
-  const models = listModelsForUi().filter((m) => m.runsCompleted > 0);
+  const rows: ModelExplorerRow[] = listModelsForUi()
+    .filter((m) => m.runsCompleted > 0)
+    .map((m) => {
+      const profile = getModelProfile(m.id);
+      // The DB release_date is authoritative — discovered models have one but no static profile.
+      const releaseDate = m.releaseDate ?? profile?.releaseDate ?? null;
+      const zod = zodiacFromDate(releaseDate);
+      return {
+        id: m.id,
+        displayName: m.displayName,
+        lab: VENDOR_LABELS[m.vendor] ?? m.vendor,
+        cohort: m.cohort === "frontier" ? "Frontier" : "Historical",
+        releaseDate,
+        addedAt: m.addedAt,
+        reasoning: !!m.reasoning,
+        runs: m.runsCompleted,
+        spend: m.totalSpend,
+        priceIn: m.pricingPromptUsd,
+        priceOut: m.pricingCompletionUsd,
+        archetype: computeModelFindings(m.id, m.displayName).bigFiveLabel,
+        hq: profile ? `${profile.hqCity}, ${profile.hqCountry}` : null,
+        zodiacSign: zod?.sign ?? null,
+        zodiacElement: zod?.element ?? null,
+        zodiacBlurb: zod?.blurb ?? null,
+      };
+    });
+
   return (
     <div>
       <h1 className="serif text-3xl font-semibold tracking-tight mb-2 text-neutral-900">Models</h1>
       <p className="text-neutral-600 mb-8 max-w-2xl">
-        The cutting-edge model from every major frontier lab, with full personality data and cost transparency.
+        Every model in the dataset — the cutting-edge release from each major frontier lab plus the
+        historical predecessors we test them against. Sort by lab, release date, cost or run count;
+        filter to one lab or one cohort.
       </p>
-      <div className="grid md:grid-cols-2 gap-4">
-        {models.map((m) => {
-          const profile = getModelProfile(m.id);
-          const zod = zodiacFromDate(profile?.releaseDate);
-          return (
-            <Link
-              key={m.id}
-              href={`/models/${encodeURIComponent(m.id)}`}
-              className="card block p-5 hover:border-[var(--accent)] transition"
-            >
-              <div className="flex items-baseline justify-between gap-2">
-                <span className="serif font-semibold text-lg text-neutral-900">{m.displayName}</span>
-                {zod ? (
-                  <span className="flex items-center gap-1.5 text-xs text-neutral-600" title={zod.blurb}>
-                    <span style={{ color: ELEMENT_COLORS[zod.element] }}>
-                      <ZodiacIcon sign={zod.sign} size={16} />
-                    </span>
-                    {zod.sign}
-                  </span>
-                ) : null}
-              </div>
-              <div className="text-xs text-neutral-500 font-mono mt-1">{m.id}</div>
-              {profile ? (
-                <div className="text-xs text-neutral-600 mt-2">
-                  {profile.hqCity}, {profile.hqCountry} · released {profile.releaseDate}
-                </div>
-              ) : null}
-              <div className="text-xs text-neutral-600 mt-3">
-                {fmtPerM(m.pricingPromptUsd)}/M in · {fmtPerM(m.pricingCompletionUsd)}/M out
-              </div>
-              <div className="text-xs text-neutral-500 mt-1">
-                {m.runsCompleted} runs · {fmtUsd(m.totalSpend)} spent
-              </div>
-            </Link>
-          );
-        })}
-      </div>
+      <ModelsExplorer rows={rows} />
     </div>
   );
 }

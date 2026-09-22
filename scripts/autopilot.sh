@@ -1,6 +1,7 @@
 #!/bin/zsh
 # Nightly autopilot: discover new frontier models → sweep → write + publish the dispatch →
-# refresh seed/exports/figures/paper → commit named files → push → deploy → email.
+# refresh seed/exports/figures/paper → commit named files → push → deploy → queue the
+# Hacker News post → email.
 # Runs from launchd on the always-on Mac (see scripts/launchd/*.plist). Safe to re-run.
 set -uo pipefail
 cd /Users/anthony/personality-bench
@@ -30,8 +31,23 @@ drift figures, and paper PDF.
 Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>" >> $LOG 2>&1 && git push -q origin HEAD >> $LOG 2>&1 && log "pushed" || log "git commit/push failed"
 railway up --detach --ci >> $LOG 2>&1 && log "deploy triggered" || log "railway up failed"
 
+# Queue (never send) the Hacker News post for each new model. Posting is a manual step:
+# HN penalises accounts that submit on a cron, and 06:00 local is a dead slot anyway.
+# Fire one with: npx tsx scripts/post_hn.ts --post <model_id>
+HN_LINES=""
+for M in ${(z)MODELS}; do
+  if npx tsx scripts/post_hn.ts --draft "$M" >> $LOG 2>&1; then
+    HN_LINES="${HN_LINES}HN post drafted for $M — publish with: npx tsx scripts/post_hn.ts --post $M"$'\n'
+    log "hn draft queued for $M"
+  else
+    log "hn draft failed for $M"
+  fi
+done
+
 SUMMARY=$(python3 -c "
 import json; d=json.load(open('data/discover-last.json'))
 print('\n'.join(f\"{m['id']}: {m['ok']} ok / {m['fail']} fail, \${m['spent']:.2f} — https://persona.earthpilot.ai/models/{m['id']}\" for m in d['models']))")
-npx tsx -e "import { notify } from './scripts/discover_and_run'; notify(process.argv[1].split('\n'), 'new model(s) live: ' + process.argv[2]);" "$SUMMARY" "$MODELS" >> $LOG 2>&1
+BODY="$SUMMARY"
+[ -n "$HN_LINES" ] && BODY="$SUMMARY"$'\n'"${HN_LINES%$'\n'}"
+npx tsx -e "import { notify } from './scripts/discover_and_run'; notify(process.argv[1].split('\n').filter(Boolean), 'new model(s) live: ' + process.argv[2]);" "$BODY" "$MODELS" >> $LOG 2>&1
 log "done"

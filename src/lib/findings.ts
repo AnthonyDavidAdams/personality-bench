@@ -6,6 +6,7 @@
  * database; no per-model hardcoding.
  */
 import { rawSqlite } from "./db";
+import { memo } from "./cache";
 
 interface DimRow {
   modelId: string;
@@ -13,6 +14,10 @@ interface DimRow {
 }
 
 function getCohort(instrumentId: string, dimension: string, framing: "self" | "human"): DimRow[] {
+  return memo(`cohort:${instrumentId}:${dimension}:${framing}`, 60_000, () => getCohortUncached(instrumentId, dimension, framing));
+}
+
+function getCohortUncached(instrumentId: string, dimension: string, framing: "self" | "human"): DimRow[] {
   const db = rawSqlite();
   return db
     .prepare(
@@ -24,16 +29,27 @@ function getCohort(instrumentId: string, dimension: string, framing: "self" | "h
     .all(instrumentId, dimension, framing) as DimRow[];
 }
 
-function rank(modelId: string, cohort: DimRow[]): { rank: number; n: number; mean: number | null; min: number; max: number; cohortMean: number } {
-  const sorted = [...cohort].sort((a, b) => b.mean - a.mean);
-  const idx = sorted.findIndex((c) => c.modelId === modelId);
+// Scores are means of 5 Likert runs, so exact ties are common — a dozen models can all
+// sit at 5.00 on Honesty-Humility. Ranking by sorted position then hands eleven of them a
+// rank like "30 of 46" while the tier logic correctly calls them "the highest in the cohort".
+// Competition ranking (1224) instead: everyone tied at the top is rank 1.
+const TIE_EPSILON = 0.005;
+
+function rank(
+  modelId: string,
+  cohort: DimRow[],
+): { rank: number; n: number; tiedWith: number; mean: number | null; min: number; max: number; cohortMean: number } {
   const myRow = cohort.find((c) => c.modelId === modelId);
   const means = cohort.map((c) => c.mean);
   const cohortMean = means.length ? means.reduce((a, b) => a + b, 0) / means.length : 0;
+  const mine = myRow?.mean ?? null;
+  const better = mine == null ? 0 : cohort.filter((c) => c.mean > mine + TIE_EPSILON).length;
+  const tiedWith = mine == null ? 0 : cohort.filter((c) => c.modelId !== modelId && Math.abs(c.mean - mine) <= TIE_EPSILON).length;
   return {
-    rank: idx === -1 ? -1 : idx + 1,
+    rank: mine == null ? -1 : better + 1,
     n: cohort.length,
-    mean: myRow?.mean ?? null,
+    tiedWith,
+    mean: mine,
     min: Math.min(...means),
     max: Math.max(...means),
     cohortMean,
@@ -70,6 +86,7 @@ interface Finding {
   mean: number;
   rank: number;
   n: number;
+  tiedWith: number;         // how many other models share this score
   tier: NonNullable<ReturnType<typeof tier>>;
   narrative: string;       // single-sentence English description
 }
@@ -121,22 +138,28 @@ export function computeModelFindings(modelId: string, displayName: string): Mode
     // Only keep dimensions where the model is notably extreme (rank 1, last, or "very high/low").
     const isNotable = t === "highest" || t === "lowest" || t === "very high" || t === "very low";
     if (!isNotable) continue;
-    const narrative = buildNarrative(def.label, def.family, t, r.mean, r.rank, r.n, def);
+    const narrative = buildNarrative(def.label, def.family, t, r.mean, r.rank, r.n, r.tiedWith, def);
     allBullets.push({
       family: def.family,
       dimension: def.label,
       mean: r.mean,
       rank: r.rank,
       n: r.n,
+      tiedWith: r.tiedWith,
       tier: t,
       narrative,
     });
   }
 
-  // Sort by interestingness — highs/lows first, then by deviation magnitude
+  // Sort by interestingness — highs/lows first, then by how much the score actually
+  // distinguishes this model. Several scales saturate (30 of 46 models max out HEXACO
+  // Honesty-Humility), and "highest, tied with 29 others" is a weaker fact about a model
+  // than a rank it holds alone, so ties sink.
   allBullets.sort((a, b) => {
     const order = { highest: 0, lowest: 1, "very high": 2, "very low": 3, "above average": 4, "below average": 5, average: 6 } as Record<string, number>;
-    return (order[a.tier] ?? 9) - (order[b.tier] ?? 9);
+    const byTier = (order[a.tier] ?? 9) - (order[b.tier] ?? 9);
+    if (byTier !== 0) return byTier;
+    return a.tiedWith - b.tiedWith;
   });
 
   const summary = buildSummary(displayName, allBullets);
@@ -158,10 +181,12 @@ function buildNarrative(
   mean: number,
   rank: number,
   n: number,
+  tiedWith: number,
   def: typeof DIMENSIONS_OF_INTEREST[number],
 ): string {
   const tierStr = TIER_STR[t];
-  const rankStr = t === "highest" ? `#1 of ${n}` : t === "lowest" ? `${n} of ${n}` : `${rank} of ${n}`;
+  const tieStr = tiedWith > 0 ? `, tied with ${tiedWith} other${tiedWith === 1 ? "" : "s"}` : "";
+  const rankStr = `#${rank} of ${n}${tieStr}`;
   // Flavor by dimension family
   if (family === "Dark Triad") {
     if (t === "highest" || t === "very high") {

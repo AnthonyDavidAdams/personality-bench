@@ -160,17 +160,38 @@ export function listInstrumentsForUi() {
     .all() as { id: string; name: string; shortName: string; family: string; itemCount: number; scaleMin: number; scaleMax: number; description: string; citation: string; dimensions: string }[];
 }
 
-export function listModelsForUi() {
+export interface ModelUiRow {
+  id: string;
+  displayName: string;
+  vendor: string;
+  family: string | null;
+  reasoning: number;
+  cohort: string | null;
+  lineage: string | null;
+  releaseDate: string | null;
+  contextWindow: number | null;
+  pricingPromptUsd: number | null;
+  pricingCompletionUsd: number | null;
+  runsCompleted: number;
+  totalSpend: number;
+  lastRunAt: number | null;
+  addedAt: number | null;
+}
+
+export function listModelsForUi(): ModelUiRow[] {
   const db = rawSqlite();
   return db
     .prepare(
       `SELECT m.id, m.display_name as displayName, m.vendor, m.family, m.reasoning,
+              m.cohort, m.lineage, m.release_date as releaseDate, m.context_window as contextWindow,
               m.pricing_prompt_usd as pricingPromptUsd, m.pricing_completion_usd as pricingCompletionUsd,
               (SELECT COUNT(*) FROM runs r WHERE r.model_id = m.id AND r.status='completed') as runsCompleted,
-              (SELECT COALESCE(SUM(r.cost_usd), 0) FROM runs r WHERE r.model_id = m.id) as totalSpend
+              (SELECT COALESCE(SUM(r.cost_usd), 0) FROM runs r WHERE r.model_id = m.id) as totalSpend,
+              (SELECT MAX(r.completed_at) FROM runs r WHERE r.model_id = m.id AND r.status='completed') as lastRunAt,
+              COALESCE(m.discovered_at, (SELECT MIN(r.completed_at) FROM runs r WHERE r.model_id = m.id AND r.status='completed')) as addedAt
        FROM models m WHERE m.active=1 ORDER BY m.vendor, m.display_name`,
     )
-    .all() as any[];
+    .all() as ModelUiRow[];
 }
 
 /**
@@ -188,7 +209,7 @@ export interface SpendTableRow {
   costUsd: number;
 }
 
-const VENDOR_LABELS: Record<string, string> = {
+export const VENDOR_LABELS: Record<string, string> = {
   anthropic: "Anthropic",
   openai: "OpenAI",
   google: "Google",
