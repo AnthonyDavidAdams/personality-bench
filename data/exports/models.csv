@@ -50,10 +50,11 @@ openai/gpt-6-astra,openai,GPT-6 Astra,gpt,frontier,0,10,50,1
 openai/gpt-6-astra-pro,openai,GPT-6 Astra Pro,gpt,frontier,0,10,50,1
 openai/o1,openai,OpenAI o1,o-series,frontier,1,15,60,1
 openai/o3,openai,OpenAI o3,o-series,frontier,1,2,8,1
-x-ai/grok-4.5,x-ai,Grok 4.5,x-ai,frontier,0,2,6,1
-x-ai/grok-4.6,x-ai,Grok 4.6,x-ai,frontier,0,2,6,1
+x-ai/grok-4.7,x-ai,Grok 4.7,x-ai,frontier,0,1.5999999999999999,4.8,1
 x-ai/grok-2,xai,Grok 2,grok-2,frontier,0,,,0
 x-ai/grok-3,xai,Grok 3,grok-3,frontier,0,,,0
 x-ai/grok-4,xai,Grok 4,grok-4,frontier,0,,,0
 x-ai/grok-4.20,xai,Grok 4.20,grok-4,frontier,0,1.25,2.5,1
 x-ai/grok-4.3,xai,Grok 4.3,grok-4,frontier,0,1.25,2.5,1
+x-ai/grok-4.5,xai,Grok 4.5,x-ai,frontier,0,2,6,1
+x-ai/grok-4.6,xai,Grok 4.6,x-ai,frontier,0,2,6,1
