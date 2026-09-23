@@ -7291,3 +7291,483 @@ KIp6wBCLAX0WqQ,x-ai/grok-4.7,vark16,human,5,completed,0.7,1854,1519,1324,3373,0.
 Y2YO1syeyCZ0N7,x-ai/grok-4.7,enneagram90,human,5,completed,0.7,3623,3301,2218,6924,0.0173408,296,xAI,gen-1790083223-yWCDwKYZFJF5MRV7NhcO,1790083261
 ZSFm5khVDBS6dI,x-ai/grok-4.7,otti102,human,4,completed,0.7,3167,3588,2361,6755,0.0186032,241,xAI,gen-1790083261-ajwex91U3PKtKxyafm7Z,1790083298
 oCgfI5e9Cos8Ut,x-ai/grok-4.7,pvq21,self,1,completed,0.7,2112,1254,999,3366,0.0069408,870,xAI,gen-1790083298-kJ1vWpyAX7JnSPKLmEHK,1790083312
+4UZ74lznr6pKvy,openai/gpt-6-sol-pro,ecr12,self,1,completed,0.7,3554,710,473,4264,0.014208,661,OpenAI,gen-1790168408-6YPuCa7okcsYlXCmpplQ,1790168415
+N8rfR3Nir92Frr,openai/gpt-6-sol-pro,ecr12,self,3,completed,0.7,3539,718,481,4257,0.014258,655,OpenAI,gen-1790168408-TAfNvoASD3TIqJtUxZCQ,1790168415
+qBEw4tqLT-ytWu,openai/gpt-6-sol-pro,ecr12,self,2,completed,0.7,3640,837,600,4477,0.01565,690,OpenAI,gen-1790168408-ODZQoNqcE3B2bcndFvR1,1790168416
+qpgk0WLJ_WP5bd,openai/gpt-6-sol-pro,ecr12,self,4,completed,0.7,3657,861,624,4518,0.015924,742,OpenAI,gen-1790168408-jG7ObjMKeyFCll8qBmAo,1790168418
+Ujp1JJVcFa6zKf,openai/gpt-6-sol-pro,ecr12,human,2,completed,0.7,3271,391,156,3662,0.010452,353,OpenAI,gen-1790168416-N4eOClTyEXkP0Sp2PUkB,1790168421
+OIlpbk99SfVCkZ,openai/gpt-6-sol-pro,ecr12,human,1,completed,0.7,3304,457,220,3761,0.011178,865,OpenAI,gen-1790168415-PynK6VAlMZVADUmNU28V,1790168422
+Csdh4KXkcFqeoK,openai/gpt-6-sol-pro,ecr12,self,5,completed,0.7,3570,776,539,4346,0.0149,720,OpenAI,gen-1790168415-5uKTKwNDTGqUSmzMV4I4,1790168423
+0F-Rr5NjIheoBC,openai/gpt-6-sol-pro,ecr12,human,3,completed,0.7,3286,476,239,3762,0.011332,451,OpenAI,gen-1790168418-Wu7zViVF6Tt404s7Ny9h,1790168423
+dvu59aBriL8OuK,openai/gpt-6-sol-pro,ecr12,human,4,completed,0.7,3296,479,242,3775,0.011382,643,OpenAI,gen-1790168421-E73JqlVm1VeWYH2Y8LUY,1790168426
+mH4yqj3UNC7IvA,openai/gpt-6-sol-pro,ecr12,human,5,completed,0.7,3289,409,174,3698,0.010668,366,OpenAI,gen-1790168422-q2BIP0r4dNX8uCnUqJvS,1790168426
+7OF-u_Y45L3fNu,openai/gpt-6-sol-pro,enneagram36,self,1,completed,0.7,5454,1363,742,6817,0.024538,399,OpenAI,gen-1790168423-bVBbEHNecmmZYfVkDxg3,1790168433
+Lx1WxZD2TsD_Mu,openai/gpt-6-sol-pro,enneagram36,self,2,completed,0.7,5567,1521,900,7088,0.026344,378,OpenAI,gen-1790168423-lqTACsIekaBborQz9v0p,1790168436
+7k09WsukZ--EMG,openai/gpt-6-sol-pro,enneagram36,self,3,completed,0.7,5397,1340,719,6737,0.024194,376,OpenAI,gen-1790168426-mBMRjrirqcbTPYerPWF2,1790168437
+8VhVIjkziVy2Lb,openai/gpt-6-sol-pro,enneagram36,self,4,completed,0.7,5451,1414,793,6865,0.025042,370,OpenAI,gen-1790168426-8MX0vE0icukmJiHfSC16,1790168438
+Xir115ifGOJpQr,openai/gpt-6-sol-pro,enneagram36,self,5,completed,0.7,5459,1291,670,6750,0.023828,427,OpenAI,gen-1790168433-9zpQgI47JTLHEAusPuWk,1790168443
+unV2k5wSkLRA-O,openai/gpt-6-sol-pro,enneagram36,human,1,completed,0.7,5233,1091,470,6324,0.021376,426,OpenAI,gen-1790168436-AIdWAFgSZnRX4EcyldCW,1790168445
+MtiDNL_ltfYvc-,openai/gpt-6-sol-pro,enneagram36,human,2,completed,0.7,5276,1191,570,6467,0.022462,553,OpenAI,gen-1790168437-wdjuTR5GMvf7Sg0L6BSN,1790168445
+Wr4JXwGpIzEX7J,openai/gpt-6-sol-pro,enneagram36,human,3,completed,0.7,5507,1399,778,6906,0.025004,535,OpenAI,gen-1790168438-JgO5OEvd1nGiL4wW9FCV,1790168448
+-bcPzChBAesxBg,openai/gpt-6-sol-pro,enneagram36,human,5,completed,0.7,5363,1258,637,6621,0.023306,476,OpenAI,gen-1790168445-8a3L7qCEcdmjMzSuxiLG,1790168453
+JlehNtwEZuFxPC,openai/gpt-6-sol-pro,enneagram36,human,4,completed,0.7,5404,1391,770,6795,0.024718,403,OpenAI,gen-1790168443-mUZ9rQmpXpXTWvb1E8M4,1790168454
+LBWkje2QSAEzns,openai/gpt-6-sol-pro,enneagram90,self,1,completed,0.7,11092,2679,1194,13771,0.0446702,494,OpenAI,gen-1790168445-Jyj2hYWXTZJD6N79pPpd,1790168462
+LjGIehKK-rRO-u,openai/gpt-6-sol-pro,enneagram90,self,2,completed,0.7,11259,2904,1419,14163,0.0429504,418,OpenAI,gen-1790168448-Wtfgzi3FFF7KssauhqnG,1790168466
+z7OGIxVUiKR5rs,openai/gpt-6-sol-pro,enneagram90,self,4,completed,0.7,11034,2707,1222,13741,0.0405304,408,OpenAI,gen-1790168454-nuvbBikxzAeRd5JtG5g6,1790168473
+vRHZrSPbZld2MC,openai/gpt-6-sol-pro,enneagram90,self,3,completed,0.7,11090,2748,1263,13838,0.0410524,451,OpenAI,gen-1790168453-dg70bsltDAM09tMOMnkp,1790168475
+_rb1H7Thq3Ke8P,openai/gpt-6-sol-pro,enneagram90,human,1,completed,0.7,11059,2664,1179,13723,0.0456796,532,OpenAI,gen-1790168466-B3ceaKxx5KbjyJx7zuFD,1790168483
+EwtA51gfwKvYBN,openai/gpt-6-sol-pro,enneagram90,self,5,completed,0.7,11065,2832,1347,13897,0.0418424,610,OpenAI,gen-1790168463-GHn9uY16U8ZyefmUN4qy,1790168486
+b-onG7p2f_3ukQ,openai/gpt-6-sol-pro,enneagram90,human,2,completed,0.7,11087,2721,1236,13808,0.0408592,401,OpenAI,gen-1790168473-4769xfbkfhTPDuAxRZpW,1790168489
+ovmOAK_3LvyyyY,openai/gpt-6-sol-pro,enneagram90,human,3,completed,0.7,10916,2490,1005,13406,0.0382072,491,OpenAI,gen-1790168475-CrpskMfQfGYbNGsubtHu,1790168489
+kH3G4miZ-1pNFS,openai/gpt-6-sol-pro,eq_short,self,1,completed,0.7,4218,759,362,4977,0.016026,432,OpenAI,gen-1790168489-FZTLLjC5EvMWvae1sW4q,1790168494
+u18YUDsYvYna3g,openai/gpt-6-sol-pro,eq_short,self,2,completed,0.7,4183,891,494,5074,0.017276,503,OpenAI,gen-1790168489-8hUgursFPQN1DoOgDBDn,1790168497
+6yWPpiOFacWbDT,openai/gpt-6-sol-pro,enneagram90,human,4,completed,0.7,10924,2640,1155,13564,0.0397232,416,OpenAI,gen-1790168483-yT8lQse2U4IdpMjPwFZf,1790168499
+GHNY1aV-8ugouh,openai/gpt-6-sol-pro,enneagram90,human,5,completed,0.7,11056,2667,1182,13723,0.0402572,470,OpenAI,gen-1790168486-lfuYga9rOcA1FqoEWAws,1790168501
+jPD5VFgUHVAXS9,openai/gpt-6-sol-pro,eq_short,self,3,completed,0.7,4174,788,391,4962,0.016228,787,OpenAI,gen-1790168494-aWksem7QROIUYX4i29Bd,1790168501
+tYAtXHgaTTWJLb,openai/gpt-6-sol-pro,eq_short,self,4,completed,0.7,4190,837,440,5027,0.01675,534,OpenAI,gen-1790168497-NwIkKfGgCbw8vM1PqyGR,1790168505
+27XJ1zUWbgMPNT,openai/gpt-6-sol-pro,eq_short,self,5,completed,0.7,4176,715,318,4891,0.015502,447,OpenAI,gen-1790168499-B4vgA2rPfn4IKl5aZsFt,1790168505
+avrGHRNxgHDZIp,openai/gpt-6-sol-pro,eq_short,human,1,completed,0.7,4094,784,387,4878,0.016028,376,OpenAI,gen-1790168501-0yUTcryEtWETbbvFEfSU,1790168507
+mNdV-qgyo-fal4,openai/gpt-6-sol-pro,eq_short,human,2,completed,0.7,4108,704,309,4812,0.015256,392,OpenAI,gen-1790168501-e0CEEeZ50c9BUqwDOPTY,1790168507
+5r_WnBGKf2nRDs,openai/gpt-6-sol-pro,eq_short,human,4,completed,0.7,4098,774,377,4872,0.015936,456,OpenAI,gen-1790168505-o4slKwZuOESK53qN2NxH,1790168511
+QfSCwEvI-FZqT6,openai/gpt-6-sol-pro,eq_short,human,3,completed,0.7,4092,792,395,4884,0.016104,513,OpenAI,gen-1790168505-B1jrzrfglcztBvnouayJ,1790168513
+HJbeyUZDeGl49J,openai/gpt-6-sol-pro,eq_short,human,5,completed,0.7,4130,913,516,5043,0.01739,414,OpenAI,gen-1790168507-vciBnJUzKWuuTBVe8Kus,1790168515
+wpQVO92SuNl9Rq,openai/gpt-6-sol-pro,hexaco24,self,1,completed,0.7,4468,1149,720,5617,0.020426,483,OpenAI,gen-1790168507-L5QkziEqh2PAns0JkXRv,1790168516
+n0TOdk_GP8QQUQ,openai/gpt-6-sol-pro,hexaco24,self,2,completed,0.7,4437,1211,782,5648,0.020984,550,OpenAI,gen-1790168511-QeSZ4LYNmawZgEFHTz8X,1790168522
+BWQie2MuiptZek,openai/gpt-6-sol-pro,hexaco24,self,3,completed,0.7,4406,994,565,5400,0.018752,737,OpenAI,gen-1790168513-ex14NV0EuqXsUTR4XZFS,1790168522
+5V-n-GGsNNo672,openai/gpt-6-sol-pro,hexaco24,self,5,completed,0.7,4332,1051,622,5383,0.019174,577,OpenAI,gen-1790168516-vl32snXdfCA0FvYfHyTS,1790168525
+iI5LEseFaop58-,openai/gpt-6-sol-pro,hexaco24,self,4,completed,0.7,4401,1036,607,5437,0.019162,604,OpenAI,gen-1790168515-1wB7BufM7YVECdRWxSZW,1790168526
+VfjbZ3TdZT-JDV,openai/gpt-6-sol-pro,hexaco24,human,2,completed,0.7,4175,860,431,5035,0.01695,508,OpenAI,gen-1790168522-dUcHVj9UzAAzUFGfyeOM,1790168529
+k9fZDz5KqI_fJt,openai/gpt-6-sol-pro,hexaco24,human,1,completed,0.7,4199,876,447,5075,0.017158,525,OpenAI,gen-1790168522-4WTZILfPIIRp0NspNmWN,1790168531
+j2TWbODttt1SWG,openai/gpt-6-sol-pro,hexaco24,human,3,completed,0.7,4181,746,319,4927,0.015822,401,OpenAI,gen-1790168525-44bpHQI59xHTeUAw17iC,1790168531
+4v_1F0kzuiRHlv,openai/gpt-6-sol-pro,hexaco24,human,4,completed,0.7,4266,977,548,5243,0.018302,545,OpenAI,gen-1790168526-wJe1MudxrB0x81FmJdGc,1790168534
+7dgbsDGjSiTdcb,openai/gpt-6-sol-pro,hexaco24,human,5,completed,0.7,4294,1037,608,5331,0.018958,727,OpenAI,gen-1790168529-uNBl080xB9iDwzV5SHUr,1790168538
+lM76s6srMyyUw5,openai/gpt-6-sol-pro,ipip50,self,1,completed,0.7,5177,1550,705,6727,0.025854,1047,OpenAI,gen-1790168531-iAeaP51qhOSb6E5r0yG8,1790168542
+GD0FTxWON99Cf2,openai/gpt-6-sol-pro,ipip50,self,2,completed,0.7,5048,1676,831,6724,0.026856,510,OpenAI,gen-1790168531-YTNVTXVcLLXcGB18kxSa,1790168546
+HSTL_mA00gWXmO,openai/gpt-6-sol-pro,ipip50,self,3,completed,0.7,5138,1583,738,6721,0.026106,523,OpenAI,gen-1790168534-czrwcIQfQYwiQCvHEJBX,1790168548
+GkwDMJhYTbDGTa,openai/gpt-6-sol-pro,ipip50,self,4,completed,0.7,5095,1381,536,6476,0.024,560,OpenAI,gen-1790168538-Y3hIE4Kwn0lAdrZKC3Fo,1790168548
+bxxD36pDEi_c9X,openai/gpt-6-sol-pro,ipip50,self,5,completed,0.7,5090,1443,598,6533,0.02461,466,OpenAI,gen-1790168542-D9tlZ9XSHXHklXKB8ISi,1790168553
+_0IpM_0X68TnXJ,openai/gpt-6-sol-pro,ipip50,human,2,completed,0.7,5052,1479,634,6531,0.024894,613,OpenAI,gen-1790168548-uliFeyVXbTp9Ln8swcVA,1790168557
+sYtMZuQo_vLNwH,openai/gpt-6-sol-pro,ipip50,human,1,completed,0.7,5025,1509,664,6534,0.02514,428,OpenAI,gen-1790168546-nkGArtJrRxwLRyTZeexi,1790168558
+VE0RpZQ-hRfyI8,openai/gpt-6-sol-pro,ipip50,human,3,completed,0.7,5083,1634,789,6717,0.026506,834,OpenAI,gen-1790168548-Zfqm9kdl1lq4vmiilcZY,1790168559
+8uvKwMbL0FkpcU,openai/gpt-6-sol-pro,ipip50,human,4,completed,0.7,4898,1300,455,6198,0.022796,557,OpenAI,gen-1790168553-hqV8MMmP38tZ9EIRXI8e,1790168563
+pwYkEmGu7b5pYx,openai/gpt-6-sol-pro,kolb12,self,1,completed,0.7,3508,495,258,4003,0.011966,391,OpenAI,gen-1790168558-7tHyon99uVf5Mp7DKG1P,1790168564
+Yi_wkXpRhDPRRx,openai/gpt-6-sol-pro,kolb12,self,2,completed,0.7,3546,535,298,4081,0.012442,478,OpenAI,gen-1790168559-cnJuoMrGZspHlEOrIt50,1790168564
+plem7HB24FHYIb,openai/gpt-6-sol-pro,ipip50,human,5,completed,0.7,5127,1620,775,6747,0.026454,444,OpenAI,gen-1790168557-YF0hlhWDS7fQe90bRLfQ,1790168567
+3ngZPAEv4U6Rt_,openai/gpt-6-sol-pro,kolb12,self,4,completed,0.7,3501,420,185,3921,0.011202,635,OpenAI,gen-1790168564-HV63FS172nGa2vobXqC3,1790168568
+XalmRvD9LK9nL-,openai/gpt-6-sol-pro,kolb12,self,3,completed,0.7,3507,554,317,4061,0.012554,438,OpenAI,gen-1790168563-FNFC93AAekLjbaBWSDqh,1790168569
+INBlubtHOBd9TP,openai/gpt-6-sol-pro,kolb12,self,5,completed,0.7,3546,578,341,4124,0.012872,357,OpenAI,gen-1790168565-BMWMUomgRpEnPCWP6Wqo,1790168571
+moePj2pKA9BOW7,openai/gpt-6-sol-pro,kolb12,human,1,completed,0.7,3510,610,373,4120,0.01312,432,OpenAI,gen-1790168567-YA5RlplYLG1gXuyJ1Uxs,1790168574
+0NkNQJLeyOglj9,openai/gpt-6-sol-pro,kolb12,human,2,completed,0.7,3436,536,299,3972,0.012232,586,OpenAI,gen-1790168568-g44t9dmmLsLZ4B0N1B2W,1790168574
+kucGmhchYAqfgE,openai/gpt-6-sol-pro,kolb12,human,4,completed,0.7,3424,412,177,3836,0.010968,391,OpenAI,gen-1790168571-7ecbNC5aulYE3XaABmJi,1790168575
+LbR6kyJj2A784W,openai/gpt-6-sol-pro,kolb12,human,3,completed,0.7,3468,603,366,4071,0.012966,408,OpenAI,gen-1790168570-sFaaIDSx6Uzc5eSKhhM8,1790168576
+ZXLqgEdUcDR9NJ,openai/gpt-6-sol-pro,kolb12,human,5,completed,0.7,3481,646,409,4127,0.013422,907,OpenAI,gen-1790168574-CPvCG5ksdo3eCe8jJ6lC,1790168582
+TFkAUFbHq-DqP6,openai/gpt-6-sol-pro,locus_levenson,self,1,completed,0.7,4752,1143,714,5895,0.020934,379,OpenAI,gen-1790168574-KmjzJ1EoRbFnGylGh0FX,1790168584
+urR3EQbSIXNGlw,openai/gpt-6-sol-pro,locus_levenson,self,2,completed,0.7,4611,1107,678,5718,0.020292,500,OpenAI,gen-1790168575-XNvyLZOFPejvXNbU6cCp,1790168585
+V_8qjcj92dkIhw,openai/gpt-6-sol-pro,locus_levenson,self,3,completed,0.7,4716,1128,699,5844,0.020712,463,OpenAI,gen-1790168576-QFrrOxauDVSDc2FyZFCI,1790168590
+9rWDfDPmfbtcyz,openai/gpt-6-sol-pro,locus_levenson,human,1,completed,0.7,4272,660,233,4932,0.015144,535,OpenAI,gen-1790168585-784eKkaIuJ97if7u7uoD,1790168591
+vfBfDhQEMMBi1d,openai/gpt-6-sol-pro,locus_levenson,self,4,completed,0.7,4588,989,560,5577,0.019066,528,OpenAI,gen-1790168582-Cr52RyJk1ms9SyiXYwYi,1790168592
+6y5WiaGXk8sdGW,openai/gpt-6-sol-pro,locus_levenson,self,5,completed,0.7,4614,1010,581,5624,0.019328,514,OpenAI,gen-1790168584-UKgTwQCuFgpsJ4yyqIxt,1790168595
+57YNszMFi6k5Uw,openai/gpt-6-sol-pro,locus_levenson,human,2,completed,0.7,4390,704,275,5094,0.01582,376,OpenAI,gen-1790168590-LpSmjU9FfB7Q3uq7VvIo,1790168596
+a4sRbRACrVqC-y,openai/gpt-6-sol-pro,locus_levenson,human,3,completed,0.7,4378,758,329,5136,0.016336,701,OpenAI,gen-1790168591-9mQJ8mEJXZ2jg6hudg68,1790168597
+tvSXOtbmYqvdy5,openai/gpt-6-sol-pro,locus_levenson,human,4,completed,0.7,4375,676,249,5051,0.01551,617,OpenAI,gen-1790168592-2s4KBzLaLChEzxgdpvHP,1790168597
+9mTCKO1jlk0C0S,openai/gpt-6-sol-pro,locus_levenson,human,5,completed,0.7,4413,825,396,5238,0.017076,432,OpenAI,gen-1790168595-4MXqSxaXE6TmZx9E1fOP,1790168601
+xAM-Gj3yjRtG72,openai/gpt-6-sol-pro,lsq40,self,1,completed,0.7,5402,1177,492,6579,0.022574,440,OpenAI,gen-1790168596-LDx50lT5PDK7WfHFSoux,1790168604
+NhJGYazR30p_KW,openai/gpt-6-sol-pro,lsq40,self,2,completed,0.7,5494,1274,589,6768,0.023728,836,OpenAI,gen-1790168597-PYTgS82sDt9K5bFZeDts,1790168606
+jnaLupdjlfkjrk,openai/gpt-6-sol-pro,lsq40,self,3,completed,0.7,5509,1354,669,6863,0.024558,408,OpenAI,gen-1790168597-SZYM303IFeX5DMLlQd2Y,1790168607
+KLIYfhJg3Hpx-L,openai/gpt-6-sol-pro,lsq40,self,4,completed,0.7,5485,1283,598,6768,0.0238,575,OpenAI,gen-1790168601-PdV9mDTxgkNA6O255jVH,1790168612
+X0bpi6fgOdO-WV,openai/gpt-6-sol-pro,lsq40,self,5,completed,0.7,5467,1304,619,6771,0.023974,656,OpenAI,gen-1790168604-MotQO3QpopTUvl4VJvI3,1790168614
+zd77fTX1ktNaXw,openai/gpt-6-sol-pro,lsq40,human,1,completed,0.7,5375,1236,551,6611,0.02311,441,OpenAI,gen-1790168606-VCjechLDVnzzidRSngAq,1790168615
+ByUym5jFIWFmoZ,openai/gpt-6-sol-pro,lsq40,human,2,completed,0.7,5350,1182,497,6532,0.02252,691,OpenAI,gen-1790168607-STMVLW9H9wSJoAnLUxV9,1790168616
+G2Oo32c_WitL2R,openai/gpt-6-sol-pro,lsq40,human,3,completed,0.7,5453,1330,645,6783,0.024206,781,OpenAI,gen-1790168612-fCilSIsVspdtNfTh0VEa,1790168621
+tdgd4pfBUCBoT4,openai/gpt-6-sol-pro,lsq40,human,5,completed,0.7,5390,1283,598,6673,0.02361,440,OpenAI,gen-1790168615-vpASwQWu2zv33OeMAjoC,1790168623
+HizF4ElZt-aKRR,openai/gpt-6-sol-pro,lsq40,human,4,completed,0.7,5372,1350,665,6722,0.024244,1098,OpenAI,gen-1790168614-1RxJjl8ZZez3ntm0o0jL,1790168624
+ZxvgwjZthiIFGH,openai/gpt-6-sol-pro,mfq30,self,1,completed,0.7,5588,1056,531,6644,0.0197686,725,OpenAI,gen-1790168616-bjXaMASD8Rixyl6Z0QU7,1790168626
+MhB74i1AlcluzK,openai/gpt-6-sol-pro,mfq30,self,2,completed,0.7,5650,1202,677,6852,0.0193852,379,OpenAI,gen-1790168621-MEGllRlrjNXn6MDWzKyU,1790168632
+v-iIBkV6sgo5K2,openai/gpt-6-sol-pro,mfq30,self,3,completed,0.7,5373,845,320,6218,0.0152612,755,OpenAI,gen-1790168624-RIgHgY3qEjFho0q63vow,1790168632
+9-xVd2X2SVIAQd,openai/gpt-6-sol-pro,mfq30,self,5,completed,0.7,5633,1004,479,6637,0.0173712,674,OpenAI,gen-1790168626-v086Y8UiejX98dKeeYPL,1790168634
+002KqlyFs3V9X5,openai/gpt-6-sol-pro,mfq30,self,4,completed,0.7,5686,1256,731,6942,0.0199972,362,OpenAI,gen-1790168624-vpI9gIFl1mZ4KYKMy5c2,1790168635
+p9mjY2T3Ictq2T,openai/gpt-6-sol-pro,mfq30,human,1,completed,0.7,5478,1009,484,6487,0.01912,595,OpenAI,gen-1790168632-o7aHzcnj5nKqCOEK9VBF,1790168639
+xcmfhSTRX7_Daj,openai/gpt-6-sol-pro,mfq30,human,2,completed,0.7,5579,1098,573,6677,0.018286,562,OpenAI,gen-1790168632-YMVqwCB1GoT6iMNXJrEO,1790168641
+f_Rdy5ta_PXgHQ,openai/gpt-6-sol-pro,mfq30,human,3,completed,0.7,5465,1069,544,6534,0.017768,951,OpenAI,gen-1790168634-7RRpZBZsSPsqKumkKaaG,1790168643
+IBqK21XP5IL5Nb,openai/gpt-6-sol-pro,mfq30,human,4,completed,0.7,5517,1020,495,6537,0.017382,516,OpenAI,gen-1790168635-fp8PHSUEME0dF4AxZELk,1790168643
+xi2DVgUa9ylNGg,openai/gpt-6-sol-pro,ncs18,self,1,completed,0.7,3912,770,437,4682,0.015524,919,OpenAI,gen-1790168641-KVTusIVLVsAQW9CKTAXN,1790168648
+LaOoHMSY_Qwie5,openai/gpt-6-sol-pro,mfq30,human,5,completed,0.7,5569,1066,541,6635,0.017946,557,OpenAI,gen-1790168640-ga4LXQUPJh1TEwhe7lfO,1790168650
+U1glm_tShcBhKy,openai/gpt-6-sol-pro,ncs18,self,3,completed,0.7,3913,819,486,4732,0.016016,384,OpenAI,gen-1790168643-ymXWZMX5uC7IKBdAmx5c,1790168651
+jlCJcQcIq_LluP,openai/gpt-6-sol-pro,ncs18,self,2,completed,0.7,4012,942,609,4954,0.017444,456,OpenAI,gen-1790168643-ZYd2fM1aMjBoeUCx3x9I,1790168653
+qm-IPAvch9UiDJ,openai/gpt-6-sol-pro,ncs18,self,4,completed,0.7,3896,747,414,4643,0.015262,599,OpenAI,gen-1790168648-ppRs9Kq49TT9HQlajBhv,1790168656
+QpBviIO5jB45wQ,openai/gpt-6-sol-pro,ncs18,self,5,completed,0.7,3904,796,463,4700,0.015768,557,OpenAI,gen-1790168650-5cPV5FKdAQHocGz9g45i,1790168658
+v_IzqjUfGVBUPZ,openai/gpt-6-sol-pro,ncs18,human,1,completed,0.7,3933,876,543,4809,0.016626,437,OpenAI,gen-1790168651-ZLdz9wYR2wsFILkAclEv,1790168658
+576vDRYcXeMYqZ,openai/gpt-6-sol-pro,ncs18,human,2,completed,0.7,3840,786,453,4626,0.01554,365,OpenAI,gen-1790168653-KamHAEYh9L0ymAqOeQw9,1790168660
+0i5VlTXYVTVvtI,openai/gpt-6-sol-pro,ncs18,human,3,completed,0.7,3826,834,501,4660,0.015992,495,OpenAI,gen-1790168656-TEKBqbOQR1XASMnL3Boq,1790168665
+JQQVmS9Yw074ER,openai/gpt-6-sol-pro,ncs18,human,5,completed,0.7,3874,855,522,4729,0.016298,360,OpenAI,gen-1790168658-RINMzhlP4GOLtDrZGtBV,1790168665
+3ZD7QOGCq3wTj-,openai/gpt-6-sol-pro,ncs18,human,4,completed,0.7,3854,774,441,4628,0.015448,505,OpenAI,gen-1790168658-y5fZqlslXVJlhfzEbyut,1790168666
+q1OmdQHKOaDWXg,openai/gpt-6-sol-pro,obsi32,self,1,completed,0.7,5088,1155,598,6243,0.021726,509,OpenAI,gen-1790168660-gxSYeL9zE3iHud51WcC7,1790168670
+fRKuxafmKYdl-F,openai/gpt-6-sol-pro,obsi32,self,2,completed,0.7,5056,1225,668,6281,0.022362,576,OpenAI,gen-1790168665-4f03gh0lJb7xSRrLwYvu,1790168675
+9FXVOTh5jdXXx-,openai/gpt-6-sol-pro,obsi32,self,4,completed,0.7,5039,1180,623,6219,0.021878,520,OpenAI,gen-1790168666-FJVeThZdFs5zhdsw118E,1790168676
+GsWyRplkszZcpa,openai/gpt-6-sol-pro,obsi32,self,3,completed,0.7,5176,1415,858,6591,0.024502,384,OpenAI,gen-1790168665-iVAXNyrU9rU3w5u4NgnJ,1790168679
+MJeTgrLuQ2F0QR,openai/gpt-6-sol-pro,obsi32,self,5,completed,0.7,5013,1161,604,6174,0.021636,428,OpenAI,gen-1790168670-iIIzybyTmVJnYHgVioZM,1790168680
+Q6toTTEmvtyXC9,openai/gpt-6-sol-pro,obsi32,human,1,completed,0.7,4924,984,427,5908,0.019688,413,OpenAI,gen-1790168675-Qyj9nyBMY15L6ACVPL7x,1790168681
+skEcuwm4z38yYl,openai/gpt-6-sol-pro,obsi32,human,2,completed,0.7,4960,1096,539,6056,0.02088,402,OpenAI,gen-1790168676-BSq17GfZxA1DwY9e7ysj,1790168684
+vKWWiHzuQ_wWFT,openai/gpt-6-sol-pro,obsi32,human,4,completed,0.7,4992,992,437,5984,0.019904,471,OpenAI,gen-1790168680-z4z5DsSDl9HmvXxd3VnR,1790168687
+4m5LZh0FW8Z2xy,openai/gpt-6-sol-pro,obsi32,human,3,completed,0.7,4986,1106,549,6092,0.021032,635,OpenAI,gen-1790168679-S5IQ4VgsbqBlIv7GOnwm,1790168688
+gb8xRMbt3HXXPW,openai/gpt-6-sol-pro,obsi32,human,5,completed,0.7,4916,1163,606,6079,0.021462,803,OpenAI,gen-1790168682-llGelHbRVzgd2ZH0nUmJ,1790168691
+oPWdDMr-oCyRkh,openai/gpt-6-sol-pro,otti102,self,2,completed,0.7,10070,2837,1160,12907,0.0415296,460,OpenAI,gen-1790168687-qjUWgHRb5cRGh5qkmPl7,1790168702
+Cmve4q5Pa_6byV,openai/gpt-6-sol-pro,otti102,self,1,completed,0.7,10247,3017,1340,13264,0.0481433,851,OpenAI,gen-1790168684-PcLyea9SsumyrnhXINsf,1790168703
+aHXtIW5Nq6mvL5,openai/gpt-6-sol-pro,otti102,self,3,completed,0.7,10173,3031,1354,13204,0.0436756,541,OpenAI,gen-1790168688-xgTMb1VEQYnBroBixYk2,1790168705
+I8kGbhrLHpXuPL,openai/gpt-6-sol-pro,otti102,self,4,completed,0.7,9974,2785,1108,12759,0.0408176,1193,OpenAI,gen-1790168691-3KUGtiT0TLkxNrcetLJL,1790168707
+MDgXeea9nUY2QX,openai/gpt-6-sol-pro,otti102,self,5,completed,0.7,10174,2997,1320,13171,0.0433376,505,OpenAI,gen-1790168702-yDa0LaCyLVCjUwNzwddE,1790168720
+qOo7bN1nvcIhPP,openai/gpt-6-sol-pro,otti102,human,1,completed,0.7,9887,2823,1146,12710,0.0455132,500,OpenAI,gen-1790168703-sYKT2Q4D6IZbMdI0JdVy,1790168720
+y47Subrl9IOEQz,openai/gpt-6-sol-pro,otti102,human,2,completed,0.7,9918,2964,1287,12882,0.0425784,393,OpenAI,gen-1790168705-oEb58x3j5yXtrNDQF0DC,1790168723
+L0kXCnOObNph_D,openai/gpt-6-sol-pro,otti102,human,3,completed,0.7,9946,2839,1162,12785,0.0413844,447,OpenAI,gen-1790168707-mWvqL2baJIdrhzHPow5f,1790168725
+fTbpRNs4O8Ii1d,openai/gpt-6-sol-pro,pvq21,self,1,completed,0.7,4678,899,518,5577,0.018346,449,OpenAI,gen-1790168724-lZIQnrBMoGzhaT0tPhWK,1790168732
+bRKxp5mZTNzlvA,openai/gpt-6-sol-pro,pvq21,self,2,completed,0.7,4650,842,461,5492,0.01772,463,OpenAI,gen-1790168725-BFL05OxQ6GwYqcgWwW53,1790168733
+OzDghgFeXEO7P3,openai/gpt-6-sol-pro,otti102,human,4,completed,0.7,9898,2870,1193,12768,0.0415984,463,OpenAI,gen-1790168720-EGWV768fBbeM1y39aaJg,1790168736
+TvN-VfamdV-aer,openai/gpt-6-sol-pro,otti102,human,5,completed,0.7,9885,2780,1103,12665,0.0406724,437,OpenAI,gen-1790168720-HZGmi8iyN7OPQ0tQq31L,1790168737
+fk6jVDG7DmEdrO,openai/gpt-6-sol-pro,pvq21,self,3,completed,0.7,4640,811,430,5451,0.01739,509,OpenAI,gen-1790168732-ja8PFOZjdBrIaCK3UobI,1790168740
+F8mLqv47H7CC41,openai/gpt-6-sol-pro,pvq21,self,4,completed,0.7,4633,865,484,5498,0.017916,453,OpenAI,gen-1790168733-xMhXPMR3GtyIGEAwpq7k,1790168742
+hmD0-s0jKmiK0y,openai/gpt-6-sol-pro,pvq21,self,5,completed,0.7,4679,793,412,5472,0.017288,448,OpenAI,gen-1790168736-gG7O6BhBbOAdwXC8Oexs,1790168742
+u4ya2WbEfMAy8N,openai/gpt-6-sol-pro,pvq21,human,1,completed,0.7,4558,774,393,5332,0.016856,942,OpenAI,gen-1790168737-9PsgwYBoQRZlW83Wl2sI,1790168744
+v1gImOtupZlWlX,openai/gpt-6-sol-pro,pvq21,human,2,completed,0.7,4475,602,221,5077,0.01497,744,OpenAI,gen-1790168740-eDvDs7iXZmJcOLFTPnNO,1790168746
+dfmhyXBrFfh-x7,openai/gpt-6-sol-pro,pvq21,human,3,completed,0.7,4447,573,192,5020,0.014624,521,OpenAI,gen-1790168742-p3odexXaUhOzLzmSffYD,1790168749
+GiUkhY2tDgQ4YX,openai/gpt-6-sol-pro,pvq21,human,5,completed,0.7,4489,672,291,5161,0.015698,382,OpenAI,gen-1790168744-V1FX0Qx5fzdC62ZwBa5f,1790168750
+jZ7Dm9FsYW4t1o,openai/gpt-6-sol-pro,pvq21,human,4,completed,0.7,4475,856,475,5331,0.01751,710,OpenAI,gen-1790168742-mrI8pRQd22uy7rxXQhU1,1790168751
+YgeiSkt6npdlGm,openai/gpt-6-sol-pro,sd3,self,1,completed,0.7,4352,1179,702,5531,0.020494,606,OpenAI,gen-1790168746-lsTHWU6WZ9rDnLBfQ0bV,1790168756
+ggARCcO_hzicXe,openai/gpt-6-sol-pro,sd3,self,2,completed,0.7,4252,1012,535,5264,0.018624,444,OpenAI,gen-1790168749-2VVumI0F0HmVFP1kghm0,1790168757
+4vVFoMyNI1wOXv,openai/gpt-6-sol-pro,sd3,self,3,completed,0.7,4265,1154,677,5419,0.02007,533,OpenAI,gen-1790168750-9ILjcIjzsbpneflGnV9M,1790168759
+9dZmkekcfWLUnR,openai/gpt-6-sol-pro,sd3,human,1,completed,0.7,4197,996,519,5193,0.018354,449,OpenAI,gen-1790168757-U9opz195KtdGNYzhEsKE,1790168764
+xybKgq_wok7muB,openai/gpt-6-sol-pro,sd3,self,4,completed,0.7,4372,1285,808,5657,0.021594,447,OpenAI,gen-1790168752-mM7EmL3PFnkXomg73KO7,1790168765
+DKSp8NDPy4ztU4,openai/gpt-6-sol-pro,sd3,self,5,completed,0.7,4260,1136,659,5396,0.01988,338,OpenAI,gen-1790168756-vypod8FQMyLyb2lRHDKy,1790168765
+eE1OyVoN8X-3Ie,openai/gpt-6-sol-pro,sd3,human,2,completed,0.7,4062,926,449,4988,0.017384,769,OpenAI,gen-1790168759-SDaRbgrJEwSvEWhbztoF,1790168767
+xXXdV7qjUR4D9J,openai/gpt-6-sol-pro,sd3,human,5,completed,0.7,4099,832,357,4931,0.016518,380,OpenAI,gen-1790168765-duw6Dkw1ONaYmepaoudb,1790168771
+83LyIMXoSUgQpS,openai/gpt-6-sol-pro,sd3,human,3,completed,0.7,4149,1018,541,5167,0.018478,455,OpenAI,gen-1790168764-U9YmbmtR2aEm4fExP9U7,1790168772
+mOls9J7B5tP4Q4,openai/gpt-6-sol-pro,sd3,human,4,completed,0.7,4058,902,425,4960,0.017136,542,OpenAI,gen-1790168765-fdRiGxWpSlttCNiQVnav,1790168772
+XxZUOtGjM0K4Gn,openai/gpt-6-sol-pro,vark16,self,1,completed,0.7,3841,713,412,4554,0.014812,434,OpenAI,gen-1790168767-BlXUtAzKXGL480RL5Bct,1790168774
+n7XAiZkzvgiqQk,openai/gpt-6-sol-pro,vark16,self,2,completed,0.7,3772,688,387,4460,0.014424,528,OpenAI,gen-1790168771-DKvIrdrmaydVfNVaB59g,1790168778
+W078KzgBG3cQxz,openai/gpt-6-sol-pro,vark16,self,3,completed,0.7,3747,567,266,4314,0.013164,525,OpenAI,gen-1790168772-Dkdi8s9j4n3cutllGkst,1790168778
+AIdQzWB4Koefue,openai/gpt-6-sol-pro,vark16,self,5,completed,0.7,3772,625,324,4397,0.013794,395,OpenAI,gen-1790168775-hgotDLBSAI217yEOStXV,1790168781
+vv5q5DFZb4lGvR,openai/gpt-6-sol-pro,vark16,self,4,completed,0.7,3791,632,331,4423,0.013902,412,OpenAI,gen-1790168772-b68LdeOljQMn95sya9z7,1790168782
+uTHT3vaKKEXy7p,openai/gpt-6-sol-pro,vark16,human,1,completed,0.7,3474,391,94,3865,0.010858,893,OpenAI,gen-1790168778-PRtNY2tUbm0N82AsguMw,1790168783
+svfzpWvuLOWkSI,openai/gpt-6-sol-pro,vark16,human,2,completed,0.7,3552,585,286,4137,0.012954,577,OpenAI,gen-1790168778-LOP2UPe475c98uxFI2X8,1790168785
+aCS0vaGUboxiL4,openai/gpt-6-sol-pro,vark16,human,4,completed,0.7,3474,295,0,3769,0.009898,609,OpenAI,gen-1790168782-BXuCGUbSkTan68FKLJBk,1790168785
+9Xhh_gqq-0Mzsx,openai/gpt-6-sol-pro,vark16,human,3,completed,0.7,3557,454,155,4011,0.011654,358,OpenAI,gen-1790168781-I6P3EajkBnOrPkcOGfF4,1790168787
+xcnBmKI67Haa4H,openai/gpt-6-sol-pro,vark16,human,5,completed,0.7,3474,411,114,3885,0.011058,390,OpenAI,gen-1790168783-7pGeNIRqWSSP8j3vJ88m,1790168787
+Fpg7IPMVyfswAy,openai/gpt-6-sol,ecr12,self,3,completed,0.7,529,288,178,817,0.003938,481,OpenAI,gen-1790168787-zQBxCugCO4UtIjIyYCtI,1790168791
+pE-Q6NiKtwrjdO,openai/gpt-6-sol,ecr12,self,1,completed,0.7,529,317,207,846,0.004228,589,OpenAI,gen-1790168787-hBI3u6VUmqPnsAnwsH95,1790168792
+G5D1FOsimOUriC,openai/gpt-6-sol,ecr12,self,2,completed,0.7,529,291,181,820,0.003968,498,OpenAI,gen-1790168787-CsXLuT19ESxpKbXhddj3,1790168792
+dj2HPOgprPpawK,openai/gpt-6-sol,ecr12,self,4,completed,0.7,529,317,207,846,0.004228,464,OpenAI,gen-1790168787-ngujnNxIsveToh56Uwz3,1790168792
+VYXYytzetNcG_4,openai/gpt-6-sol,ecr12,human,2,completed,0.7,506,178,68,684,0.002792,385,OpenAI,gen-1790168792-vPY02yVucz9vrALtZBau,1790168794
+1tQ-QLEt-H3E55,openai/gpt-6-sol,ecr12,self,5,completed,0.7,529,246,136,775,0.003518,544,OpenAI,gen-1790168791-ZEWo5PHfOZk07cRCFELg,1790168795
+5xEnh7-HQxyCRI,openai/gpt-6-sol,ecr12,human,3,completed,0.7,506,242,132,748,0.003432,341,OpenAI,gen-1790168792-Yrym1xTSL0RpAbjKdUE0,1790168795
+efsZHTIL2YG4SI,openai/gpt-6-sol,ecr12,human,1,completed,0.7,506,192,82,698,0.002932,551,OpenAI,gen-1790168792-hcy53lZjzLXwfk0ppRjc,1790168797
+uhVkhjufGQWD_-,openai/gpt-6-sol,ecr12,human,4,completed,0.7,506,192,82,698,0.002932,428,OpenAI,gen-1790168794-GpUD0wfDgMLjt4LTrfgN,1790168797
+v93Ch_fkRRy9fX,openai/gpt-6-sol,ecr12,human,5,completed,0.7,506,182,72,688,0.002832,362,OpenAI,gen-1790168795-f08O3KzFE15OiLZ4lr6j,1790168798
+Rb1p8VQoDd2bRW,openai/gpt-6-sol,enneagram36,self,1,completed,0.7,965,560,258,1525,0.00753,381,OpenAI,gen-1790168795-wgnZpzl0JfiDcXKiWrFk,1790168801
+nzGnCKeBo7Qccs,openai/gpt-6-sol,enneagram36,self,2,completed,0.7,965,503,201,1468,0.00696,973,OpenAI,gen-1790168798-ZZGh03o8hGpeeb52UGK9,1790168803
+QJkcYKizmTW3uC,openai/gpt-6-sol,enneagram36,self,3,completed,0.7,965,618,316,1583,0.00811,600,OpenAI,gen-1790168798-iyNOmgBABhLbg0YD9hsS,1790168804
+fQT-oHgelo1gLH,openai/gpt-6-sol,enneagram36,self,4,completed,0.7,965,586,284,1551,0.00779,527,OpenAI,gen-1790168798-0CyNVoQc0DtApfguopxx,1790168805
+z36sQQ0yHJzEsm,openai/gpt-6-sol,enneagram36,self,5,completed,0.7,965,565,263,1530,0.00758,339,OpenAI,gen-1790168801-ivBP9dk18HcG7M3nVDc5,1790168808
+dVKFQhXXf1WkVG,openai/gpt-6-sol,enneagram36,human,3,completed,0.7,942,480,178,1422,0.006684,626,OpenAI,gen-1790168805-mytdfKZEF35eMLeMrIN2,1790168809
+hIFxdvXwqGeKCv,openai/gpt-6-sol,enneagram36,human,1,completed,0.7,942,492,190,1434,0.006804,418,OpenAI,gen-1790168803-xEzXrDR4VbKxe2gtRQzw,1790168810
+Nn39TarqA3wvWs,openai/gpt-6-sol,enneagram36,human,2,completed,0.7,942,552,250,1494,0.007404,380,OpenAI,gen-1790168804-2z0JiFf4WANEOhCbwV1l,1790168810
+B2n4Exi6qE2Kw5,openai/gpt-6-sol,enneagram36,human,4,completed,0.7,942,494,192,1436,0.006824,499,OpenAI,gen-1790168808-I8DWFLy9xfZ5efOQONEU,1790168813
+CwGZ8-2Y1mXEL4,openai/gpt-6-sol,enneagram36,human,5,completed,0.7,942,517,215,1459,0.007054,432,OpenAI,gen-1790168809-FoJ3LcDGQBCmA4bAgnZ6,1790168814
+rnGbNXdpFTBuVN,openai/gpt-6-sol,enneagram90,self,1,completed,0.7,2394,1250,516,3644,0.0129842,435,OpenAI,gen-1790168810-oVRmOOw3g9XpvpzS78fZ,1790168822
+OgtUFKJkuJ3QBz,openai/gpt-6-sol,enneagram90,self,2,completed,0.7,2394,1250,516,3644,0.0129842,541,OpenAI,gen-1790168811-QUOJvWkSDK4SS1ZKhr6X,1790168822
+G8_r2PHgGlBg-B,openai/gpt-6-sol,enneagram90,self,3,completed,0.7,2394,1236,502,3630,0.0128442,357,OpenAI,gen-1790168813-PNuDMgR0wGHUHEURMUoM,1790168825
+A0Sd2_tsW-iXzg,openai/gpt-6-sol,enneagram90,self,4,completed,0.7,2394,1186,452,3580,0.0123442,453,OpenAI,gen-1790168814-zmR9UjySG1Mn1SFXwr39,1790168826
+YfWH_j7pTyaiM9,openai/gpt-6-sol,enneagram90,human,1,completed,0.7,2371,1143,409,3514,0.0119096,487,OpenAI,gen-1790168822-M6K91BWo3w9PGhg0gbWD,1790168831
+PP_HpPKxGUvJrK,openai/gpt-6-sol,enneagram90,self,5,completed,0.7,2394,1162,428,3556,0.0121042,442,OpenAI,gen-1790168822-3YLJNU2por8SFyAC48nn,1790168832
+z2oUhvro1Cvb1g,openai/gpt-6-sol,enneagram90,human,2,completed,0.7,2371,1134,400,3505,0.0118196,608,OpenAI,gen-1790168825-bjn5FM9RnIGKdYtZb8sg,1790168835
+d-gT2ko_oOybVy,openai/gpt-6-sol,enneagram90,human,3,completed,0.7,2371,1142,408,3513,0.0118996,446,OpenAI,gen-1790168826-Xq1MP7nYxxHzGjAQnA7M,1790168836
+KSotvoIVv_Ubb7,openai/gpt-6-sol,eq_short,self,1,completed,0.7,697,348,158,1045,0.004874,604,OpenAI,gen-1790168835-6Xp98wWfkkZpP0kqMjag,1790168839
+zJ7TofFFsdqyKQ,openai/gpt-6-sol,enneagram90,human,5,completed,0.7,2371,1140,406,3511,0.0118796,434,OpenAI,gen-1790168832-U7vbHvsp2PvV7Ybp2xyx,1790168841
+_57F4Sw8mO-Wsx,openai/gpt-6-sol,eq_short,self,2,completed,0.7,697,361,171,1058,0.005004,538,OpenAI,gen-1790168836-0cb19Q5Mx11pvFmcdOjL,1790168841
+LQvTe1vz4zXolW,openai/gpt-6-sol,enneagram90,human,4,completed,0.7,2371,1135,401,3506,0.0118296,428,OpenAI,gen-1790168831-89vqCSKJ6YwhbDUVTyUc,1790168842
+_o3v_tcDz-d_Zs,openai/gpt-6-sol,eq_short,self,3,completed,0.7,697,333,143,1030,0.004724,462,OpenAI,gen-1790168839-EYUBHNbaPmArBxnTH5TX,1790168843
+ji_3xrlQJPymI0,openai/gpt-6-sol,eq_short,self,4,completed,0.7,697,327,137,1024,0.004664,867,OpenAI,gen-1790168841-DuWIop0nziFLYH0RhQL9,1790168845
+DsDan4iW23s_Tr,openai/gpt-6-sol,eq_short,self,5,completed,0.7,697,361,171,1058,0.005004,421,OpenAI,gen-1790168841-mgj4FhKnJTTXzwi4W6It,1790168845
+FeDc6rdNwdMvrM,openai/gpt-6-sol,eq_short,human,1,completed,0.7,674,328,138,1002,0.004628,516,OpenAI,gen-1790168842-S29lZ0rXdCwLLV8nZ1uq,1790168846
+4JGO7Z4pDUu_oz,openai/gpt-6-sol,eq_short,human,2,completed,0.7,674,350,160,1024,0.004848,505,OpenAI,gen-1790168843-VUnoPFycWcBnGtiNG6jU,1790168847
+vp8NyeCisdat8K,openai/gpt-6-sol,eq_short,human,3,completed,0.7,674,328,138,1002,0.004628,516,OpenAI,gen-1790168845-FnE0ovZaJfiMIf6wRERz,1790168848
+zMRHtut-6eNmJ1,openai/gpt-6-sol,eq_short,human,4,completed,0.7,674,349,159,1023,0.004838,398,OpenAI,gen-1790168845-n4v9NgQz20CrY0WeWExD,1790168849
+lSHDTIN1yj2Xbz,openai/gpt-6-sol,eq_short,human,5,completed,0.7,674,328,138,1002,0.004628,3056,OpenAI,gen-1790168846-iDiTCeq5B9mUpByidQj8,1790168853
+ECeicyAGe4cZoH,openai/gpt-6-sol,hexaco24,self,1,completed,0.7,706,413,207,1119,0.005542,418,OpenAI,gen-1790168847-KiKwFT9cOkNSBFIsjwxi,1790168853
+CZIEqA8lkHXH_q,openai/gpt-6-sol,hexaco24,self,2,completed,0.7,706,399,193,1105,0.005402,507,OpenAI,gen-1790168848-HzkXE0URe2TJpCtV2HKY,1790168853
+nV2WYE8vIZapmP,openai/gpt-6-sol,hexaco24,self,3,completed,0.7,706,368,162,1074,0.005092,372,OpenAI,gen-1790168849-PhnaJcAyaw3s5x9G5jB0,1790168853
+yWTKDrNQ3Iq4Ek,openai/gpt-6-sol,hexaco24,human,2,completed,0.7,683,350,144,1033,0.004866,594,OpenAI,gen-1790168853-DGPPuonBOv9AjJT1qrRI,1790168857
+RvxIy8v8JGwmZ_,openai/gpt-6-sol,hexaco24,self,4,completed,0.7,706,418,212,1124,0.005592,626,OpenAI,gen-1790168853-uXQkyKxJJIolihEeUd7M,1790168858
+HWdAvYLqI5Bwb5,openai/gpt-6-sol,hexaco24,human,1,completed,0.7,683,388,182,1071,0.005246,580,OpenAI,gen-1790168853-3FDmkZgbHa4FaS78Fq0h,1790168858
+nW-dPsPhTfp0LH,openai/gpt-6-sol,hexaco24,self,5,completed,0.7,706,419,213,1125,0.005602,478,OpenAI,gen-1790168853-kKeLzaQxXv8HHZZzekje,1790168859
+liKlMdhR1-46hE,openai/gpt-6-sol,hexaco24,human,3,completed,0.7,683,361,155,1044,0.004976,535,OpenAI,gen-1790168857-PMEtm8JIldAMVpgp5tvI,1790168862
+hVv4Em2QMGLBAP,openai/gpt-6-sol,hexaco24,human,4,completed,0.7,683,365,159,1048,0.005016,542,OpenAI,gen-1790168858-SZArZxGBdzwAQVbCWiIp,1790168863
+ICqNvoeHpNAwa6,openai/gpt-6-sol,hexaco24,human,5,completed,0.7,683,368,162,1051,0.005046,529,OpenAI,gen-1790168858-ApWZD6TxJxmeaeaJM225,1790168863
+Hr0wvoQ5WsS4vK,openai/gpt-6-sol,ipip50,self,1,completed,0.7,776,688,274,1464,0.008432,933,OpenAI,gen-1790168859-DGiiUZ1oJUOODGgYssYx,1790168867
+pqzLf8N461IH_M,openai/gpt-6-sol,ipip50,self,3,completed,0.7,776,652,238,1428,0.008072,581,OpenAI,gen-1790168863-OuQ25GhrU1llcui5Av7m,1790168868
+aFmzM12rR39fhr,openai/gpt-6-sol,ipip50,self,2,completed,0.7,776,717,303,1493,0.008722,973,OpenAI,gen-1790168862-ariUtmSzHoaPjIj0nRZn,1790168869
+B30y2sDPsbZ5P1,openai/gpt-6-sol,ipip50,self,4,completed,0.7,776,724,310,1500,0.008792,679,OpenAI,gen-1790168863-oc1vWHm9KSjENMTNjYrj,1790168870
+gnfZf-Q9AvHuH4,openai/gpt-6-sol,ipip50,human,1,completed,0.7,753,728,314,1481,0.008786,478,OpenAI,gen-1790168869-mFOmMBd7DDl6dgBU73Ew,1790168875
+bsaFj5FVQmf92E,openai/gpt-6-sol,ipip50,self,5,completed,0.7,776,747,333,1523,0.009022,597,OpenAI,gen-1790168867-qFCl52l1P0aAlYOgnkWa,1790168876
+2n3N4Nc6kfXL_k,openai/gpt-6-sol,ipip50,human,2,completed,0.7,753,701,287,1454,0.008516,1221,OpenAI,gen-1790168869-if4tlFvDFmRB1tvIdES1,1790168876
+eo0klU6pKhN0-v,openai/gpt-6-sol,ipip50,human,3,completed,0.7,753,668,254,1421,0.008186,508,OpenAI,gen-1790168871-kYDlz94LoeTuJjoJuZuL,1790168877
+QbmmaLYHqiXwxs,openai/gpt-6-sol,kolb12,self,1,completed,0.7,573,230,120,803,0.003446,745,OpenAI,gen-1790168876-7Wh8soLsQyz1SbA4faWF,1790168880
+YZHP_MrwF_hu88,openai/gpt-6-sol,kolb12,self,2,completed,0.7,573,194,84,767,0.003086,1303,OpenAI,gen-1790168877-amjntHsqCLuTQz1I3QGg,1790168881
+Ri7eJPhPiFlZYR,openai/gpt-6-sol,ipip50,human,4,completed,0.7,753,645,231,1398,0.007956,1031,OpenAI,gen-1790168875-MQXj8sLeFWb9Jkf7RS4E,1790168882
+Aw3jhz3oyJn1Wa,openai/gpt-6-sol,ipip50,human,5,completed,0.7,753,670,256,1423,0.008206,455,OpenAI,gen-1790168876-bHtPRnoUe1DPlMP3cRrv,1790168882
+Gg2ncpNv3gBM6y,openai/gpt-6-sol,kolb12,self,3,completed,0.7,573,221,111,794,0.003356,1052,OpenAI,gen-1790168880-EgwrMy1jlQrWFpap0EpQ,1790168884
+_XdJ59vdkLadcH,openai/gpt-6-sol,kolb12,self,4,completed,0.7,573,219,109,792,0.003336,1254,OpenAI,gen-1790168881-E5iQgZeGKphVVSCBE4oY,1790168885
+LJlhVMx0jPlxDl,openai/gpt-6-sol,kolb12,human,1,completed,0.7,550,108,0,658,0.00218,1149,OpenAI,gen-1790168882-dX6sBvSO3RZLQr3tVhY4,1790168885
+FHQlMaMaHU46Qc,openai/gpt-6-sol,kolb12,self,5,completed,0.7,573,225,115,798,0.003396,2162,OpenAI,gen-1790168882-GzQsDon6Rc4tViXF06f3,1790168887
+kRNjz_w-xyDHX2,openai/gpt-6-sol,kolb12,human,2,completed,0.7,550,212,102,762,0.00322,652,OpenAI,gen-1790168884-XfjU4ANG0gcQFTzqfpYK,1790168887
+IMkcyMK_7pIgFm,openai/gpt-6-sol,kolb12,human,4,completed,0.7,550,212,102,762,0.00322,519,OpenAI,gen-1790168885-6I85AN8unUA3CDibx778,1790168888
+QoOpqg4bDljonG,openai/gpt-6-sol,kolb12,human,3,completed,0.7,550,251,141,801,0.00361,2225,OpenAI,gen-1790168885-apXRED25LTTaklaQNr64,1790168890
+LcqYjScqHRmMet,openai/gpt-6-sol,kolb12,human,5,completed,0.7,550,201,91,751,0.00311,499,OpenAI,gen-1790168887-zgIGOo7yaFzrSTxuclbc,1790168890
+u-djAfvMx11663,openai/gpt-6-sol,locus_levenson,self,1,completed,0.7,794,372,166,1166,0.005308,986,OpenAI,gen-1790168887-uFLSdy3vF54SUmhCvt2V,1790168892
+C5R0ZQo8VhjnFG,openai/gpt-6-sol,locus_levenson,self,2,completed,0.7,794,448,242,1242,0.006068,997,OpenAI,gen-1790168888-nVhDCji6lPzWvDnjVT9b,1790168894
+EpJY2prjyamM09,openai/gpt-6-sol,locus_levenson,self,3,completed,0.7,794,428,222,1222,0.005868,677,OpenAI,gen-1790168890-jsgZiLViXAwSx771xmtM,1790168895
+JW90dyGO47prMQ,openai/gpt-6-sol,locus_levenson,self,4,completed,0.7,794,429,223,1223,0.005878,1332,OpenAI,gen-1790168890-pnEpI43gHCAr4QQvb1tw,1790168897
+5HJP86ZrAayVMm,openai/gpt-6-sol,locus_levenson,human,1,completed,0.7,771,204,0,975,0.003582,1352,OpenAI,gen-1790168894-PzaEMkiyzLQIUPMFUP8f,1790168897
+njRlNDf1Ixak1b,openai/gpt-6-sol,locus_levenson,self,5,completed,0.7,794,398,192,1192,0.005568,1074,OpenAI,gen-1790168892-ifeUkGQeELU1nAbpOWRI,1790168898
+53cYDyp1oJ_yEz,openai/gpt-6-sol,locus_levenson,human,2,completed,0.7,771,336,130,1107,0.004902,947,OpenAI,gen-1790168895-kNS5EgAKshx1y9AmB6hN,1790168900
+kvCFfVLG4TN8bD,openai/gpt-6-sol,locus_levenson,human,3,completed,0.7,771,204,0,975,0.003582,3617,OpenAI,gen-1790168897-rLMag5Ct5akPRHyUcseL,1790168902
+bDf3TgkcerxEMy,openai/gpt-6-sol,locus_levenson,human,4,completed,0.7,771,340,134,1111,0.004942,601,OpenAI,gen-1790168897-Tw2X2gaWiOw5ZDpMDXJV,1790168902
+UJk97bBlqQKP34,openai/gpt-6-sol,locus_levenson,human,5,completed,0.7,771,343,137,1114,0.004972,903,OpenAI,gen-1790168898-VAN3Vuuy8Dn11PYCyZhg,1790168903
+pvh_v8p1VtJX8Q,openai/gpt-6-sol,lsq40,self,1,completed,0.7,971,554,220,1525,0.007482,520,OpenAI,gen-1790168900-P0ssjStQhG334k1bpWX8,1790168906
+HcL4x5GXKQp1Lr,openai/gpt-6-sol,lsq40,self,2,completed,0.7,971,591,257,1562,0.007852,573,OpenAI,gen-1790168902-S1gZ012CTDMyc9jNHIE5,1790168908
+NcElXQDwnaTRzb,openai/gpt-6-sol,lsq40,self,4,completed,0.7,971,533,199,1504,0.007272,870,OpenAI,gen-1790168903-QwucFuzrt2s8PHMagbL4,1790168909
+nQIHSJQyy5Gstr,openai/gpt-6-sol,lsq40,self,3,completed,0.7,971,546,212,1517,0.007402,1417,OpenAI,gen-1790168902-anV506THOTD342ZDPs7U,1790168910
+I2HTrAHx-Hg0R-,openai/gpt-6-sol,lsq40,self,5,completed,0.7,971,514,180,1485,0.007082,1439,OpenAI,gen-1790168906-QNkRD955EST3SCmalngW,1790168912
+vhej4FBD1nKTYu,openai/gpt-6-sol,lsq40,human,2,completed,0.7,948,529,195,1477,0.007186,662,OpenAI,gen-1790168909-vDosazlajHKZq0h9lTPo,1790168913
+ZLx5RrsnfbhRgO,openai/gpt-6-sol,lsq40,human,1,completed,0.7,948,527,193,1475,0.007166,1873,OpenAI,gen-1790168908-35cpBOuspXN9THoqvSM2,1790168914
+7LLSfdGE7QeN1M,openai/gpt-6-sol,lsq40,human,3,completed,0.7,948,561,227,1509,0.007506,837,OpenAI,gen-1790168910-TZbedmwIETNfBpLzX0og,1790168915
+X4aIESAvAgEz9C,openai/gpt-6-sol,lsq40,human,4,completed,0.7,948,597,263,1545,0.007866,785,OpenAI,gen-1790168912-AGsIraDvHTinNPDFd0Zq,1790168919
+DcWPYAS5bCZnMx,openai/gpt-6-sol,lsq40,human,5,completed,0.7,948,543,209,1491,0.007326,1060,OpenAI,gen-1790168913-lA5xRk1PF8PW0mEo1cpQ,1790168919
+VkzA_Pdh3TkyGZ,openai/gpt-6-sol,mfq30,self,1,completed,0.7,1096,351,97,1447,0.0037346,1050,OpenAI,gen-1790168914-WXuyqS6B0PO0VvC4cQ7x,1790168920
+2B7AbsDpVNCHYp,openai/gpt-6-sol,mfq30,self,2,completed,0.7,1096,496,242,1592,0.0051846,538,OpenAI,gen-1790168915-yTqsPzVoRvibs4EhFqPD,1790168921
+G1N7RWVx8AttYO,openai/gpt-6-sol,mfq30,self,4,completed,0.7,1096,430,176,1526,0.0045246,1032,OpenAI,gen-1790168919-ovH7geFf35rAIw4DlHbr,1790168925
+4tE5pD_vqB3NQZ,openai/gpt-6-sol,mfq30,self,5,completed,0.7,1096,455,201,1551,0.0047746,1464,OpenAI,gen-1790168920-R8srDmSjNcecWVMeDoZu,1790168925
+ZK_1EJReLSwK6k,openai/gpt-6-sol,mfq30,self,3,completed,0.7,1096,496,242,1592,0.0051846,1224,OpenAI,gen-1790168919-yWgrI83i5PbkCOfiWeDS,1790168927
+qWogdnrOwWJLsh,openai/gpt-6-sol,mfq30,human,1,completed,0.7,1073,406,152,1479,0.00428,1399,OpenAI,gen-1790168921-57bPFrQNo7hzG3ZDBULu,1790168927
+4q4X0RxGIbJenP,openai/gpt-6-sol,mfq30,human,2,completed,0.7,1073,424,170,1497,0.00446,1238,OpenAI,gen-1790168925-3yDR3vohLZupuojxffnO,1790168931
+rr0uCpWdmyeYkU,openai/gpt-6-sol,mfq30,human,5,completed,0.7,1073,415,161,1488,0.00437,1023,OpenAI,gen-1790168927-b7bjQagVWxOvswZmo9hk,1790168931
+ovs8S9AcrRhosV,openai/gpt-6-sol,mfq30,human,3,completed,0.7,1073,515,261,1588,0.00537,500,OpenAI,gen-1790168925-h8whUspcd1ohcpfNhTwQ,1790168932
+XoQvDGnibz1L-S,openai/gpt-6-sol,mfq30,human,4,completed,0.7,1073,432,178,1505,0.00454,1098,OpenAI,gen-1790168927-1G9BzEjtJhyRzcmNsbjp,1790168932
+_u30jIj-b_d5lc,openai/gpt-6-sol,ncs18,self,2,completed,0.7,625,309,151,934,0.00434,1865,OpenAI,gen-1790168932-zNlqJ55TAq4gqYLPv79J,1790168937
+yCKtbiH9pbhjjS,openai/gpt-6-sol,ncs18,self,3,completed,0.7,625,314,156,939,0.00439,990,OpenAI,gen-1790168932-NSJESTiGJJXGjYLPQwWS,1790168937
+VCj_bJjoMJAVG2,openai/gpt-6-sol,ncs18,self,4,completed,0.7,625,276,118,901,0.00401,931,OpenAI,gen-1790168933-cmPyYtHEHDiTkMD1wdWa,1790168938
+7KFrJ5tMi2dMit,openai/gpt-6-sol,ncs18,self,1,completed,0.7,625,260,102,885,0.00385,445,OpenAI,gen-1790168931-YeispIHphFnvJFjZBXdx,1790168940
+fXpehfjwmSBCQr,openai/gpt-6-sol,ncs18,self,5,completed,0.7,625,318,160,943,0.00443,1360,OpenAI,gen-1790168937-Oi2Bj4dyepMMa7Nw6msv,1790168941
+sX1D0zQcredUeE,openai/gpt-6-sol,ncs18,human,1,completed,0.7,602,298,140,900,0.004184,581,OpenAI,gen-1790168937-DgOOs964qXLFockCafBI,1790168942
+MdGxtZYJtPMWjZ,openai/gpt-6-sol,ncs18,human,2,completed,0.7,602,361,203,963,0.004814,1039,OpenAI,gen-1790168938-r6k9tQNETElfFrZSX2Um,1790168942
+DDGiPPcBYTs7l0,openai/gpt-6-sol,ncs18,human,3,completed,0.7,602,331,173,933,0.004514,1267,OpenAI,gen-1790168941-4ScqUbNkmrqsASoVIaM7,1790168946
+pl2KxAjZIbhTsD,openai/gpt-6-sol,ncs18,human,5,completed,0.7,602,411,253,1013,0.005314,379,OpenAI,gen-1790168942-dA9jk9yrpvJCDQoQwQDY,1790168947
+1LHqSKznqpVffA,openai/gpt-6-sol,ncs18,human,4,completed,0.7,602,345,187,947,0.004654,751,OpenAI,gen-1790168942-4HHlabvqkjs4vHMEDLhE,1790168948
+u6JrIevEYB0lyV,openai/gpt-6-sol,obsi32,self,1,completed,0.7,889,448,178,1337,0.006258,1018,OpenAI,gen-1790168943-X6C2MiYE9QWXSy6NiovB,1790168948
+GuH4m5TbxmA9XH,openai/gpt-6-sol,obsi32,self,2,completed,0.7,889,512,242,1401,0.006898,966,OpenAI,gen-1790168946-RAushYqx5MMjdueV1XLF,1790168952
+rdIat8Ot2ImfD9,openai/gpt-6-sol,obsi32,self,3,completed,0.7,889,521,251,1410,0.006988,770,OpenAI,gen-1790168947-yGNlGxuePPFMB0rDHFaD,1790168954
+HmvMt9QmJqJ9Rw,openai/gpt-6-sol,obsi32,self,4,completed,0.7,889,555,285,1444,0.007328,779,OpenAI,gen-1790168948-wN3YQ4PC4eDaBw8lBvZn,1790168954
+AH9wWupdZHwpuh,openai/gpt-6-sol,obsi32,self,5,completed,0.7,889,484,214,1373,0.006618,581,OpenAI,gen-1790168948-Ob9hCFagNVrtxku88w5P,1790168954
+WYaEWvwzIKuqYH,openai/gpt-6-sol,obsi32,human,1,completed,0.7,866,448,178,1314,0.006212,1172,OpenAI,gen-1790168953-UCkkYbnI8TbrPtJ35i9K,1790168958
+N_InRNyAY18jDU,openai/gpt-6-sol,obsi32,human,2,completed,0.7,866,485,215,1351,0.006582,1426,OpenAI,gen-1790168954-f3aoukZI9Cfv6MAITEd3,1790168959
+I3Q8pYH3PrUCT4,openai/gpt-6-sol,obsi32,human,3,completed,0.7,866,434,164,1300,0.006072,782,OpenAI,gen-1790168954-5ct3jYsVFXZy25cCzMxB,1790168959
+I_Ll2GurWQktx1,openai/gpt-6-sol,obsi32,human,4,completed,0.7,866,527,257,1393,0.007002,972,OpenAI,gen-1790168954-EXwUuTHklUkq0C93acJy,1790168960
+S_K7ktGW_s2y1O,openai/gpt-6-sol,obsi32,human,5,completed,0.7,866,457,187,1323,0.006302,935,OpenAI,gen-1790168958-79IA3yhXDELfqMRQgAhc,1790168964
+Lr3lukLycNrd88,openai/gpt-6-sol,otti102,self,1,completed,0.7,1942,1341,511,3283,0.0138038,1019,OpenAI,gen-1790168959-xlIcCPSkhyTV9xRb47mY,1790168971
+HL8P5Uk9xY3fJ7,openai/gpt-6-sol,otti102,self,2,completed,0.7,1942,1401,571,3343,0.0144038,733,OpenAI,gen-1790168959-nwPkhJQVH3bI7B7Mv1vo,1790168972
+VY5--x8eMe7m2n,openai/gpt-6-sol,otti102,self,3,completed,0.7,1942,1438,608,3380,0.0147738,569,OpenAI,gen-1790168960-0Q9AW52GkYO5XPnZI3YB,1790168974
+T5JV8P2Fah5MW4,openai/gpt-6-sol,otti102,human,1,completed,0.7,1919,1284,454,3203,0.0132292,1367,OpenAI,gen-1790168972-rTpNDBErHj4MNVmXizSn,1790168983
+aUQfIbYshQrj0h,openai/gpt-6-sol,otti102,self,4,completed,0.7,1942,1368,538,3310,0.0140738,3148,OpenAI,gen-1790168964-aSa68QkRiLflmM4ZfFF9,1790168985
+0FL9GzB7De3xbq,openai/gpt-6-sol,otti102,human,2,completed,0.7,1919,1289,459,3208,0.0132792,1085,OpenAI,gen-1790168974-Xjc17GaRXxHhIKdixko1,1790168985
+QTStIncAg45IbZ,openai/gpt-6-sol,otti102,self,5,completed,0.7,1942,1346,516,3288,0.0138538,1787,OpenAI,gen-1790168972-gAXaOLwuLORL9QIB4VY8,1790168993
+TMeu2rGHY_Z4KK,openai/gpt-6-sol,otti102,human,3,completed,0.7,1919,1283,453,3202,0.0132192,1227,OpenAI,gen-1790168983-5Dd0kBapLfCaLo9bqjPB,1790168996
+j8_lZP4Q8woUCg,openai/gpt-6-sol,otti102,human,4,completed,0.7,1919,1282,452,3201,0.0132092,1454,OpenAI,gen-1790168985-ysCsSJlebnF8eULTCGR1,1790168996
+J_Ped58bcwienx,openai/gpt-6-sol,otti102,human,5,completed,0.7,1919,1280,450,3199,0.0131892,1969,OpenAI,gen-1790168985-AhYGA35eVoE10ItQpUz6,1790168997
+QyQxWCeJDJkIDR,openai/gpt-6-sol,pvq21,self,1,completed,0.7,858,342,160,1200,0.005136,1105,OpenAI,gen-1790168993-U4G4kO56GskL6gecScc4,1790168998
+AQ5gJKL5RuU_l2,openai/gpt-6-sol,pvq21,self,4,completed,0.7,858,312,130,1170,0.004836,710,OpenAI,gen-1790168997-Jhp8IFMoltAWTJrsbLVZ,1790169001
+MTC1deC3CmkeGU,openai/gpt-6-sol,pvq21,self,2,completed,0.7,858,363,181,1221,0.005346,2369,OpenAI,gen-1790168996-P3V0nDlpfduJyT8DbrJ1,1790169003
+97qQizWDcaNRaF,openai/gpt-6-sol,pvq21,self,3,completed,0.7,858,354,172,1212,0.005256,3218,OpenAI,gen-1790168996-ls56AXeMAWH9JClkvAs5,1790169003
+PkuR68F8r5-FpK,openai/gpt-6-sol,pvq21,self,5,completed,0.7,858,337,155,1195,0.005086,1212,OpenAI,gen-1790168998-UPaBvdEHVhlD1Hg1i7EV,1790169004
+gvufQD2azB1-dY,openai/gpt-6-sol,pvq21,human,3,completed,0.7,835,323,141,1158,0.0049,983,OpenAI,gen-1790169003-nUNy9Shb6qbmNNGrl5CB,1790169007
+6J-_UYzVp-y9uu,openai/gpt-6-sol,pvq21,human,1,completed,0.7,835,300,118,1135,0.00467,865,OpenAI,gen-1790169001-ETXAVIM3ZXUN0RK78t8s,1790169008
+G0GNxV4x3fFwVk,openai/gpt-6-sol,pvq21,human,2,completed,0.7,835,300,118,1135,0.00467,1344,OpenAI,gen-1790169003-pa9dBI3XLRbGmEK2Xjq6,1790169008
+VV8vAf9lzkihLG,openai/gpt-6-sol,pvq21,human,4,completed,0.7,835,355,173,1190,0.00522,1364,OpenAI,gen-1790169004-I6oKVTQmlSnlc19PCMvO,1790169008
+nJnEj2bZBZWiIA,openai/gpt-6-sol,pvq21,human,5,completed,0.7,835,304,122,1139,0.00471,1000,OpenAI,gen-1790169007-sLq5w4CTMovRlImz5pPp,1790169012
+J0nQHZdxJnLaPm,openai/gpt-6-sol,sd3,self,3,completed,0.7,648,457,227,1105,0.005866,515,OpenAI,gen-1790169008-y7wVzRZ6tNvV4w95ATXz,1790169014
+6OoiYTAYExG_TQ,openai/gpt-6-sol,sd3,self,1,completed,0.7,648,464,234,1112,0.005936,1354,OpenAI,gen-1790169008-hYVUprIpkjM9LRoOB3gy,1790169015
+5qLmfNjcLRepbq,openai/gpt-6-sol,sd3,self,2,completed,0.7,648,485,255,1133,0.006146,805,OpenAI,gen-1790169008-BMexZrJgMQfJWsiRbgSE,1790169015
+w99fD3yvfWhHzv,openai/gpt-6-sol,sd3,self,4,completed,0.7,648,459,229,1107,0.005886,1079,OpenAI,gen-1790169012-H766kL8uMVz7h2qC8c9H,1790169018
+m8CWVyhceogT-b,openai/gpt-6-sol,sd3,human,2,completed,0.7,625,393,163,1018,0.00518,557,OpenAI,gen-1790169015-mMPSvE9fDuPx1Tnb5RgN,1790169019
+Y30M24h9hRrHwZ,openai/gpt-6-sol,sd3,human,1,completed,0.7,625,398,168,1023,0.00523,1224,OpenAI,gen-1790169015-SnqzARS3pV1SXo8U6oqS,1790169020
+x7IUGIMyNFIwWA,openai/gpt-6-sol,sd3,human,3,completed,0.7,625,377,147,1002,0.00502,1286,OpenAI,gen-1790169018-MqY3apkTkYb03qcTgn51,1790169023
+0bOJ1UxWLIpyYB,openai/gpt-6-sol,sd3,human,4,completed,0.7,625,395,165,1020,0.0052,1031,OpenAI,gen-1790169019-XgJeJ5EBkvgu5mXyjU0R,1790169023
+-2h-VjMN9gYa8j,openai/gpt-6-sol,sd3,self,5,completed,0.7,648,463,233,1111,0.005926,3465,OpenAI,gen-1790169014-1MpKKWOiLFR1qwL0BG5A,1790169024
+mOn3OFpjxqfn3n,openai/gpt-6-sol,sd3,human,5,completed,0.7,625,391,161,1016,0.00516,489,OpenAI,gen-1790169020-SdG4z7DEgzgABcJvwzGq,1790169027
+LpH4IAPLqZ1VPj,openai/gpt-6-sol,vark16,self,1,completed,0.7,622,256,114,878,0.003804,1051,OpenAI,gen-1790169023-V3cXA0S4EMrhyh5f85RH,1790169027
+lL-EWn15NP4kB7,openai/gpt-6-sol,vark16,self,2,completed,0.7,622,313,171,935,0.004374,1185,OpenAI,gen-1790169023-7oK6nWXVaw0q9CPbKYSp,1790169028
+IT2n-OAw7B4QOE,openai/gpt-6-sol,vark16,self,3,completed,0.7,622,250,108,872,0.003744,1052,OpenAI,gen-1790169024-q5kXEFNREjytX17728kG,1790169029
+FeBH9f00USA4vs,openai/gpt-6-sol,vark16,human,1,completed,0.7,599,140,0,739,0.002598,596,OpenAI,gen-1790169028-Jop5R4mjBBrc2aj38CYH,1790169030
+5fTliHv7N_SH85,openai/gpt-6-sol,vark16,human,2,completed,0.7,599,140,0,739,0.002598,585,OpenAI,gen-1790169029-7greHfdW4qdTiKk1RUrU,1790169031
+TGwmz6OOdShIBf,openai/gpt-6-sol,vark16,self,4,completed,0.7,622,280,138,902,0.004044,880,OpenAI,gen-1790169027-LgXqBcMseoDUAxffgTos,1790169032
+0kd8cD7R5vLXN7,openai/gpt-6-sol,vark16,self,5,completed,0.7,622,308,166,930,0.004324,1517,OpenAI,gen-1790169027-zQ4TthfETXHeTCKECnVu,1790169033
+AuHye6I9chiJi-,openai/gpt-6-sol,vark16,human,3,completed,0.7,599,140,0,739,0.002598,480,OpenAI,gen-1790169031-zZ13xCE3DZwAC4HOkCK6,1790169033
+RO1MAM4VUPfTys,openai/gpt-6-sol,vark16,human,4,completed,0.7,599,253,111,852,0.003728,964,OpenAI,gen-1790169031-DPZplq9VSBRoMq4eXnFK,1790169034
+tDoa4WeraT_ejE,openai/gpt-6-sol,vark16,human,5,completed,0.7,599,140,0,739,0.002598,970,OpenAI,gen-1790169032-LCS5T20UHurDIqMTwkwL,1790169036
+KtTfm3lpMZ22hE,anthropic/claude-opus-5.5,ecr12,self,1,completed,0.7,775,177,0,952,0.00664,1694,Claude Platform on AWS,gen-1790169036-4HMKgHXvQDcwRVnsRFio,1790169039
+dnwJBTgPakyYxD,anthropic/claude-opus-5.5,ecr12,self,2,completed,0.7,775,177,0,952,0.00664,1523,Claude Platform on AWS,gen-1790169036-UXdNWUJn0vt0u0dpY0B8,1790169039
+c5Aiu2B8qUD8Ao,anthropic/claude-opus-5.5,ecr12,self,4,completed,0.7,775,177,0,952,0.00664,1705,Claude Platform on AWS,gen-1790169036-xSITYwEaGAdL49UqOeXa,1790169039
+cn5z_QHue7m5Hj,anthropic/claude-opus-5.5,ecr12,self,3,completed,0.7,775,177,0,952,0.00664,1912,Claude Platform on AWS,gen-1790169036-IhTZYzh8RvdafxI6Bvsu,1790169040
+IAIPXYOK7ZlbMo,anthropic/claude-opus-5.5,ecr12,human,1,completed,0.7,736,177,0,913,0.006484,1345,Claude Platform on AWS,gen-1790169039-lEGci4HB9fLj28NikF8j,1790169042
+Xu4ItHT8-WbmvA,anthropic/claude-opus-5.5,ecr12,human,2,completed,0.7,736,177,0,913,0.006484,1346,Claude Platform on AWS,gen-1790169040-AlG3b5ZvYk48STIbLucO,1790169043
+tjqObYxIf6IYEo,anthropic/claude-opus-5.5,ecr12,human,3,completed,0.7,736,177,0,913,0.006484,1486,Claude Platform on AWS,gen-1790169040-SuSDhvKHcfjJ6HJuysXF,1790169043
+zZVxMbORKAfZOv,anthropic/claude-opus-5.5,ecr12,self,5,completed,0.7,775,177,0,952,0.00664,3786,Claude Platform on AWS,gen-1790169039-cNqjUzW0RljSbw7aI9eG,1790169045
+lhxVoY3btnp_IE,anthropic/claude-opus-5.5,ecr12,human,4,completed,0.7,736,177,0,913,0.006484,1500,Claude Platform on AWS,gen-1790169043-oLZaDTeVDATaDcPjCIE1,1790169046
+-z0mxivf3dxon0,anthropic/claude-opus-5.5,ecr12,human,5,completed,0.7,736,177,0,913,0.006484,1368,Claude Platform on AWS,gen-1790169043-TzmqG5zR6F44oE4UqagF,1790169046
+Ht3iwm3_P62E0b,anthropic/claude-opus-5.5,enneagram36,self,1,completed,0.7,1477,513,0,1990,0.016168,2634,Claude Platform on AWS,gen-1790169043-0eQJKGfhXHsDvh9oiWfy,1790169050
+gRyrgxEUj9UcQR,anthropic/claude-opus-5.5,enneagram36,self,2,completed,0.7,1477,513,0,1990,0.016168,1388,Claude Platform on AWS,gen-1790169045-BA3abaCpwVsaYe2ccoA3,1790169050
+8OZfRfM7-dFR2e,anthropic/claude-opus-5.5,enneagram36,self,3,completed,0.7,1477,513,0,1990,0.016168,1401,Claude Platform on AWS,gen-1790169046-hm5ryW0R8zPXeEWgYvJj,1790169051
+QT4LC4Uh29IaLy,anthropic/claude-opus-5.5,enneagram36,self,4,completed,0.7,1477,513,0,1990,0.016168,1696,Claude Platform on AWS,gen-1790169046-wMOxMwpynbFyczVsSpTG,1790169052
+EOnUSvXTDOZ1OG,anthropic/claude-opus-5.5,enneagram36,self,5,completed,0.7,1477,513,0,1990,0.016168,1621,Claude Platform on AWS,gen-1790169050-QFfuUIch6qjoIxzmjPpF,1790169056
+xBwBbxHO49v33X,anthropic/claude-opus-5.5,enneagram36,human,1,completed,0.7,1438,513,0,1951,0.016012,1386,Claude Platform on AWS,gen-1790169050-JcAHgcE33ywAsYwrMGhn,1790169056
+Ig-HJ8l_xJydHY,anthropic/claude-opus-5.5,enneagram36,human,2,completed,0.7,1438,513,0,1951,0.016012,1352,Claude Platform on AWS,gen-1790169051-AGpaxLoTvuFYJPCrL0SK,1790169057
+QRsQNakOqAqj_C,anthropic/claude-opus-5.5,enneagram36,human,3,completed,0.7,1438,513,0,1951,0.016012,1547,Claude Platform on AWS,gen-1790169052-YpZiC5biF6qwVHD0dVOq,1790169057
+uvmik4uKSuvo6V,anthropic/claude-opus-5.5,enneagram36,human,4,completed,0.7,1438,513,0,1951,0.016012,1807,Claude Platform on AWS,gen-1790169056-zZB3MhXZikU5J96Eh5Uw,1790169061
+KdvPphbxeZn4tG,anthropic/claude-opus-5.5,enneagram36,human,5,completed,0.7,1438,513,0,1951,0.016012,1562,Claude Platform on AWS,gen-1790169056-95lncYBS4idsLF0xuQdo,1790169061
+Ch0FqnNiel_17_,anthropic/claude-opus-5.5,enneagram90,self,1,completed,0.7,3437,1269,0,4706,0.039128,2173,Claude Platform on AWS,gen-1790169057-FiafopqWCewkNvQjqWWq,1790169068
+rzgv7DOyKf5vCM,anthropic/claude-opus-5.5,enneagram90,self,2,completed,0.7,3437,1269,0,4706,0.039128,2087,Claude Platform on AWS,gen-1790169058-xEYfRfRvfpqP0tF5EVM8,1790169070
+NYjZLpOrWcNLtB,anthropic/claude-opus-5.5,enneagram90,self,3,completed,0.7,3437,1269,0,4706,0.039128,2038,Claude Platform on AWS,gen-1790169061-Lm0DFWcvpThncWMy78HT,1790169073
+TKvjg6B-fDUIkq,anthropic/claude-opus-5.5,enneagram90,self,4,completed,0.7,3437,1269,0,4706,0.039128,2013,Claude Platform on AWS,gen-1790169061-VuDVs9SCqhGVorcVMa2i,1790169073
+6Y4Zvu1PtktPUl,anthropic/claude-opus-5.5,enneagram90,self,5,completed,0.7,3437,1269,0,4706,0.039128,2055,Claude Platform on AWS,gen-1790169069-7Cy6pKWpFlJb3P43ytne,1790169080
+TQyyjI1sw1ShLL,anthropic/claude-opus-5.5,enneagram90,human,1,completed,0.7,3398,1269,0,4667,0.038972,2042,Claude Platform on AWS,gen-1790169070-2jmCFvSPjfbALZ65IVRy,1790169081
+QUa-gtcOhB2cc9,anthropic/claude-opus-5.5,enneagram90,human,2,completed,0.7,3398,1269,0,4667,0.038972,2052,Claude Platform on AWS,gen-1790169073-WfyBUU2QvqskfnQn8o7D,1790169085
+W3T1KW-V7FKLca,anthropic/claude-opus-5.5,enneagram90,human,3,completed,0.7,3398,1269,0,4667,0.038972,1915,Claude Platform on AWS,gen-1790169073-m5KLrmhTferjiVQoRnks,1790169085
+YNVzB64nSHVIzC,anthropic/claude-opus-5.5,eq_short,self,1,completed,0.7,1008,317,0,1325,0.010372,1336,Claude Platform on AWS,gen-1790169085-dpyKmUnEcgzLvnwdTbmu,1790169089
+eHbpiFGFpB9Jbv,anthropic/claude-opus-5.5,eq_short,self,2,completed,0.7,1008,317,0,1325,0.010372,1751,Claude Platform on AWS,gen-1790169085-TRJaZJLTpmUpFOVg4tSw,1790169089
+_eY2GnN9J8Mclt,anthropic/claude-opus-5.5,enneagram90,human,4,completed,0.7,3398,1269,0,4667,0.038972,1921,Claude Platform on AWS,gen-1790169081-ZxqKgYXBcpc0eykxtsst,1790169092
+COST3KXs6CEzSH,anthropic/claude-opus-5.5,enneagram90,human,5,completed,0.7,3398,1269,0,4667,0.038972,2673,Claude Platform on AWS,gen-1790169081-h1JfRq0V4DNkzqTKMzI7,1790169093
+DX0OnJjQqzobID,anthropic/claude-opus-5.5,eq_short,self,3,completed,0.7,1008,317,0,1325,0.010372,1449,Claude Platform on AWS,gen-1790169089-CghpthxsnJcGujCCWbt7,1790169093
+3EJY0KzJtZZFgj,anthropic/claude-opus-5.5,eq_short,self,4,completed,0.7,1008,317,0,1325,0.010372,1393,Claude Platform on AWS,gen-1790169089-ze0kiYcqz4gtd4ZQ3R7y,1790169093
+To53lfKUsU2ps3,anthropic/claude-opus-5.5,eq_short,self,5,completed,0.7,1008,317,0,1325,0.010372,1399,Claude Platform on AWS,gen-1790169092-sPyF7XsIwDWDDzRYl9yI,1790169096
+yXb6zjQPyj4jVi,anthropic/claude-opus-5.5,eq_short,human,1,completed,0.7,969,317,0,1286,0.010216,1645,Claude Platform on AWS,gen-1790169093-f6ppM3vhXSnBe0I6ak4E,1790169097
+7KVG3Hbom8yDaL,anthropic/claude-opus-5.5,eq_short,human,2,completed,0.7,969,317,0,1286,0.010216,1525,Claude Platform on AWS,gen-1790169093-D2El7qyTQX9weUDJ043S,1790169097
+lixUNguVTwnxsh,anthropic/claude-opus-5.5,eq_short,human,3,completed,0.7,969,317,0,1286,0.010216,1329,Claude Platform on AWS,gen-1790169093-FIaFh1GDnCmlYhtYrIvB,1790169098
+q7p9PhA-nMUlrD,anthropic/claude-opus-5.5,eq_short,human,4,completed,0.7,969,317,0,1286,0.010216,1504,Claude Platform on AWS,gen-1790169096-RFQGoMlGaQsrhFmh5gMr,1790169100
+ygQtCNOpEqUn24,anthropic/claude-opus-5.5,eq_short,human,5,completed,0.7,969,317,0,1286,0.010216,1894,Claude Platform on AWS,gen-1790169097-fLo6dInXCDABHJqoCP3r,1790169102
+g0w1hSRLVphByB,anthropic/claude-opus-5.5,hexaco24,self,1,completed,0.7,1059,345,0,1404,0.011136,1347,Claude Platform on AWS,gen-1790169098-j0P0VbZF1OvnrYNbBrQV,1790169102
+1qpXqlGkSFoEY9,anthropic/claude-opus-5.5,hexaco24,self,2,completed,0.7,1059,345,0,1404,0.011136,1329,Claude Platform on AWS,gen-1790169098-qLENMAQ6OEiX4fh8jucR,1790169102
+kqJvCKO-Lb7vkv,anthropic/claude-opus-5.5,hexaco24,self,3,completed,0.7,1059,345,0,1404,0.011136,1327,Claude Platform on AWS,gen-1790169101-LqBobPLHKJscJEv083GH,1790169105
+6-HSKkiTt-yoTf,anthropic/claude-opus-5.5,hexaco24,self,4,completed,0.7,1059,345,0,1404,0.011136,1509,Claude Platform on AWS,gen-1790169102-TBpbbIijCvqN2AG3Sglt,1790169106
+rhrwZe8-c6L_4j,anthropic/claude-opus-5.5,hexaco24,self,5,completed,0.7,1059,345,0,1404,0.011136,1637,Claude Platform on AWS,gen-1790169102-JVRtUCpeYBrQCwt5EPhW,1790169106
+_i12vRTS2fXLPN,anthropic/claude-opus-5.5,hexaco24,human,1,completed,0.7,1020,345,0,1365,0.01098,1501,Claude Platform on AWS,gen-1790169102-egxNkAkZYvneTSwVWrCf,1790169107
+yIZalG7KKnBh8y,anthropic/claude-opus-5.5,hexaco24,human,2,completed,0.7,1020,345,0,1365,0.01098,1421,Claude Platform on AWS,gen-1790169105-oXvjvi603jC8aW3ICP26,1790169109
+VApzx_piWIVxVC,anthropic/claude-opus-5.5,hexaco24,human,3,completed,0.7,1020,345,0,1365,0.01098,1535,Claude Platform on AWS,gen-1790169106-mLuTNl4ddqzOEzmAlgtK,1790169111
+9yhkp_7Qi05B_O,anthropic/claude-opus-5.5,hexaco24,human,4,completed,0.7,1020,345,0,1365,0.01098,1533,Claude Platform on AWS,gen-1790169106-5ygnFQdeJPAUaw0j4E0f,1790169111
+RydYSVR0XbIh_T,anthropic/claude-opus-5.5,hexaco24,human,5,completed,0.7,1020,345,0,1365,0.01098,1455,Claude Platform on AWS,gen-1790169107-t8fnS5su7fP81DrFC1q2,1790169111
+YksjBrcnLtVrzS,anthropic/claude-opus-5.5,ipip50,self,1,completed,0.7,1137,709,0,1846,0.018728,1784,Claude Platform on AWS,gen-1790169109-bHSv0tfavDJUblYFiDqd,1790169117
+zeKrFZDOsmYVl9,anthropic/claude-opus-5.5,ipip50,self,2,completed,0.7,1137,709,0,1846,0.018728,1405,Claude Platform on AWS,gen-1790169111-hvvWqSzSkGvWvtfGopkD,1790169117
+qvfoA3S-iuT5qz,anthropic/claude-opus-5.5,ipip50,self,3,completed,0.7,1137,709,0,1846,0.018728,1391,Claude Platform on AWS,gen-1790169111-utP3X5cqqeuiDt902LJf,1790169117
+JwBAMWwCMm3Iwb,anthropic/claude-opus-5.5,ipip50,self,4,completed,0.7,1137,709,0,1846,0.018728,1346,Claude Platform on AWS,gen-1790169111-tKQ701ikhZIjWzmZdqpT,1790169118
+5nFohlPobAZHwh,anthropic/claude-opus-5.5,ipip50,self,5,completed,0.7,1137,709,0,1846,0.018728,1337,Claude Platform on AWS,gen-1790169117-gLT8A4yASx3H0MngzPR8,1790169124
+2M3e-f8IJsTToC,anthropic/claude-opus-5.5,ipip50,human,1,completed,0.7,1098,709,0,1807,0.018572,1490,Claude Platform on AWS,gen-1790169118-4jlmflVa6eASyUlvrsr1,1790169124
+-FTiupjPs5134U,anthropic/claude-opus-5.5,ipip50,human,2,completed,0.7,1098,709,0,1807,0.018572,1657,Claude Platform on AWS,gen-1790169118-tLFZFhB67QGTyWTyh817,1790169124
+j2sQjnunhmyTtn,anthropic/claude-opus-5.5,ipip50,human,3,completed,0.7,1098,709,0,1807,0.018572,1415,Claude Platform on AWS,gen-1790169118-1Ah6vAlWXXiuJJH5yFGj,1790169125
+rRLT0vGhmSxT62,anthropic/claude-opus-5.5,kolb12,self,1,completed,0.7,894,177,0,1071,0.007116,1361,Claude Platform on AWS,gen-1790169124-1mD3Ixq6TPh25mp77Jmb,1790169128
+PpnWQVkQ-9ZIjE,anthropic/claude-opus-5.5,kolb12,self,2,completed,0.7,894,177,0,1071,0.007116,1524,Claude Platform on AWS,gen-1790169125-g0cJdPFLrqzZqCooNryu,1790169128
+hwIPzW6fKaTUkY,anthropic/claude-opus-5.5,ipip50,human,4,completed,0.7,1098,709,0,1807,0.018572,1514,Claude Platform on AWS,gen-1790169124-bFXjsIrbRUqpYZjfjzhN,1790169131
+5ZDXkKuQCGMCMr,anthropic/claude-opus-5.5,ipip50,human,5,completed,0.7,1098,709,0,1807,0.018572,1373,Claude Platform on AWS,gen-1790169124-SVHFxbT3PEGGCljJrkh7,1790169131
+d4XOoEwp1AOic6,anthropic/claude-opus-5.5,kolb12,self,3,completed,0.7,894,177,0,1071,0.007116,1587,Claude Platform on AWS,gen-1790169128-MZqQELnhbPKbzCNP5KrP,1790169131
+J4x2fc0aruuDfz,anthropic/claude-opus-5.5,kolb12,self,4,completed,0.7,894,177,0,1071,0.007116,1530,Claude Platform on AWS,gen-1790169129-JNS4LLRI3OlfDwC7yMsr,1790169132
+DCgqV4A8vM0UWy,anthropic/claude-opus-5.5,kolb12,self,5,completed,0.7,894,177,0,1071,0.007116,1396,Claude Platform on AWS,gen-1790169131-NCHIxToaOkcJjYnJ7go6,1790169134
+H8jGz0nZcubFT4,anthropic/claude-opus-5.5,kolb12,human,1,completed,0.7,855,177,0,1032,0.00696,1411,Claude Platform on AWS,gen-1790169131-yvZwCTokakN6j0qjRXQ9,1790169134
+WucOgXEV1yWhDL,anthropic/claude-opus-5.5,kolb12,human,2,completed,0.7,855,177,0,1032,0.00696,1424,Claude Platform on AWS,gen-1790169132-ODDnNF1hZZ2AXCqyu95H,1790169135
+pcyYM4-xIhMfMn,anthropic/claude-opus-5.5,kolb12,human,3,completed,0.7,855,177,0,1032,0.00696,1622,Claude Platform on AWS,gen-1790169132-m8iG5cfzviKEQseIhya8,1790169135
+zGNjKVv7VeL1aJ,anthropic/claude-opus-5.5,kolb12,human,4,completed,0.7,855,177,0,1032,0.00696,1462,Claude Platform on AWS,gen-1790169134-9PLQP8negaNCaSFqbfEf,1790169137
+JVrDHWgURRbdDX,anthropic/claude-opus-5.5,kolb12,human,5,completed,0.7,855,177,0,1032,0.00696,1590,Claude Platform on AWS,gen-1790169134-uRAU2Ku6zzsoX2vpjgKN,1790169138
+aYxTNAHLZRZbKQ,anthropic/claude-opus-5.5,locus_levenson,self,1,completed,0.7,1146,345,0,1491,0.011484,1416,Claude Platform on AWS,gen-1790169135-xwRYntyTFtw4POeHDXS2,1790169139
+UzoEEFycjamXdd,anthropic/claude-opus-5.5,locus_levenson,self,2,completed,0.7,1146,345,0,1491,0.011484,1639,Claude Platform on AWS,gen-1790169135-m0Zyw5mePU8egaFIY0SR,1790169140
+4qYtA53npzrZ9S,anthropic/claude-opus-5.5,locus_levenson,self,3,completed,0.7,1146,345,0,1491,0.011484,1500,Claude Platform on AWS,gen-1790169137-uTcAe4kjyQZwcjLKiwlY,1790169142
+0P3PjlHVNcH3px,anthropic/claude-opus-5.5,locus_levenson,self,4,completed,0.7,1146,345,0,1491,0.011484,1461,Claude Platform on AWS,gen-1790169138-YMLgQpPQIBBj0idp6CR9,1790169142
+UMZ_QRsKfaFzP7,anthropic/claude-opus-5.5,locus_levenson,self,5,completed,0.7,1146,345,0,1491,0.011484,1336,Claude Platform on AWS,gen-1790169139-1s905JGJsQlEK0sAcYyo,1790169144
+-bvtAoBvaVcmYw,anthropic/claude-opus-5.5,locus_levenson,human,1,completed,0.7,1107,345,0,1452,0.011328,1477,Claude Platform on AWS,gen-1790169140-pIumE1uru56msiRQdbuo,1790169145
+7yaDhrj27a0MWE,anthropic/claude-opus-5.5,locus_levenson,human,2,completed,0.7,1107,345,0,1452,0.011328,1262,Claude Platform on AWS,gen-1790169142-1pstj3wvYR5I9fxehujb,1790169146
+uqeboypKxCXcL4,anthropic/claude-opus-5.5,locus_levenson,human,3,completed,0.7,1107,345,0,1452,0.011328,1329,Claude Platform on AWS,gen-1790169142-7RDXYjo9DjtqkfB8upj5,1790169147
+wIv98Y0yR-WOZT,anthropic/claude-opus-5.5,locus_levenson,human,4,completed,0.7,1107,345,0,1452,0.011328,1742,Claude Platform on AWS,gen-1790169144-TZ4SnNZQeIcodRaqFqNX,1790169149
+Xg5q-oEhioJ9Gp,anthropic/claude-opus-5.5,locus_levenson,human,5,completed,0.7,1107,345,0,1452,0.011328,1293,Claude Platform on AWS,gen-1790169145-Xyvhq7xGSU134Ly5lCis,1790169149
+zAA82-AWulKPev,anthropic/claude-opus-5.5,lsq40,self,1,completed,0.7,1527,569,0,2096,0.017488,1382,Claude Platform on AWS,gen-1790169146-4UVW4j9O456jnwPiYzXv,1790169152
+EQo1dXk1PqmDrJ,anthropic/claude-opus-5.5,lsq40,self,2,completed,0.7,1527,569,0,2096,0.017488,1409,Claude Platform on AWS,gen-1790169147-CMhRcbWn6PzFwmvr4Wca,1790169152
+dugE3s-_7Y2A2-,anthropic/claude-opus-5.5,lsq40,self,3,completed,0.7,1527,569,0,2096,0.017488,1538,Claude Platform on AWS,gen-1790169149-zq1nhfIPKJqFXZrqn11d,1790169154
+uNzlcVi8z2aRjS,anthropic/claude-opus-5.5,lsq40,self,4,completed,0.7,1527,569,0,2096,0.017488,2091,Claude Platform on AWS,gen-1790169149-30xQ3VyEfEVFEHvgMSLU,1790169156
+tZXGCzGzMimxxQ,anthropic/claude-opus-5.5,lsq40,self,5,completed,0.7,1527,569,0,2096,0.017488,1304,Claude Platform on AWS,gen-1790169152-ZltusTL20gWLVmAW877o,1790169158
+Sh6qyClR7S6JN4,anthropic/claude-opus-5.5,lsq40,human,1,completed,0.7,1488,569,0,2057,0.017332,1450,Claude Platform on AWS,gen-1790169153-AiXK9cfKsGkRCQwS5p4C,1790169158
+jpf3NvBF5QUJhF,anthropic/claude-opus-5.5,lsq40,human,2,completed,0.7,1488,569,0,2057,0.017332,1455,Claude Platform on AWS,gen-1790169154-4GzyFipvR6KFkPVTOVk7,1790169160
+1gch3PBFVWdTG3,anthropic/claude-opus-5.5,lsq40,human,3,completed,0.7,1488,569,0,2057,0.017332,1329,Claude Platform on AWS,gen-1790169156-EaRnSn519UC7jvRNnTSa,1790169161
+2vgjGuHQcoBV7p,anthropic/claude-opus-5.5,lsq40,human,4,completed,0.7,1488,569,0,2057,0.017332,1279,Claude Platform on AWS,gen-1790169158-gHfc3WK31HDq4yCQXaMj,1790169164
+ydjbo7-JzN5dQt,anthropic/claude-opus-5.5,lsq40,human,5,completed,0.7,1488,569,0,2057,0.017332,1127,Claude Platform on AWS,gen-1790169158-5us1PpqxdSBoe5HlwhXz,1790169164
+B0-wT5TGzp4Ma4,anthropic/claude-opus-5.5,mfq30,self,1,completed,0.7,1625,429,0,2054,0.01508,1410,Claude Platform on AWS,gen-1790169160-qRZEzkjRzFwyL6UWarSH,1790169165
+7RyT51DFbjR_9m,anthropic/claude-opus-5.5,mfq30,self,2,completed,0.7,1625,429,0,2054,0.01508,1578,Claude Platform on AWS,gen-1790169161-pmVLRQLhqoWkEmlz3h3C,1790169166
+iQKcP9V6G4sqP6,anthropic/claude-opus-5.5,mfq30,self,3,completed,0.7,1625,429,0,2054,0.01508,1417,Claude Platform on AWS,gen-1790169164-ah2PDcLBCJP6cpv15IFs,1790169169
+6JmoC9pro0yFPI,anthropic/claude-opus-5.5,mfq30,self,4,completed,0.7,1625,429,0,2054,0.01508,1510,Claude Platform on AWS,gen-1790169164-kMMkuVlG5SiBmtMctic8,1790169169
+v4d3PWhCVTsoI-,anthropic/claude-opus-5.5,mfq30,self,5,completed,0.7,1625,429,0,2054,0.01508,1606,Claude Platform on AWS,gen-1790169165-OE36L0hcLiN7GaFRINFE,1790169170
+9BKg74fwBRfPSJ,anthropic/claude-opus-5.5,mfq30,human,1,completed,0.7,1586,429,0,2015,0.014924,1401,Claude Platform on AWS,gen-1790169166-PnD4si475lQl2Cn6Q09W,1790169171
+Z29B76soHDqD2-,anthropic/claude-opus-5.5,mfq30,human,2,completed,0.7,1586,429,0,2015,0.014924,1290,Claude Platform on AWS,gen-1790169169-4sYVuE5RMvbK5GeCwvQt,1790169174
+cGdwPXotmbrp9Z,anthropic/claude-opus-5.5,mfq30,human,3,completed,0.7,1586,429,0,2015,0.014924,1323,Claude Platform on AWS,gen-1790169169-4ypxIgIYpZE1zP8Laf9S,1790169174
+ktclBv5LOpC4Wn,anthropic/claude-opus-5.5,mfq30,human,4,completed,0.7,1586,429,0,2015,0.014924,1320,Claude Platform on AWS,gen-1790169171-BPc29G2C9ozSWmYUmOOx,1790169175
+W73ugAAuEAP2W-,anthropic/claude-opus-5.5,mfq30,human,5,completed,0.7,1586,429,0,2015,0.014924,1434,Claude Platform on AWS,gen-1790169171-IKoQR5mueNaIINEuHb4G,1790169176
+2luMdMx1jqasmf,anthropic/claude-opus-5.5,ncs18,self,2,completed,0.7,926,261,0,1187,0.008924,1346,Claude Platform on AWS,gen-1790169174-6mVhUC3PwJRjKvL16C9Z,1790169177
+CqaCs5mM1ClSfs,anthropic/claude-opus-5.5,ncs18,self,1,completed,0.7,926,261,0,1187,0.008924,1403,Claude Platform on AWS,gen-1790169174-k0jfh9QU26UUrgZv5Ylo,1790169178
+Y6Fh_9_ujAP_HF,anthropic/claude-opus-5.5,ncs18,self,3,completed,0.7,926,261,0,1187,0.008924,1438,Claude Platform on AWS,gen-1790169175-g1UDLQkCy1VcwmrIrV2F,1790169179
+ZWUmIl5YRlBMEy,anthropic/claude-opus-5.5,ncs18,self,4,completed,0.7,926,261,0,1187,0.008924,1427,Claude Platform on AWS,gen-1790169176-VpxPSXScnTGMdoudaTAh,1790169180
+S1wKe34-7kBuPB,anthropic/claude-opus-5.5,ncs18,self,5,completed,0.7,926,261,0,1187,0.008924,1763,Claude Platform on AWS,gen-1790169178-jSkuw54nE5v73unZYh45,1790169182
+Jmz796NW2741bb,anthropic/claude-opus-5.5,ncs18,human,1,completed,0.7,887,261,0,1148,0.008768,1559,Claude Platform on AWS,gen-1790169178-zuPmrTGMorh8GK9xM4QG,1790169182
+CXh5e7Ge44MT08,anthropic/claude-opus-5.5,ncs18,human,2,completed,0.7,887,261,0,1148,0.008768,1300,Claude Platform on AWS,gen-1790169179-6Ij2qKEjqpVGg4H7IfM5,1790169183
+iHsKaTFw-j_FsW,anthropic/claude-opus-5.5,ncs18,human,3,completed,0.7,887,261,0,1148,0.008768,1890,Claude Platform on AWS,gen-1790169180-0Fwe9vPCfFWM4Vh4Tg2J,1790169184
+028nsp8w2mfMQY,anthropic/claude-opus-5.5,ncs18,human,4,completed,0.7,887,261,0,1148,0.008768,1549,Claude Platform on AWS,gen-1790169182-jSYJYGNMVDWKOa7JOa1o,1790169186
+adO2j1fMY_CTC8,anthropic/claude-opus-5.5,ncs18,human,5,completed,0.7,887,261,0,1148,0.008768,1457,Claude Platform on AWS,gen-1790169182-p9Pkc7lWfWceAn7iFUTM,1790169186
+_iGZQdSN8Aj0rm,anthropic/claude-opus-5.5,obsi32,self,1,completed,0.7,1326,457,0,1783,0.014444,1475,Claude Platform on AWS,gen-1790169183-OZKGBImsCy7KRMxNJdMu,1790169188
+bBtcJ2EerK11Sn,anthropic/claude-opus-5.5,obsi32,self,2,completed,0.7,1326,457,0,1783,0.014444,1815,Claude Platform on AWS,gen-1790169184-IPKsENXFScMJgcNxIyhe,1790169190
+BknqRmsmG1Ot09,anthropic/claude-opus-5.5,obsi32,self,3,completed,0.7,1326,457,0,1783,0.014444,1460,Claude Platform on AWS,gen-1790169186-3tgZFXQfVHvEnACI7YlC,1790169191
+z-duet9H_MECzk,anthropic/claude-opus-5.5,obsi32,self,4,completed,0.7,1326,457,0,1783,0.014444,1447,Claude Platform on AWS,gen-1790169186-x0ThoAN6uMCqe2TEqw6n,1790169191
+YMW80HQmfS0TvI,anthropic/claude-opus-5.5,obsi32,self,5,completed,0.7,1326,457,0,1783,0.014444,1387,Claude Platform on AWS,gen-1790169188-RaQJzSQlORYA3cMov3rP,1790169193
+RoddS-mqIF3NVV,anthropic/claude-opus-5.5,obsi32,human,1,completed,0.7,1287,457,0,1744,0.014288,2159,Claude Platform on AWS,gen-1790169190-md2mBfAqODsyZEPp5vd0,1790169196
+MLzUZ1paevxpl4,anthropic/claude-opus-5.5,obsi32,human,2,completed,0.7,1287,457,0,1744,0.014288,1343,Claude Platform on AWS,gen-1790169191-SBvevzsSr3Bfp0cr3gEV,1790169196
+ts7gHTeM1YcKns,anthropic/claude-opus-5.5,obsi32,human,3,completed,0.7,1287,457,0,1744,0.014288,2005,Claude Platform on AWS,gen-1790169192-pIGuh4iJV46kZ3YD7LEH,1790169197
+Tfrg4AA3lh72bZ,anthropic/claude-opus-5.5,obsi32,human,4,completed,0.7,1287,457,0,1744,0.014288,2105,Claude Platform on AWS,gen-1790169193-9Lk2jJ6G4SQPrMflTuid,1790169199
+5a_Que9RnNSX3D,anthropic/claude-opus-5.5,obsi32,human,5,completed,0.7,1287,457,0,1744,0.014288,2283,Claude Platform on AWS,gen-1790169196-s9OhIMWsN3cJglBnA1Ie,1790169202
+fth3mdlPYLdmk5,anthropic/claude-opus-5.5,otti102,self,1,completed,0.7,2876,1437,0,4313,0.040244,2085,Claude Platform on AWS,gen-1790169197-Zojh1x8IDQzuDHMFT3kM,1790169209
+CFcmjyU5uBV9kp,anthropic/claude-opus-5.5,otti102,self,2,completed,0.7,2876,1437,0,4313,0.040244,2066,Claude Platform on AWS,gen-1790169197-7NmYD2EdKVuTVQwm5Lpe,1790169210
+kRZPDqUKM-F2o3,anthropic/claude-opus-5.5,otti102,self,3,completed,0.7,2876,1437,0,4313,0.040244,2256,Claude Platform on AWS,gen-1790169199-yW9l91rCFs7XT4Fn8WFU,1790169212
+A1kcbWM5TXk2lc,anthropic/claude-opus-5.5,otti102,self,4,completed,0.7,2876,1437,0,4313,0.040244,2061,Claude Platform on AWS,gen-1790169202-E4zj5Ud05Xo7FJ2KOq5C,1790169214
+v3FKWagnk9CbEi,anthropic/claude-opus-5.5,otti102,human,1,completed,0.7,2837,1437,0,4274,0.040088,1472,Claude Platform on AWS,gen-1790169210-IMhUDIFmpZPkb3KSNQm5,1790169221
+AdcNi6QlAJxbXZ,anthropic/claude-opus-5.5,otti102,self,5,completed,0.7,2876,1437,0,4313,0.040244,2016,Claude Platform on AWS,gen-1790169209-CHVsxfqJvLYXA3xx5FMN,1790169222
+ivFhHx8UtLTnQt,anthropic/claude-opus-5.5,otti102,human,2,completed,0.7,2837,1437,0,4274,0.040088,1377,Claude Platform on AWS,gen-1790169212-PTTzKGQeq9bGA1JOrn7F,1790169223
+oLcSrAZMyhm_e3,anthropic/claude-opus-5.5,otti102,human,3,completed,0.7,2837,1437,0,4274,0.040088,1466,Claude Platform on AWS,gen-1790169214-HYbVNwbDtT0LhmIt50oN,1790169225
+SsXGqckflOgbRf,anthropic/claude-opus-5.5,pvq21,self,1,completed,0.7,1163,303,0,1466,0.010712,1502,Claude Platform on AWS,gen-1790169223-oqdqFz7kN4Eil1U1FsEb,1790169227
+LNFRyiRNpOKqrQ,anthropic/claude-opus-5.5,pvq21,self,2,completed,0.7,1163,303,0,1466,0.010712,1472,Claude Platform on AWS,gen-1790169225-JaQBI21FV0UmbOSP6rig,1790169230
+AvmWs10SwqBko2,anthropic/claude-opus-5.5,pvq21,self,3,completed,0.7,1163,303,0,1466,0.010712,1765,Claude Platform on AWS,gen-1790169227-ZMLkPA944pk01IGA66PG,1790169231
+LDCBSyFWK5iY_Z,anthropic/claude-opus-5.5,otti102,human,4,completed,0.7,2837,1437,0,4274,0.040088,1338,Claude Platform on AWS,gen-1790169221-q5bgjJ7JzRf1KMPIySBj,1790169232
+tvk5OgU_B7l2sO,anthropic/claude-opus-5.5,otti102,human,5,completed,0.7,2837,1437,0,4274,0.040088,1400,Claude Platform on AWS,gen-1790169222-kP6uGuqgNZZMkiAqKKc2,1790169233
+D69427XKr6Y1z8,anthropic/claude-opus-5.5,pvq21,self,4,completed,0.7,1163,303,0,1466,0.010712,1362,Claude Platform on AWS,gen-1790169230-BJIF8frxqUh73h1NAHKw,1790169234
+MYyKNvi-asD04b,anthropic/claude-opus-5.5,pvq21,self,5,completed,0.7,1163,303,0,1466,0.010712,1396,Claude Platform on AWS,gen-1790169231-VdFwGmk0AtbJwk3MkNRu,1790169235
+K6kxEZ1PZgRb8e,anthropic/claude-opus-5.5,pvq21,human,1,completed,0.7,1124,303,0,1427,0.010556,1422,Claude Platform on AWS,gen-1790169232-wVgIhw9vAU5Q7xvOntng,1790169236
+c1Id_vkUJSEegE,anthropic/claude-opus-5.5,pvq21,human,2,completed,0.7,1124,303,0,1427,0.010556,1441,Claude Platform on AWS,gen-1790169233-4Ix2ALrVPVtdhyzxnsMz,1790169237
+-0tACwZ8NgnL3h,anthropic/claude-opus-5.5,pvq21,human,3,completed,0.7,1124,303,0,1427,0.010556,1393,Claude Platform on AWS,gen-1790169234-fpYAHxRAzAP3brtWizDG,1790169238
+2SdXlO0h2wR-4G,anthropic/claude-opus-5.5,pvq21,human,4,completed,0.7,1124,303,0,1427,0.010556,1656,Claude Platform on AWS,gen-1790169235-UhwWGDUWlrEd1nKqvolN,1790169240
+EaE_Kz8Fu_uObK,anthropic/claude-opus-5.5,pvq21,human,5,completed,0.7,1124,303,0,1427,0.010556,1523,Claude Platform on AWS,gen-1790169236-rkxeuotw49316zI3KRao,1790169240
+k8Vbngw-fW-Fmp,anthropic/claude-opus-5.5,sd3,self,1,completed,0.7,937,387,0,1324,0.011488,1943,Claude Platform on AWS,gen-1790169237-XlUQqXWSCuATsQRYz56S,1790169242
+xcFziCZTENP0kd,anthropic/claude-opus-5.5,sd3,self,2,completed,0.7,937,387,0,1324,0.011488,1499,Claude Platform on AWS,gen-1790169238-QBA8XVWEkD0Nppg80QU4,1790169242
+qgxS5T_NWmxk4S,anthropic/claude-opus-5.5,sd3,self,3,completed,0.7,937,387,0,1324,0.011488,2377,Claude Platform on AWS,gen-1790169240-TU3Goh5PCKwhOmBjZ3O6,1790169245
+q6xWnavPZdt6X2,anthropic/claude-opus-5.5,sd3,self,4,completed,0.7,937,387,0,1324,0.011488,1544,Claude Platform on AWS,gen-1790169240-dsz5oS9ik9juB344IFNw,1790169245
+hbovpXWpJ8cjqx,anthropic/claude-opus-5.5,sd3,self,5,completed,0.7,937,387,0,1324,0.011488,1929,Claude Platform on AWS,gen-1790169242-IyfyHeNrEMsKEz3at5JI,1790169247
+XVlWUORMat8CVr,anthropic/claude-opus-5.5,sd3,human,1,completed,0.7,898,387,0,1285,0.011332,1844,Claude Platform on AWS,gen-1790169242-nzS7geicGR80fBJiI3ba,1790169247
+TYmFXzGeblpxJd,anthropic/claude-opus-5.5,sd3,human,2,completed,0.7,898,387,0,1285,0.011332,2108,Claude Platform on AWS,gen-1790169245-aItl239pkBa5Wqrv4a53,1790169250
+nvPPnMzxXRzBaI,anthropic/claude-opus-5.5,sd3,human,3,completed,0.7,898,387,0,1285,0.011332,1979,Claude Platform on AWS,gen-1790169245-sjmMY4maPTORl1ipkAsN,1790169250
+uLsyIck-eHbrGE,anthropic/claude-opus-5.5,sd3,human,5,completed,0.7,898,387,0,1285,0.011332,2100,Claude Platform on AWS,gen-1790169247-tJPeFnstxG0aTkcl96T5,1790169252
+9VqemGPrjE73ax,anthropic/claude-opus-5.5,sd3,human,4,completed,0.7,898,387,0,1285,0.011332,2473,Claude Platform on AWS,gen-1790169247-xXjmzAIFZVlt4MEnkDlV,1790169253
+q7cwx5SIXPSnMl,anthropic/claude-opus-5.5,vark16,self,1,completed,0.7,941,233,0,1174,0.008424,1794,Claude Platform on AWS,gen-1790169250-ybfqfAGKR9iwVm3Ay3Y2,1790169254
+NH45pQqG9qFDqe,anthropic/claude-opus-5.5,vark16,self,2,completed,0.7,941,233,0,1174,0.008424,1526,Claude Platform on AWS,gen-1790169250-YvxfFg9pcBnibQl6uH52,1790169254
+KLbIm-ZqauOJxj,anthropic/claude-opus-5.5,vark16,self,3,completed,0.7,941,233,0,1174,0.008424,1583,Claude Platform on AWS,gen-1790169252-lWIPlGLdviLs5sQIYhoR,1790169256
+Bo6kHCCrcdFaVj,anthropic/claude-opus-5.5,vark16,self,4,completed,0.7,941,233,0,1174,0.008424,1471,Claude Platform on AWS,gen-1790169253-ay33dd9cO9brBz1e61Co,1790169256
+wsQ7OR0YiS4q4d,anthropic/claude-opus-5.5,vark16,self,5,completed,0.7,941,233,0,1174,0.008424,1575,Claude Platform on AWS,gen-1790169254-Ml5ODlyo7367whSvM5nT,1790169258
+P8vAuIPS0H5gMe,anthropic/claude-opus-5.5,vark16,human,1,completed,0.7,902,233,0,1135,0.008268,1556,Claude Platform on AWS,gen-1790169254-woZzcVz4MjlRZ7zTQJ79,1790169258
+yAofXJSSmiJx0L,anthropic/claude-opus-5.5,vark16,human,2,completed,0.7,902,233,0,1135,0.008268,1481,Claude Platform on AWS,gen-1790169256-HvYIrsM7ofMFZX3gxJDr,1790169260
+xx1_mVDtzSYJGF,anthropic/claude-opus-5.5,vark16,human,3,completed,0.7,902,233,0,1135,0.008268,1738,Claude Platform on AWS,gen-1790169256-LYiViHQOAcerbdH6az6b,1790169260
+FVt2mAP1pdQLQj,anthropic/claude-opus-5.5,vark16,human,4,completed,0.7,902,233,0,1135,0.008268,1661,Claude Platform on AWS,gen-1790169258-EqjwpWiOcY3JEssV31A8,1790169262
+vdD_QHWs6V_KYI,anthropic/claude-opus-5.5,vark16,human,5,completed,0.7,902,233,0,1135,0.008268,1826,Claude Platform on AWS,gen-1790169258-xYn30hJy3ZQauqTxUyYm,1790169263
