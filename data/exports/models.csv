@@ -18,6 +18,7 @@ anthropic/claude-opus-5.5,anthropic,Claude Opus 5.5,claude_opus,frontier,0,4,20,
 anthropic/claude-sonnet-4,anthropic,Claude Sonnet 4,claude-4-sonnet,frontier,0,3,15,1
 anthropic/claude-sonnet-4.5,anthropic,Claude Sonnet 4.5,claude-4-sonnet,frontier,0,3,15,1
 anthropic/claude-sonnet-4.6,anthropic,Claude Sonnet 4.6,claude-4-sonnet,frontier,0,3,15,1
+anthropic/claude-sonnet-5.5,anthropic,Claude Sonnet 5.5,claude_sonnet,frontier,0,2,10,1
 deepseek/deepseek-chat,deepseek,DeepSeek Chat V3,deepseek-v3,frontier,0,0.2574,1.0287,1
 deepseek/deepseek-r1,deepseek,DeepSeek R1,deepseek-r1,frontier,1,0.7,2.5,1
 deepseek/deepseek-r1-0528,deepseek,DeepSeek R1 (0528),deepseek-r1,frontier,1,0.5,2.1500000000000004,1

@@ -2849,6 +2849,196 @@ anthropic/claude-sonnet-4.6,Claude Sonnet 4.6,anthropic,vark16,VARK Learning Sty
 anthropic/claude-sonnet-4.6,Claude Sonnet 4.6,anthropic,vark16,VARK Learning Styles,self,vark_kinesthetic,2.75,5
 anthropic/claude-sonnet-4.6,Claude Sonnet 4.6,anthropic,vark16,VARK Learning Styles,self,vark_read_write,4.5,5
 anthropic/claude-sonnet-4.6,Claude Sonnet 4.6,anthropic,vark16,VARK Learning Styles,self,vark_visual,2.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ecr12,Attachment (ECR-12),human,attachment_anxiety,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.2667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.1667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,human,disc_c,3.625,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,human,disc_d,2.875,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,human,disc_i,2.75,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,human,disc_s,3.7,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,self,disc_c,3.875,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,self,disc_d,2.25,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,self,disc_i,2.575,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,obsi32,Behavioral Styles,self,disc_s,3.55,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.6,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),human,extraversion,3.16,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),human,neuroticism,2.74,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),human,openness,3.6,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),self,agreeableness,4.76,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.46,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),self,extraversion,3.28,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),self,neuroticism,1.16,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ipip50,Big 5 (IPIP-50),self,openness,4.7,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,sd3,Dark Triad,human,machiavellianism,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,sd3,Dark Triad,human,narcissism,2.5778,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,sd3,Dark Triad,human,psychopathy,2.1111,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,sd3,Dark Triad,self,machiavellianism,1.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,sd3,Dark Triad,self,narcissism,2.0222,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,sd3,Dark Triad,self,psychopathy,1.2222,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,eq_short,Empathy Quotient,human,empathy_quotient,3.1273,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,eq_short,Empathy Quotient,self,empathy_quotient,3.4909,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_1,3.02,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_2,3.14,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_3,2.8,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_4,2.72,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_5,3.14,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_6,3.38,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_7,2.9,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_8,2.8,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,human,ennea_9,3.3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_1,3.08,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_2,2.68,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_3,2.06,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_4,2.08,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_5,3.06,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_6,2.94,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_7,2.42,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_8,1.84,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,enneagram90,Enneagram,self,ennea_9,2.56,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,human,agreeableness,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,human,conscientiousness,3.6,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,human,emotionality,2.8,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,human,extraversion,3.25,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,human,honesty_humility,3.4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,human,openness,3.65,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,self,agreeableness,4.0667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,self,conscientiousness,4.25,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,self,emotionality,2.16,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,self,extraversion,3.65,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,self,honesty_humility,4.75,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,hexaco24,HEXACO-24,self,openness,5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_activist,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_pragmatist,3.86,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_reflector,3.76,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,human,lsq_theorist,3.4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_activist,2.78,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_pragmatist,3.6,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_reflector,4.14,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,lsq40,Honey & Mumford LSQ,self,lsq_theorist,4.32,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,human,kolb_ac,2.7333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,human,kolb_ae,3.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,human,kolb_ce,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,human,kolb_ro,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,self,kolb_ac,4.6,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,self,kolb_ae,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,self,kolb_ce,2.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,kolb12,Kolb Learning Modes,self,kolb_ro,3.9333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,locus_levenson,Locus of Control,human,loc_chance,2.625,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,locus_levenson,Locus of Control,human,loc_internal,4.4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,locus_levenson,Locus of Control,human,loc_powerful_others,2.825,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,locus_levenson,Locus of Control,self,loc_chance,2.425,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,locus_levenson,Locus of Control,self,loc_internal,3.875,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,locus_levenson,Locus of Control,self,loc_powerful_others,2.625,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,human,authority,3.0333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,human,care,3.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,human,fairness,3.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,human,loyalty,2.8333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,human,sanctity,2.8333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,self,authority,1.8333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,self,care,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,self,fairness,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,self,loyalty,1.7667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,mfq30,Moral Foundations,self,sanctity,1.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ncs18,Need for Cognition,human,need_for_cognition,3.3111,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,ncs18,Need for Cognition,self,need_for_cognition,4.5222,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,achievement,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,benevolence,5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,conformity,3.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,hedonism,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,power,2.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,security,4.3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,self_direction,4.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,stimulation,2.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,tradition,3.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,human,universalism,4.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,achievement,2,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,benevolence,5.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,conformity,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,hedonism,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,power,1.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,security,3.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,self_direction,4.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,stimulation,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,tradition,3.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,pvq21,Schwartz Values,self,universalism,5.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_achiever,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_activator,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_adaptability,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_analytical,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_arranger,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_belief,3.4667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_command,2.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_communication,2.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_competition,2.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_connectedness,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_consistency,3.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_context,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_deliberative,3.4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_developer,3.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_discipline,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_empathy,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_focus,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_futuristic,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_harmony,3.7333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_ideation,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_includer,3.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_individualization,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_input,2.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_intellection,3.4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_learner,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_maximizer,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_positivity,3.1333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_relator,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_responsibility,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_restorative,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_self_assurance,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_significance,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_strategic,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,human,str_woo,2.8,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_achiever,3.5333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_activator,2.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_adaptability,3.4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_analytical,4.9333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_arranger,4.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_belief,4.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_command,2.1333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_communication,4.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_competition,1.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_connectedness,3.4667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_consistency,3.5333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_context,4,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_deliberative,3.7333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_developer,4.7333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_discipline,2.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_empathy,3.4667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_focus,3.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_futuristic,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_harmony,3.6667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_ideation,4.8,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_includer,4.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_individualization,4.7333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_input,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_intellection,3.5333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_learner,4.4667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_maximizer,3.7333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_positivity,3.3333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_relator,3,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_responsibility,4.6,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_restorative,3.8667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_self_assurance,2.7333,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_significance,2.4667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_strategic,4.8667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,otti102,Talent Themes,self,str_woo,3.0667,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,human,vark_aural,2.75,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,human,vark_kinesthetic,3.75,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,human,vark_read_write,2.75,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,human,vark_visual,3.5,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,self,vark_aural,2.2,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,self,vark_kinesthetic,3.45,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,self,vark_read_write,4.15,5
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,anthropic,vark16,VARK Learning Styles,self,vark_visual,2.25,5
 deepseek/deepseek-chat,DeepSeek Chat V3,deepseek,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.9667,5
 deepseek/deepseek-chat,DeepSeek Chat V3,deepseek,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.8,5
 deepseek/deepseek-chat,DeepSeek Chat V3,deepseek,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.6667,5
