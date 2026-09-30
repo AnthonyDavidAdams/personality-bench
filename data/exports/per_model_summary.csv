@@ -8075,6 +8075,386 @@ openai/gpt-6-sol-pro,GPT-6 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_
 openai/gpt-6-sol-pro,GPT-6 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_kinesthetic,3.85,5
 openai/gpt-6-sol-pro,GPT-6 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_read_write,4.1,5
 openai/gpt-6-sol-pro,GPT-6 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_visual,2.25,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.6667,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.3333,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.5333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,human,disc_c,3.675,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,human,disc_d,2.875,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,human,disc_i,2.95,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,human,disc_s,3.75,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,self,disc_c,4.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,self,disc_d,2.125,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,self,disc_i,2.325,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,obsi32,Behavioral Styles,self,disc_s,3.65,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),human,extraversion,2.98,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),human,neuroticism,2.92,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),human,openness,3.42,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),self,agreeableness,4.7,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.66,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),self,extraversion,3.24,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),self,neuroticism,1.1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ipip50,Big 5 (IPIP-50),self,openness,4.7,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,sd3,Dark Triad,human,machiavellianism,2.7778,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,sd3,Dark Triad,human,narcissism,2.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,sd3,Dark Triad,human,psychopathy,2,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,sd3,Dark Triad,self,machiavellianism,1.7222,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,sd3,Dark Triad,self,narcissism,2.4722,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,sd3,Dark Triad,self,psychopathy,1.1111,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,eq_short,Empathy Quotient,human,empathy_quotient,3.0455,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,eq_short,Empathy Quotient,self,empathy_quotient,3.3818,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_1,3.04,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_2,2.9,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_3,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_4,2.68,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_5,3.1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_6,3.52,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_7,3.28,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_8,2.74,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,human,ennea_9,3.6,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_1,3.38,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_2,2.78,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_3,1.74,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_4,1.86,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_5,3.28,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_6,2.98,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_7,1.66,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_8,1.66,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,enneagram90,Enneagram,self,ennea_9,2.36,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,human,agreeableness,2.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,human,conscientiousness,3.75,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,human,emotionality,2.6,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,human,extraversion,3.3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,human,honesty_humility,3.55,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,human,openness,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,self,agreeableness,4.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,self,conscientiousness,4.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,self,emotionality,1.8,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,self,extraversion,3.7,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,self,honesty_humility,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,hexaco24,HEXACO-24,self,openness,4.8,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,human,lsq_activist,3.08,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,human,lsq_pragmatist,4.1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,human,lsq_reflector,3.88,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,human,lsq_theorist,3.46,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,self,lsq_activist,2.475,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,self,lsq_pragmatist,3.125,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,self,lsq_reflector,4.725,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,lsq40,Honey & Mumford LSQ,self,lsq_theorist,4.575,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,human,kolb_ac,2.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,human,kolb_ae,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,human,kolb_ce,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,human,kolb_ro,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,self,kolb_ac,4.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,self,kolb_ae,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,self,kolb_ce,1.8667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,kolb12,Kolb Learning Modes,self,kolb_ro,4.7333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,locus_levenson,Locus of Control,human,loc_chance,3.375,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,locus_levenson,Locus of Control,human,loc_internal,4.25,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,locus_levenson,Locus of Control,human,loc_powerful_others,3.1875,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,locus_levenson,Locus of Control,self,loc_chance,2.4063,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,locus_levenson,Locus of Control,self,loc_internal,3.6875,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,locus_levenson,Locus of Control,self,loc_powerful_others,4.875,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,human,authority,3.4667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,human,care,3.8333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,human,fairness,4.1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,human,loyalty,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,human,sanctity,2.9667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,self,authority,1.9,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,self,care,4.1667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,self,fairness,4.3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,self,loyalty,2.1667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,mfq30,Moral Foundations,self,sanctity,0.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ncs18,Need for Cognition,human,need_for_cognition,2.8333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,ncs18,Need for Cognition,self,need_for_cognition,4.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,achievement,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,benevolence,5.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,conformity,4.2,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,hedonism,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,power,3.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,security,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,self_direction,4.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,stimulation,3.4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,tradition,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,human,universalism,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,achievement,2.2,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,benevolence,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,conformity,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,hedonism,1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,power,1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,security,3.4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,self_direction,3.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,stimulation,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,tradition,3.5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,pvq21,Schwartz Values,self,universalism,5.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_achiever,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_activator,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_adaptability,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_analytical,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_arranger,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_belief,3.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_command,2.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_communication,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_competition,2.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_connectedness,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_consistency,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_context,3.4667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_deliberative,3.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_developer,3.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_discipline,3.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_empathy,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_focus,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_futuristic,3.2667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_harmony,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_ideation,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_includer,3.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_individualization,3.9333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_input,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_intellection,3.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_learner,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_maximizer,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_positivity,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_relator,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_responsibility,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_restorative,2.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_self_assurance,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_significance,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_strategic,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,human,str_woo,2.8,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_achiever,3.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_activator,2.7333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_adaptability,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_analytical,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_arranger,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_belief,4.8667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_command,2.9333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_communication,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_competition,1,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_connectedness,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_consistency,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_context,4.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_deliberative,4.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_developer,4.8,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_discipline,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_empathy,3.2,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_focus,4.1333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_futuristic,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_harmony,4.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_ideation,4.6,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_includer,4.6667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_individualization,4.8667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_input,3,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_intellection,2.8,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_learner,3.6,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_maximizer,3.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_positivity,4,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_relator,2.6,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_responsibility,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_restorative,4.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_self_assurance,3.2,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_significance,2.3333,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_strategic,5,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,otti102,Talent Themes,self,str_woo,3.4667,5
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,human,vark_aural,3.5625,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,human,vark_kinesthetic,4.375,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,human,vark_read_write,2.75,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,human,vark_visual,3.75,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,self,vark_aural,2.125,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,self,vark_kinesthetic,3.75,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,self,vark_read_write,4.5625,4
+openai/gpt-6.1-sol,GPT-6.1 Sol,openai,vark16,VARK Learning Styles,self,vark_visual,2.25,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.1667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ecr12,Attachment (ECR-12),self,attachment_avoidance,2.6333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_c,3.75,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_d,2.875,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_i,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,human,disc_s,3.75,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_c,4.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_d,2.125,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_i,2.325,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,obsi32,Behavioral Styles,self,disc_s,3.7,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,agreeableness,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,extraversion,2.92,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,neuroticism,2.9,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),human,openness,3.4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),self,agreeableness,4.74,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.66,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),self,extraversion,3.32,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),self,neuroticism,1.1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ipip50,Big 5 (IPIP-50),self,openness,4.7,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,sd3,Dark Triad,human,machiavellianism,2.8222,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,sd3,Dark Triad,human,narcissism,2.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,sd3,Dark Triad,human,psychopathy,2,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,sd3,Dark Triad,self,machiavellianism,1.6889,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,sd3,Dark Triad,self,narcissism,2.5778,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,sd3,Dark Triad,self,psychopathy,1.1111,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,eq_short,Empathy Quotient,human,empathy_quotient,3.0455,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,eq_short,Empathy Quotient,self,empathy_quotient,3.3909,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_1,2.975,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_2,2.875,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_3,3,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_4,2.65,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_5,3.1,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_6,3.575,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_7,3.3,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_8,2.725,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,human,ennea_9,3.6,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_1,3.42,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_2,2.74,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_3,1.78,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_4,1.96,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_5,3.26,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_6,2.94,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_7,1.7,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_8,1.62,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,enneagram90,Enneagram,self,ennea_9,2.3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,human,agreeableness,2.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,human,conscientiousness,3.75,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,human,emotionality,2.6,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,human,extraversion,3.25,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,human,honesty_humility,3.55,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,human,openness,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,self,agreeableness,4.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,self,conscientiousness,4.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,self,emotionality,1.92,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,self,extraversion,3.6,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,self,honesty_humility,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,hexaco24,HEXACO-24,self,openness,4.8,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_activist,3.06,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_pragmatist,4.1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_reflector,3.86,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,human,lsq_theorist,3.42,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_activist,2.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_pragmatist,3.1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_reflector,4.62,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,lsq40,Honey & Mumford LSQ,self,lsq_theorist,4.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ac,2.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ae,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ce,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,human,kolb_ro,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ac,4.6667,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ae,4,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ce,1.75,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,kolb12,Kolb Learning Modes,self,kolb_ro,4.6667,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,locus_levenson,Locus of Control,human,loc_chance,3.375,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,locus_levenson,Locus of Control,human,loc_internal,4.2813,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,locus_levenson,Locus of Control,human,loc_powerful_others,3.1875,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,locus_levenson,Locus of Control,self,loc_chance,2.4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,locus_levenson,Locus of Control,self,loc_internal,3.7,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,locus_levenson,Locus of Control,self,loc_powerful_others,4.775,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,human,authority,3.3333,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,human,care,3.8333,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,human,fairness,4.1667,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,human,loyalty,3.4167,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,human,sanctity,2.875,4
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,self,authority,1.8667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,self,care,4.0667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,self,fairness,4.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,self,loyalty,2.0667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,mfq30,Moral Foundations,self,sanctity,0.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ncs18,Need for Cognition,human,need_for_cognition,2.8444,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,ncs18,Need for Cognition,self,need_for_cognition,4.2889,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,achievement,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,benevolence,5.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,conformity,4.2,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,hedonism,4.1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,power,3.3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,security,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,self_direction,4.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,stimulation,3.3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,tradition,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,human,universalism,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,achievement,2.7,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,benevolence,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,conformity,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,hedonism,1.1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,power,1.1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,security,3.3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,self_direction,3.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,stimulation,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,tradition,3.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,pvq21,Schwartz Values,self,universalism,5.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_achiever,2.9333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_activator,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_adaptability,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_analytical,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_arranger,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_belief,3.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_command,2.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_communication,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_competition,2.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_connectedness,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_consistency,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_context,3.6,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_deliberative,3.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_developer,3.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_discipline,3.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_empathy,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_focus,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_futuristic,3.0667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_harmony,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_ideation,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_includer,3.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_individualization,3.9333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_input,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_intellection,3.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_learner,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_maximizer,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_positivity,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_relator,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_responsibility,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_restorative,2.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_self_assurance,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_significance,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_strategic,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,human,str_woo,2.8667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_achiever,3.7333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_activator,2.7333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_adaptability,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_analytical,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_arranger,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_belief,4.8667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_command,3,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_communication,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_competition,1,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_connectedness,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_consistency,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_context,4.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_deliberative,4.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_developer,4.8,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_discipline,3.2667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_empathy,3.2667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_focus,4.0667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_futuristic,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_harmony,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_ideation,4.6,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_includer,4.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_individualization,4.8,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_input,3.1333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_intellection,2.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_learner,3.4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_maximizer,3.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_positivity,4,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_relator,2.4667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_responsibility,4.6667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_restorative,4.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_self_assurance,3.1333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_significance,2.3333,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_strategic,5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,otti102,Talent Themes,self,str_woo,3.4667,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,human,vark_aural,3.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,human,vark_kinesthetic,4.35,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,human,vark_read_write,2.75,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,human,vark_visual,3.75,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_aural,2,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_kinesthetic,3.75,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_read_write,4.5,5
+openai/gpt-6.1-sol-pro,GPT-6.1 Sol Pro,openai,vark16,VARK Learning Styles,self,vark_visual,2.25,5
 openai/o1,OpenAI o1,openai,ecr12,Attachment (ECR-12),human,attachment_anxiety,4,5
 openai/o1,OpenAI o1,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.5667,5
 openai/o1,OpenAI o1,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.4667,5
