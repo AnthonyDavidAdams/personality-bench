@@ -1,0 +1,2000 @@
+{
+  "framing": "self",
+  "snapshots": [
+    "2024-06-30",
+    "2024-09-30",
+    "2024-12-31",
+    "2025-03-31",
+    "2025-06-30",
+    "2025-09-30",
+    "2025-12-31",
+    "2026-03-31",
+    "2026-06-30"
+  ],
+  "dropBackfilled": false,
+  "nBoot": 2000,
+  "perScale": [
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "W": 1.0605514814814818,
+      "B": 0.5902087619047623,
+      "diff": 0.47034271957671947,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.04502868002645484,
+      "diff_hi": 0.8647972470238099,
+      "p_exceed": 0.9845
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "W": 0.2431781481481482,
+      "B": 0.09988799999999995,
+      "diff": 0.14329014814814825,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.0265504683201053,
+      "diff_hi": 0.3616886183201052,
+      "p_exceed": 0.9435
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "W": 0.05263805555555562,
+      "B": 0.045215619047619116,
+      "diff": 0.007422436507936503,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.03793812281746035,
+      "diff_hi": 0.03218177123015862,
+      "p_exceed": 0.5305
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "W": 0.2424385185185186,
+      "B": 0.5065897142857143,
+      "diff": -0.2641511957671957,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.39230342275132274,
+      "diff_hi": -0.19577947195767198,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "W": 0.026378796296296372,
+      "B": 0.02972876190476197,
+      "diff": -0.0033499656084655972,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.013768612103174718,
+      "diff_hi": 0.009382620833333476,
+      "p_exceed": 0.3195
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "W": 0.2190277777777778,
+      "B": 0.30071190476190485,
+      "diff": -0.08168412698412705,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.10726444692460312,
+      "diff_hi": -0.0603050198412699,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "W": 0.26945777777777785,
+      "B": 0.45516038095238087,
+      "diff": -0.18570260317460302,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.27901657936507895,
+      "diff_hi": -0.09324292328042313,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "W": 0.15763368055555557,
+      "B": 0.34935238095238097,
+      "diff": -0.1917187003968254,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.5352094246031746,
+      "diff_hi": 0.0531084437003967,
+      "p_exceed": 0.07
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "W": 0.263627572016461,
+      "B": 0.11415449735449726,
+      "diff": 0.14947307466196372,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.07970534685479136,
+      "diff_hi": 0.2282456459435629,
+      "p_exceed": 1.0
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "W": 0.16686979166666668,
+      "B": 0.08948095238095241,
+      "diff": 0.07738883928571427,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.038360556795635,
+      "diff_hi": 0.11808768725198417,
+      "p_exceed": 1.0
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "W": 0.08283564814814819,
+      "B": 0.17533571428571443,
+      "diff": -0.09250006613756624,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.20549385747354493,
+      "diff_hi": -0.00825464864418004,
+      "p_exceed": 0.013
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "W": 0.35551097393689995,
+      "B": 0.5306210464432686,
+      "diff": -0.17511007250636862,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.2950436658991448,
+      "diff_hi": -0.04299401528512641,
+      "p_exceed": 0.005
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "W": 0.15962905807041608,
+      "B": 0.4569363903586128,
+      "diff": -0.2973073322881967,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.6144969719609378,
+      "diff_hi": -0.08447296418773251,
+      "p_exceed": 0.0005
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "W": 0.0744323273891175,
+      "B": 0.06855543797766021,
+      "diff": 0.005876889411457281,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.08323092780390634,
+      "diff_hi": 0.07696114426154542,
+      "p_exceed": 0.604
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "W": 0.3998148148148146,
+      "B": 1.1429523809523814,
+      "diff": -0.7431375661375668,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -1.096275791997355,
+      "diff_hi": -0.4590089351851854,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "W": 0.4056481481481482,
+      "B": 1.0649142857142855,
+      "diff": -0.6592661375661373,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -1.0277432622354497,
+      "diff_hi": -0.1680576703042331,
+      "p_exceed": 0.004
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "W": 1.705,
+      "B": 3.635066666666666,
+      "diff": -1.930066666666666,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -2.328564957010582,
+      "diff_hi": -1.2633484143518525,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "W": 0.35970833333333324,
+      "B": 0.2534095238095238,
+      "diff": 0.10629880952380943,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.3386626769179894,
+      "diff_hi": 0.39459480820105813,
+      "p_exceed": 0.7065
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "W": 0.18435416666666668,
+      "B": 0.10048571428571426,
+      "diff": 0.08386845238095242,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.010941633597883605,
+      "diff_hi": 0.17451184358465602,
+      "p_exceed": 0.991
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "W": 0.5477986111111113,
+      "B": 1.214352380952381,
+      "diff": -0.6665537698412698,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -1.12647482473545,
+      "diff_hi": -0.18590121197089954,
+      "p_exceed": 0.003
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "W": 1.1866967592592594,
+      "B": 2.9958571428571426,
+      "diff": -1.8091603835978831,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -2.179813315145503,
+      "diff_hi": -1.351137843915344,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "W": 0.14274768518518516,
+      "B": 0.2779238095238094,
+      "diff": -0.13517612433862425,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.4491617791005292,
+      "diff_hi": 0.08581184193121652,
+      "p_exceed": 0.1465
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "W": 0.16285416666666677,
+      "B": 0.12362857142857145,
+      "diff": 0.03922559523809532,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.17647197255291003,
+      "diff_hi": 0.1787428257275133,
+      "p_exceed": 0.7525
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "W": 0.32698765432098775,
+      "B": 0.15025185185185194,
+      "diff": 0.1767358024691358,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.0714426734273957,
+      "diff_hi": 0.31199860890652537,
+      "p_exceed": 0.9985
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "W": 0.15973225308641936,
+      "B": 0.0520592592592591,
+      "diff": 0.10767299382716027,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.01900828373015895,
+      "diff_hi": 0.2140612290564377,
+      "p_exceed": 0.991
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "W": 0.2776177983539094,
+      "B": 0.2797460317460315,
+      "diff": -0.0021282333921221475,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.07627206973838906,
+      "diff_hi": 0.11218456735008826,
+      "p_exceed": 0.6155
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "W": 0.22174871399176946,
+      "B": 0.09870582010582013,
+      "diff": 0.12304289388594933,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.005489626506466779,
+      "diff_hi": 0.21636186728395046,
+      "p_exceed": 0.9775
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "W": 0.3464827674897119,
+      "B": 0.2732910052910053,
+      "diff": 0.0731917621987066,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.1279813830099941,
+      "diff_hi": 0.1830280518812462,
+      "p_exceed": 0.85
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "W": 0.3054192386831276,
+      "B": 0.6904201058201058,
+      "diff": -0.38500086713697823,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.8666713210978839,
+      "diff_hi": -0.020089884259259366,
+      "p_exceed": 0.017
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "W": 0.855048353909465,
+      "B": 1.585784126984127,
+      "diff": -0.7307357730746621,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -1.041151315402704,
+      "diff_hi": -0.49207219815549713,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "W": 0.8168225308641975,
+      "B": 1.400548148148148,
+      "diff": -0.5837256172839506,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -1.3703501491769543,
+      "diff_hi": 0.10487299952233925,
+      "p_exceed": 0.0555
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "W": 0.08489539332721158,
+      "B": 0.06592459661550581,
+      "diff": 0.018970796711705762,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": 0.0014183181380907825,
+      "diff_hi": 0.0406000384663736,
+      "p_exceed": 0.983
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "W": 0.04472302240512128,
+      "B": 0.060525573192239945,
+      "diff": -0.015802550787118667,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.07658039762149724,
+      "diff_hi": 0.020472928404043314,
+      "p_exceed": 0.245
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "W": 0.38954745370370364,
+      "B": 1.7282833333333336,
+      "diff": -1.33873587962963,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -1.6478714649470905,
+      "diff_hi": -1.080634973958333,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "W": 1.279328414351852,
+      "B": 2.537236309523809,
+      "diff": -1.257907895171957,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -1.7261928811177247,
+      "diff_hi": -0.8043801973792988,
+      "p_exceed": 0.0
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "W": 0.2813375289351852,
+      "B": 0.697870238095238,
+      "diff": -0.41653270916005275,
+      "n_within": 32,
+      "n_between": 66,
+      "n_models": 52,
+      "diff_lo": -0.8220681301669973,
+      "diff_hi": -0.17207400235615083,
+      "p_exceed": 0.0
+    }
+  ],
+  "leaveOneLabOut": [
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "dropped_lab": "anthropic",
+      "diff": 0.5762813333333333
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "dropped_lab": "deepseek",
+      "diff": 0.8681124444444445
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "dropped_lab": "google",
+      "diff": 0.4155168148148146
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "dropped_lab": "meta",
+      "diff": -0.3282208888888891
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "dropped_lab": "mistral",
+      "diff": 0.5729191111111109
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "dropped_lab": "openai",
+      "diff": 0.6095197777777778
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "extraversion",
+      "dropped_lab": "xai",
+      "diff": 0.5782704444444443
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "dropped_lab": "anthropic",
+      "diff": 0.22141466666666673
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "dropped_lab": "deepseek",
+      "diff": 0.12645244444444464
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "dropped_lab": "google",
+      "diff": 0.13735148148148155
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "dropped_lab": "meta",
+      "diff": 0.009823111111111255
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "dropped_lab": "mistral",
+      "diff": 0.14690711111111124
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "dropped_lab": "openai",
+      "diff": 0.17396911111111119
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "agreeableness",
+      "dropped_lab": "xai",
+      "diff": 0.18711311111111117
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "dropped_lab": "anthropic",
+      "diff": 0.009865666666666634
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "dropped_lab": "deepseek",
+      "diff": -0.0003809999999999994
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "dropped_lab": "google",
+      "diff": 0.006971388888888902
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "dropped_lab": "meta",
+      "diff": -0.012356999999999986
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "dropped_lab": "mistral",
+      "diff": 0.03279499999999999
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "dropped_lab": "openai",
+      "diff": 0.020820000000000005
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "conscientiousness",
+      "dropped_lab": "xai",
+      "diff": -0.005757000000000061
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "dropped_lab": "anthropic",
+      "diff": -0.23869466666666672
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "dropped_lab": "deepseek",
+      "diff": -0.2400364444444445
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "dropped_lab": "google",
+      "diff": -0.2826868148148147
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "dropped_lab": "meta",
+      "diff": -0.2479684444444445
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "dropped_lab": "mistral",
+      "diff": -0.21522044444444444
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "dropped_lab": "openai",
+      "diff": -0.34930044444444447
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "neuroticism",
+      "dropped_lab": "xai",
+      "diff": -0.275151111111111
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "dropped_lab": "anthropic",
+      "diff": 0.00046299999999999467
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "dropped_lab": "deepseek",
+      "diff": -0.00126411111111107
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "dropped_lab": "google",
+      "diff": -0.0005092037037037062
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "dropped_lab": "meta",
+      "diff": -0.014125444444444468
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "dropped_lab": "mistral",
+      "diff": 0.00376922222222225
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "dropped_lab": "openai",
+      "diff": 0.003032888888888908
+    },
+    {
+      "instrument": "ipip50",
+      "dimension": "openness",
+      "dropped_lab": "xai",
+      "diff": -0.014816111111111124
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "dropped_lab": "anthropic",
+      "diff": -0.12150000000000011
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "dropped_lab": "deepseek",
+      "diff": -0.09308333333333335
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "dropped_lab": "google",
+      "diff": -0.10258888888888892
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "dropped_lab": "meta",
+      "diff": 0.037625
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "dropped_lab": "mistral",
+      "diff": -0.14870833333333347
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "dropped_lab": "openai",
+      "diff": -0.08670833333333344
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "honesty_humility",
+      "dropped_lab": "xai",
+      "diff": -0.056825000000000014
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "dropped_lab": "anthropic",
+      "diff": 0.05956266666666671
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "dropped_lab": "deepseek",
+      "diff": -0.23968533333333303
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "dropped_lab": "google",
+      "diff": -0.20203022222222206
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "dropped_lab": "meta",
+      "diff": -0.3821386666666665
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "dropped_lab": "mistral",
+      "diff": -0.15680533333333307
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "dropped_lab": "openai",
+      "diff": -0.22268799999999978
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "emotionality",
+      "dropped_lab": "xai",
+      "diff": -0.15613333333333312
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "dropped_lab": "anthropic",
+      "diff": -0.21595624999999996
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "dropped_lab": "deepseek",
+      "diff": 0.0012937500000000518
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "dropped_lab": "google",
+      "diff": -0.1989496527777778
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "dropped_lab": "meta",
+      "diff": -0.28538125000000003
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "dropped_lab": "mistral",
+      "diff": -0.23374791666666667
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "dropped_lab": "openai",
+      "diff": -0.20819166666666672
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "extraversion",
+      "dropped_lab": "xai",
+      "diff": -0.20109791666666665
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "dropped_lab": "anthropic",
+      "diff": 0.17384444444444466
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "dropped_lab": "deepseek",
+      "diff": 0.13204197530864217
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "dropped_lab": "google",
+      "diff": 0.15577572016460922
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "dropped_lab": "meta",
+      "diff": 0.022041975308642117
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "dropped_lab": "mistral",
+      "diff": 0.1864864197530866
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "dropped_lab": "openai",
+      "diff": 0.18912345679012363
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "agreeableness",
+      "dropped_lab": "xai",
+      "diff": 0.18699753086419768
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "dropped_lab": "anthropic",
+      "diff": 0.12349374999999996
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "dropped_lab": "deepseek",
+      "diff": 0.08676874999999992
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "dropped_lab": "google",
+      "diff": 0.06916979166666665
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "dropped_lab": "meta",
+      "diff": -0.03398125000000002
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "dropped_lab": "mistral",
+      "diff": 0.1063520833333333
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "dropped_lab": "openai",
+      "diff": 0.0947583333333333
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "conscientiousness",
+      "dropped_lab": "xai",
+      "diff": 0.09516041666666664
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "dropped_lab": "anthropic",
+      "diff": -0.0421666666666668
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "dropped_lab": "deepseek",
+      "diff": -0.08458888888888891
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "dropped_lab": "google",
+      "diff": -0.11244768518518532
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "dropped_lab": "meta",
+      "diff": -0.11334722222222236
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "dropped_lab": "mistral",
+      "diff": -0.13468888888888902
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "dropped_lab": "openai",
+      "diff": -0.081076388888889
+    },
+    {
+      "instrument": "hexaco24",
+      "dimension": "openness",
+      "dropped_lab": "xai",
+      "diff": -0.07918472222222232
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "dropped_lab": "anthropic",
+      "diff": -0.22294238683127554
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "dropped_lab": "deepseek",
+      "diff": -0.246922633744856
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "dropped_lab": "google",
+      "diff": -0.1510733882030177
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "dropped_lab": "meta",
+      "diff": 0.17891111111111108
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "dropped_lab": "mistral",
+      "diff": -0.2259366255144032
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "dropped_lab": "openai",
+      "diff": -0.13239588477366254
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "machiavellianism",
+      "dropped_lab": "xai",
+      "diff": -0.4254106995884773
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "dropped_lab": "anthropic",
+      "diff": -0.35592716049382733
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "dropped_lab": "deepseek",
+      "diff": -0.12567969821673514
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "dropped_lab": "google",
+      "diff": -0.3079232053040697
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "dropped_lab": "meta",
+      "diff": -0.3955101508916326
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "dropped_lab": "mistral",
+      "diff": -0.2610657064471882
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "dropped_lab": "openai",
+      "diff": -0.3203072702331964
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "narcissism",
+      "dropped_lab": "xai",
+      "diff": -0.3147381344307273
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "dropped_lab": "anthropic",
+      "diff": -0.0005506172839506579
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "dropped_lab": "deepseek",
+      "diff": 0.014688340192043861
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "dropped_lab": "google",
+      "diff": 0.004779652491998146
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "dropped_lab": "meta",
+      "diff": 0.05470973936899863
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "dropped_lab": "mistral",
+      "diff": -0.018490260631001405
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "dropped_lab": "openai",
+      "diff": 0.016066117969821644
+    },
+    {
+      "instrument": "sd3",
+      "dimension": "psychopathy",
+      "dropped_lab": "xai",
+      "diff": -0.030064746227709237
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "dropped_lab": "anthropic",
+      "diff": -0.8351000000000006
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "dropped_lab": "deepseek",
+      "diff": -1.059855555555556
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "dropped_lab": "google",
+      "diff": -0.2116518518518522
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "dropped_lab": "meta",
+      "diff": -0.6901555555555561
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "dropped_lab": "mistral",
+      "diff": -0.7366222222222226
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "dropped_lab": "openai",
+      "diff": -0.7714388888888895
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "self_direction",
+      "dropped_lab": "xai",
+      "diff": -0.8971388888888894
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "dropped_lab": "anthropic",
+      "diff": -0.5375666666666663
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "dropped_lab": "deepseek",
+      "diff": -0.8176888888888885
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "dropped_lab": "google",
+      "diff": -0.523885185185185
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "dropped_lab": "meta",
+      "diff": -0.4991888888888889
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "dropped_lab": "mistral",
+      "diff": -0.869522222222222
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "dropped_lab": "openai",
+      "diff": -0.5160888888888885
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "stimulation",
+      "dropped_lab": "xai",
+      "diff": -0.8509222222222217
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "dropped_lab": "anthropic",
+      "diff": -2.626733333333334
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "dropped_lab": "deepseek",
+      "diff": -1.5398333333333325
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "dropped_lab": "google",
+      "diff": -2.037666666666666
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "dropped_lab": "meta",
+      "diff": -0.04283333333333306
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "dropped_lab": "mistral",
+      "diff": -2.7774999999999994
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "dropped_lab": "openai",
+      "diff": -2.1889166666666666
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "hedonism",
+      "dropped_lab": "xai",
+      "diff": -2.2969833333333334
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "dropped_lab": "anthropic",
+      "diff": 0.18388333333333323
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "dropped_lab": "deepseek",
+      "diff": 0.01645000000000002
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "dropped_lab": "google",
+      "diff": 0.06537500000000002
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "dropped_lab": "meta",
+      "diff": 0.34048333333333325
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "dropped_lab": "mistral",
+      "diff": 0.12194999999999989
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "dropped_lab": "openai",
+      "diff": 0.09513333333333315
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "achievement",
+      "dropped_lab": "xai",
+      "diff": -0.07918333333333344
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "dropped_lab": "anthropic",
+      "diff": 0.09465833333333339
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "dropped_lab": "deepseek",
+      "diff": 0.07792500000000005
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "dropped_lab": "google",
+      "diff": 0.07842083333333338
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "dropped_lab": "meta",
+      "diff": 0.10312500000000005
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "dropped_lab": "mistral",
+      "diff": 0.12312500000000004
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "dropped_lab": "openai",
+      "diff": 0.022816666666666693
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "power",
+      "dropped_lab": "xai",
+      "diff": 0.08700833333333337
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "dropped_lab": "anthropic",
+      "diff": -0.40074166666666633
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "dropped_lab": "deepseek",
+      "diff": -0.43680833333333324
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "dropped_lab": "google",
+      "diff": -0.7638013888888886
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "dropped_lab": "meta",
+      "diff": -0.8141749999999995
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "dropped_lab": "mistral",
+      "diff": -0.9336749999999996
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "dropped_lab": "openai",
+      "diff": -0.7923
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "security",
+      "dropped_lab": "xai",
+      "diff": -0.5243749999999997
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "dropped_lab": "anthropic",
+      "diff": -1.8637416666666655
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "dropped_lab": "deepseek",
+      "diff": -1.3149638888888888
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "dropped_lab": "google",
+      "diff": -1.7178365740740738
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "dropped_lab": "meta",
+      "diff": -1.284663888888889
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "dropped_lab": "mistral",
+      "diff": -2.1266638888888885
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "dropped_lab": "openai",
+      "diff": -1.974788888888888
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "conformity",
+      "dropped_lab": "xai",
+      "diff": -2.3814638888888884
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "dropped_lab": "anthropic",
+      "diff": -0.13552499999999984
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "dropped_lab": "deepseek",
+      "diff": -0.12813611111111112
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "dropped_lab": "google",
+      "diff": -0.16605231481481475
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "dropped_lab": "meta",
+      "diff": -0.14256944444444436
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "dropped_lab": "mistral",
+      "diff": -0.01376944444444439
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "dropped_lab": "openai",
+      "diff": -0.19287777777777765
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "tradition",
+      "dropped_lab": "xai",
+      "diff": -0.1673027777777777
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "dropped_lab": "anthropic",
+      "diff": 0.15742500000000004
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "dropped_lab": "deepseek",
+      "diff": 0.047925000000000106
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "dropped_lab": "google",
+      "diff": 0.02492083333333342
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "dropped_lab": "meta",
+      "diff": 0.033091666666666825
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "dropped_lab": "mistral",
+      "diff": -0.011574999999999891
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "dropped_lab": "openai",
+      "diff": -0.01649999999999993
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "benevolence",
+      "dropped_lab": "xai",
+      "diff": 0.03929166666666681
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "dropped_lab": "anthropic",
+      "diff": 0.22201481481481497
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "dropped_lab": "deepseek",
+      "diff": 0.09918518518518507
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "dropped_lab": "google",
+      "diff": 0.18183209876543213
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "dropped_lab": "meta",
+      "diff": 0.20265185185185183
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "dropped_lab": "mistral",
+      "diff": 0.12309629629629629
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "dropped_lab": "openai",
+      "diff": 0.21118518518518528
+    },
+    {
+      "instrument": "pvq21",
+      "dimension": "universalism",
+      "dropped_lab": "xai",
+      "diff": 0.1971851851851852
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "dropped_lab": "anthropic",
+      "diff": 0.13440092592592562
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "dropped_lab": "deepseek",
+      "diff": 0.0989157407407406
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "dropped_lab": "google",
+      "diff": 0.12994706790123423
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "dropped_lab": "meta",
+      "diff": 0.06374166666666671
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "dropped_lab": "mistral",
+      "diff": 0.16134166666666633
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "dropped_lab": "openai",
+      "diff": 0.10816666666666641
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "care",
+      "dropped_lab": "xai",
+      "diff": 0.05719722222222201
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "dropped_lab": "anthropic",
+      "diff": 0.037942592592592805
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "dropped_lab": "deepseek",
+      "diff": 0.02272654320987655
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "dropped_lab": "google",
+      "diff": -0.025048868312757044
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "dropped_lab": "meta",
+      "diff": 0.08980061728395083
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "dropped_lab": "mistral",
+      "diff": -0.1484216049382714
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "dropped_lab": "openai",
+      "diff": -0.028577160493826914
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "fairness",
+      "dropped_lab": "xai",
+      "diff": 0.03668024691358035
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "dropped_lab": "anthropic",
+      "diff": 0.19737870370370358
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "dropped_lab": "deepseek",
+      "diff": 0.09618364197530857
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "dropped_lab": "google",
+      "diff": 0.11420056584362129
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "dropped_lab": "meta",
+      "diff": 0.13742438271604926
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "dropped_lab": "mistral",
+      "diff": 0.14672067901234562
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "dropped_lab": "openai",
+      "diff": 0.145366049382716
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "loyalty",
+      "dropped_lab": "xai",
+      "diff": 0.024026234567901206
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "dropped_lab": "anthropic",
+      "diff": 0.13231759259259246
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "dropped_lab": "deepseek",
+      "diff": 0.03422006172839498
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "dropped_lab": "google",
+      "diff": 0.0560235082304526
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "dropped_lab": "meta",
+      "diff": -0.024476234567901267
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "dropped_lab": "mistral",
+      "diff": 0.07518672839506169
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "dropped_lab": "openai",
+      "diff": 0.15070802469135794
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "authority",
+      "dropped_lab": "xai",
+      "diff": 0.0883626543209875
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "dropped_lab": "anthropic",
+      "diff": -0.48170555555555566
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "dropped_lab": "deepseek",
+      "diff": 0.058551234567901234
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "dropped_lab": "google",
+      "diff": -0.41195113168724284
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "dropped_lab": "meta",
+      "diff": -0.39345246913580256
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "dropped_lab": "mistral",
+      "diff": -0.5192561728395062
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "dropped_lab": "openai",
+      "diff": -0.45384320987654325
+    },
+    {
+      "instrument": "mfq30",
+      "dimension": "sanctity",
+      "dropped_lab": "xai",
+      "diff": -0.4933487654320988
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "dropped_lab": "anthropic",
+      "diff": -0.21573703703703695
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "dropped_lab": "deepseek",
+      "diff": -0.6638086419753089
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "dropped_lab": "google",
+      "diff": -0.6611812757201648
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "dropped_lab": "meta",
+      "diff": -1.2791604938271606
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "dropped_lab": "mistral",
+      "diff": -0.9581049382716049
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "dropped_lab": "openai",
+      "diff": -0.5615623456790126
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_anxiety",
+      "dropped_lab": "xai",
+      "diff": -0.7755956790123457
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "dropped_lab": "anthropic",
+      "diff": -0.4101425925925929
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "dropped_lab": "deepseek",
+      "diff": -0.2691277777777781
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "dropped_lab": "google",
+      "diff": -0.5821404320987656
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "dropped_lab": "meta",
+      "diff": -0.9112240740740742
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "dropped_lab": "mistral",
+      "diff": -0.34777222222222237
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "dropped_lab": "openai",
+      "diff": -0.6291333333333334
+    },
+    {
+      "instrument": "ecr12",
+      "dimension": "attachment_avoidance",
+      "dropped_lab": "xai",
+      "diff": -0.936538888888889
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "dropped_lab": "anthropic",
+      "diff": 0.034009641873278235
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "dropped_lab": "deepseek",
+      "diff": 0.013474747474747417
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "dropped_lab": "google",
+      "diff": 0.015304208754208723
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "dropped_lab": "meta",
+      "diff": 0.034764003673094596
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "dropped_lab": "mistral",
+      "diff": -0.002379247015610729
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "dropped_lab": "openai",
+      "diff": 0.029282874196510475
+    },
+    {
+      "instrument": "eq_short",
+      "dimension": "empathy_quotient",
+      "dropped_lab": "xai",
+      "diff": 0.008339348025711638
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "dropped_lab": "anthropic",
+      "diff": 0.0032954732510288853
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "dropped_lab": "deepseek",
+      "diff": -0.008649245541838144
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "dropped_lab": "google",
+      "diff": -0.01913541380887058
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "dropped_lab": "meta",
+      "diff": -0.035673525377229065
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "dropped_lab": "mistral",
+      "diff": -0.018284636488340125
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "dropped_lab": "openai",
+      "diff": -0.018301508916323705
+    },
+    {
+      "instrument": "ncs18",
+      "dimension": "need_for_cognition",
+      "dropped_lab": "xai",
+      "diff": -0.013868998628257849
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "dropped_lab": "anthropic",
+      "diff": -1.6453625000000003
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "dropped_lab": "deepseek",
+      "diff": -1.4436972222222222
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "dropped_lab": "google",
+      "diff": -1.3018900462962968
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "dropped_lab": "meta",
+      "diff": -1.2266784722222221
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "dropped_lab": "mistral",
+      "diff": -1.303593055555556
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "dropped_lab": "openai",
+      "diff": -1.018173263888889
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_internal",
+      "dropped_lab": "xai",
+      "diff": -1.4317565972222228
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "dropped_lab": "anthropic",
+      "diff": -1.6007385416666655
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "dropped_lab": "deepseek",
+      "diff": -1.4124121527777775
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "dropped_lab": "google",
+      "diff": -1.0890799189814806
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "dropped_lab": "meta",
+      "diff": -1.7569684027777777
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "dropped_lab": "mistral",
+      "diff": -0.5383267361111101
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "dropped_lab": "openai",
+      "diff": -1.0395392361111107
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_powerful_others",
+      "dropped_lab": "xai",
+      "diff": -1.368290277777777
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "dropped_lab": "anthropic",
+      "diff": -0.5198546875000001
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "dropped_lab": "deepseek",
+      "diff": -0.12066788194444447
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "dropped_lab": "google",
+      "diff": -0.4755208043981481
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "dropped_lab": "meta",
+      "diff": -0.5617512152777776
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "dropped_lab": "mistral",
+      "diff": -0.27908246527777775
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "dropped_lab": "openai",
+      "diff": -0.5451996527777776
+    },
+    {
+      "instrument": "locus_levenson",
+      "dimension": "loc_chance",
+      "dropped_lab": "xai",
+      "diff": -0.4136522569444443
+    }
+  ]
+}

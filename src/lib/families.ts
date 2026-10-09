@@ -81,6 +81,32 @@ export const FAMILIES: FamilyLineage[] = [
     ],
   },
   {
+    // Added 2026-10-08. Google and xAI had NO lineage entry, so every within-family analysis in
+    // this repo silently excluded them — including the drift page and the two contrasts the HDSR
+    // proposal cites as its headline evidence (Gemini narcissism, Grok Machiavellianism).
+    // Release dates marked (OR) are the OpenRouter listing date, used where no announcement date
+    // was recorded; they are listing dates, not lab announcement dates.
+    id: "gemini",
+    label: "Google Gemini Pro",
+    vendor: "google",
+    versions: [
+      { modelId: "google/gemini-2.5-pro",           label: "Gemini 2.5 Pro", releaseDate: "2025-03-25" },
+      { modelId: "google/gemini-3.1-pro-preview",   label: "Gemini 3.1 Pro", releaseDate: "2026-02-19" },
+    ],
+  },
+  {
+    id: "grok",
+    label: "xAI Grok",
+    vendor: "xai",
+    versions: [
+      { modelId: "x-ai/grok-4.20", label: "Grok 4.20", releaseDate: "2026-04-20" },
+      { modelId: "x-ai/grok-4.3",  label: "Grok 4.3",  releaseDate: "2026-04-30" },
+      { modelId: "x-ai/grok-4.5",  label: "Grok 4.5",  releaseDate: "2026-07-08" },
+      { modelId: "x-ai/grok-4.6",  label: "Grok 4.6",  releaseDate: "2026-08-12" },
+      { modelId: "x-ai/grok-4.7",  label: "Grok 4.7",  releaseDate: "2026-09-21" },
+    ],
+  },
+  {
     id: "mistral",
     label: "Mistral Large",
     vendor: "mistral",

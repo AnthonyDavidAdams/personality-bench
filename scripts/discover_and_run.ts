@@ -61,6 +61,22 @@ interface Candidate {
   lineage: string | null; lineageLabel: string; predecessor: string | null; releaseDate: string;
 }
 
+/**
+ * OpenRouter slug prefixes do not match the vendor keys the curated registry uses, and a model
+ * filed under the wrong key becomes a phantom laboratory in every per-lab analysis. `x-ai/grok-4.7`
+ * arrived as vendor "x-ai" while the other four Grok versions were "xai", which split the Grok
+ * series across two buckets in per_lab_efa.py. Normalize on the way in.
+ */
+const VENDOR_ALIASES: Record<string, string> = {
+  "x-ai": "xai",
+  "meta-llama": "meta",
+  mistralai: "mistral",
+  "google-deepmind": "google",
+};
+function normalizeVendor(slugPrefix: string): string {
+  return VENDOR_ALIASES[slugPrefix] ?? slugPrefix;
+}
+
 /** Pick the lineage whose member slugs share the longest prefix with the new slug (min 4 chars past the vendor). */
 function inferLineage(id: string): string | null {
   const db = rawSqlite();
@@ -128,7 +144,7 @@ async function main() {
     const lineage = inferLineage(m.id);
     const releaseDate = new Date(created * 1000).toISOString().slice(0, 10);
     candidates.push({
-      id: m.id, displayName: shortLabelFull(m.name), vendor: m.id.split("/")[0],
+      id: m.id, displayName: shortLabelFull(m.name), vendor: normalizeVendor(m.id.split("/")[0]),
       promptUsd, completionUsd, created,
       estimatedRunCost: (tokensIn * promptUsd + tokensOut * completionUsd) / 1_000_000,
       lineage, lineageLabel: shortLabel(m.name),
