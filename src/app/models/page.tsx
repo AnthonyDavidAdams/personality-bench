@@ -1,6 +1,7 @@
 import { listModelsForUi, VENDOR_LABELS } from "@/lib/queries";
 import { getModelProfile } from "@/lib/model_profiles";
 import { zodiacFromDate } from "@/lib/zodiac";
+import { AstrologyDisclaimer } from "@/components/AstrologyDisclaimer";
 import { computeModelFindings } from "@/lib/findings";
 import { ModelsExplorer, type ModelExplorerRow } from "@/components/ModelsExplorer";
 import { buildMetadata } from "@/lib/seo";
@@ -50,6 +51,7 @@ export default function ModelsIndex() {
         historical predecessors we test them against. Sort by lab, release date, cost or run count;
         filter to one lab or one cohort.
       </p>
+      <AstrologyDisclaimer className="mb-8 max-w-2xl -mt-4" />
       <ModelsExplorer rows={rows} />
     </div>
   );

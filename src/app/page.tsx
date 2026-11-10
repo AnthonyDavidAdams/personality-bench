@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AstrologyDisclaimer } from "@/components/AstrologyDisclaimer";
 import Image from "next/image";
 import fs from "node:fs";
 import path from "node:path";
@@ -355,6 +356,7 @@ export default function Home() {
             </ul>
             <div className="pt-4 mt-4 border-t border-[var(--border)] text-xs text-neutral-600 italic leading-relaxed">
               For fun we also calculated a Western zodiac sign and a real Human Design bodygraph (Swiss Ephemeris, validated against three reference charts) for every model — using release date, time, and lab HQ coordinates as a stand-in for birth. <Link href="/models/anthropic/claude-opus-4.8" className="text-[var(--link)] hover:underline">See an example →</Link>
+              <AstrologyDisclaimer className="mt-3 not-italic" />
             </div>
           </aside>
         </div>

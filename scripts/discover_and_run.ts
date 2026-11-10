@@ -239,11 +239,12 @@ function shortLabelFull(name: string): string {
 }
 
 /** Best-effort email via Gmail SMTP. Password comes from GMAIL_APP_PASSWORD (env or ~/.gmail.env); never inline. */
-export function notify(lines: string[], subjectTail: string): void {
+/** `extra` is appended verbatim after the bullets (e.g. a Hacker News draft to copy from). */
+export function notify(lines: string[], subjectTail: string, extra = ""): void {
   const envFile = path.join(process.env.HOME ?? "", ".gmail.env");
   const pw = process.env.GMAIL_APP_PASSWORD ?? (fs.existsSync(envFile) ? fs.readFileSync(envFile, "utf8").match(/GMAIL_APP_PASSWORD=(\S+)/)?.[1] : undefined);
   if (!pw) { console.log("[discover] no GMAIL_APP_PASSWORD — skipping email"); return; }
-  const body = ["Personality Bench nightly discovery", "", ...lines.map((l) => `  • ${l}`), "", "Dashboard: https://persona.earthpilot.ai"].join("\n");
+  const body = ["Personality Bench nightly discovery", "", ...lines.map((l) => `  • ${l}`), ...(extra.trim() ? ["", extra.trim()] : []), "", "Dashboard: https://persona.earthpilot.ai"].join("\n");
   const py = `
 import smtplib, os
 from email.mime.text import MIMEText

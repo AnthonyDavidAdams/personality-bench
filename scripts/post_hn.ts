@@ -18,6 +18,10 @@
  *   npx tsx scripts/post_hn.ts --post --force <model>  # submit again even if already posted
  *   npx tsx scripts/post_hn.ts --list                  # show the queue
  *
+ * Add --blurb-by <openrouter slug> to any draft-building form to have that model write the
+ * comment's opening paragraph from the measured brief (e.g. let a new model describe itself).
+ * The bullets, method line and link stay generated. Costs one call, a few cents.
+ *
  * Credentials: ~/.hn.env with
  *   HN_USERNAME=ada1981
  *   HN_PASSWORD=...
@@ -28,6 +32,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { rawSqlite } from "../src/lib/db";
 import { computeModelFindings } from "../src/lib/findings";
+import { chatWithRetry } from "../src/lib/openrouter/client";
+import { buildBrief } from "./generate_article";
 
 const SITE = "https://persona.earthpilot.ai";
 const HN = "https://news.ycombinator.com";
@@ -53,6 +59,8 @@ export interface HnDraft {
   title: string;
   url: string;
   comment: string;
+  /** OpenRouter slug of the model that wrote the opening paragraph, if not the template. */
+  blurbBy?: string;
   createdAt: string;
   postedAt?: string;
   itemId?: string;
@@ -125,6 +133,71 @@ export function buildDraft(modelId: string): HnDraft {
     url,
     comment,
     createdAt: new Date().toISOString(),
+  };
+}
+
+/**
+ * Replace the templated label + summary at the top of the comment with an opening written by
+ * `writer`. Everything it may say comes from the same brief the dispatch generator uses.
+ */
+export async function writeBlurb(draft: HnDraft, writer: string): Promise<HnDraft> {
+  const brief = buildBrief(draft.modelId);
+  if (!brief) throw new Error(`no brief for ${draft.modelId}`);
+
+  const facts = [
+    `Model: ${brief.displayName} (${brief.modelId})${brief.releaseDate ? `, released ${brief.releaseDate}` : ""}`,
+    `Algorithmic archetype label: ${brief.archetypeLabel}`,
+    `Summary: ${brief.summary}`,
+    ...brief.bullets.map((b) => `Notable: ${b.family} / ${b.dimension}: ${b.tier}, mean ${b.mean.toFixed(2)}. ${b.narrative}`),
+    ...(brief.predecessor
+      ? brief.predecessor.deltas.map(
+          (d) =>
+            `Vs ${brief.predecessor!.displayName}: ${d.dimension} (${d.instrument}) ${d.pred.toFixed(2)} -> ${d.this.toFixed(2)}`,
+        )
+      : []),
+    ...brief.cohortContext.map(
+      (c) => `Cohort: ${c.dimension} (${c.instrument}) ${c.thisModel.toFixed(2)} vs cohort mean ${c.cohortMean.toFixed(2)}, rank ${c.rank} of ${c.n}`,
+    ),
+  ].join("\n");
+
+  const self = writer === draft.modelId;
+  const res = await chatWithRetry(
+    {
+      model: writer,
+      messages: [
+        {
+          role: "system",
+          content:
+            "You write the submitter's first comment on a Hacker News link post. HN readers are technical and allergic to hype. " +
+            "Plain text only: no markdown, no headings, no bold, no emoji, no hashtags, no em dashes. " +
+            "Use only numbers that appear in the facts given; do not invent results or interpret beyond them.",
+        },
+        {
+          role: "user",
+          content:
+            `${self ? "These are your own results. You are the model that was tested; write in the first person as that model." : "Write as the researchers who ran the bench."} ` +
+            `Write the opening paragraph of the comment, 60 to 110 words: the single most interesting thing in this profile, ` +
+            `with its numbers, and why it is worth a click. If the archetype label rests on a ceiling score many models share, say so rather than lead with it. ` +
+            `Output the paragraph only.\n\n${facts}`,
+        },
+      ],
+      temperature: 0.7,
+      maxTokens: 4000,
+      includeUsage: true,
+    },
+    { maxAttempts: 3 },
+  );
+  const blurb = res.content.trim().replace(/^["']|["']$/g, "");
+  if (!blurb) throw new Error(`${writer} returned an empty blurb`);
+  console.log(`[hn] blurb by ${writer} · $${(res.usage.costUsd ?? 0).toFixed(4)}`);
+
+  // The templated comment is: label, summary, bullets, method, url. Keep from the bullets on.
+  const rest = draft.comment.split("\n\n").filter((p) => p.startsWith("- ") || p.startsWith("Method:") || p.startsWith("http"));
+  const byline = self ? `(The paragraph above was written by ${brief.displayName} about its own results.)` : "";
+  return {
+    ...draft,
+    comment: [blurb, byline, ...rest].filter(Boolean).join("\n\n"),
+    blurbBy: writer,
   };
 }
 
@@ -327,7 +400,13 @@ function printDraft(d: HnDraft): void {
 async function main() {
   const argv = process.argv.slice(2);
   const flag = (f: string) => argv.includes(f);
-  const args = argv.filter((a) => !a.startsWith("--"));
+  const blurbIdx = argv.indexOf("--blurb-by");
+  const blurbBy = blurbIdx >= 0 ? argv[blurbIdx + 1] : undefined;
+  if (blurbIdx >= 0 && !blurbBy) {
+    console.error("--blurb-by needs an OpenRouter model slug");
+    process.exit(1);
+  }
+  const args = argv.filter((a, i) => !a.startsWith("--") && !(blurbIdx >= 0 && i === blurbIdx + 1));
 
   if (flag("--list")) {
     const q = readQueue();
@@ -353,6 +432,7 @@ async function main() {
       process.exit(1);
     }
     draft = buildDraft(args[0]);
+    if (blurbBy) draft = await writeBlurb(draft, blurbBy);
   }
 
   printDraft(draft);

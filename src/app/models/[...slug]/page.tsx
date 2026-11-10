@@ -10,6 +10,7 @@ import { getModelProfile } from "@/lib/model_profiles";
 import { getBirthChart } from "@/lib/birth_chart";
 import { computeModelFindings } from "@/lib/findings";
 import { ZodiacIcon, ELEMENT_COLORS } from "@/components/ZodiacIcon";
+import { AstrologyDisclaimer, ASTROLOGY_DISCLAIMER } from "@/components/AstrologyDisclaimer";
 import { ScatterChart } from "@/components/ScatterChart";
 import { interpretInstrumentForModel } from "@/lib/instrument_interpretation";
 import { buildMetadata } from "@/lib/seo";
@@ -128,7 +129,7 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
             {model.display_name}
           </h1>
           {chart?.sun ? (
-            <div className="flex items-center gap-2 text-sm text-neutral-700" title={chart.sun.blurb}>
+            <div className="flex items-center gap-2 text-sm text-neutral-700" title={`${chart.sun.blurb}\n\n${ASTROLOGY_DISCLAIMER}`}>
               <span style={{ color: ELEMENT_COLORS[chart.sun.element] }}>
                 <ZodiacIcon sign={chart.sun.sign} size={20} />
               </span>
@@ -313,6 +314,7 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
               Treating model release as a "birth" — playful, not literal
             </div>
           </div>
+          <AstrologyDisclaimer className="mb-4" />
           {profile ? (
             <div className="text-xs text-neutral-600 mb-4 bg-[var(--soft)] rounded px-3 py-2">
               <strong className="text-neutral-800">Inputs used:</strong> {profile.releaseDate} at {profile.releaseTime ?? "12:00"} UTC,

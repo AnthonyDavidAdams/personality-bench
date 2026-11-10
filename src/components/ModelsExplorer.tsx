@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ZodiacIcon, ELEMENT_COLORS } from "./ZodiacIcon";
+import { ASTROLOGY_DISCLAIMER } from "./AstrologyDisclaimer";
 
 export interface ModelExplorerRow {
   id: string;
@@ -262,7 +263,7 @@ export function ModelsExplorer({ rows }: { rows: ModelExplorerRow[] }) {
               <div className="flex items-baseline justify-between gap-2">
                 <span className="serif font-semibold text-lg text-neutral-900">{r.displayName}</span>
                 {r.zodiacSign ? (
-                  <span className="flex items-center gap-1.5 text-xs text-neutral-600 shrink-0" title={r.zodiacBlurb ?? undefined}>
+                  <span className="flex items-center gap-1.5 text-xs text-neutral-600 shrink-0" title={`${r.zodiacBlurb ? r.zodiacBlurb + "\n\n" : ""}${ASTROLOGY_DISCLAIMER}`}>
                     <span style={{ color: ELEMENT_COLORS[r.zodiacElement ?? ""] }}>
                       <ZodiacIcon sign={r.zodiacSign} size={16} />
                     </span>

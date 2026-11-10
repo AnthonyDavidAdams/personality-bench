@@ -36,8 +36,16 @@ railway up --detach --ci >> $LOG 2>&1 && log "deploy triggered" || log "railway 
 # Fire one with: npx tsx scripts/post_hn.ts --post <model_id>
 HN_LINES=""
 for M in ${(z)MODELS}; do
-  if npx tsx scripts/post_hn.ts --draft "$M" >> $LOG 2>&1; then
-    HN_LINES="${HN_LINES}HN post drafted for $M — publish with: npx tsx scripts/post_hn.ts --post $M"$'\n'
+  # The opening paragraph is written in the lab's voice by the strongest frontier model
+  # (one call, a few cents); if that fails, fall back to the templated opener.
+  if npx tsx scripts/post_hn.ts --draft "$M" --blurb-by "${HN_BLURB_MODEL:-anthropic/claude-opus-5.5}" >> $LOG 2>&1 \
+     || npx tsx scripts/post_hn.ts --draft "$M" >> $LOG 2>&1; then
+    # Full post text from the queue, so it can be read (or pasted by hand) from the email.
+    POST=$(python3 -c "
+import json,sys
+d=next(x for x in json.load(open('data/hn-queue.json')) if x['modelId']==sys.argv[1])
+print(f\"\nHN post for {d['modelId']}\ntitle: {d['title']}\nurl:   {d['url']}\n\nfirst comment:\n{d['comment']}\n\npublish with: npx tsx scripts/post_hn.ts --post {d['modelId']}\n\")" "$M")
+    HN_LINES="${HN_LINES}${POST}"$'\n'
     log "hn draft queued for $M"
   else
     log "hn draft failed for $M"
@@ -47,7 +55,5 @@ done
 SUMMARY=$(python3 -c "
 import json; d=json.load(open('data/discover-last.json'))
 print('\n'.join(f\"{m['id']}: {m['ok']} ok / {m['fail']} fail, \${m['spent']:.2f} — https://persona.earthpilot.ai/models/{m['id']}\" for m in d['models']))")
-BODY="$SUMMARY"
-[ -n "$HN_LINES" ] && BODY="$SUMMARY"$'\n'"${HN_LINES%$'\n'}"
-npx tsx -e "import { notify } from './scripts/discover_and_run'; notify(process.argv[1].split('\n').filter(Boolean), 'new model(s) live: ' + process.argv[2]);" "$BODY" "$MODELS" >> $LOG 2>&1
+npx tsx -e "import { notify } from './scripts/discover_and_run'; notify(process.argv[1].split('\n').filter(Boolean), 'new model(s) live: ' + process.argv[2], process.argv[3]);" "$SUMMARY" "$MODELS" "$HN_LINES" >> $LOG 2>&1
 log "done"

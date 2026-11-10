@@ -21,7 +21,7 @@ import { nanoid } from "nanoid";
 // flagships ship (the article generator is also subject to model drift!).
 const GENERATOR_MODEL = "anthropic/claude-fable-5.1";
 
-interface BriefForModel {
+export interface BriefForModel {
   modelId: string;
   displayName: string;
   vendor: string;
@@ -96,7 +96,7 @@ function buildSeriesContext(modelId: string): Pick<BriefForModel, "priorPosts" |
   return { priorPosts, lineageDrift };
 }
 
-function buildBrief(modelId: string): BriefForModel | null {
+export function buildBrief(modelId: string): BriefForModel | null {
   const db = rawSqlite();
   const model = db.prepare(`SELECT id, display_name, vendor FROM models WHERE id = ?`).get(modelId) as
     | { id: string; display_name: string; vendor: string }
@@ -411,7 +411,9 @@ async function main() {
   }
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (process.argv[1]?.endsWith("generate_article.ts")) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
