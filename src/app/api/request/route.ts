@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { rawSqlite } from "@/lib/db";
+import { inbox } from "@/lib/db";
 import { nanoid } from "nanoid";
 import crypto from "node:crypto";
 
@@ -41,7 +41,7 @@ export async function POST(req: Request) {
   }
 
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? null;
-  const db = rawSqlite();
+  const db = inbox();
 
   // Light abuse prevention: max 5 requests per ipHash per day.
   const ipHash = hashIp(ip);

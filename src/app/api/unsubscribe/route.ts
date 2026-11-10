@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import { rawSqlite } from "@/lib/db";
+import { inbox } from "@/lib/db";
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
   const token = url.searchParams.get("token");
   if (!token) return new NextResponse("Missing token", { status: 400 });
 
-  const db = rawSqlite();
+  const db = inbox();
   const row = db.prepare(`UPDATE email_subscribers SET status='unsubscribed', unsubscribed_at=unixepoch() WHERE unsubscribe_token=? RETURNING email`).get(token) as { email?: string } | undefined;
   if (!row?.email) return new NextResponse("Invalid token", { status: 404 });
 

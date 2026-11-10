@@ -5,6 +5,7 @@ import { createGunzip } from "node:zlib";
 import { pipeline } from "node:stream/promises";
 import fs from "node:fs";
 import path from "node:path";
+import { openInbox, rescueIntoInbox, inboxPathFor, INBOX_TABLES } from "../src/lib/db/inbox.mjs";
 
 const dbPath =
   process.env.DATABASE_PATH ||
@@ -14,6 +15,20 @@ const dbPath =
 
 fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 console.log(`[start] ensured directory ${path.dirname(dbPath)}`);
+
+// Visitor data (subscribers, requests) lives in a separate inbox DB that reseeding never touches.
+// Rescue any rows still in the results DB into it BEFORE that DB can be replaced below.
+try {
+  const inbox = openInbox(dbPath);
+  const copied = rescueIntoInbox(inbox, dbPath);
+  const counts = INBOX_TABLES.map((t) => `${t}=${inbox.prepare(`SELECT COUNT(*) AS n FROM ${t}`).get().n}`).join(", ");
+  console.log(`[start] inbox ${inboxPathFor(dbPath)}: ${counts}; rescued ${JSON.stringify(copied)}`);
+  inbox.close();
+} catch (e) {
+  // Never reseed over rows we could not rescue.
+  console.error(`[start] inbox rescue FAILED — skipping reseed this boot:`, e.message);
+  process.env.SKIP_SEED = "1";
+}
 
 // Volume seeding: restore the baked-in snapshot if either
 //   (a) no volume DB exists / it's schema-only (< 2 MB), or
@@ -28,9 +43,11 @@ try {
 
   let shouldSeed = false;
   let reason = "";
-  // FORCE_SEED env var overrides all checks — for recovery from corrupted volume DBs
-  // (set to "1" during a one-shot deploy, then remove).
-  if (process.env.FORCE_SEED === "1" && seedStat) {
+  if (process.env.SKIP_SEED === "1") {
+    console.log("[start] SKIP_SEED set — keeping the volume DB as is");
+  } else if (process.env.FORCE_SEED === "1" && seedStat) {
+    // FORCE_SEED overrides the remaining checks — for recovery from a corrupted volume DB
+    // (set to "1" for one deploy, then remove; visitor data is safe in the inbox either way).
     shouldSeed = true;
     reason = "FORCE_SEED=1 override";
   } else if (!dbExists) {

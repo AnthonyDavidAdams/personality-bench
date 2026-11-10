@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { rawSqlite } from "@/lib/db";
+import { inbox } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
@@ -33,7 +33,7 @@ function fmtDate(ts: number | null) {
 }
 
 export default function AdminPage() {
-  const db = rawSqlite();
+  const db = inbox();
 
   const subscribers = db.prepare(
     `SELECT id, email, source, status, created_at AS createdAt,

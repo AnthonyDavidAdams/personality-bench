@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { rawSqlite } from "@/lib/db";
+import { inbox } from "@/lib/db";
 import { nanoid } from "nanoid";
 
 function isValidEmail(s: string): boolean {
@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: "Please enter a valid email." }, { status: 400 });
   }
 
-  const db = rawSqlite();
+  const db = inbox();
   // Upsert: idempotent if already subscribed
   try {
     db.prepare(

@@ -3,6 +3,7 @@ import { drizzle } from "drizzle-orm/better-sqlite3";
 import * as schema from "./schema";
 import fs from "node:fs";
 import path from "node:path";
+import { openInbox } from "./inbox.mjs";
 
 const defaultPath =
   process.env.NODE_ENV === "production"
@@ -35,6 +36,13 @@ export const db = new Proxy({} as Drizzled, {
 export function rawSqlite(): Database.Database {
   getDb();
   return _sqlite!;
+}
+
+let _inbox: Database.Database | null = null;
+/** Subscribers and model requests. Separate file: never overwritten by the deploy-time reseed. */
+export function inbox(): Database.Database {
+  if (!_inbox) _inbox = openInbox(dbPath) as Database.Database;
+  return _inbox;
 }
 
 export { schema };

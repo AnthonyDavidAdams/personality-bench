@@ -1,4 +1,4 @@
-import { rawSqlite } from "@/lib/db";
+import { inbox } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
@@ -12,7 +12,7 @@ function csvEscape(v: string | number | null | undefined): string {
 }
 
 export async function GET() {
-  const db = rawSqlite();
+  const db = inbox();
   const rows = db.prepare(
     `SELECT email, source, status, created_at, confirmed_at, unsubscribed_at
      FROM email_subscribers ORDER BY created_at DESC`,
