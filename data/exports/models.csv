@@ -5,6 +5,7 @@ anthropic/claude-3.5-haiku,anthropic,Claude 3.5 Haiku,claude-3,frontier,0,,,0
 anthropic/claude-3.5-sonnet,anthropic,Claude 3.5 Sonnet,claude-3,frontier,0,,,0
 anthropic/claude-fable-5,anthropic,Claude Fable 5,claude-fable,frontier,0,10,50,1
 anthropic/claude-fable-5.1,anthropic,Claude Fable 5.1,claude-fable,frontier,0,10,50,1
+anthropic/claude-fable-5.2,anthropic,Claude Fable 5.2,claude_opus,frontier,0,8,40,1
 anthropic/claude-haiku-4.5,anthropic,Claude Haiku 4.5,claude-4-haiku,frontier,0,1,5,1
 anthropic/claude-opus-4,anthropic,Claude Opus 4,claude-4,frontier,0,15,75,1
 anthropic/claude-opus-4.1,anthropic,Claude Opus 4.1,claude-4,frontier,0,15,75,1
