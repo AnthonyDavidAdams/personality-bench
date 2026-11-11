@@ -2,24 +2,43 @@
  * Birth-chart-style readings for models.
  *
  * Combines:
- *   - Sun sign (tropical zodiac from release date) — accurate
- *   - Moon sign (computed from real ephemeris) — accurate
- *   - Full Human Design chart computed via Swiss Ephemeris (sweph in Moshier mode)
- *     using release date, time, and HQ coordinates as the "birth chart" inputs.
+ *   - Sun sign (tropical zodiac from release date)
+ *   - Moon sign and a full Human Design chart from the Bodygraph API engine
+ *     (https://github.com/AnthonyDavidAdams/bodygraph-api, NASA JPL DE440), pre-rendered into
+ *     public/bodygraph/<model id>.{svg,json} by scripts/render_bodygraphs.ts.
  *
  * Treat this as an editorial overlay on the personality data — release events
  * are not biological births, but if we treat them as moments of arrival into
  * the world, the chart math is the same.
  */
+import fs from "node:fs";
+import path from "node:path";
 import { zodiacFromDate } from "./zodiac";
 import { getModelProfile } from "./model_profiles";
-import { computeHumanDesign, type HDChart } from "./hd/human_design";
 import { rawSqlite } from "./db";
+
+/** public/bodygraph/<id>.json, written by scripts/bodygraph_render.py. */
+export interface HDChart {
+  utc: string;
+  engine: string;
+  type: string;
+  strategy: string;
+  authority: string;
+  profile: string;
+  definition: string;
+  incarnationCross: string;
+  definedCenters: string[];
+  definedChannels: string[];
+  sunLongitude: number;
+  moonLongitude: number;
+}
 
 export interface BirthChart {
   sun: ReturnType<typeof zodiacFromDate>;
   moon: ReturnType<typeof zodiacFromDate>;
   hd: HDChart | null;
+  /** Public path of the rendered bodygraph SVG, when one exists. */
+  svg: string | null;
   hdError: string | null;
 }
 
@@ -47,19 +66,15 @@ export function getBirthChart(modelId: string): BirthChart | null {
   const p = getModelProfile(modelId);
   if (!p) return null;
   const sun = zodiacFromDate(p.releaseDate);
-  const hdResult = computeHumanDesign({
-    birthday: p.releaseDate,
-    birthTime: p.releaseTime ?? "12:00",
-    lat: p.hqLat,
-    lon: p.hqLon,
-  });
-  if ("error" in hdResult) {
-    return { sun, moon: null, hd: null, hdError: hdResult.error };
+  const base = path.join(process.cwd(), "public", "bodygraph", modelId);
+  let hd: HDChart | null = null;
+  try {
+    hd = JSON.parse(fs.readFileSync(`${base}.json`, "utf8")) as HDChart;
+  } catch {
+    return { sun, moon: null, hd: null, svg: null, hdError: "chart not rendered yet" };
   }
-  // Use the Moon's ecliptic longitude from the personality chart for the moon sign.
-  const moonLon = hdResult.personality.Moon?.longitude;
-  const moon = moonLon != null ? zodiacFromLongitude(moonLon) : null;
-  return { sun, moon, hd: hdResult, hdError: null };
+  const svg = fs.existsSync(`${base}.svg`) ? `/bodygraph/${modelId}.svg` : null;
+  return { sun, moon: zodiacFromLongitude(hd.moonLongitude), hd, svg, hdError: null };
 }
 
 /**

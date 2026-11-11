@@ -1,0 +1,32 @@
+{
+ "inputs": {
+  "utc": "2026-09-21T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-09-21T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "1/3 Investigator / Martyr",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of the Vessel of Love 3",
+ "definedCenters": [
+  "Ajna",
+  "Throat",
+  "G",
+  "Spleen",
+  "Solar Plexus",
+  "Sacral",
+  "Root"
+ ],
+ "definedChannels": [
+  "10-20 Awakening",
+  "10-57 Perfected Form",
+  "17-62 Acceptance",
+  "20-57 The Brainwave",
+  "29-46 Discovery",
+  "30-41 Recognition"
+ ],
+ "sunLongitude": 178.7333855,
+ "moonLongitude": 299.8792871
+}

@@ -4,7 +4,6 @@ import path from "node:path";
 import { notFound } from "next/navigation";
 import { rawSqlite } from "@/lib/db";
 import { RadarChart, RadarLegend, colorForModel } from "@/components/RadarChart";
-import { Bodygraph, BodygraphLegend } from "@/components/Bodygraph";
 import { DIMENSION_GUIDES } from "@/lib/interpretations";
 import { getModelProfile } from "@/lib/model_profiles";
 import { getBirthChart } from "@/lib/birth_chart";
@@ -304,7 +303,7 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
         </section>
       )}
 
-      {/* Birth chart panel — sun + moon + Human Design from Swiss Ephemeris.
+      {/* Birth chart panel — sun + moon + Human Design from the Bodygraph API engine.
           Placed at the end of the model page since this is editorial/playful, not core data. */}
       {chart ? (
         <section className="card p-6">
@@ -317,7 +316,7 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
           <AstrologyDisclaimer className="mb-4" />
           {profile ? (
             <div className="text-xs text-neutral-600 mb-4 bg-[var(--soft)] rounded px-3 py-2">
-              <strong className="text-neutral-800">Inputs used:</strong> {profile.releaseDate} at {profile.releaseTime ?? "12:00"} UTC,
+              <strong className="text-neutral-800">Inputs used:</strong> {profile.releaseDate} at {profile.releaseTime ? `${profile.releaseTime} UTC` : "12:00 local time at HQ"},
               {" "}{profile.hqCity} ({profile.hqLat.toFixed(2)}°, {profile.hqLon.toFixed(2)}°).
               {profile.releaseTimeNote ? <span className="italic"> {profile.releaseTimeNote}</span> : null}
             </div>
@@ -359,7 +358,7 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
                 <>
                   <div className="serif text-xl mt-1">{chart.hd.type}</div>
                   <div className="text-xs text-neutral-500 mt-0.5">
-                    {chart.hd.profile} · {chart.hd.authority}
+                    {chart.hd.profile} · {chart.hd.authority} authority
                   </div>
                   <div className="text-xs text-neutral-700 mt-2 leading-relaxed">
                     {chart.hd.incarnationCross}
@@ -371,10 +370,15 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
           {chart.hd ? (
             <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start pt-4 border-t border-[var(--border)]">
               <div>
-                <Bodygraph chart={chart.hd} size={420} />
-                <div className="mt-2">
-                  <BodygraphLegend />
-                </div>
+                {chart.svg ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={chart.svg}
+                    alt={`Human Design bodygraph for ${model.display_name}: ${chart.hd.type}, ${chart.hd.profile}`}
+                    width={420}
+                    className="max-w-full h-auto"
+                  />
+                ) : null}
               </div>
               <div className="text-xs text-neutral-700 space-y-3">
                 <div>
@@ -386,8 +390,10 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
                   <div className="font-mono text-[11px] text-neutral-600">{chart.hd.definedChannels.join(", ") || "none"}</div>
                 </div>
                 <div className="text-[10px] text-neutral-500 italic pt-2 border-t border-[var(--soft)]">
-                  Computed via Swiss Ephemeris (Moshier mode) from the model's announced release date, time, and HQ
-                  coordinates. Validated against three independent reference charts (Jobs, Winfrey, Einstein).
+                  Computed and drawn by the{" "}
+                  <a href="https://github.com/AnthonyDavidAdams/bodygraph-api" className="text-[var(--link)] hover:underline">Bodygraph API</a>{" "}
+                  (NASA JPL DE440 ephemeris; reproduces Jovian Archive&apos;s published reference charts) from the
+                  model&apos;s announced release date and time.
                 </div>
               </div>
             </div>

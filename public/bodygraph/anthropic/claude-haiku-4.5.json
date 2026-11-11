@@ -1,0 +1,22 @@
+{
+ "inputs": {
+  "utc": "2025-10-15T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-10-15T17:00:00Z",
+ "type": "Manifestor",
+ "strategy": "Inform before acting",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/5 Hermit / Heretic",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Maya 3",
+ "definedCenters": [
+  "Throat",
+  "Solar Plexus"
+ ],
+ "definedChannels": [
+  "35-36 Transitoriness"
+ ],
+ "sunLongitude": 202.595168,
+ "moonLongitude": 136.5899895
+}

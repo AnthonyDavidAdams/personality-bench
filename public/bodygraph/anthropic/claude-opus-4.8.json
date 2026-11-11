@@ -1,0 +1,24 @@
+{
+ "inputs": {
+  "utc": "2026-05-15T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-05-15T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "1/3 Investigator / Martyr",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Contagion 2",
+ "definedCenters": [
+  "Heart",
+  "Solar Plexus",
+  "Root"
+ ],
+ "definedChannels": [
+  "30-41 Recognition",
+  "37-40 Community"
+ ],
+ "sunLongitude": 54.8756216,
+ "moonLongitude": 38.9617611
+}

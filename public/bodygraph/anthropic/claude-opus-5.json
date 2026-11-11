@@ -1,0 +1,24 @@
+{
+ "inputs": {
+  "utc": "2026-07-24T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-07-24T17:00:00Z",
+ "type": "Manifestor",
+ "strategy": "Inform before acting",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "6/2 Role Model / Hermit",
+ "definition": "Single Definition",
+ "incarnationCross": "Left Angle Cross of Distraction",
+ "definedCenters": [
+  "Throat",
+  "Heart",
+  "Solar Plexus"
+ ],
+ "definedChannels": [
+  "21-45 The Money Line",
+  "37-40 Community"
+ ],
+ "sunLongitude": 121.8214912,
+ "moonLongitude": 247.8731795
+}

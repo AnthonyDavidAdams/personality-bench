@@ -1,0 +1,31 @@
+{
+ "inputs": {
+  "utc": "2026-07-08T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-07-08T17:00:00Z",
+ "type": "Manifestor",
+ "strategy": "Inform before acting",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/4 Hermit / Opportunist",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Penetration 2",
+ "definedCenters": [
+  "Ajna",
+  "Throat",
+  "G",
+  "Heart",
+  "Spleen",
+  "Solar Plexus"
+ ],
+ "definedChannels": [
+  "10-20 Awakening",
+  "10-57 Perfected Form",
+  "17-62 Acceptance",
+  "20-57 The Brainwave",
+  "25-51 Initiation",
+  "37-40 Community"
+ ],
+ "sunLongitude": 106.5515198,
+ "moonLongitude": 27.9660257
+}

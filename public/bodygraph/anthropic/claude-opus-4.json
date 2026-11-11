@@ -1,0 +1,29 @@
+{
+ "inputs": {
+  "utc": "2025-05-22T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-05-22T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/4 Hermit / Opportunist",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of the Sleeping Phoenix 2",
+ "definedCenters": [
+  "Throat",
+  "G",
+  "Heart",
+  "Solar Plexus",
+  "Sacral"
+ ],
+ "definedChannels": [
+  "6-59 Intimacy",
+  "12-22 Openness",
+  "20-34 Charisma",
+  "25-51 Initiation",
+  "35-36 Transitoriness"
+ ],
+ "sunLongitude": 61.8475535,
+ "moonLongitude": 0.3402185
+}

@@ -1,0 +1,27 @@
+{
+ "inputs": {
+  "utc": "2025-12-18T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-12-18T17:00:00Z",
+ "type": "Manifestor",
+ "strategy": "Inform before acting",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "5/1 Heretic / Investigator",
+ "definition": "Split Definition",
+ "incarnationCross": "Left Angle Cross of Education 2",
+ "definedCenters": [
+  "Head",
+  "Ajna",
+  "Throat",
+  "G",
+  "Solar Plexus"
+ ],
+ "definedChannels": [
+  "10-20 Awakening",
+  "12-22 Openness",
+  "47-64 Abstraction"
+ ],
+ "sunLongitude": 267.0272496,
+ "moonLongitude": 252.0716843
+}

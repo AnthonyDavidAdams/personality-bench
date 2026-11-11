@@ -1,0 +1,26 @@
+{
+ "inputs": {
+  "utc": "2024-12-05T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2024-12-05T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "3/5 Martyr / Heretic",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of Consciousness 4",
+ "definedCenters": [
+  "Throat",
+  "G",
+  "Solar Plexus",
+  "Sacral"
+ ],
+ "definedChannels": [
+  "5-15 Rhythm",
+  "29-46 Discovery",
+  "35-36 Transitoriness"
+ ],
+ "sunLongitude": 254.0572502,
+ "moonLongitude": 307.0142174
+}

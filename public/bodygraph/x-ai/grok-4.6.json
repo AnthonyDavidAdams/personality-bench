@@ -1,0 +1,30 @@
+{
+ "inputs": {
+  "utc": "2026-08-12T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-08-12T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/4 Hermit / Opportunist",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Explanation 3",
+ "definedCenters": [
+  "Ajna",
+  "Throat",
+  "Heart",
+  "Solar Plexus",
+  "Sacral",
+  "Root"
+ ],
+ "definedChannels": [
+  "21-45 The Money Line",
+  "23-43 Structuring",
+  "30-41 Recognition",
+  "37-40 Community",
+  "42-53 Maturation"
+ ],
+ "sunLongitude": 140.0084094,
+ "moonLongitude": 139.6645458
+}

@@ -1,0 +1,22 @@
+{
+ "inputs": {
+  "utc": "2026-03-15T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-03-15T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "3/5 Martyr / Heretic",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Eden",
+ "definedCenters": [
+  "Heart",
+  "Solar Plexus"
+ ],
+ "definedChannels": [
+  "37-40 Community"
+ ],
+ "sunLongitude": 355.1158965,
+ "moonLongitude": 313.5711055
+}

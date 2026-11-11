@@ -1,0 +1,27 @@
+{
+ "inputs": {
+  "utc": "2025-08-05T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-08-05T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Sacral",
+ "profile": "1/3 Investigator / Martyr",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of the Sphinx 3",
+ "definedCenters": [
+  "Throat",
+  "G",
+  "Sacral"
+ ],
+ "definedChannels": [
+  "1-8 Inspiration",
+  "7-31 The Alpha",
+  "10-20 Awakening",
+  "13-33 The Prodigal",
+  "29-46 Discovery"
+ ],
+ "sunLongitude": 133.5289978,
+ "moonLongitude": 269.9640044
+}

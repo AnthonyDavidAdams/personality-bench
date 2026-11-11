@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const config: NextConfig = {
-  serverExternalPackages: ["better-sqlite3", "sweph"],
+  serverExternalPackages: ["better-sqlite3"],
   async headers() {
     return [
       {

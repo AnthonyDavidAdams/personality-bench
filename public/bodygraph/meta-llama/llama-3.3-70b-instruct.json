@@ -1,0 +1,28 @@
+{
+ "inputs": {
+  "utc": "2024-12-06T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2024-12-06T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "4/1 Opportunist / Investigator",
+ "definition": "Split Definition",
+ "incarnationCross": "Juxtaposition Cross of Habits",
+ "definedCenters": [
+  "Ajna",
+  "Throat",
+  "G",
+  "Solar Plexus",
+  "Sacral"
+ ],
+ "definedChannels": [
+  "5-15 Rhythm",
+  "23-43 Structuring",
+  "29-46 Discovery",
+  "35-36 Transitoriness"
+ ],
+ "sunLongitude": 255.0726013,
+ "moonLongitude": 320.4639683
+}

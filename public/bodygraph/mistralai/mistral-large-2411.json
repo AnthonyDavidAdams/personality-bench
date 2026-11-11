@@ -1,0 +1,22 @@
+{
+ "inputs": {
+  "utc": "2024-11-18T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2024-11-18T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Splenic",
+ "profile": "3/5 Martyr / Heretic",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Contagion 4",
+ "definedCenters": [
+  "Spleen",
+  "Root"
+ ],
+ "definedChannels": [
+  "18-58 Judgement"
+ ],
+ "sunLongitude": 236.8483197,
+ "moonLongitude": 94.7701737
+}

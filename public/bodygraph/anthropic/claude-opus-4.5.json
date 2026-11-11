@@ -1,0 +1,26 @@
+{
+ "inputs": {
+  "utc": "2025-11-24T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-11-24T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Sacral",
+ "profile": "3/5 Martyr / Heretic",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of the Sleeping Phoenix 4",
+ "definedCenters": [
+  "Head",
+  "Ajna",
+  "Throat",
+  "Sacral"
+ ],
+ "definedChannels": [
+  "4-63 Logic",
+  "20-34 Charisma",
+  "47-64 Abstraction"
+ ],
+ "sunLongitude": 242.6708385,
+ "moonLongitude": 291.1931636
+}

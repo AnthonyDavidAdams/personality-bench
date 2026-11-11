@@ -1,0 +1,25 @@
+{
+ "inputs": {
+  "utc": "2025-04-16T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-04-16T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "1/3 Investigator / Martyr",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of Laws",
+ "definedCenters": [
+  "Throat",
+  "Solar Plexus",
+  "Sacral",
+  "Root"
+ ],
+ "definedChannels": [
+  "3-60 Mutation",
+  "35-36 Transitoriness"
+ ],
+ "sunLongitude": 26.9485401,
+ "moonLongitude": 247.164454
+}

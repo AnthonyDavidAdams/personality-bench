@@ -1,0 +1,27 @@
+{
+ "inputs": {
+  "utc": "2026-09-29T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-09-29T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "3/6 Martyr / Role Model",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of Service 3",
+ "definedCenters": [
+  "Ajna",
+  "Throat",
+  "Spleen",
+  "Solar Plexus",
+  "Root"
+ ],
+ "definedChannels": [
+  "17-62 Acceptance",
+  "18-58 Judgement",
+  "30-41 Recognition"
+ ],
+ "sunLongitude": 186.5700125,
+ "moonLongitude": 45.4982043
+}

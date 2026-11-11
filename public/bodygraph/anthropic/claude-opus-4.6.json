@@ -1,0 +1,28 @@
+{
+ "inputs": {
+  "utc": "2026-01-15T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-01-15T17:00:00Z",
+ "type": "Generator",
+ "strategy": "Wait to respond",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "6/2 Role Model / Hermit",
+ "definition": "Triple Split Definition",
+ "incarnationCross": "Left Angle Cross of Obscuration 2",
+ "definedCenters": [
+  "Throat",
+  "Heart",
+  "Spleen",
+  "Solar Plexus",
+  "Sacral",
+  "Root"
+ ],
+ "definedChannels": [
+  "3-60 Mutation",
+  "20-57 The Brainwave",
+  "37-40 Community"
+ ],
+ "sunLongitude": 295.5545783,
+ "moonLongitude": 260.5679409
+}

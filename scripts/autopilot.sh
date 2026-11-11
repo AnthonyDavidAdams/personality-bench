@@ -20,8 +20,9 @@ for M in ${(z)MODELS}; do
 done
 
 zsh paper/refresh.sh >> $LOG 2>&1 || log "refresh had errors (continuing)"
+npx tsx scripts/render_bodygraphs.ts >> $LOG 2>&1 || log "bodygraph render failed (continuing)"
 
-git add seed/personality-bench-seed.db.gz data/exports/*.csv paper/personality-bench.pdf paper/personality-bench.html paper/figures/*.png 2>/dev/null
+git add seed/personality-bench-seed.db.gz data/exports/*.csv paper/personality-bench.pdf paper/personality-bench.html paper/figures/*.png public/bodygraph 2>/dev/null
 git commit -q -m "Autopilot: add $MODELS
 
 Nightly discovery swept the model(s) above at N=5 across all instruments,

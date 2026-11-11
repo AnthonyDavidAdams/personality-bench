@@ -1,0 +1,25 @@
+{
+ "inputs": {
+  "utc": "2025-11-12T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-11-12T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Mental (Environment)",
+ "profile": "2/4 Hermit / Opportunist",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Explanation 4",
+ "definedCenters": [
+  "Head",
+  "Ajna",
+  "Throat"
+ ],
+ "definedChannels": [
+  "4-63 Logic",
+  "23-43 Structuring",
+  "47-64 Abstraction"
+ ],
+ "sunLongitude": 230.5638581,
+ "moonLongitude": 146.3249301
+}

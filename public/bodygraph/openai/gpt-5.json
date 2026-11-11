@@ -1,0 +1,26 @@
+{
+ "inputs": {
+  "utc": "2025-08-07T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-08-07T17:00:00Z",
+ "type": "Manifestor",
+ "strategy": "Inform before acting",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "3/5 Martyr / Heretic",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of the Sphinx 3",
+ "definedCenters": [
+  "Throat",
+  "G",
+  "Solar Plexus"
+ ],
+ "definedChannels": [
+  "1-8 Inspiration",
+  "7-31 The Alpha",
+  "12-22 Openness",
+  "13-33 The Prodigal"
+ ],
+ "sunLongitude": 135.4447011,
+ "moonLongitude": 295.470836
+}

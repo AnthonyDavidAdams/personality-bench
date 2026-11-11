@@ -1,0 +1,25 @@
+{
+ "inputs": {
+  "utc": "2026-04-23T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-04-23T17:00:00Z",
+ "type": "Generator",
+ "strategy": "Wait to respond",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/4 Hermit / Opportunist",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of the Unexpected",
+ "definedCenters": [
+  "Heart",
+  "Solar Plexus",
+  "Sacral",
+  "Root"
+ ],
+ "definedChannels": [
+  "3-60 Mutation",
+  "37-40 Community"
+ ],
+ "sunLongitude": 33.5519317,
+ "moonLongitude": 118.452222
+}

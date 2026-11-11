@@ -1,0 +1,26 @@
+{
+ "inputs": {
+  "utc": "2026-05-01T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-05-01T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "4/1 Opportunist / Investigator",
+ "definition": "Single Definition",
+ "incarnationCross": "Juxtaposition Cross of Rationalization",
+ "definedCenters": [
+  "G",
+  "Heart",
+  "Solar Plexus",
+  "Root"
+ ],
+ "definedChannels": [
+  "19-49 Synthesis",
+  "25-51 Initiation",
+  "37-40 Community"
+ ],
+ "sunLongitude": 41.3316603,
+ "moonLongitude": 221.1520858
+}

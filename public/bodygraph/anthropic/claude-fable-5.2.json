@@ -1,0 +1,22 @@
+{
+ "inputs": {
+  "utc": "2026-11-09T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-11-09T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "5/1 Heretic / Investigator",
+ "definition": "Single Definition",
+ "incarnationCross": "Left Angle Cross of Defiance 2",
+ "definedCenters": [
+  "Solar Plexus",
+  "Root"
+ ],
+ "definedChannels": [
+  "30-41 Recognition"
+ ],
+ "sunLongitude": 227.3069641,
+ "moonLongitude": 232.0243066
+}

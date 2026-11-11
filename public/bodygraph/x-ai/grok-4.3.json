@@ -1,0 +1,30 @@
+{
+ "inputs": {
+  "utc": "2026-04-30T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-04-30T17:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "3/6 Martyr / Role Model",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of the Four Ways",
+ "definedCenters": [
+  "Throat",
+  "G",
+  "Heart",
+  "Solar Plexus",
+  "Sacral",
+  "Root"
+ ],
+ "definedChannels": [
+  "13-33 The Prodigal",
+  "19-49 Synthesis",
+  "25-51 Initiation",
+  "37-40 Community",
+  "42-53 Maturation"
+ ],
+ "sunLongitude": 40.3610851,
+ "moonLongitude": 208.9637494
+}

@@ -1,0 +1,29 @@
+{
+ "inputs": {
+  "utc": "2025-03-25T16:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2025-03-25T16:00:00Z",
+ "type": "Manifesting Generator",
+ "strategy": "Wait to respond, then inform",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/4 Hermit / Opportunist",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of Service",
+ "definedCenters": [
+  "Ajna",
+  "Throat",
+  "Spleen",
+  "Solar Plexus",
+  "Sacral",
+  "Root"
+ ],
+ "definedChannels": [
+  "9-52 Concentration",
+  "17-62 Acceptance",
+  "18-58 Judgement",
+  "35-36 Transitoriness"
+ ],
+ "sunLongitude": 5.2495398,
+ "moonLongitude": 313.892842
+}

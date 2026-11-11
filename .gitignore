@@ -31,3 +31,4 @@ data/discover-last.json
 data/autopilot.log
 .venv-efa/
 data/hn-queue.json
+.venv-hd/

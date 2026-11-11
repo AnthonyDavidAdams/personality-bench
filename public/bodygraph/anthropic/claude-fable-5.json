@@ -1,0 +1,28 @@
+{
+ "inputs": {
+  "utc": "2026-06-09T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-06-09T17:00:00Z",
+ "type": "Manifestor",
+ "strategy": "Inform before acting",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/5 Hermit / Heretic",
+ "definition": "Single Definition",
+ "incarnationCross": "Right Angle Cross of Rulership 2",
+ "definedCenters": [
+  "Ajna",
+  "Throat",
+  "Heart",
+  "Solar Plexus",
+  "Root"
+ ],
+ "definedChannels": [
+  "17-62 Acceptance",
+  "21-45 The Money Line",
+  "37-40 Community",
+  "39-55 Emoting"
+ ],
+ "sunLongitude": 78.8749154,
+ "moonLongitude": 4.728091
+}

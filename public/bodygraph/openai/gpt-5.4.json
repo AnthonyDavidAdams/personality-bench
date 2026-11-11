@@ -1,0 +1,30 @@
+{
+ "inputs": {
+  "utc": "2026-03-10T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2026-03-10T17:00:00Z",
+ "type": "Generator",
+ "strategy": "Wait to respond",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "4/6 Opportunist / Role Model",
+ "definition": "Triple Split Definition",
+ "incarnationCross": "Right Angle Cross of Rulership",
+ "definedCenters": [
+  "Head",
+  "Ajna",
+  "Throat",
+  "G",
+  "Heart",
+  "Solar Plexus",
+  "Sacral"
+ ],
+ "definedChannels": [
+  "10-34 Exploration",
+  "17-62 Acceptance",
+  "37-40 Community",
+  "47-64 Abstraction"
+ ],
+ "sunLongitude": 350.1265973,
+ "moonLongitude": 252.5794296
+}

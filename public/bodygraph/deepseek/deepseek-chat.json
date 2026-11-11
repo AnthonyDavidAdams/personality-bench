@@ -1,0 +1,27 @@
+{
+ "inputs": {
+  "utc": "2024-12-26T17:00:00Z"
+ },
+ "engine": "bodygraph 1.1.0",
+ "utc": "2024-12-26T17:00:00Z",
+ "type": "Manifestor",
+ "strategy": "Inform before acting",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "2/4 Hermit / Opportunist",
+ "definition": "Split Definition",
+ "incarnationCross": "Right Angle Cross of Service 4",
+ "definedCenters": [
+  "Throat",
+  "G",
+  "Spleen",
+  "Solar Plexus",
+  "Root"
+ ],
+ "definedChannels": [
+  "1-8 Inspiration",
+  "18-58 Judgement",
+  "35-36 Transitoriness"
+ ],
+ "sunLongitude": 275.4187562,
+ "moonLongitude": 226.3863376
+}
