@@ -1,8 +1,9 @@
 {
  "inputs": {
+  "name": "OpenAI o3",
   "utc": "2025-04-16T17:00:00Z"
  },
- "engine": "bodygraph 1.1.0",
+ "engine": "bodygraph 1.1.0 / footer 2",
  "utc": "2025-04-16T17:00:00Z",
  "type": "Manifesting Generator",
  "strategy": "Wait to respond, then inform",

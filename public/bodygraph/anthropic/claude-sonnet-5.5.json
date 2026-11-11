@@ -1,8 +1,9 @@
 {
  "inputs": {
+  "name": "Claude Sonnet 5.5",
   "utc": "2026-09-28T17:00:00Z"
  },
- "engine": "bodygraph 1.1.0",
+ "engine": "bodygraph 1.1.0 / footer 2",
  "utc": "2026-09-28T17:00:00Z",
  "type": "Projector",
  "strategy": "Wait for the invitation",

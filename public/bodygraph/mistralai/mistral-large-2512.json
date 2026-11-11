@@ -1,8 +1,9 @@
 {
  "inputs": {
+  "name": "Mistral Large (2512)",
   "utc": "2025-12-09T10:00:00Z"
  },
- "engine": "bodygraph 1.1.0",
+ "engine": "bodygraph 1.1.0 / footer 2",
  "utc": "2025-12-09T10:00:00Z",
  "type": "Generator",
  "strategy": "Wait to respond",

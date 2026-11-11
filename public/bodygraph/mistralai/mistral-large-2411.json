@@ -1,8 +1,9 @@
 {
  "inputs": {
+  "name": "Mistral Large 2411",
   "utc": "2024-11-18T17:00:00Z"
  },
- "engine": "bodygraph 1.1.0",
+ "engine": "bodygraph 1.1.0 / footer 2",
  "utc": "2024-11-18T17:00:00Z",
  "type": "Projector",
  "strategy": "Wait for the invitation",
