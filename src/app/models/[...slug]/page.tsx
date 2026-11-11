@@ -379,6 +379,14 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
                   />
                 </a>
               ) : null}
+              {chart.svg ? (
+                <div className="flex justify-center gap-3 text-xs">
+                  <span className="text-neutral-500">Download:</span>
+                  <a href={`/api/bodygraph/${modelId}.png`} className="text-[var(--link)] hover:underline">PNG</a>
+                  <a href={`/api/bodygraph/${modelId}.jpg`} className="text-[var(--link)] hover:underline">JPG</a>
+                  <a href={chart.svg} download className="text-[var(--link)] hover:underline">SVG</a>
+                </div>
+              ) : null}
               <div className="text-xs text-neutral-700 space-y-3 max-w-3xl mx-auto">
                 <div>
                   <div className="font-semibold text-neutral-900 mb-1">Defined centers ({chart.hd.definedCenters.length}/9)</div>
