@@ -3,7 +3,7 @@
   "name": "Claude Haiku 4.5",
   "utc": "2025-10-15T17:00:00Z"
  },
- "engine": "bodygraph 1.2.0 / footer 2",
+ "engine": "bodygraph 1.2.1 / footer 2",
  "utc": "2025-10-15T17:00:00Z",
  "type": "Manifestor",
  "strategy": "Inform before acting",

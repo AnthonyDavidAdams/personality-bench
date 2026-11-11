@@ -3,7 +3,7 @@
   "name": "Claude Opus 4.6",
   "utc": "2026-01-15T17:00:00Z"
  },
- "engine": "bodygraph 1.2.0 / footer 2",
+ "engine": "bodygraph 1.2.1 / footer 2",
  "utc": "2026-01-15T17:00:00Z",
  "type": "Generator",
  "strategy": "Wait to respond",

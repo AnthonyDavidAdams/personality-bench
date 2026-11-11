@@ -3,7 +3,7 @@
   "name": "GPT-5",
   "utc": "2025-08-07T17:00:00Z"
  },
- "engine": "bodygraph 1.2.0 / footer 2",
+ "engine": "bodygraph 1.2.1 / footer 2",
  "utc": "2025-08-07T17:00:00Z",
  "type": "Manifestor",
  "strategy": "Inform before acting",

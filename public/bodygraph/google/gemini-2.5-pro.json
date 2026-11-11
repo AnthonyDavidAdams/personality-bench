@@ -3,7 +3,7 @@
   "name": "Gemini 2.5 Pro",
   "utc": "2025-03-25T16:00:00Z"
  },
- "engine": "bodygraph 1.2.0 / footer 2",
+ "engine": "bodygraph 1.2.1 / footer 2",
  "utc": "2025-03-25T16:00:00Z",
  "type": "Manifesting Generator",
  "strategy": "Wait to respond, then inform",
