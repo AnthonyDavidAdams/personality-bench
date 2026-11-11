@@ -13,6 +13,7 @@ shows). Skips a model whose JSON already has the same inputs and engine version.
 Driven by scripts/render_bodygraphs.ts; run that, not this.
 """
 import json
+import re
 import os
 import sys
 from datetime import datetime, timezone
@@ -31,7 +32,7 @@ SITE = "https://persona.earthpilot.ai"
 RENDER = f"bodygraph {bodygraph.__version__} / footer 2"
 
 INK, GREY, RED = "#1f2328", "#6e7781", "#d1361f"
-W, GRAPH_H, FOOT_H, MARGIN = 1000, 1038, 215, 57
+W, FOOT_H, MARGIN = 1000, 215, 57
 
 
 def qr_path(url: str, x: float, y: float, size: float) -> str:
@@ -48,6 +49,8 @@ def qr_path(url: str, x: float, y: float, size: float) -> str:
 def with_footer(graph_svg: str, model_id: str, name: str) -> str:
     """Stack the bodygraph on top of a footer that says where the image came from."""
     url = f"{SITE}/models/{model_id}"
+    # The footer starts wherever the graph ends, whatever height the renderer gives it.
+    GRAPH_H = float(re.search(r'viewBox="0 0 [\d.]+ ([\d.]+)"', graph_svg).group(1))
     q = 150
     qx, qy = W - MARGIN - q, GRAPH_H + 22
     with ts.Session() as session:
