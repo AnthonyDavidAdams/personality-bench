@@ -11,6 +11,7 @@
  * are not biological births, but if we treat them as moments of arrival into
  * the world, the chart math is the same.
  */
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { zodiacFromDate } from "./zodiac";
@@ -39,6 +40,8 @@ export interface BirthChart {
   hd: HDChart | null;
   /** Public path of the rendered bodygraph SVG, when one exists. */
   svg: string | null;
+  /** Content hash of the SVG. Append as ?v= so a re-render gets a new URL past any cache. */
+  version: string | null;
   hdError: string | null;
 }
 
@@ -71,10 +74,15 @@ export function getBirthChart(modelId: string): BirthChart | null {
   try {
     hd = JSON.parse(fs.readFileSync(`${base}.json`, "utf8")) as HDChart;
   } catch {
-    return { sun, moon: null, hd: null, svg: null, hdError: "chart not rendered yet" };
+    return { sun, moon: null, hd: null, svg: null, version: null, hdError: "chart not rendered yet" };
   }
-  const svg = fs.existsSync(`${base}.svg`) ? `/bodygraph/${modelId}.svg` : null;
-  return { sun, moon: zodiacFromLongitude(hd.moonLongitude), hd, svg, hdError: null };
+  let svg: string | null = null;
+  let version: string | null = null;
+  if (fs.existsSync(`${base}.svg`)) {
+    version = crypto.createHash("sha1").update(fs.readFileSync(`${base}.svg`)).digest("hex").slice(0, 10);
+    svg = `/bodygraph/${modelId}.svg?v=${version}`;
+  }
+  return { sun, moon: zodiacFromLongitude(hd.moonLongitude), hd, svg, version, hdError: null };
 }
 
 /**

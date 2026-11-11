@@ -380,11 +380,29 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
                 </a>
               ) : null}
               {chart.svg ? (
-                <div className="flex justify-center gap-3 text-xs">
-                  <span className="text-neutral-500">Download:</span>
-                  <a href={`/api/bodygraph/${modelId}.png`} className="text-[var(--link)] hover:underline">PNG</a>
-                  <a href={`/api/bodygraph/${modelId}.jpg`} className="text-[var(--link)] hover:underline">JPG</a>
-                  <a href={chart.svg} download className="text-[var(--link)] hover:underline">SVG</a>
+                <div className="flex flex-wrap items-center justify-center gap-2">
+                  <a
+                    href={`/api/bodygraph/${modelId}.png?v=${chart.version}`}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-md bg-neutral-900 text-white text-sm hover:bg-neutral-700"
+                  >
+                    <DownloadIcon /> Download PNG
+                  </a>
+                  <a
+                    href={`/api/bodygraph/${modelId}.jpg?v=${chart.version}`}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-md border border-[var(--border)] bg-white text-sm text-neutral-800 hover:border-neutral-500"
+                  >
+                    <DownloadIcon /> JPG
+                  </a>
+                  <a
+                    href={chart.svg}
+                    download
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-md border border-[var(--border)] bg-white text-sm text-neutral-800 hover:border-neutral-500"
+                  >
+                    <DownloadIcon /> SVG
+                  </a>
+                  <span className="w-full text-center text-[11px] text-neutral-500">
+                    2000px wide, with a QR code back to this page. SVG is the editable vector.
+                  </span>
                 </div>
               ) : null}
               <div className="text-xs text-neutral-700 space-y-3 max-w-3xl mx-auto">
@@ -408,6 +426,14 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
         </section>
       ) : null}
     </div>
+  );
+}
+
+function DownloadIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+      <path d="M8 2v8m0 0L4.5 6.5M8 10l3.5-3.5M2.5 13.5h11" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
