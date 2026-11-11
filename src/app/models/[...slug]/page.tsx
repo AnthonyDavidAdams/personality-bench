@@ -368,19 +368,18 @@ export default async function ModelPage({ params }: { params: Promise<{ slug: st
             </div>
           </div>
           {chart.hd ? (
-            <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start pt-4 border-t border-[var(--border)]">
-              <div>
-                {chart.svg ? (
-                  // eslint-disable-next-line @next/next/no-img-element
+            <div className="pt-4 border-t border-[var(--border)] space-y-6">
+              {chart.svg ? (
+                <a href={chart.svg} target="_blank" rel="noopener" title="Open full size">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={chart.svg}
                     alt={`Human Design bodygraph for ${model.display_name}: ${chart.hd.type}, ${chart.hd.profile}`}
-                    width={420}
-                    className="max-w-full h-auto"
+                    className="block w-full max-w-3xl h-auto mx-auto"
                   />
-                ) : null}
-              </div>
-              <div className="text-xs text-neutral-700 space-y-3">
+                </a>
+              ) : null}
+              <div className="text-xs text-neutral-700 space-y-3 max-w-3xl mx-auto">
                 <div>
                   <div className="font-semibold text-neutral-900 mb-1">Defined centers ({chart.hd.definedCenters.length}/9)</div>
                   <div>{chart.hd.definedCenters.join(", ")}</div>
