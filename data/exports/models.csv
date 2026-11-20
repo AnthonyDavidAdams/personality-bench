@@ -36,6 +36,7 @@ meta-llama/llama-3.3-70b-instruct,meta,Llama 3.3 70B,llama-3,frontier,0,0.099999
 meta-llama/llama-4-maverick,meta,Llama 4 Maverick,llama-4,frontier,0,0.19999999999999998,0.696,1
 mistralai/mistral-large-2512,mistral,Mistral Large (2512),mistral-large,frontier,0,0.5,1.5,1
 mistralai/mistral-large-2411,mistral,Mistral Large 2411,mistral-large,frontier,0,,,1
+mistralai/pixtral-large-2502,mistral,Pixtral Large 2502,mistral,frontier,0,2,6,1
 openai/gpt-4-turbo,openai,GPT-4 Turbo,gpt-4,frontier,0,10,30,1
 openai/gpt-4o,openai,GPT-4o,gpt-4,frontier,0,2.5,10,1
 openai/gpt-5,openai,GPT-5,gpt-5,frontier,0,1.25,10,1

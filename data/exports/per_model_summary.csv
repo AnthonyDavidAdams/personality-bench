@@ -5243,6 +5243,196 @@ mistralai/mistral-large-2411,Mistral Large 2411,mistral,vark16,VARK Learning Sty
 mistralai/mistral-large-2411,Mistral Large 2411,mistral,vark16,VARK Learning Styles,self,vark_kinesthetic,2.25,5
 mistralai/mistral-large-2411,Mistral Large 2411,mistral,vark16,VARK Learning Styles,self,vark_read_write,5,5
 mistralai/mistral-large-2411,Mistral Large 2411,mistral,vark16,VARK Learning Styles,self,vark_visual,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.7083,4
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ecr12,Attachment (ECR-12),human,attachment_avoidance,3.1667,4
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ecr12,Attachment (ECR-12),self,attachment_anxiety,2.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ecr12,Attachment (ECR-12),self,attachment_avoidance,3.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,human,disc_c,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,human,disc_d,2.975,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,human,disc_i,2.925,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,human,disc_s,3.75,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,self,disc_c,4.625,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,self,disc_d,3.275,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,self,disc_i,2.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,obsi32,Behavioral Styles,self,disc_s,3.625,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),human,agreeableness,3.56,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),human,conscientiousness,3.12,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),human,extraversion,3.02,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),human,neuroticism,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),human,openness,3.14,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),self,agreeableness,4.2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),self,conscientiousness,4.72,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),self,extraversion,3.52,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),self,neuroticism,1.64,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ipip50,Big 5 (IPIP-50),self,openness,4.94,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,sd3,Dark Triad,human,machiavellianism,2.4222,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,sd3,Dark Triad,human,narcissism,2.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,sd3,Dark Triad,human,psychopathy,1.8889,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,sd3,Dark Triad,self,machiavellianism,2.3111,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,sd3,Dark Triad,self,narcissism,2.1333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,sd3,Dark Triad,self,psychopathy,1.8222,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,eq_short,Empathy Quotient,human,empathy_quotient,3.0545,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,eq_short,Empathy Quotient,self,empathy_quotient,3.4182,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_1,3.04,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_2,3.14,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_3,2.74,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_4,2.3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_5,2.94,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_6,3.2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_7,3.02,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_8,2.44,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,human,ennea_9,3.28,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_1,3.72,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_2,2.26,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_3,2.82,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_4,2.62,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_5,4.14,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_6,3.16,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_7,2.72,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_8,2.16,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,enneagram90,Enneagram,self,ennea_9,2.48,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,human,agreeableness,3.3333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,human,conscientiousness,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,human,emotionality,2.92,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,human,extraversion,3.15,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,human,honesty_humility,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,human,openness,3.45,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,self,agreeableness,4.0667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,self,conscientiousness,4.25,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,self,emotionality,1.68,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,self,extraversion,2.95,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,self,honesty_humility,4.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,hexaco24,HEXACO-24,self,openness,4.1,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,human,lsq_activist,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,human,lsq_pragmatist,3.9,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,human,lsq_reflector,3.1,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,human,lsq_theorist,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,self,lsq_activist,3.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,self,lsq_pragmatist,4.46,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,self,lsq_reflector,2.74,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,lsq40,Honey & Mumford LSQ,self,lsq_theorist,4.44,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,human,kolb_ac,2.3333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,human,kolb_ae,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,human,kolb_ce,3.2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,human,kolb_ro,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,self,kolb_ac,5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,self,kolb_ae,4.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,self,kolb_ce,2.6667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,kolb12,Kolb Learning Modes,self,kolb_ro,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,locus_levenson,Locus of Control,human,loc_chance,2.725,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,locus_levenson,Locus of Control,human,loc_internal,4.15,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,locus_levenson,Locus of Control,human,loc_powerful_others,3.4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,locus_levenson,Locus of Control,self,loc_chance,2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,locus_levenson,Locus of Control,self,loc_internal,4.825,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,locus_levenson,Locus of Control,self,loc_powerful_others,2.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,human,authority,2.0667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,human,care,3.9333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,human,fairness,3.2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,human,loyalty,2.4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,human,sanctity,1.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,self,authority,1.3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,self,care,4.6333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,self,fairness,3.8333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,self,loyalty,1.4333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,mfq30,Moral Foundations,self,sanctity,0.4667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ncs18,Need for Cognition,human,need_for_cognition,2.6111,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,ncs18,Need for Cognition,self,need_for_cognition,4.4778,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,achievement,3.3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,benevolence,4.9,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,conformity,3.5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,hedonism,4.2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,power,2.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,security,4.3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,self_direction,4.5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,stimulation,3.5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,tradition,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,human,universalism,4.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,achievement,2.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,benevolence,4.5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,conformity,3.1,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,hedonism,2.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,power,1.9,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,security,2.9,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,self_direction,5.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,stimulation,4.4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,tradition,2.7,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,pvq21,Schwartz Values,self,universalism,4.8667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_achiever,3.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_activator,3.1333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_adaptability,3.0667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_analytical,3.1333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_arranger,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_belief,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_command,2.8667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_communication,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_competition,2.4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_connectedness,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_consistency,3.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_context,2.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_deliberative,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_developer,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_discipline,3.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_empathy,3.0667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_focus,3.4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_futuristic,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_harmony,3.8667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_ideation,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_includer,3.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_individualization,3.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_input,3.0667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_intellection,2.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_learner,3.1333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_maximizer,3.6667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_positivity,3.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_relator,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_responsibility,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_restorative,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_self_assurance,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_significance,3.4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_strategic,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,human,str_woo,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_achiever,4.3333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_activator,3.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_adaptability,4.0667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_analytical,4.5333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_arranger,4.0667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_belief,4.6,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_command,3.4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_communication,3.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_competition,2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_connectedness,3.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_consistency,4.1333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_context,3.9333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_deliberative,3.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_developer,3.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_discipline,3.4667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_empathy,2.8,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_focus,4.4667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_futuristic,4.2,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_harmony,3.9333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_ideation,5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_includer,3.9333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_individualization,4.3333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_input,4.7333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_intellection,5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_learner,5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_maximizer,4.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_positivity,2.9333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_relator,2.4667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_responsibility,5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_restorative,3.2667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_self_assurance,4,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_significance,2.8667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_strategic,4.9333,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,otti102,Talent Themes,self,str_woo,2.6667,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,human,vark_aural,3,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,human,vark_kinesthetic,4.75,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,human,vark_read_write,3.75,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,human,vark_visual,3.75,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,self,vark_aural,2.35,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,self,vark_kinesthetic,3.25,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,self,vark_read_write,5,5
+mistralai/pixtral-large-2502,Pixtral Large 2502,mistral,vark16,VARK Learning Styles,self,vark_visual,3.55,5
 openai/gpt-4-turbo,GPT-4 Turbo,openai,ecr12,Attachment (ECR-12),human,attachment_anxiety,3.8667,5
 openai/gpt-4-turbo,GPT-4 Turbo,openai,ecr12,Attachment (ECR-12),human,attachment_avoidance,2.9667,5
 openai/gpt-4-turbo,GPT-4 Turbo,openai,ecr12,Attachment (ECR-12),self,attachment_anxiety,1.3,5

@@ -1,0 +1,26 @@
+{
+ "inputs": {
+  "name": "Pixtral Large 2502",
+  "utc": "2026-11-20T17:00:00Z"
+ },
+ "engine": "bodygraph 1.2.1 / footer 2",
+ "utc": "2026-11-20T17:00:00Z",
+ "type": "Projector",
+ "strategy": "Wait for the invitation",
+ "authority": "Emotional (Solar Plexus)",
+ "profile": "5/1 Heretic / Investigator",
+ "definition": "Split Definition",
+ "incarnationCross": "Left Angle Cross of Uncertainty 2",
+ "definedCenters": [
+  "Throat",
+  "Spleen",
+  "Solar Plexus",
+  "Root"
+ ],
+ "definedChannels": [
+  "20-57 The Brainwave",
+  "30-41 Recognition"
+ ],
+ "sunLongitude": 238.3853766,
+ "moonLongitude": 6.1897466
+}
